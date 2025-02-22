@@ -20,11 +20,10 @@ on:
           - sonarcloud
           - trivy
           - zap
-          - ecoindex
           - dsfr
+          - ecoindex
   push:
     branches:
-      - master
       - main
     paths:
       - "dashlord.yaml"
@@ -46,18 +45,18 @@ jobs:
       sites: ${{ steps.init.outputs.sites }}
       config: ${{ steps.init.outputs.config }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: init
         uses: "SocialGouv/dashlord-actions/init@v1"
         with:
           url: ${{ github.event.inputs.url }}
           tool: ${{ github.event.inputs.tool }}
-        # to create missing entries in updown.io
       - id: updown-init
         if: ${{ matrix.sites.tools.updownio }}
         uses: "SocialGouv/dashlord-actions/updown-init@v1"
         env:
           UPDOWNIO_API_KEY: ${{ secrets.UPDOWNIO_API_KEY }}
+
   scans:
     runs-on: ubuntu-latest
     name: Scan
@@ -69,14 +68,12 @@ jobs:
       matrix:
         sites: ${{ fromJson(needs.init.outputs.sites) }}
     steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.ref }}
+      - uses: actions/checkout@v4
 
       - run: |
           mkdir scans
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
@@ -89,6 +86,45 @@ jobs:
         with:
           url: ${{ matrix.sites.url }}
           output: scans/dsfr.json
+
+      - name: Trivy
+        continue-on-error: true
+        timeout-minutes: 20
+        if: ${{ matrix.sites.tools.trivy && matrix.sites.docker }}
+        uses: "SocialGouv/dashlord-actions/trivy@v1"
+        with:
+          images: ${{ join(matrix.sites.docker) }}
+          output: scans/trivy.json
+
+      - name: Nuclei scan
+        if: ${{ matrix.sites.tools.nuclei }}
+        timeout-minutes: 10
+        continue-on-error: true
+        uses: "SocialGouv/dashlord-nuclei-action@master"
+        with:
+          url: ${{ matrix.sites.url }}
+          output: "scans/nuclei.log"
+
+      - name: Betagouv API scan
+        if: ${{ matrix.sites.tools.betagouv }}
+        continue-on-error: true
+        timeout-minutes: 10
+        id: betagouv
+        uses: betagouv/dashlord-startup-action@main
+        with:
+          id: "${{ matrix.sites.betaId }}"
+          output: "scans/betagouv.json"
+
+      - name: ZAP Scan
+        if: ${{ matrix.sites.tools.zap }}
+        uses: zaproxy/action-baseline@v0.9.0
+        timeout-minutes: 30
+        with:
+          token: "" # disable issue creation
+          rules_file_name: "zap-rules.tsv"
+          target: "${{ matrix.sites.url }}"
+          cmd_options: "-a"
+          allow_issue_writing: false
 
       - name: sonarcloud scan
         if: ${{ matrix.sites.tools.sonarcloud }}
@@ -136,15 +172,6 @@ jobs:
           url: ${{ matrix.sites.url }}
           output: scans/declaration-rgpd.json
 
-      - name: Trivy
-        continue-on-error: true
-        timeout-minutes: 20
-        if: ${{ matrix.sites.tools.trivy && matrix.sites.docker }}
-        uses: "socialgouv/dashlord-actions/trivy@v1"
-        with:
-          images: ${{ join(matrix.sites.docker) }}
-          output: scans/trivy.json
-
       - name: Detect 404s
         continue-on-error: true
         timeout-minutes: 10
@@ -154,25 +181,58 @@ jobs:
           url: ${{ matrix.sites.url }}
           output: scans/404.json
 
-      - name: Betagouv API scan
-        if: ${{ matrix.sites.tools.betagouv }}
+      - name: Stats page from beta
         continue-on-error: true
-        timeout-minutes: 10
-        id: betagouv
-        uses: betagouv/dashlord-startup-action@main
-        with:
-          id: "${{ matrix.sites.betaId }}"
-          output: "scans/betagouv.json"
-
-      - name: Stats page
         timeout-minutes: 10
         uses: "betagouv/check-url-action@main"
         if: ${{ matrix.sites.tools.stats }}
+        id: stats
         with:
-          url: ${{ steps.betagouv.outputs.stats_url || format('{0}/stats', matrix.sites.url) }}
+          url: ${{ steps.betagouv.outputs.stats_url }}
           output: scans/stats.json
           minExpectedRegex: ^stat
           exactExpectedRegex: ^stats$
+
+      - name: Stats page retry on url
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "betagouv/check-url-action@main"
+        if: ${{ steps.stats.outcome=='failure' }}
+        with:
+          url: ${{ format('{0}/stats', matrix.sites.url) }}
+          output: scans/stats.json
+          minExpectedRegex: ^stat
+          exactExpectedRegex: ^stats$
+
+      - name: Budget page from beta
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "betagouv/check-url-action@main"
+        if: ${{ matrix.sites.tools.budget_page }}
+        id: budget_page
+        with:
+          url: ${{ steps.betagouv.outputs.budget_url }}
+          output: scans/budget_page.json
+          exactExpectedRegex: ^budget$
+
+      - name: Budget page retry on url
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "betagouv/check-url-action@main"
+        if: ${{ steps.budget_page.outcome=='failure' }}
+        with:
+          url: ${{ format('{0}/budget', matrix.sites.url) }}
+          output: scans/budget_page.json
+          exactExpectedRegex: ^budget$
+
+      - name: Open Github repository
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "betagouv/check-url-action@main"
+        if: ${{ matrix.sites.tools.betagouv }}
+        with:
+          url: ${{ steps.betagouv.outputs.github_repository }}
+          output: scans/github_repository.json
 
       - name: Screenshot Website
         uses: swinton/screenshot-website@v1.x
@@ -194,18 +254,6 @@ jobs:
         with:
           url: "${{ matrix.sites.url }}"
           output: scans/wappalyzer.json
-
-      - name: ZAP Scan
-        if: ${{ matrix.sites.tools.zap }}
-        uses: zaproxy/action-baseline@v0.6.1
-        timeout-minutes: 10
-        with:
-          token: "" # disable issue creation
-          rules_file_name: "zap-rules.tsv"
-          docker_name: "owasp/zap2docker-stable"
-          target: "${{ matrix.sites.url }}"
-          cmd_options: "-a"
-          allow_issue_writing: false
 
         # https://github.com/treosh/lighthouse-ci-action#inputs
       - name: Lighthouse scan
@@ -252,15 +300,6 @@ jobs:
           grade: "F"
           options: "--fast"
 
-      - name: Nuclei scan
-        if: ${{ matrix.sites.tools.nuclei }}
-        timeout-minutes: 10
-        continue-on-error: true
-        uses: "SocialGouv/dashlord-nuclei-action@master"
-        with:
-          url: ${{ matrix.sites.url }}
-          output: "scans/nuclei.log"
-
       - name: Updown.io checks
         if: ${{ matrix.sites.tools.updownio }}
         continue-on-error: true
@@ -278,6 +317,8 @@ jobs:
           token: ${{ secrets.DEPENDABOTALERTS_TOKEN }}
           repositories: ${{ join(matrix.sites.repositories) }}
           output: scans/dependabotalerts.json
+          maxAlerts: 100
+          states: "OPEN"
 
       - name: Code quality alerts
         if: ${{ matrix.sites.tools.codescan && matrix.sites.repositories }}
@@ -287,6 +328,7 @@ jobs:
           token: ${{ secrets.CODESCANALERTS_TOKEN }}
           repositories: ${{ join(matrix.sites.repositories) }}
           output: scans/codescanalerts.json
+          state: open
 
       - uses: SocialGouv/dashlord-actions/save@v1
         with:
@@ -294,35 +336,10 @@ jobs:
           # only clean up previous stats when all tools runned
           cleanup: ${{ github.event.inputs.tool == 'all' && true || false }}
 
-      - name: "Commit"
-        id: commit1
-        continue-on-error: true
-        run: |
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config --global user.name GitHub
-          git add "results"
-          git commit -m "update: ${{ matrix.sites.url }}"
-          git pull --rebase --no-ff origin ${{ github.ref }}
-          git push
-
-      - name: "Commit retry"
-        if: steps.commit1.outcome=='failure'
-        id: commit2
-        continue-on-error: true
-        run: |
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config --global user.name GitHub
-          git add "results"
-          git commit -m "update: ${{ matrix.sites.url }}"
-          git pull --rebase --no-ff origin ${{ github.ref }}
-          git push
-
-      - name: "Commit retry 2"
-        if: steps.commit2.outcome=='failure'
-        run: |
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config --global user.name GitHub
-          git add "results"
-          git commit -m "update: ${{ matrix.sites.url }}"
-          git pull --rebase --no-ff origin ${{ github.ref }}
-          git push
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: "results"
+          author_name: "incubateur-ademe-admin"
+          author_email: "accelerateurdelatransitionecologique@ademe.fr"
+          message: "update: ${{ matrix.sites.url }}"
+          pull: "--rebase --autostash"

@@ -1,37 +1,161 @@
-title: DashLord example
-description: Bonnes pratiques techniques
-entity: Votre entité
-footer: Powered by SocialGouv
-marianne: false
+_api_tools: &api_tools
+  "404": false
+  screenshot: false
+  wappalyzer: false
+  declaration-a11y: false
+  declaration-rgpd: false
+  budget_page: false
+  stats: false
+
+_iframe_tools: &iframe_tools
+  "404": false
+  declaration-rgpd: false
+  declaration-a11y: false
+  budget_page: false
+  stats: false
+
+_same_github_tools: &same_github_tools
+  dependabot: false
+  codescan: false
+  github_repository: true
+
+_staging_tools: &staging_tools
+  <<: *same_github_tools
+  "404": false
+  screenshot: false
+  lighthouse: false
+  testssl: false
+  wappalyzer: false
+  dependabot: false
+  codescan: false
+  updownio: false
+  http: false
+  stats: false
+  declaration-a11y: false
+  declaration-rgpd: false
+  sonarcloud: false
+  budget_page: false
+  github_repository: false
+
+_incubateur_tools: &incubateur_tools
+  betagouv: false
+  stats: false
+  budget_page: false
+  declaration-a11y: false
+
+# special
+_no_front_tools: &no_front_tools
+  "404": false
+  screenshot: false
+  lighthouse: false
+  testssl: false
+  wappalyzer: false
+  nuclei: false
+  zap: false
+  thirdparties: false
+  # dependabot: true
+  # codescan: true
+  updownio: false
+  http: false
+  nmap: false
+  stats: false
+  trivy: false
+  declaration-a11y: false
+  declaration-rgpd: false
+  # betagouv: true
+  ecoindex: false
+  sonarcloud: false
+  budget_page: false
+  dsfr: false
+  # github_repository: true
+
+title: DashLord La Ruche
+description: Bonnes pratiques techniques de l'Incuabteur de l'Agriculture
+entity: Ministère\nde l'Agriculture\net de la Souveraineté\nAlimentaire
+footer: Incubateur de l'Agriculture
+marianne: true
+operator:
+  logo: https://raw.githubusercontent.com/incubateur-ademe/.github/main/logo-la-ruche-simple.jpg
+  name: La Ruche
+  orientation: horizontal
 tools:
   "404": true
   screenshot: true
-  nmap: true
-  zap: true
-  wappalyzer: true
-  http: true
-  testssl: true
   lighthouse: true
-  thirdparties: true
+  testssl: true
+  wappalyzer: true
   nuclei: true
-  updownio: false
+  zap: true
+  thirdparties: true
   dependabot: true
   codescan: true
-  stats: false
+  updownio: true
+  http: true
+  nmap: true
+  stats: true
+  trivy: false
   declaration-a11y: true
-  ecoindex: true
-  dsfr: true
+  declaration-rgpd: true
   betagouv: true
-columns: # pour masquer des colonnes
+  ecoindex: true
+  sonarcloud: true
+  budget_page: true
+  dsfr: true
+  github_repository: true
+columns:
   zap: false
-updownioStatusPage: https://updown.io/status_pages
-updownioRecipients:
-  - email:123456
-  - email:789987
+updownioStatusPage: https://updown.io/o4r49
 urls:
-  - url: https://www.fabrique.social.gouv.fr
+  - url: https://compl-alim.beta.gouv.fr
+    category: startup
+    betaId: icare-complements-alimentaires
+    tags:
+      - homepage
+      - production
     repositories:
-      - socialgouv/www
-    docker:
-      - ghcr.io/socialgouv/fabrique/frontend
-  - url: https://beta.gouv.fr
+      - betagouv/complements-alimentaires
+  - url: https://ma-cantine.agriculture.gouv.fr
+    category: startup
+    betaId: ma-cantine-egalim
+    tags:
+      - homepage
+      - production
+    repositories:
+      - betagouv/ma-cantine
+  - url: https://maestro.beta.gouv.fr
+    category: startup
+    betaId: maestro
+    tags:
+      - homepage
+      - production
+    repositories:
+      - betagouv/maestro
+  - url: https://zacharie.beta.gouv.fr
+    category: startup
+    betaId: zacharie
+    tags:
+      - homepage
+      - production
+    repositories:
+      - betagouv/zacharie
+  # TODO UPDATE
+  # - url: SEVES_URL
+  - url: https://beta.gouv.fr/startups/seves.html
+    category: startup
+    betaId: seves
+    tags:
+      - no_front
+    repositories:
+      - betagouv/seves
+    tools:
+      <<: *no_front_tools
+  # - url: PLATEFORME_AGRI_URL
+  - url: https://beta.gouv.fr/startups/plateforme-agriculteurs.html
+    category: startup
+    betaId: plateforme-agriculteurs
+    tags:
+      - no_front
+    repositories:
+      - betagouv/aides-agri
+    tools:
+      <<: *no_front_tools

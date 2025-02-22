@@ -3,7 +3,14 @@
     "collect": {
       "numberOfRuns": 1,
       "settings": {
-        "chromeFlags": ["--ignore-certificate-errors"]
+        "chromeFlags": [
+          "--ignore-certificate-errors",
+          "--no-first-run",
+          "--disable-dev-shm-usage",
+          "--no-sandbox",
+          "--disable-dev-shm-usage",
+          "--headless"
+        ]
       }
     }
   }

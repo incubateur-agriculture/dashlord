@@ -18,11 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Website
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
@@ -37,7 +37,8 @@ jobs:
       - uses: EndBug/add-and-commit@v7
         with:
           add: '["report.json"]'
-          default_author: "github_actions"
+          author_name: "incubateur-agriculture-admin"
+          author_email: "incubateur.sg@agriculture.gouv.fr"
           message: "chore: report update"
 
       # deploy build to gh-pages
