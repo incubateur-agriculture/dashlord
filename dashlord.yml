@@ -105,6 +105,7 @@ columns:
   zap: false
 updownioStatusPage: https://updown.io/o4r49
 urls:
+  # Compl'Alim
   - url: https://compl-alim.beta.gouv.fr
     category: startup
     betaId: icare-complements-alimentaires
@@ -113,6 +114,8 @@ urls:
       - production
     repositories:
       - betagouv/complements-alimentaires
+
+  # Ma Cantine
   - url: https://ma-cantine.agriculture.gouv.fr
     category: startup
     betaId: ma-cantine-egalim
@@ -121,6 +124,8 @@ urls:
       - production
     repositories:
       - betagouv/ma-cantine
+
+  # Maestro
   - url: https://maestro.beta.gouv.fr
     category: startup
     betaId: maestro
@@ -129,6 +134,16 @@ urls:
       - production
     repositories:
       - betagouv/maestro
+  - url: https://app.maestro.beta.gouv.fr
+    category: startup
+    betaId: maestro
+    tags:
+      - app
+      - production
+    repositories:
+      - betagouv/maestro
+
+  # Zacharie
   - url: https://zacharie.beta.gouv.fr
     category: startup
     betaId: zacharie
@@ -138,6 +153,7 @@ urls:
     repositories:
       - betagouv/zacharie
   # TODO UPDATE
+  # SÈVES
   # - url: SEVES_URL
   - url: https://beta.gouv.fr/startups/seves.html
     category: startup
@@ -148,6 +164,7 @@ urls:
       - betagouv/seves
     tools:
       <<: *no_front_tools
+  # Plateforme Aides Agri
   # - url: PLATEFORME_AGRI_URL
   - url: https://beta.gouv.fr/startups/plateforme-agriculteurs.html
     category: startup
