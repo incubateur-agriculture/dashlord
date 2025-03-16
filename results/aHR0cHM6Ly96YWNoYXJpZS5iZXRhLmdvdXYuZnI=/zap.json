@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.16.0",
-	"@generated": "Sun, 9 Mar 2025 01:46:35",
+	"@generated": "Sun, 16 Mar 2025 02:09:24",
 	"site":[ 
 		{
 			"@name": "https://zacharie.beta.gouv.fr",
@@ -20,7 +20,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "9",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -29,7 +29,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
+							"id": "52",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
@@ -38,7 +38,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "46",
+							"id": "50",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -53,7 +53,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10020",
@@ -66,7 +66,7 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "0",
+							"id": "1",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -75,7 +75,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "48",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -84,7 +84,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "47",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -99,7 +99,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90004",
@@ -112,7 +112,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "40",
+							"id": "42",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -121,7 +121,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "62",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -130,7 +130,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
+							"id": "24",
 							"uri": "https://zacharie.beta.gouv.fr/assets/index-ut192bh-.css",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -139,7 +139,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "23",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -148,7 +148,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "65",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -166,7 +166,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "71",
+							"id": "64",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -175,7 +175,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "63",
+							"id": "67",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -184,7 +184,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
+							"id": "44",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
@@ -193,7 +193,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "72",
+							"id": "69",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
@@ -202,7 +202,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "68",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
@@ -239,7 +239,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "61",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
@@ -249,7 +249,7 @@
 						},
 						{
 							"id": "88",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -257,7 +257,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "63",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -272,7 +272,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "2",
@@ -286,17 +286,17 @@
 					"instances":[ 
 						{
 							"id": "73",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "10.2.0.11",
-							"otherinfo": "10.2.0.11\n10.2.1.5\n10.2.1.3\n10.2.1.1\n10.0.2.58\n10.0.2.59\n10.2.5.0\n10.2.5.1\n10.2.5.2\n10.2.5.3\n10.2.5.4\n10.2.5.5\n10.2.5.6\n10.2.5.7\n10.2.5.8\n10.2.5.9\n10.2.5.10\n10.2.5.11\n10.2.5.12\n10.2.5.13\n10.2.5.14\n10.2.5.15\n10.2.5.16\n10.2.5.17\n10.2.5.18\n10.2.5.19\n10.2.5.20\n10.2.5.21\n10.2.5.22\n10.2.5.23\n10.2.5.24\n10.2.5.25\n10.2.5.26\n10.2.5.27\n10.2.5.28\n10.2.5.29\n10.2.5.30\n10.2.5.31\n10.2.5.32\n10.2.5.33\n10.2.5.34\n10.2.5.35\n10.2.5.36\n10.2.5.37\n10.2.5.38\n10.2.5.39\n10.2.5.40\n10.2.5.41\n10.2.5.42\n10.2.5.43\n10.2.5.44\n10.2.5.45\n10.2.5.46\n10.2.5.47\n10.2.5.48\n10.2.5.49\n10.2.5.50\n10.2.5.51\n10.2.5.52\n10.2.5.53\n10.2.5.54\n10.2.5.55\n10.2.5.56\n10.2.5.57\n10.2.5.58\n10.2.5.59\n10.2.5.60\n10.2.5.61\n10.2.5.62\n10.2.5.63\n10.2.5.64\n10.2.0.11\n10.2.0.12\n10.2.0.13\n10.2.1.1\n10.2.1.2\n10.2.128.2\n10.2.128.3\n10.2.128.39\n10.2.128.4\n10.2.128.41\n10.2.1.3\n10.2.135.148\n10.2.135.35\n10.2.136.14\n10.2.137.88\n10.2.138.114\n10.2.138.118\n10.2.138.216\n10.2.138.230\n10.2.138.238\n10.2.139.118\n10.2.139.148\n10.2.140.41\n10.2.141.93\n10.2.142.206\n10.2.142.210\n10.2.142.211\n10.2.142.56\n10.2.143.144\n10.2.143.155\n10.2.143.157\n10.2.143.227\n10.2.143.235\n10.2.143.236\n10.2.144.41\n10.2.144.46\n10.2.145.56\n10.2.145.96\n10.2.146.173\n10.2.147.106\n10.2.147.2\n10.2.147.83\n10.2.148.114\n10.2.148.40\n10.2.148.93\n10.2.149.243\n10.2.1.5\n10.2.150.232\n10.2.151.217\n10.2.151.219\n10.2.152.60\n10.2.153.0\n10.2.153.137\n10.2.153.198\n10.2.153.201\n10.2.154.195\n10.2.156.187\n10.2.156.207\n10.2.156.49\n10.2.157.184\n10.2.157.198\n10.2.159.147\n10.2.160.104\n10.2.161.220\n10.2.161.78\n10.2.162.147\n10.2.162.89\n10.2.163.254\n10.2.163.62\n10.2.164.140\n10.2.165.16\n10.2.166.144\n10.2.167.24\n10.2.168.252\n10.2.169.246\n10.2.170.11\n10.2.170.148\n10.2.171.176\n10.2.172.185\n10.2.173.206\n10.2.173.250\n10.2.173.94\n10.2.173.95\n10.2.174.142\n10.2.175.241\n10.2.175.33\n10.2.175.34\n10.2.175.36\n10.2.177.171\n10.2.178.169\n10.2.179.107\n10.2.179.207\n10.2.180.91\n10.2.181.102\n10.2.181.60\n10.2.182.223\n10.2.188.104\n10.2.188.105\n10.2.188.107\n10.2.190.93\n10.2.203.14\n10.2.204.84\n10.2.206.10\n10.2.207.135\n10.2.209.152\n10.2.215.100\n10.2.216.58\n10.2.220.190\n10.2.225.217\n10.2.225.218\n10.2.246.23\n10.2.254.128\n"
+							"evidence": "10.0.0.254",
+							"otherinfo": "10.0.0.254\n10.2.0.11\n10.2.1.5\n10.2.1.3\n10.2.1.1\n10.0.2.58\n10.0.2.59\n10.2.5.0\n10.2.5.1\n10.2.5.2\n10.2.5.3\n10.2.5.4\n10.2.5.5\n10.2.5.6\n10.2.5.7\n10.2.5.8\n10.2.5.9\n10.2.5.10\n10.2.5.11\n10.2.5.12\n10.2.5.13\n10.2.5.14\n10.2.5.15\n10.2.5.16\n10.2.5.17\n10.2.5.18\n10.2.5.19\n10.2.5.20\n10.2.5.21\n10.2.5.22\n10.2.5.23\n10.2.5.24\n10.2.5.25\n10.2.5.26\n10.2.5.27\n10.2.5.28\n10.2.5.29\n10.2.5.30\n10.2.5.31\n10.2.5.32\n10.2.5.33\n10.2.5.34\n10.2.5.35\n10.2.5.36\n10.2.5.37\n10.2.5.38\n10.2.5.39\n10.2.5.40\n10.2.5.41\n10.2.5.42\n10.2.5.43\n10.2.5.44\n10.2.5.45\n10.2.5.46\n10.2.5.47\n10.2.5.48\n10.2.5.49\n10.2.5.50\n10.2.5.51\n10.2.5.52\n10.2.5.53\n10.2.5.54\n10.2.5.55\n10.2.5.56\n10.2.5.57\n10.2.5.58\n10.2.5.59\n10.2.5.60\n10.2.5.61\n10.2.5.62\n10.2.5.63\n10.2.5.64\n10.2.0.11\n10.2.0.12\n10.2.0.13\n10.2.1.1\n10.2.1.2\n10.2.128.2\n10.2.128.3\n10.2.128.39\n10.2.128.4\n10.2.128.41\n10.2.1.3\n10.2.135.148\n10.2.135.35\n10.2.136.14\n10.2.137.88\n10.2.138.114\n10.2.138.118\n10.2.138.216\n10.2.138.230\n10.2.138.238\n10.2.139.118\n10.2.139.148\n10.2.140.41\n10.2.141.93\n10.2.142.206\n10.2.142.210\n10.2.142.211\n10.2.142.56\n10.2.143.144\n10.2.143.155\n10.2.143.157\n10.2.143.227\n10.2.143.235\n10.2.143.236\n10.2.144.41\n10.2.144.46\n10.2.145.56\n10.2.145.96\n10.2.146.173\n10.2.147.106\n10.2.147.2\n10.2.147.83\n10.2.148.114\n10.2.148.40\n10.2.148.93\n10.2.149.243\n10.2.1.5\n10.2.150.232\n10.2.151.217\n10.2.151.219\n10.2.152.60\n10.2.153.0\n10.2.153.137\n10.2.153.198\n10.2.153.201\n10.2.154.195\n10.2.156.187\n10.2.156.207\n10.2.156.49\n10.2.157.184\n10.2.157.198\n10.2.159.147\n10.2.160.104\n10.2.161.220\n10.2.161.78\n10.2.162.147\n10.2.162.89\n10.2.163.254\n10.2.163.62\n10.2.164.140\n10.2.165.16\n10.2.166.144\n10.2.167.24\n10.2.168.252\n10.2.169.246\n10.2.170.11\n10.2.170.148\n10.2.171.176\n10.2.172.185\n10.2.173.206\n10.2.173.250\n10.2.173.94\n10.2.173.95\n10.2.174.142\n10.2.175.241\n10.2.175.33\n10.2.175.34\n10.2.175.36\n10.2.177.171\n10.2.178.169\n10.2.179.107\n10.2.179.207\n10.2.180.91\n10.2.181.102\n10.2.181.60\n10.2.182.223\n10.2.188.104\n10.2.188.105\n10.2.188.107\n10.2.190.93\n10.2.203.14\n10.2.204.84\n10.2.206.10\n10.2.207.135\n10.2.209.152\n10.2.215.100\n10.2.216.58\n10.2.220.190\n10.2.225.217\n10.2.225.218\n10.2.246.23\n10.2.254.128\n"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Remove the private IP address from the HTTP response body. For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
-					"otherinfo": "<p>10.2.0.11</p><p>10.2.1.5</p><p>10.2.1.3</p><p>10.2.1.1</p><p>10.0.2.58</p><p>10.0.2.59</p><p>10.2.5.0</p><p>10.2.5.1</p><p>10.2.5.2</p><p>10.2.5.3</p><p>10.2.5.4</p><p>10.2.5.5</p><p>10.2.5.6</p><p>10.2.5.7</p><p>10.2.5.8</p><p>10.2.5.9</p><p>10.2.5.10</p><p>10.2.5.11</p><p>10.2.5.12</p><p>10.2.5.13</p><p>10.2.5.14</p><p>10.2.5.15</p><p>10.2.5.16</p><p>10.2.5.17</p><p>10.2.5.18</p><p>10.2.5.19</p><p>10.2.5.20</p><p>10.2.5.21</p><p>10.2.5.22</p><p>10.2.5.23</p><p>10.2.5.24</p><p>10.2.5.25</p><p>10.2.5.26</p><p>10.2.5.27</p><p>10.2.5.28</p><p>10.2.5.29</p><p>10.2.5.30</p><p>10.2.5.31</p><p>10.2.5.32</p><p>10.2.5.33</p><p>10.2.5.34</p><p>10.2.5.35</p><p>10.2.5.36</p><p>10.2.5.37</p><p>10.2.5.38</p><p>10.2.5.39</p><p>10.2.5.40</p><p>10.2.5.41</p><p>10.2.5.42</p><p>10.2.5.43</p><p>10.2.5.44</p><p>10.2.5.45</p><p>10.2.5.46</p><p>10.2.5.47</p><p>10.2.5.48</p><p>10.2.5.49</p><p>10.2.5.50</p><p>10.2.5.51</p><p>10.2.5.52</p><p>10.2.5.53</p><p>10.2.5.54</p><p>10.2.5.55</p><p>10.2.5.56</p><p>10.2.5.57</p><p>10.2.5.58</p><p>10.2.5.59</p><p>10.2.5.60</p><p>10.2.5.61</p><p>10.2.5.62</p><p>10.2.5.63</p><p>10.2.5.64</p><p>10.2.0.11</p><p>10.2.0.12</p><p>10.2.0.13</p><p>10.2.1.1</p><p>10.2.1.2</p><p>10.2.128.2</p><p>10.2.128.3</p><p>10.2.128.39</p><p>10.2.128.4</p><p>10.2.128.41</p><p>10.2.1.3</p><p>10.2.135.148</p><p>10.2.135.35</p><p>10.2.136.14</p><p>10.2.137.88</p><p>10.2.138.114</p><p>10.2.138.118</p><p>10.2.138.216</p><p>10.2.138.230</p><p>10.2.138.238</p><p>10.2.139.118</p><p>10.2.139.148</p><p>10.2.140.41</p><p>10.2.141.93</p><p>10.2.142.206</p><p>10.2.142.210</p><p>10.2.142.211</p><p>10.2.142.56</p><p>10.2.143.144</p><p>10.2.143.155</p><p>10.2.143.157</p><p>10.2.143.227</p><p>10.2.143.235</p><p>10.2.143.236</p><p>10.2.144.41</p><p>10.2.144.46</p><p>10.2.145.56</p><p>10.2.145.96</p><p>10.2.146.173</p><p>10.2.147.106</p><p>10.2.147.2</p><p>10.2.147.83</p><p>10.2.148.114</p><p>10.2.148.40</p><p>10.2.148.93</p><p>10.2.149.243</p><p>10.2.1.5</p><p>10.2.150.232</p><p>10.2.151.217</p><p>10.2.151.219</p><p>10.2.152.60</p><p>10.2.153.0</p><p>10.2.153.137</p><p>10.2.153.198</p><p>10.2.153.201</p><p>10.2.154.195</p><p>10.2.156.187</p><p>10.2.156.207</p><p>10.2.156.49</p><p>10.2.157.184</p><p>10.2.157.198</p><p>10.2.159.147</p><p>10.2.160.104</p><p>10.2.161.220</p><p>10.2.161.78</p><p>10.2.162.147</p><p>10.2.162.89</p><p>10.2.163.254</p><p>10.2.163.62</p><p>10.2.164.140</p><p>10.2.165.16</p><p>10.2.166.144</p><p>10.2.167.24</p><p>10.2.168.252</p><p>10.2.169.246</p><p>10.2.170.11</p><p>10.2.170.148</p><p>10.2.171.176</p><p>10.2.172.185</p><p>10.2.173.206</p><p>10.2.173.250</p><p>10.2.173.94</p><p>10.2.173.95</p><p>10.2.174.142</p><p>10.2.175.241</p><p>10.2.175.33</p><p>10.2.175.34</p><p>10.2.175.36</p><p>10.2.177.171</p><p>10.2.178.169</p><p>10.2.179.107</p><p>10.2.179.207</p><p>10.2.180.91</p><p>10.2.181.102</p><p>10.2.181.60</p><p>10.2.182.223</p><p>10.2.188.104</p><p>10.2.188.105</p><p>10.2.188.107</p><p>10.2.190.93</p><p>10.2.203.14</p><p>10.2.204.84</p><p>10.2.206.10</p><p>10.2.207.135</p><p>10.2.209.152</p><p>10.2.215.100</p><p>10.2.216.58</p><p>10.2.220.190</p><p>10.2.225.217</p><p>10.2.225.218</p><p>10.2.246.23</p><p>10.2.254.128</p><p></p>",
+					"otherinfo": "<p>10.0.0.254</p><p>10.2.0.11</p><p>10.2.1.5</p><p>10.2.1.3</p><p>10.2.1.1</p><p>10.0.2.58</p><p>10.0.2.59</p><p>10.2.5.0</p><p>10.2.5.1</p><p>10.2.5.2</p><p>10.2.5.3</p><p>10.2.5.4</p><p>10.2.5.5</p><p>10.2.5.6</p><p>10.2.5.7</p><p>10.2.5.8</p><p>10.2.5.9</p><p>10.2.5.10</p><p>10.2.5.11</p><p>10.2.5.12</p><p>10.2.5.13</p><p>10.2.5.14</p><p>10.2.5.15</p><p>10.2.5.16</p><p>10.2.5.17</p><p>10.2.5.18</p><p>10.2.5.19</p><p>10.2.5.20</p><p>10.2.5.21</p><p>10.2.5.22</p><p>10.2.5.23</p><p>10.2.5.24</p><p>10.2.5.25</p><p>10.2.5.26</p><p>10.2.5.27</p><p>10.2.5.28</p><p>10.2.5.29</p><p>10.2.5.30</p><p>10.2.5.31</p><p>10.2.5.32</p><p>10.2.5.33</p><p>10.2.5.34</p><p>10.2.5.35</p><p>10.2.5.36</p><p>10.2.5.37</p><p>10.2.5.38</p><p>10.2.5.39</p><p>10.2.5.40</p><p>10.2.5.41</p><p>10.2.5.42</p><p>10.2.5.43</p><p>10.2.5.44</p><p>10.2.5.45</p><p>10.2.5.46</p><p>10.2.5.47</p><p>10.2.5.48</p><p>10.2.5.49</p><p>10.2.5.50</p><p>10.2.5.51</p><p>10.2.5.52</p><p>10.2.5.53</p><p>10.2.5.54</p><p>10.2.5.55</p><p>10.2.5.56</p><p>10.2.5.57</p><p>10.2.5.58</p><p>10.2.5.59</p><p>10.2.5.60</p><p>10.2.5.61</p><p>10.2.5.62</p><p>10.2.5.63</p><p>10.2.5.64</p><p>10.2.0.11</p><p>10.2.0.12</p><p>10.2.0.13</p><p>10.2.1.1</p><p>10.2.1.2</p><p>10.2.128.2</p><p>10.2.128.3</p><p>10.2.128.39</p><p>10.2.128.4</p><p>10.2.128.41</p><p>10.2.1.3</p><p>10.2.135.148</p><p>10.2.135.35</p><p>10.2.136.14</p><p>10.2.137.88</p><p>10.2.138.114</p><p>10.2.138.118</p><p>10.2.138.216</p><p>10.2.138.230</p><p>10.2.138.238</p><p>10.2.139.118</p><p>10.2.139.148</p><p>10.2.140.41</p><p>10.2.141.93</p><p>10.2.142.206</p><p>10.2.142.210</p><p>10.2.142.211</p><p>10.2.142.56</p><p>10.2.143.144</p><p>10.2.143.155</p><p>10.2.143.157</p><p>10.2.143.227</p><p>10.2.143.235</p><p>10.2.143.236</p><p>10.2.144.41</p><p>10.2.144.46</p><p>10.2.145.56</p><p>10.2.145.96</p><p>10.2.146.173</p><p>10.2.147.106</p><p>10.2.147.2</p><p>10.2.147.83</p><p>10.2.148.114</p><p>10.2.148.40</p><p>10.2.148.93</p><p>10.2.149.243</p><p>10.2.1.5</p><p>10.2.150.232</p><p>10.2.151.217</p><p>10.2.151.219</p><p>10.2.152.60</p><p>10.2.153.0</p><p>10.2.153.137</p><p>10.2.153.198</p><p>10.2.153.201</p><p>10.2.154.195</p><p>10.2.156.187</p><p>10.2.156.207</p><p>10.2.156.49</p><p>10.2.157.184</p><p>10.2.157.198</p><p>10.2.159.147</p><p>10.2.160.104</p><p>10.2.161.220</p><p>10.2.161.78</p><p>10.2.162.147</p><p>10.2.162.89</p><p>10.2.163.254</p><p>10.2.163.62</p><p>10.2.164.140</p><p>10.2.165.16</p><p>10.2.166.144</p><p>10.2.167.24</p><p>10.2.168.252</p><p>10.2.169.246</p><p>10.2.170.11</p><p>10.2.170.148</p><p>10.2.171.176</p><p>10.2.172.185</p><p>10.2.173.206</p><p>10.2.173.250</p><p>10.2.173.94</p><p>10.2.173.95</p><p>10.2.174.142</p><p>10.2.175.241</p><p>10.2.175.33</p><p>10.2.175.34</p><p>10.2.175.36</p><p>10.2.177.171</p><p>10.2.178.169</p><p>10.2.179.107</p><p>10.2.179.207</p><p>10.2.180.91</p><p>10.2.181.102</p><p>10.2.181.60</p><p>10.2.182.223</p><p>10.2.188.104</p><p>10.2.188.105</p><p>10.2.188.107</p><p>10.2.190.93</p><p>10.2.203.14</p><p>10.2.204.84</p><p>10.2.206.10</p><p>10.2.207.135</p><p>10.2.209.152</p><p>10.2.215.100</p><p>10.2.216.58</p><p>10.2.220.190</p><p>10.2.225.217</p><p>10.2.225.218</p><p>10.2.246.23</p><p>10.2.254.128</p><p></p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "497",
 					"wascid": "13",
@@ -313,7 +313,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "13",
+							"id": "25",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -322,7 +322,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "61",
+							"id": "56",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
@@ -332,7 +332,7 @@
 						},
 						{
 							"id": "75",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -340,7 +340,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "64",
+							"id": "3",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-ut192bh-.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "70",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"method": "GET",
 							"param": "",
@@ -358,7 +367,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "53",
+							"id": "55",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -367,13 +376,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10096",
@@ -387,7 +396,7 @@
 					"instances":[ 
 						{
 							"id": "80",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -396,7 +405,7 @@
 						},
 						{
 							"id": "78",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -405,7 +414,7 @@
 						},
 						{
 							"id": "79",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -414,7 +423,7 @@
 						},
 						{
 							"id": "76",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -441,7 +450,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "26",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -450,7 +459,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "62",
+							"id": "58",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -460,7 +469,7 @@
 						},
 						{
 							"id": "85",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -477,7 +486,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "68",
+							"id": "71",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -495,7 +504,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "55",
+							"id": "57",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -524,17 +533,17 @@
 					"instances":[ 
 						{
 							"id": "86",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eAFrXpyfk9KwOC+1vGFJQWJJxgQASssINA",
-							"otherinfo": "x\\x0001k^\uFFFD\uFFFD\uFFFD\u04B08/\uFFFD\uFFFDaIAbI\uFFFD\\x0004\\x0000J\uFFFD\\x00084"
+							"evidence": "BKWII_QnJECNzukAdB9xbVkThEhi_1_dpSg8a0lSw8pxjCtVhvK82rm6DC1kw0EjARzX9y8MElmSr0JPS2yZ3j8",
+							"otherinfo": "\\x0004\uFFFD\uFFFD#\uFFFD'$@\uFFFD\uFFFD\uFFFD\\x0000t\\x001fqmY\\x0013\uFFFDHb\uFFFD_\u0765(<kIR\uFFFD\uFFFDq\uFFFD+U\uFFFD\uFFFD\u06B9\uFFFD\\x000c-d\uFFFDA#\\x0001\\x001c\uFFFD\uFFFD/\\x000c\\x0012Y\uFFFD\uFFFDBOKl\uFFFD\uFFFD?"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>x\\x0001k^\uFFFD\uFFFD\uFFFD\u04B08/\uFFFD\uFFFDaIAbI\uFFFD\\x0004\\x0000J\uFFFD\\x00084</p>",
+					"otherinfo": "<p>\\x0004\uFFFD\uFFFD#\uFFFD'$@\uFFFD\uFFFD\uFFFD\\x0000t\\x001fqmY\\x0013\uFFFDHb\uFFFD_\u0765(<kIR\uFFFD\uFFFDq\uFFFD+U\uFFFD\uFFFD\u06B9\uFFFD\\x000c-d\uFFFDA#\\x0001\\x001c\uFFFD\uFFFD/\\x000c\\x0012Y\uFFFD\uFFFDBOKl\uFFFD\uFFFD?</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
@@ -552,7 +561,7 @@
 					"instances":[ 
 						{
 							"id": "74",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -579,30 +588,30 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "15",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-DjSq4gjg.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-D5t6Q5jL.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "56",
+							"id": "54",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-DjSq4gjg.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-D5t6Q5jL.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "49",
+							"id": "53",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-DjSq4gjg.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-D5t6Q5jL.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -625,7 +634,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "8",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "cache-control",
@@ -634,7 +643,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
+							"id": "51",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "cache-control",
@@ -643,7 +652,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
+							"id": "66",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"method": "GET",
 							"param": "cache-control",
@@ -652,7 +661,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
+							"id": "2",
+							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "public, max-age=0",
+							"otherinfo": ""
+						},
+						{
+							"id": "49",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "cache-control",
@@ -661,13 +679,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -680,7 +698,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "32",
+							"id": "33",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -689,7 +707,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "19",
+							"id": "17",
 							"uri": "https://zacharie.beta.gouv.fr/assets/index-ut192bh-.css",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -698,7 +716,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
+							"id": "16",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -713,7 +731,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -726,7 +744,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "30",
+							"id": "29",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -735,7 +753,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
+							"id": "14",
 							"uri": "https://zacharie.beta.gouv.fr/assets/index-ut192bh-.css",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -744,7 +762,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "25",
+							"id": "13",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -781,7 +799,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
+							"id": "10",
 							"uri": "https://zacharie.beta.gouv.fr/assets/index-ut192bh-.css",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -790,7 +808,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "11",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -818,7 +836,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "35",
+							"id": "36",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -827,7 +845,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "20",
+							"id": "19",
 							"uri": "https://zacharie.beta.gouv.fr/assets/index-ut192bh-.css",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -836,7 +854,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "27",
+							"id": "20",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -865,7 +883,7 @@
 					"instances":[ 
 						{
 							"id": "87",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-DjSq4gjg.js",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-D5t6Q5jL.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -901,7 +919,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "36",
+							"id": "37",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -910,7 +928,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "66",
+							"id": "59",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
@@ -919,7 +937,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "69",
+							"id": "72",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"method": "GET",
 							"param": "",
@@ -928,7 +946,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "22",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -937,7 +955,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "57",
+							"id": "60",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
