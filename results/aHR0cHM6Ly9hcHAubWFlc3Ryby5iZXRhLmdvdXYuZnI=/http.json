@@ -1,129 +1,42 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A+",
+    "grade": "C",
     "error": null,
-    "score": 120,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 0,
-    "testsPassed": 10,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 16 Mar 2025 02:01:19 GMT",
+      "date": "Sun, 23 Mar 2025 02:05:48 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "29b9ecb9-4a8a-4f88-a9f1-f3094594357c",
-      "content-security-policy": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
-      "cross-origin-opener-policy": "same-origin",
-      "cross-origin-resource-policy": "same-origin",
-      "x-dns-prefetch-control": "off",
-      "expect-ct": "max-age=0",
-      "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=15552000; includeSubDomains",
-      "x-download-options": "noopen",
-      "x-content-type-options": "nosniff",
-      "origin-agent-cluster": "?1",
-      "x-permitted-cross-domain-policies": "none",
-      "referrer-policy": "no-referrer",
-      "x-xss-protection": "0",
+      "x-request-id": "e0dca840-38ee-47cc-99ad-2628c7e73213",
+      "x-powered-by": "Express",
       "vary": "Origin",
+      "access-control-allow-credentials": "true",
       "x-ratelimit-limit": "10000",
-      "x-ratelimit-remaining": "9808",
-      "x-ratelimit-reset": "1742090590",
+      "x-ratelimit-remaining": "9960",
+      "x-ratelimit-reset": "1742695797",
       "cache-control": "public, max-age=0",
-      "last-modified": "Mon, 24 Feb 2025 08:26:03 GMT",
-      "etag": "W/\"953-19537103178\""
+      "last-modified": "Thu, 20 Mar 2025 16:57:04 GMT",
+      "etag": "W/\"953-195b47cab00\"",
+      "strict-transport-security": "max-age=31536000"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": true,
-      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
-      "scoreModifier": 0,
-      "data": {
-        "default-src": [
-          "'none'"
-        ],
-        "script-src": [
-          "'self'",
-          "https://stats.beta.gouv.fr"
-        ],
-        "frame-src": [
-          "'none'"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css"
-        ],
-        "img-src": [
-          "'self'",
-          "data:",
-          "https://stats.beta.gouv.fr"
-        ],
-        "font-src": [
-          "'self'",
-          "data:"
-        ],
-        "object-src": [
-          "'self'"
-        ],
-        "media-src": [
-          "'self'"
-        ],
-        "connect-src": [
-          "'self'",
-          "https://api.maptiler.com",
-          "https://openmaptiles.data.gouv.fr",
-          "https://openmaptiles.geo.data.gouv.fr",
-          "https://openmaptiles.github.io",
-          "https://s3.fr-par.scw.cloud",
-          "https://stats.beta.gouv.fr"
-        ],
-        "worker-src": [
-          "'self'",
-          "blob:"
-        ],
-        "manifest-src": [
-          "'self'"
-        ],
-        "base-uri": [
-          "'self'"
-        ],
-        "block-all-mixed-content": [
-          "'none'"
-        ],
-        "form-action": [
-          "'self'"
-        ],
-        "frame-ancestors": [
-          "'self'"
-        ],
-        "script-src-attr": [
-          "'none'"
-        ],
-        "upgrade-insecure-requests": [
-          "'none'"
-        ]
-      },
-      "http": true,
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": true,
-        "insecureBaseUri": false,
-        "insecureFormAction": false,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": false,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -156,10 +69,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "no-referrer",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -167,9 +80,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15552000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 15552000,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
@@ -182,25 +95,25 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-implemented-with-same-origin",
-      "scoreModifier": 10,
-      "data": "same-origin",
-      "http": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     }
   }
