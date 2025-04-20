@@ -19,11 +19,11 @@
 <span style="font-weight:bold;">#####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad (Mar 28 2025)</i>  [~183 ciphers]
-  on fv-az1927-344:/home/testssl/bin/openssl.Linux.x86_64
+  on fv-az813-319:/home/testssl/bin/openssl.Linux.x86_64
 
 <span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>91.208.207.168 91.208.207.184
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2025-04-13 03:21:56        --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2025-04-20 02:02:15        --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   91.208.207.184 
  rDNS (91.208.207.168):  --
@@ -105,7 +105,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">88 &gt;= 60 days</span> (2024-07-10 00:00 --&gt; 2025-07-10 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">81 &gt;= 60 days</span> (2024-07-10 00:00 --&gt; 2025-07-10 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://GEANT.ocsp.sectigo.com
@@ -132,26 +132,27 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>1 issued: <span style="color:#c05600;">NOT</span> secure, <span style="color:#c05600;">NOT</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: media-src &apos;self&apos;
-                                cellar-c2.services.clever-cloud.com; script-src
-                                &apos;self&apos; stats.beta.gouv.fr &apos;unsafe-inline&apos;
-                                client.crisp.chat; default-src &apos;self&apos;; img-src
+                              <span style="color:#008817;">Content-Security-Policy</span>: font-src &apos;self&apos;
+                                client.crisp.chat; media-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com; img-src
                                 &apos;self&apos; cellar-c2.services.clever-cloud.com
                                 voxusagers.numerique.gouv.fr &apos;unsafe-inline&apos;
                                 stats.beta.gouv.fr www.w3.org data:
                                 image.crisp.chat
-                                jedonnemonavis.numerique.gouv.fr; connect-src
-                                &apos;self&apos; stats.beta.gouv.fr ws:
-                                api-adresse.data.gouv.fr geo.api.gouv.fr
-                                client.crisp.chat wss://client.relay.crisp.chat
+                                jedonnemonavis.numerique.gouv.fr; style-src
+                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
+                                netdna.bootstrapcdn.com; connect-src &apos;self&apos;
+                                stats.beta.gouv.fr ws: api-adresse.data.gouv.fr
+                                geo.api.gouv.fr client.crisp.chat
+                                wss://client.relay.crisp.chat
                                 entreprise.data.gouv.fr
                                 plateforme.adresse.data.gouv.fr
                                 raw.githubusercontent.com/betagouv/ma-cantine/;
-                                font-src &apos;self&apos; client.crisp.chat; frame-src
-                                &apos;self&apos; ma-cantine.crisp.help
-                                ma-cantine-metabase.cleverapps.io; style-src
-                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
-                                netdna.bootstrapcdn.com; object-src &apos;self&apos;
+                                frame-src &apos;self&apos; ma-cantine.crisp.help
+                                ma-cantine-metabase.cleverapps.io; script-src
+                                &apos;self&apos; stats.beta.gouv.fr &apos;unsafe-inline&apos;
+                                client.crisp.chat; default-src &apos;self&apos;;
+                                object-src &apos;self&apos;
                                 cellar-c2.services.clever-cloud.com
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
@@ -187,39 +188,37 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
  Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward Secrecy
 ------------------------------------------------------------------------------------------------
- Android 6.0                  TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 8.1 (native)         TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Android 9.0 (native)         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Android 10.0 (native)        TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Android 11 (native)          TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Android 12 (native)          TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Chrome 79 (Win 10)           TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Android 11/12 (native)       TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Android 13/14 (native)       TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Chrome 101 (Win 10)          TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Firefox 66 (Win 8.1/10)      TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Chromium 137 (Win 11)        TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Firefox 100 (Win 10)         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- IE 6 XP                      No connection
+ Firefox 137 (Win 11)         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  IE 8 Win 7                   No connection
- IE 8 XP                      No connection
  IE 11 Win 7                  No connection
  IE 11 Win 8.1                No connection
  IE 11 Win Phone 8.1          No connection
  IE 11 Win 10                 TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Edge 15 Win 10               TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Edge 101 Win 10 21H2         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Safari 12.1 (iOS 12.2)       TLSv1.3   TLS_CHACHA20_POLY1305_SHA256      <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Safari 13.0 (macOS 10.14.6)  TLSv1.3   TLS_CHACHA20_POLY1305_SHA256      <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Edge 133 Win 11 23H2         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Safari 18.4 (iOS 18.4)       TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Safari 15.4 (macOS 12.3.1)   TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Safari 18.4 (macOS 15.4)     TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Java 7u25                    No connection
- Java 8u161                   TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Java 8u442 (OpenJDK)         TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Java 11.0.2 (OpenJDK)        TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Java 17.0.3 (OpenJDK)        TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Java 21.0.6 (OpenJDK)        TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  go 1.17.8                    TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- LibreSSL 2.8.3 (Apple)       TLSv1.2   ECDHE-RSA-CHACHA20-POLY1305       <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ LibreSSL 3.3.6 (macOS)       TLSv1.3   TLS_CHACHA20_POLY1305_SHA256      <span style="color:#008817;">253 bit ECDH (X25519)</span>
  OpenSSL 1.0.2e               TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
- OpenSSL 1.1.0l (Debian)      TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  OpenSSL 1.1.1d (Debian)      TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- OpenSSL 3.0.3 (git)          TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ OpenSSL 3.0.15 (Debian)      TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  OpenSSL 3.5.0 (git)          TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Apple Mail (16.0)            TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Thunderbird (91.9)           TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
@@ -236,10 +235,10 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A</span>
 <span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2025-04-13 03:23:56 [ 122s] --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2025-04-20 02:04:14 [ 122s] --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2025-04-13 03:23:56        --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2025-04-20 02:04:15        --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   91.208.207.168 
  rDNS (91.208.207.184):  --
@@ -321,7 +320,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">88 &gt;= 60 days</span> (2024-07-10 00:00 --&gt; 2025-07-10 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">81 &gt;= 60 days</span> (2024-07-10 00:00 --&gt; 2025-07-10 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://GEANT.ocsp.sectigo.com
@@ -348,26 +347,27 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>1 issued: <span style="color:#c05600;">NOT</span> secure, <span style="color:#c05600;">NOT</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: media-src &apos;self&apos;
-                                cellar-c2.services.clever-cloud.com; script-src
-                                &apos;self&apos; stats.beta.gouv.fr &apos;unsafe-inline&apos;
-                                client.crisp.chat; default-src &apos;self&apos;; img-src
+                              <span style="color:#008817;">Content-Security-Policy</span>: font-src &apos;self&apos;
+                                client.crisp.chat; media-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com; img-src
                                 &apos;self&apos; cellar-c2.services.clever-cloud.com
                                 voxusagers.numerique.gouv.fr &apos;unsafe-inline&apos;
                                 stats.beta.gouv.fr www.w3.org data:
                                 image.crisp.chat
-                                jedonnemonavis.numerique.gouv.fr; connect-src
-                                &apos;self&apos; stats.beta.gouv.fr ws:
-                                api-adresse.data.gouv.fr geo.api.gouv.fr
-                                client.crisp.chat wss://client.relay.crisp.chat
+                                jedonnemonavis.numerique.gouv.fr; style-src
+                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
+                                netdna.bootstrapcdn.com; connect-src &apos;self&apos;
+                                stats.beta.gouv.fr ws: api-adresse.data.gouv.fr
+                                geo.api.gouv.fr client.crisp.chat
+                                wss://client.relay.crisp.chat
                                 entreprise.data.gouv.fr
                                 plateforme.adresse.data.gouv.fr
                                 raw.githubusercontent.com/betagouv/ma-cantine/;
-                                font-src &apos;self&apos; client.crisp.chat; frame-src
-                                &apos;self&apos; ma-cantine.crisp.help
-                                ma-cantine-metabase.cleverapps.io; style-src
-                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
-                                netdna.bootstrapcdn.com; object-src &apos;self&apos;
+                                frame-src &apos;self&apos; ma-cantine.crisp.help
+                                ma-cantine-metabase.cleverapps.io; script-src
+                                &apos;self&apos; stats.beta.gouv.fr &apos;unsafe-inline&apos;
+                                client.crisp.chat; default-src &apos;self&apos;;
+                                object-src &apos;self&apos;
                                 cellar-c2.services.clever-cloud.com
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
@@ -403,39 +403,37 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
  Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward Secrecy
 ------------------------------------------------------------------------------------------------
- Android 6.0                  TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 8.1 (native)         TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Android 9.0 (native)         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Android 10.0 (native)        TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Android 11 (native)          TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Android 12 (native)          TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Chrome 79 (Win 10)           TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Android 11/12 (native)       TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Android 13/14 (native)       TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Chrome 101 (Win 10)          TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Firefox 66 (Win 8.1/10)      TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Chromium 137 (Win 11)        TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Firefox 100 (Win 10)         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- IE 6 XP                      No connection
+ Firefox 137 (Win 11)         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  IE 8 Win 7                   No connection
- IE 8 XP                      No connection
  IE 11 Win 7                  No connection
  IE 11 Win 8.1                No connection
  IE 11 Win Phone 8.1          No connection
  IE 11 Win 10                 TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Edge 15 Win 10               TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Edge 101 Win 10 21H2         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Safari 12.1 (iOS 12.2)       TLSv1.3   TLS_CHACHA20_POLY1305_SHA256      <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Safari 13.0 (macOS 10.14.6)  TLSv1.3   TLS_CHACHA20_POLY1305_SHA256      <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Edge 133 Win 11 23H2         TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Safari 18.4 (iOS 18.4)       TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Safari 15.4 (macOS 12.3.1)   TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Safari 18.4 (macOS 15.4)     TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Java 7u25                    No connection
- Java 8u161                   TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Java 8u442 (OpenJDK)         TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Java 11.0.2 (OpenJDK)        TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Java 17.0.3 (OpenJDK)        TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Java 21.0.6 (OpenJDK)        TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  go 1.17.8                    TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- LibreSSL 2.8.3 (Apple)       TLSv1.2   ECDHE-RSA-CHACHA20-POLY1305       <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ LibreSSL 3.3.6 (macOS)       TLSv1.3   TLS_CHACHA20_POLY1305_SHA256      <span style="color:#008817;">253 bit ECDH (X25519)</span>
  OpenSSL 1.0.2e               TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
- OpenSSL 1.1.0l (Debian)      TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  OpenSSL 1.1.1d (Debian)      TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- OpenSSL 3.0.3 (git)          TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ OpenSSL 3.0.15 (Debian)      TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  OpenSSL 3.5.0 (git)          TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Apple Mail (16.0)            TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Thunderbird (91.9)           TLSv1.3   TLS_AES_128_GCM_SHA256            <span style="color:#008817;">253 bit ECDH (X25519)</span>
@@ -452,7 +450,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A</span>
 <span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2025-04-13 03:25:55 [ 241s] --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2025-04-20 02:06:14 [ 242s] --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>91.208.207.168 91.208.207.184
