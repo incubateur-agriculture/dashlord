@@ -9,11 +9,11 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 27 Apr 2025 02:01:43 GMT",
+      "date": "Sun, 04 May 2025 02:06:25 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "content-security-policy": "frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; default-src 'self'; font-src 'self' client.crisp.chat; object-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/; media-src 'self' cellar-c2.services.clever-cloud.com; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
+      "content-security-policy": "font-src 'self' client.crisp.chat; default-src 'self'; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; object-src 'self' cellar-c2.services.clever-cloud.com",
       "x-frame-options": "DENY",
       "vary": "Cookie, Accept-Language",
       "content-language": "fr",
@@ -21,9 +21,9 @@
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=vozku7hgWlrHfJoNH4Xj6Kvc2veDbzoE; expires=Sun, 26 Apr 2026 02:01:43 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+        "csrftoken=7C5Rv9YcIiz2Azw2YPIuwkhZoR7jrI91; expires=Sun, 03 May 2026 02:06:25 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
       ],
-      "sozu-id": "01JSTFN7A9EXJY3J5KW24YBD8G"
+      "sozu-id": "01JTCGPW1D4B8PKC6Z4Z97K751"
     }
   },
   "tests": {
@@ -33,33 +33,28 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
+        "font-src": [
+          "'self'",
+          "client.crisp.chat"
+        ],
+        "default-src": [
+          "'self'"
+        ],
         "frame-src": [
           "'self'",
           "ma-cantine-metabase.cleverapps.io",
           "ma-cantine.crisp.help"
         ],
-        "style-src": [
+        "img-src": [
           "'self'",
           "'unsafe-inline'",
-          "client.crisp.chat",
-          "netdna.bootstrapcdn.com"
-        ],
-        "default-src": [
-          "'self'"
-        ],
-        "font-src": [
-          "'self'",
-          "client.crisp.chat"
-        ],
-        "object-src": [
-          "'self'",
-          "cellar-c2.services.clever-cloud.com"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "client.crisp.chat",
-          "stats.beta.gouv.fr"
+          "cellar-c2.services.clever-cloud.com",
+          "data:",
+          "image.crisp.chat",
+          "jedonnemonavis.numerique.gouv.fr",
+          "stats.beta.gouv.fr",
+          "voxusagers.numerique.gouv.fr",
+          "www.w3.org"
         ],
         "connect-src": [
           "'self'",
@@ -73,20 +68,25 @@
           "ws:",
           "wss://client.relay.crisp.chat"
         ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "client.crisp.chat",
+          "netdna.bootstrapcdn.com"
+        ],
         "media-src": [
           "'self'",
           "cellar-c2.services.clever-cloud.com"
         ],
-        "img-src": [
+        "script-src": [
           "'self'",
           "'unsafe-inline'",
-          "cellar-c2.services.clever-cloud.com",
-          "data:",
-          "image.crisp.chat",
-          "jedonnemonavis.numerique.gouv.fr",
-          "stats.beta.gouv.fr",
-          "voxusagers.numerique.gouv.fr",
-          "www.w3.org"
+          "client.crisp.chat",
+          "stats.beta.gouv.fr"
+        ],
+        "object-src": [
+          "'self'",
+          "cellar-c2.services.clever-cloud.com"
         ]
       },
       "http": true,
@@ -114,7 +114,7 @@
       "data": {
         "csrftoken": {
           "domain": "ma-cantine.agriculture.gouv.fr",
-          "expires": "2026-04-26T02:01:43.000Z",
+          "expires": "2026-05-03T02:06:25.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
