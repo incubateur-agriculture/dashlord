@@ -1,43 +1,6 @@
 [
   [
     {
-      "template": "dns/dns-saas-service-detection.yaml",
-      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
-      "template-id": "dns-saas-service-detection",
-      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
-      "info": {
-        "name": "DNS SaaS Service Detection",
-        "author": [
-          "noah @thesubtlety",
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "service"
-        ],
-        "description": "A CNAME DNS record was discovered",
-        "reference": [
-          "https://ns1.com/resources/cname",
-          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "type": "dns",
-      "host": "app.maestro.beta.gouv.fr.",
-      "matched-at": "app.maestro.beta.gouv.fr",
-      "extracted-results": [
-        "maestro-prod.osc-secnum-fr1.scalingo.io."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 64731\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 64731\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\napp.maestro.beta.gouv.fr.\t3600\tIN\tCNAME\tmaestro-prod.osc-secnum-fr1.scalingo.io.\n",
-      "timestamp": "2025-05-04T02:20:49.436162765Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/caa-fingerprint.yaml",
       "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
       "template-id": "caa-fingerprint",
@@ -69,9 +32,46 @@
       "type": "dns",
       "host": "app.maestro.beta.gouv.fr.",
       "matched-at": "app.maestro.beta.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 49562\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 49562\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\napp.maestro.beta.gouv.fr.\t3600\tIN\tCNAME\tmaestro-prod.osc-secnum-fr1.scalingo.io.\nmaestro-prod.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2370229413 10000 2400 604800 1800\n",
-      "timestamp": "2025-05-04T02:20:49.450895395Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 42354\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 42354\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\napp.maestro.beta.gouv.fr.\t3600\tIN\tCNAME\tmaestro-prod.osc-secnum-fr1.scalingo.io.\nmaestro-prod.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2370229413 10000 2400 604800 1800\n",
+      "timestamp": "2025-05-11T02:20:43.244189975Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/dns-saas-service-detection.yaml",
+      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
+      "template-id": "dns-saas-service-detection",
+      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
+      "info": {
+        "name": "DNS SaaS Service Detection",
+        "author": [
+          "noah @thesubtlety",
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "service"
+        ],
+        "description": "A CNAME DNS record was discovered",
+        "reference": [
+          "https://ns1.com/resources/cname",
+          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "dns",
+      "host": "app.maestro.beta.gouv.fr.",
+      "matched-at": "app.maestro.beta.gouv.fr",
+      "extracted-results": [
+        "maestro-prod.osc-secnum-fr1.scalingo.io."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 26687\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 26687\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;app.maestro.beta.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\napp.maestro.beta.gouv.fr.\t3600\tIN\tCNAME\tmaestro-prod.osc-secnum-fr1.scalingo.io.\n",
+      "timestamp": "2025-05-11T02:20:43.316927714Z",
       "matcher-status": true
     },
     {
@@ -98,329 +98,9 @@
       "host": "https://app.maestro.beta.gouv.fr",
       "matched-at": "https://app.maestro.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:29 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 6093\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: cbbc5945-0b35-4a4d-92b2-a52e2ee639d9\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:23 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 6108\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: ee7e7d06-7b09-479f-a225-b34498c767ed\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:29.513066241Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "clear-site-data",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044268387Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-opener-policy",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044329171Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-content-type-options",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044346974Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-permitted-cross-domain-policies",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044359628Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-frame-options",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044378774Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "referrer-policy",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.0443927Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-embedder-policy",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044411746Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-resource-policy",
-      "type": "http",
-      "host": "https://app.maestro.beta.gouv.fr",
-      "matched-at": "https://app.maestro.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044429048Z",
+      "timestamp": "2025-05-11T02:21:23.949688325Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -458,9 +138,9 @@
       "host": "https://app.maestro.beta.gouv.fr",
       "matched-at": "https://app.maestro.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.044449136Z",
+      "timestamp": "2025-05-11T02:21:34.593097051Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -498,9 +178,329 @@
       "host": "https://app.maestro.beta.gouv.fr",
       "matched-at": "https://app.maestro.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:40 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5103\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 021e70f7-57fa-4f95-9302-fbbd6afdb161\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:40.04446733Z",
+      "timestamp": "2025-05-11T02:21:34.593131144Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-frame-options",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593143447Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-content-type-options",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593159618Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593174315Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593187981Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593202818Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593215432Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593233767Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://app.maestro.beta.gouv.fr",
+      "matched-at": "https://app.maestro.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:34 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 5117\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: cd524199-46af-4a7a-9d8e-a231307313f0\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "148.253.96.193",
+      "timestamp": "2025-05-11T02:21:34.593245248Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -540,9 +540,9 @@
         "https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css"
       ],
       "request": "GET / HTTP/1.1\r\nHost: app.maestro.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 04 May 2025 02:21:57 GMT\r\nEtag: W/\"953-19681c38e58\"\r\nLast-Modified: Tue, 29 Apr 2025 13:36:39 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 3484\r\nX-Ratelimit-Reset: 1746325347\r\nX-Request-Id: 74149ab1-9330-48a0-837d-26be627bbd52\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-yIZ1Wdd8.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CqRXzFA_.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 11 May 2025 02:21:51 GMT\r\nEtag: W/\"953-196a0cde7f8\"\r\nLast-Modified: Mon, 05 May 2025 14:16:11 GMT\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Origin\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 10000\r\nX-Ratelimit-Remaining: 3498\r\nX-Ratelimit-Reset: 1746930246\r\nX-Request-Id: 6b539f42-ea39-40da-aab6-68504f608956\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon-DrfPSIlu.png\" />\n    <link rel=\"icon\" href=\"/assets/favicon-CduWKyBp.svg\" type=\"image/svg+xml\" />\n    <link rel=\"shortcut icon\" href=\"/assets/favicon-BMkCb9zi.ico\" type=\"image/x-icon\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Regular-CaCqrnJM.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Medium-DptVAR1p.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"preload\" href=\"/assets/Marianne-Bold-CYjThbH0.woff2\" as=\"font\" crossorigin=\"anonymous\" />\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <!--<link rel=\"preload\" href=\"../node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2\" as=\"font\" crossorigin=\"anonymous\" />-->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\" />\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Plan de Contrôle - Plan de Surveillance\"\n    />\n    <title>maestro</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-CoGFjSNl.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DBb-3bJV.css\">\n  </head>\n\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:21:57.158443979Z",
+      "timestamp": "2025-05-11T02:21:51.879519356Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Host: app.maestro.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://app.maestro.beta.gouv.fr/'",
       "matcher-status": true
     },
@@ -573,7 +573,7 @@
         "Let's Encrypt"
       ],
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:27:47.750156412Z",
+      "timestamp": "2025-05-11T02:27:42.805681034Z",
       "matcher-status": true
     },
     {
@@ -603,7 +603,7 @@
         "app.maestro.beta.gouv.fr"
       ],
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:27:47.750326521Z",
+      "timestamp": "2025-05-11T02:27:42.805828359Z",
       "matcher-status": true
     },
     {
@@ -634,7 +634,7 @@
         "tls12"
       ],
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:27:48.793732341Z",
+      "timestamp": "2025-05-11T02:27:43.933436793Z",
       "matcher-status": true
     },
     {
@@ -665,7 +665,7 @@
         "tls13"
       ],
       "ip": "148.253.96.193",
-      "timestamp": "2025-05-04T02:27:48.99746717Z",
+      "timestamp": "2025-05-11T02:27:44.116792029Z",
       "matcher-status": true
     }
   ]
