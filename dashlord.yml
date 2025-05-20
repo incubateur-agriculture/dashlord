@@ -164,14 +164,13 @@ urls:
       - betagouv/seves
     tools:
       <<: *no_front_tools
-  # Plateforme Aides Agri
+  # Aides Agri
   # - url: PLATEFORME_AGRI_URL
-  - url: https://beta.gouv.fr/startups/plateforme-agriculteurs.html
+  - url: https://aides-agri.beta.gouv.fr
     category: startup
     betaId: plateforme-agriculteurs
     tags:
-      - no_front
+      - app
+      - production
     repositories:
       - betagouv/aides-agri
-    tools:
-      <<: *no_front_tools
