@@ -1,43 +1,6 @@
 [
   [
     {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-      "info": {
-        "name": "CAA Record",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "caa"
-        ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-        "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "compl-alim.beta.gouv.fr.",
-      "matched-at": "compl-alim.beta.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 36798\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 36798\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\ncompl-alim.beta.gouv.fr.\t60\tIN\tSOA\tdns102.ovh.net. tech.ovh.net. 2025012801 86400 3600 3600000 60\n",
-      "timestamp": "2025-05-04T02:02:49.872663478Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/spf-record-detect.yaml",
       "template-url": "https://templates.nuclei.sh/public/spf-record-detect",
       "template-id": "spf-record-detect",
@@ -66,9 +29,9 @@
       "extracted-results": [
         "v=spf1 include:mx.ovh.com include:spf.brevo.com mx  -all\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 31086\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 31086\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com include:spf.brevo.com mx  -all\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\n",
-      "timestamp": "2025-05-04T02:02:49.985925385Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 22111\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 22111\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com include:spf.brevo.com mx  -all\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\n",
+      "timestamp": "2025-05-20T14:01:45.390091791Z",
       "matcher-status": true
     },
     {
@@ -104,13 +67,50 @@
       "host": "compl-alim.beta.gouv.fr.",
       "matched-at": "compl-alim.beta.gouv.fr",
       "extracted-results": [
-        "\"v=spf1 include:mx.ovh.com include:spf.brevo.com mx  -all\"",
         "\"brevo-code:293764942a0065f7430250ae2c71bf76\"",
+        "\"v=spf1 include:mx.ovh.com include:spf.brevo.com mx  -all\"",
         "\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 31086\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 31086\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com include:spf.brevo.com mx  -all\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\n",
-      "timestamp": "2025-05-04T02:02:49.986004613Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 22111\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 22111\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com include:spf.brevo.com mx  -all\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\n",
+      "timestamp": "2025-05-20T14:01:45.390290785Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "compl-alim.beta.gouv.fr.",
+      "matched-at": "compl-alim.beta.gouv.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 13456\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 13456\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\ncompl-alim.beta.gouv.fr.\t60\tIN\tSOA\tdns102.ovh.net. tech.ovh.net. 2025012801 86400 3600 3600000 60\n",
+      "timestamp": "2025-05-20T14:01:45.399517918Z",
       "matcher-status": true
     },
     {
@@ -146,9 +146,9 @@
         "dns102.ovh.net.",
         "ns102.ovh.net."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 57971\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 57971\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tdns102.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tns102.ovh.net.\n",
-      "timestamp": "2025-05-04T02:02:49.993906566Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 43778\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 43778\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tdns102.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tns102.ovh.net.\n",
+      "timestamp": "2025-05-20T14:01:46.384494116Z",
       "matcher-status": true
     },
     {
@@ -185,13 +185,13 @@
       "host": "compl-alim.beta.gouv.fr.",
       "matched-at": "compl-alim.beta.gouv.fr",
       "extracted-results": [
-        "100 mx3.mail.ovh.net.",
         "5 mx2.mail.ovh.net.",
+        "100 mx3.mail.ovh.net.",
         "1 mx1.mail.ovh.net."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 45351\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 45351\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t100 mx3.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t5 mx2.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t1 mx1.mail.ovh.net.\n",
-      "timestamp": "2025-05-04T02:02:50.003160357Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 43359\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 43359\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t100 mx3.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t1 mx1.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t5 mx2.mail.ovh.net.\n",
+      "timestamp": "2025-05-20T14:01:46.486568971Z",
       "matcher-status": true
     },
     {
@@ -221,90 +221,10 @@
         "GET, HEAD, OPTIONS"
       ],
       "request": "OPTIONS / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAllow: GET, HEAD, OPTIONS\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:02:57 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGGGBB4KKQ8075YZRSP38S\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nContent-Length: 0\r\n\r\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:02:57.43457357Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAllow: GET, HEAD, OPTIONS\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:01:51 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ00BVAMRKNRENZSAJ29HZ9\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nContent-Length: 0\r\n\r\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:01:51.845590179Z",
       "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "content-security-policy",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:02 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=iWhSUCideUXHLXYgtwojXjWAz1cAoDEE; expires=Sun, 03 May 2026 02:04:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJFTT64RJ5YBJET2GPW02\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"UdYd3rtx5JzwEpz9xpqjZeuTyOI8OtCZ2Z5VNTBA9tm3fcnfQLEsMngjXFKy2W6t\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.4b4dc0f7.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:02.449234843Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "permissions-policy",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:02 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=iWhSUCideUXHLXYgtwojXjWAz1cAoDEE; expires=Sun, 03 May 2026 02:04:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJFTT64RJ5YBJET2GPW02\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"UdYd3rtx5JzwEpz9xpqjZeuTyOI8OtCZ2Z5VNTBA9tm3fcnfQLEsMngjXFKy2W6t\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.4b4dc0f7.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:02.449296147Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
     {
@@ -341,9 +261,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:02 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=iWhSUCideUXHLXYgtwojXjWAz1cAoDEE; expires=Sun, 03 May 2026 02:04:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJFTT64RJ5YBJET2GPW02\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"UdYd3rtx5JzwEpz9xpqjZeuTyOI8OtCZ2Z5VNTBA9tm3fcnfQLEsMngjXFKy2W6t\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.4b4dc0f7.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:02.44931926Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:41 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=uiepfnFueJxnGQCeIJBlqPFmOyvOfQCc; expires=Tue, 19 May 2026 14:02:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ01WA8997GAE0MNMEMWM16\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"1oP7IAfvEmdjbipS5KiOUNQmGEpsxGL5lwTmNNKPIVAwHYRWDjJZaslyk2K6Cmd7\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.7567195a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:41.483561463Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -381,9 +301,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:02 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=iWhSUCideUXHLXYgtwojXjWAz1cAoDEE; expires=Sun, 03 May 2026 02:04:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJFTT64RJ5YBJET2GPW02\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"UdYd3rtx5JzwEpz9xpqjZeuTyOI8OtCZ2Z5VNTBA9tm3fcnfQLEsMngjXFKy2W6t\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.4b4dc0f7.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:02.449339468Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:41 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=uiepfnFueJxnGQCeIJBlqPFmOyvOfQCc; expires=Tue, 19 May 2026 14:02:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ01WA8997GAE0MNMEMWM16\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"1oP7IAfvEmdjbipS5KiOUNQmGEpsxGL5lwTmNNKPIVAwHYRWDjJZaslyk2K6Cmd7\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.7567195a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:41.483631364Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -421,9 +341,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:02 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=iWhSUCideUXHLXYgtwojXjWAz1cAoDEE; expires=Sun, 03 May 2026 02:04:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJFTT64RJ5YBJET2GPW02\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"UdYd3rtx5JzwEpz9xpqjZeuTyOI8OtCZ2Z5VNTBA9tm3fcnfQLEsMngjXFKy2W6t\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.4b4dc0f7.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:02.449362501Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:41 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=uiepfnFueJxnGQCeIJBlqPFmOyvOfQCc; expires=Tue, 19 May 2026 14:02:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ01WA8997GAE0MNMEMWM16\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"1oP7IAfvEmdjbipS5KiOUNQmGEpsxGL5lwTmNNKPIVAwHYRWDjJZaslyk2K6Cmd7\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.7567195a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:41.483644468Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -461,9 +381,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:02 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=iWhSUCideUXHLXYgtwojXjWAz1cAoDEE; expires=Sun, 03 May 2026 02:04:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJFTT64RJ5YBJET2GPW02\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"UdYd3rtx5JzwEpz9xpqjZeuTyOI8OtCZ2Z5VNTBA9tm3fcnfQLEsMngjXFKy2W6t\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.4b4dc0f7.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:02.449381707Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:41 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=uiepfnFueJxnGQCeIJBlqPFmOyvOfQCc; expires=Tue, 19 May 2026 14:02:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ01WA8997GAE0MNMEMWM16\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"1oP7IAfvEmdjbipS5KiOUNQmGEpsxGL5lwTmNNKPIVAwHYRWDjJZaslyk2K6Cmd7\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.7567195a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:41.483658524Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -501,9 +421,89 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:02 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=iWhSUCideUXHLXYgtwojXjWAz1cAoDEE; expires=Sun, 03 May 2026 02:04:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJFTT64RJ5YBJET2GPW02\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"UdYd3rtx5JzwEpz9xpqjZeuTyOI8OtCZ2Z5VNTBA9tm3fcnfQLEsMngjXFKy2W6t\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.4b4dc0f7.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:02.449396865Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:41 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=uiepfnFueJxnGQCeIJBlqPFmOyvOfQCc; expires=Tue, 19 May 2026 14:02:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ01WA8997GAE0MNMEMWM16\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"1oP7IAfvEmdjbipS5KiOUNQmGEpsxGL5lwTmNNKPIVAwHYRWDjJZaslyk2K6Cmd7\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.7567195a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:41.483674654Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:41 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=uiepfnFueJxnGQCeIJBlqPFmOyvOfQCc; expires=Tue, 19 May 2026 14:02:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ01WA8997GAE0MNMEMWM16\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"1oP7IAfvEmdjbipS5KiOUNQmGEpsxGL5lwTmNNKPIVAwHYRWDjJZaslyk2K6Cmd7\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.7567195a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:41.483697988Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "permissions-policy",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 896\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:41 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=uiepfnFueJxnGQCeIJBlqPFmOyvOfQCc; expires=Tue, 19 May 2026 14:02:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ01WA8997GAE0MNMEMWM16\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"1oP7IAfvEmdjbipS5KiOUNQmGEpsxGL5lwTmNNKPIVAwHYRWDjJZaslyk2K6Cmd7\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.7567195a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:41.483716552Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -532,9 +532,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr/robots.txt",
       "request": "GET /robots.txt HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:18 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJZA31JF3TZQ9K09DP4GW\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:18.295338048Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:53 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ027SYSSVWEBX2NS90818V\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:53.245782241Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr/robots.txt'",
       "matcher-status": true
     },
@@ -563,9 +563,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr/robots.txt",
       "request": "GET /robots.txt HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:18 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGJZBCQC0V80B7SRQ1CRCD\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:18.335871468Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:02:53 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ027T4ZE73DM1WQ0XPJE8C\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:02:53.248758986Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr/robots.txt'",
       "matcher-status": true
     },
@@ -605,9 +605,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 2073\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 04 May 2025 02:04:38 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=g6a1uh62spm4la1q0vexwq; Path=/\r\nSozu-Id: 01JTCGKKH9BH1PMZC28P71T65C\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <title>403 Forbidden</title>\n  <style>\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font-family: sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    #info { background:#f6f6f6; }\n    #info ul { margin: 0.5em 4em; }\n    #info p, #summary p { padding-top:10px; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n<div id=\"summary\">\n  <h1>Interdit <span>(403)</span></h1>\n  <p>La vérification CSRF a échoué. La requête a été interrompue.</p>\n\n  <p>Vous voyez ce message parce que ce site HTTPS exige que le navigateur web envoie un en-tête « Referer », ce qu’il n&#x27;a pas fait. Cet en-tête est exigé pour des raisons de sécurité, afin de s’assurer que le navigateur n’ait pas été piraté par un intervenant externe.</p>\n  <p>Si vous avez désactivé l’envoi des en-têtes « Referer » par votre navigateur, veuillez les réactiver, au moins pour ce site ou pour les connexions HTTPS, ou encore pour les requêtes de même origine (« same-origin »).</p>\n  <p>Si vous utilisez la balise &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt; ou que vous incluez l’en-tête « Referrer-Policy: no-referrer », il est préférable de les enlever. La protection CSRF exige que l’en-tête ``Referer`` effectue un contrôle de référant strict. Si vous vous souciez de la confidentialité, utilisez des alternatives comme &lt;a rel=&quot;noreferrer&quot; …&gt; pour les liens vers des sites tiers.</p>\n\n\n</div>\n\n<div id=\"explanation\">\n  <p><small>Des informations plus détaillées sont affichées lorsque la variable DEBUG vaut True.</small></p>\n</div>\n\n</body>\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:04:39.016991652Z",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 2073\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Tue, 20 May 2025 14:03:08 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=i5m2ykirt52rrdv7fv5yca; Path=/\r\nSozu-Id: 01JVQ02PVPH0NG413WQ5AYXXSF\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <title>403 Forbidden</title>\n  <style>\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font-family: sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    #info { background:#f6f6f6; }\n    #info ul { margin: 0.5em 4em; }\n    #info p, #summary p { padding-top:10px; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n<div id=\"summary\">\n  <h1>Interdit <span>(403)</span></h1>\n  <p>La vérification CSRF a échoué. La requête a été interrompue.</p>\n\n  <p>Vous voyez ce message parce que ce site HTTPS exige que le navigateur web envoie un en-tête « Referer », ce qu’il n&#x27;a pas fait. Cet en-tête est exigé pour des raisons de sécurité, afin de s’assurer que le navigateur n’ait pas été piraté par un intervenant externe.</p>\n  <p>Si vous avez désactivé l’envoi des en-têtes « Referer » par votre navigateur, veuillez les réactiver, au moins pour ce site ou pour les connexions HTTPS, ou encore pour les requêtes de même origine (« same-origin »).</p>\n  <p>Si vous utilisez la balise &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt; ou que vous incluez l’en-tête « Referrer-Policy: no-referrer », il est préférable de les enlever. La protection CSRF exige que l’en-tête ``Referer`` effectue un contrôle de référant strict. Si vous vous souciez de la confidentialité, utilisez des alternatives comme &lt;a rel=&quot;noreferrer&quot; …&gt; pour les liens vers des sites tiers.</p>\n\n\n</div>\n\n<div id=\"explanation\">\n  <p><small>Des informations plus détaillées sont affichées lorsque la variable DEBUG vaut True.</small></p>\n</div>\n\n</body>\n</html>\n",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:03:08.681240954Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: compl-alim.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr/'",
       "matcher-status": true
     },
@@ -637,8 +637,8 @@
       "extracted-results": [
         "Let's Encrypt"
       ],
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:05:13.573609535Z",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:03:35.666636808Z",
       "matcher-status": true
     },
     {
@@ -667,8 +667,8 @@
       "extracted-results": [
         "compl-alim.beta.gouv.fr"
       ],
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:05:13.573765356Z",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:03:35.666862761Z",
       "matcher-status": true
     },
     {
@@ -698,8 +698,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:05:15.410926545Z",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:03:36.995286333Z",
       "matcher-status": true
     },
     {
@@ -729,8 +729,8 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "91.208.207.168",
-      "timestamp": "2025-05-04T02:05:15.681015009Z",
+      "ip": "91.208.207.184",
+      "timestamp": "2025-05-20T14:03:37.168241324Z",
       "matcher-status": true
     }
   ]
