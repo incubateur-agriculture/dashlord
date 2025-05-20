@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.16.1",
-	"@generated": "Sun, 18 May 2025 02:05:13",
+	"@generated": "Tue, 20 May 2025 14:05:06",
 	"site":[ 
 		{
 			"@name": "https://ma-cantine.agriculture.gouv.fr",
@@ -20,7 +20,7 @@
 					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "5",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -44,7 +44,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -57,7 +57,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "6",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -81,7 +81,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -94,7 +94,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "9",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -131,7 +131,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "17",
+							"id": "10",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -168,7 +168,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "19",
+							"id": "15",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "csrftoken",
@@ -177,7 +177,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "134",
+							"id": "139",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
 							"method": "GET",
 							"param": "csrftoken",
@@ -186,7 +186,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "139",
+							"id": "136",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "133",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
 							"method": "GET",
 							"param": "csrftoken",
@@ -195,8 +204,62 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "147",
+							"id": "157",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/18--Campus%20Vert%20d%E2%80%99Azur/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "158",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "169",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/33--AGESSO%20RIA%20de%20Caen/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "175",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/35--ASSOCIATION%20GESTION%20RESTAURANT%20INTER%20ADMINISTRATIF%20QUIMPER/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "189",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/38--Campus%20Corsic'agri%20Borgo-Marana/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "181",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/40--Restaurant%20Interadministratif%20de%20Lyon/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "186",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/41--AGRIA/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -213,13 +276,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "12",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10011",
@@ -232,7 +295,7 @@
 					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
 					"instances":[ 
 						{
-							"id": "21",
+							"id": "19",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "csrftoken",
@@ -241,7 +304,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "135",
+							"id": "140",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
 							"method": "GET",
 							"param": "csrftoken",
@@ -250,7 +313,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "142",
+							"id": "138",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "137",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
 							"method": "GET",
 							"param": "csrftoken",
@@ -259,8 +331,53 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "148",
+							"id": "159",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/18--Campus%20Vert%20d%E2%80%99Azur/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "160",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "170",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/33--AGESSO%20RIA%20de%20Caen/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "176",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/35--ASSOCIATION%20GESTION%20RESTAURANT%20INTER%20ADMINISTRATIF%20QUIMPER/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "182",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/40--Restaurant%20Interadministratif%20de%20Lyon/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "187",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/41--AGRIA/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -277,13 +394,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "11",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90004",
@@ -296,7 +413,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "33",
+							"id": "31",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -314,7 +431,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "124",
+							"id": "127",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -332,7 +449,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "66",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -341,7 +458,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "6",
+							"id": "11",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -350,7 +467,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "119",
+							"id": "115",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.e6c2f77e.js",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -359,7 +476,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "36",
+							"id": "34",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -377,7 +494,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "125",
+							"id": "128",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -392,7 +509,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Cross-Origin_Resource_Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10063",
@@ -405,7 +522,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "31",
+							"id": "30",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -414,7 +531,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "141",
+							"id": "152",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
 							"method": "GET",
 							"param": "",
@@ -423,7 +540,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "149",
+							"id": "150",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "148",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
 							"method": "GET",
 							"param": "",
@@ -432,8 +558,44 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "153",
+							"id": "164",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/18--Campus%20Vert%20d%E2%80%99Azur/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "167",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "173",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/33--AGESSO%20RIA%20de%20Caen/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "179",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/35--ASSOCIATION%20GESTION%20RESTAURANT%20INTER%20ADMINISTRATIF%20QUIMPER/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "185",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/40--Restaurant%20Interadministratif%20de%20Lyon/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -450,7 +612,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "118",
+							"id": "114",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.e6c2f77e.js",
 							"method": "GET",
 							"param": "",
@@ -459,13 +621,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "6",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10035",
@@ -478,7 +640,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "25",
+							"id": "26",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -487,8 +649,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "155",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/1284--Coll%C3%A8ge%20des%20Hautes%20Vignes",
+							"id": "146",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -496,8 +658,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "137",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
+							"id": "142",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -514,8 +676,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "151",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB/",
+							"id": "162",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/18--Campus%20Vert%20d%E2%80%99Azur/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -532,7 +694,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "123",
+							"id": "125",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -541,7 +703,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "64",
+							"id": "67",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/app.81b4f8d1.css",
 							"method": "GET",
 							"param": "",
@@ -583,7 +745,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10096",
@@ -917,7 +1079,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "20"
+					"sourceid": "21"
 				},
 				{
 					"pluginid": "10003",
@@ -945,7 +1107,7 @@
 					"reference": "<p>https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/</p>",
 					"cweid": "1395",
 					"wascid": "-1",
-					"sourceid": "20"
+					"sourceid": "21"
 				},
 				{
 					"pluginid": "10021",
@@ -967,7 +1129,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "65",
+							"id": "64",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -985,7 +1147,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "115",
+							"id": "112",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.e6c2f77e.js",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1000,7 +1162,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "14"
+					"sourceid": "20"
 				},
 				{
 					"pluginid": "10094",
@@ -1013,22 +1175,22 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "41",
-							"uri": "https://ma-cantine.agriculture.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
-							"otherinfo": "\uFFFDu\u0256k\uFFFD\uFFFDZ\uE6BD\u02A2\"\uFFFD\uFFFD2\uFFFD8<\\x0016m\uFFFD\uFFFD"
-						},
-						{
 							"id": "37",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "8PflKyrqZDVDDHQcz9OkXN8eNKLASuyW",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD+*\uFFFDd5C\\x000ct\\x001c\uFFFD\u04E4\\\uFFFD\\x001e4\uFFFD\uFFFDJ\uFFFD"
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "F\\x0017\uFFFD\\x0005\\x000bu8e\uFFFD\uFFFDR\\x0014H/\uFFFD7\uFFFD\uFFFDEMOD="
+						},
+						{
+							"id": "40",
+							"uri": "https://ma-cantine.agriculture.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "kSORNzWzDKh3vtq9scskVuJMYqbLUUet",
+							"otherinfo": "\uFFFD#\uFFFD75\uFFFD\\x000c\uFFFDw\uFFFD\u06BD\uFFFD\uFFFD$V\uFFFDLb\uFFFD\uFFFDQG\uFFFD"
 						},
 						{
 							"id": "122",
@@ -1040,7 +1202,25 @@
 							"otherinfo": "\uFFFDz,\uFFFD\u01A7\uFFFD)\u07B3\uFFFDu\uFFFD\uFFFD\\x0011$\uFFFDQ\\x0010\\x0013 \uFFFD"
 						},
 						{
-							"id": "127",
+							"id": "153",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "F\\x0017\uFFFD\\x0005\\x000bu8e\uFFFD\uFFFDR\\x0014H/\uFFFD7\uFFFD\uFFFDEMOD="
+						},
+						{
+							"id": "154",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "F\\x0017\uFFFD\\x0005\\x000bu8e\uFFFD\uFFFDR\\x0014H/\uFFFD7\uFFFD\uFFFDEMOD="
+						},
+						{
+							"id": "123",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/580--Restaurants%20INSA%20Lyon",
 							"method": "GET",
 							"param": "",
@@ -1049,7 +1229,7 @@
 							"otherinfo": "\uFFFDz,\uFFFD\u01A7\uFFFD)\u07B3\uFFFD|\uFFFD\uFFFDz\uFFFDZ\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"id": "128",
+							"id": "124",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/590--Restauration%20CHNO%2015%2020",
 							"method": "GET",
 							"param": "",
@@ -1058,7 +1238,7 @@
 							"otherinfo": "\uFFFDz,\uFFFD\u01A7\uFFFD)\u07B3\uFFFD}\uFFFD\uFFFDz\uFFFDZ\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"id": "129",
+							"id": "126",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/707--Restauration%20collective",
 							"method": "GET",
 							"param": "",
@@ -1067,7 +1247,7 @@
 							"otherinfo": "\uFFFDz,\uFFFD\u01A7\uFFFD)\u07B3\uFFFD\uFFFD\uFFFD\uFFFDz\uFFFDZ\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"id": "130",
+							"id": "129",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/752--ASSOCIATION%20CANTINE%20SCOLAIRE",
 							"method": "GET",
 							"param": "",
@@ -1076,7 +1256,7 @@
 							"otherinfo": "\uFFFDz,\uFFFD\u01A7\uFFFD)\u07B3\uFFFD\uFFFD\uFFFD\uFFFDI#\uFFFD \\x0004\uFFFD8"
 						},
 						{
-							"id": "131",
+							"id": "130",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/826--Restaurants%20scolaires%20Pertuis",
 							"method": "GET",
 							"param": "",
@@ -1085,7 +1265,7 @@
 							"otherinfo": "\uFFFDz,\uFFFD\u01A7\uFFFD)\u07B3\uFFFD6\uFFFD\uFFFDz\uFFFDZ\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"id": "132",
+							"id": "131",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/882--RESTAURATION%20SCOLAIRE%20DE%20ROUBAIX",
 							"method": "GET",
 							"param": "",
@@ -1099,20 +1279,11 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
-							"otherinfo": "\uFFFDu\u0256k\uFFFD\uFFFDZ\uE6BD\u02A2\"\uFFFD\uFFFD2\uFFFD8<\\x0016m\uFFFD\uFFFD"
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "F\\x0017\uFFFD\\x0005\\x000bu8e\uFFFD\uFFFDR\\x0014H/\uFFFD7\uFFFD\uFFFDEMOD="
 						},
 						{
-							"id": "126",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/nos-cantines/35--ASSOCIATION",
-							"otherinfo": "~\uFFFD\uFFFD\u03DCj{b\uFFFD\uFFFD?\u07DF\uFFFD\\x0001$\uFFFD\\x0008\uFFFD\\x0013 \uFFFD"
-						},
-						{
-							"id": "120",
+							"id": "116",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.e6c2f77e.js",
 							"method": "GET",
 							"param": "",
@@ -1121,41 +1292,13 @@
 							"otherinfo": "\uFFFDL\uFFFD\uFFFD_\uFFFD\uFFFD~\uFFFD\uFFFD\\x001e/\uFFFD\\x001d\uFFFD\uFFFD\uFFFDx\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\uFFFD\uFFFD"
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFDu\u0256k\uFFFD\uFFFDZ\uE6BD\u02A2\"\uFFFD\uFFFD2\uFFFD8<\\x0016m\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>F\\x0017\uFFFD\\x0005\\x000bu8e\uFFFD\uFFFDR\\x0014H/\uFFFD7\uFFFD\uFFFDEMOD=</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
 					"sourceid": "6"
-				},
-				{
-					"pluginid": "10019",
-					"alertRef": "10019-1",
-					"alert": "Content-Type Header Missing",
-					"name": "Content-Type Header Missing",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The Content-Type header was either missing or empty.</p>",
-					"instances":[ 
-						{
-							"id": "154",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/1284--Coll%C3%A8ge%20des%20Hautes%20Vignes",
-							"method": "GET",
-							"param": "content-type",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"solution": "<p>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p>",
-					"cweid": "345",
-					"wascid": "12",
-					"sourceid": "25159"
 				},
 				{
 					"pluginid": "10027",
@@ -1183,7 +1326,7 @@
 					"reference": "",
 					"cweid": "615",
 					"wascid": "13",
-					"sourceid": "20"
+					"sourceid": "21"
 				},
 				{
 					"pluginid": "10109",
@@ -1196,30 +1339,39 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "23",
-							"uri": "https://ma-cantine.agriculture.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"DehjImI13sb4ODUgwfE6M5KeD8J9OWR0BTmuiKZhSVWxhaAiVeigzIIigIkzwgfM\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
 							"id": "24",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"xJFDU3FMStkEx2rcnBt3ScGSsObRlhRdtwsc5f0L1YBYJjkMBJ4QPlg76hxDmm3A\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"eTaKlKf1oG0ky7qEJfIhwsHBu5eTom3GoBOrY91qRg7dTqGD1h0rhMgdilfu867Z\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "136",
+							"id": "23",
+							"uri": "https://ma-cantine.agriculture.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"jueK8k8txvKmi7eSfWhfUR7hk7DvnBwc0BiWz0rkb1xFDMRAKqnAPkc0Jho86rcb\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "145",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"voi8uQ11JHoaUCKbEANUSfQmDj5u4u9Vrb5HF2m0ScFu6TDLSIoHPoqBhMrg5zli\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"Z6ysuCCU7GrxaYN8eiKGC1zV0sHd07OGGdCEViVLLceQvDqQJMQ1xuEEpCsQJXuF\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "141",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"qpYyeM6hzH61TCJnymFURsz05S3EDEqP7w2KFsp8ddTkehm53QLfMVEJu2Ohmu6O\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -1228,16 +1380,61 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"l5pn43XN2f2sbk2hnjrf2NjQpjpn7URHhScWffiMbKjMnBVRBr22ZWT53ML98Z34\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"ZWo0LhIQ0b23FbvXXleaN3vXf9HKjmwRG3sccX1HEHPm0Q8FsPkvIwAGEjsn2ccQ\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "150",
+							"id": "161",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/18--Campus%20Vert%20d%E2%80%99Azur/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"KD1k3q26Xz4sqOjTTM3uzYe3FYryL0m5rK5wu6lXB5RLLtWBog9PurjM48cbuQ24\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "165",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"8Jfn4sp7GzXRQoqRavldJ2yRCSBGf4oz4w2WfEK6P4eb2FjroDW0Gb86glXsg9AW\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"Qi5pwidHAcoyFjBW31uXcvgNiz4vNXeGxp9BXYwyeIbR0YeEyvAi7YlwHJP8wNUF\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "171",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/33--AGESSO%20RIA%20de%20Caen/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"9AiMIYI9POKvGefu7rzCiK8WXMy7ykYNQHmY9E10tkxO1TScCVFXdddFmWjKhaEM\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "177",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/35--ASSOCIATION%20GESTION%20RESTAURANT%20INTER%20ADMINISTRATIF%20QUIMPER/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"bxyQi6RfH1cFar7paetwj4jV3VX9TIJGSEC2JMa6lxZYv6K7FIzRexoEs5IMCypF\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "183",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/40--Restaurant%20Interadministratif%20de%20Lyon/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"Np5fRLH0wPKPrrZA2kxMxTHhlAEe1JLJuw9rir0Ralx8M6CixOD7smM0KKpRKzrI\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "188",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/41--AGRIA/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"k16cbWQbe6QleKBudBBYrzdOGf6WrkK618aoCC92SCDEzpecI5Hjm2ix5pRzaaq5\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -1246,11 +1443,11 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"JlEfO2dPPTRwrVUBpcDmeKnhzGrVvM2lF8rOZeyOYo8QDcNbDke9bTXwd9NHwReI\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"WcZPRxOfxRwOodHEzfXK0bMqR0HHvEvCDj31id76bnj7JSkm4J35VER9gaskeubB\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"None\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"False\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_MANAGEMENT_INFORMATION_BANNER = \"False\" === \"True\"\n  </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
-					"count": "6",
+					"count": "12",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
@@ -1269,7 +1466,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "3",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "cache-control",
@@ -1278,7 +1475,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "133",
+							"id": "134",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
 							"method": "GET",
 							"param": "cache-control",
@@ -1287,7 +1484,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "138",
+							"id": "135",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "132",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
 							"method": "GET",
 							"param": "cache-control",
@@ -1296,8 +1502,44 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "145",
+							"id": "156",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/18--Campus%20Vert%20d%E2%80%99Azur/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "155",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "168",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/33--AGESSO%20RIA%20de%20Caen/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "174",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/35--ASSOCIATION%20GESTION%20RESTAURANT%20INTER%20ADMINISTRATIF%20QUIMPER/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "180",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/40--Restaurant%20Interadministratif%20de%20Lyon/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1323,7 +1565,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "6",
+					"count": "11",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -1342,7 +1584,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "40",
+							"id": "41",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1351,7 +1593,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "12",
+							"id": "20",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1366,7 +1608,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1388,7 +1630,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "11",
+							"id": "18",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1403,7 +1645,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1425,7 +1667,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "10",
+							"id": "17",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1440,7 +1682,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1453,7 +1695,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "42",
+							"id": "44",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1462,7 +1704,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "22",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1477,7 +1719,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10112",
@@ -1495,7 +1737,7 @@
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
 							"otherinfo": "\ncookie:csrftoken"
 						},
 						{
@@ -1504,34 +1746,79 @@
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "8PflKyrqZDVDDHQcz9OkXN8eNKLASuyW",
+							"evidence": "kSORNzWzDKh3vtq9scskVuJMYqbLUUet",
 							"otherinfo": "\ncookie:csrftoken"
 						},
 						{
-							"id": "140",
+							"id": "151",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
 							"otherinfo": "\ncookie:csrftoken"
 						},
 						{
-							"id": "146",
+							"id": "149",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "\ncookie:csrftoken"
+						},
+						{
+							"id": "147",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d'AURE/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
 							"otherinfo": "\ncookie:csrftoken"
 						},
 						{
-							"id": "152",
+							"id": "163",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/18--Campus%20Vert%20d%E2%80%99Azur/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "\ncookie:csrftoken"
+						},
+						{
+							"id": "166",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "\ncookie:csrftoken"
+						},
+						{
+							"id": "172",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/33--AGESSO%20RIA%20de%20Caen/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "\ncookie:csrftoken"
+						},
+						{
+							"id": "178",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/35--ASSOCIATION%20GESTION%20RESTAURANT%20INTER%20ADMINISTRATIF%20QUIMPER/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
+							"otherinfo": "\ncookie:csrftoken"
+						},
+						{
+							"id": "184",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/40--Restaurant%20Interadministratif%20de%20Lyon/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
 							"otherinfo": "\ncookie:csrftoken"
 						},
 						{
@@ -1540,7 +1827,7 @@
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
 							"otherinfo": "\ncookie:csrftoken"
 						},
 						{
@@ -1549,11 +1836,11 @@
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
-							"evidence": "6XXJlmv9jFrumr3KoiLX7jKpODwWbfmx",
+							"evidence": "RhemBQt1OGXtvPNSFEgv5DfTzkVNT0Q9",
 							"otherinfo": "\ncookie:csrftoken"
 						}
 					],
-					"count": "7",
+					"count": "12",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:csrftoken</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
@@ -1581,7 +1868,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "113",
+							"id": "117",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/14--Cantine%20de%20Misson",
 							"method": "GET",
 							"param": "",
@@ -1590,7 +1877,16 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "112",
+							"id": "119",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/16--Lyc%C3%A9e%20professionnel%20agricole%20F%C3%A9lix%20Gaillard",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "118",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/17--Coll%C3%A8ge%20Val%20d%27AURE",
 							"method": "GET",
 							"param": "",
@@ -1599,17 +1895,8 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "114",
+							"id": "120",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/31--RIA%20Blois%20%E2%80%93%20RAB",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"id": "117",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/nos-cantines/33--AGESSO%20RIA%20de%20Caen",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1644,7 +1931,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "66",
+							"id": "65",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
 							"method": "GET",
 							"param": "",
@@ -1653,7 +1940,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "5",
+							"id": "7",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"method": "GET",
 							"param": "",
@@ -1662,7 +1949,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "116",
+							"id": "113",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.e6c2f77e.js",
 							"method": "GET",
 							"param": "",
@@ -1677,7 +1964,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}
