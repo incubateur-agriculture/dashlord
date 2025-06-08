@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.16.1",
-	"@generated": "Sun, 1 Jun 2025 02:22:43",
+	"@generated": "Sun, 8 Jun 2025 02:16:31",
 	"site":[ 
 		{
 			"@name": "https://app.maestro.beta.gouv.fr",
@@ -20,7 +20,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "7",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -29,7 +29,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "56",
+							"id": "57",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -38,16 +38,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "63",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
-							"otherinfo": "style-src includes unsafe-inline."
-						},
-						{
-							"id": "65",
+							"id": "62",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -56,7 +47,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "49",
+							"id": "9",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -65,7 +56,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "7",
+							"id": "48",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -74,7 +65,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -93,7 +84,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "24",
+							"id": "28",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -102,7 +93,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "107",
+							"id": "100",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -111,7 +102,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "79",
+							"id": "71",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
@@ -120,7 +111,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "83",
+							"id": "81",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -129,7 +120,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "100",
+							"id": "99",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -138,7 +129,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
+							"id": "77",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -165,7 +156,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "120",
+							"id": "118",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
@@ -174,7 +165,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "121",
+							"id": "117",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -183,8 +174,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "68",
-							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
+							"id": "116",
+							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -193,6 +184,15 @@
 						},
 						{
 							"id": "27",
+							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\"\n    />",
+							"otherinfo": ""
+						},
+						{
+							"id": "63",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -201,13 +201,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -229,7 +229,7 @@
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "54",
+							"id": "55",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -238,16 +238,7 @@
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "58",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
-							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
-						},
-						{
-							"id": "64",
+							"id": "61",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -256,7 +247,7 @@
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "48",
+							"id": "4",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -265,7 +256,7 @@
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "4",
+							"id": "47",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -274,13 +265,13 @@
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>Errors:</p><p>Source-expression lists cannot be empty (use 'none' instead)</p><p></p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90004",
@@ -302,7 +293,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "105",
+							"id": "97",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -311,7 +302,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "68",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -320,7 +311,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "82",
+							"id": "80",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -329,7 +320,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "99",
+							"id": "93",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -338,7 +329,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "74",
+							"id": "76",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -347,7 +338,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "102",
+							"id": "103",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -356,7 +347,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "95",
+							"id": "94",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -365,7 +356,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "117",
+							"id": "112",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -374,16 +365,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "116",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "119",
+							"id": "113",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -392,7 +374,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "118",
+							"id": "114",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -401,7 +383,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "19",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -410,7 +392,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
+							"id": "56",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -419,13 +401,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "14",
+					"count": "13",
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10063",
@@ -438,7 +420,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "16",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -447,7 +429,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "94",
+							"id": "95",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -456,7 +438,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "71",
+							"id": "67",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
@@ -465,7 +447,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "81",
+							"id": "78",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -474,7 +456,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "98",
+							"id": "91",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -483,7 +465,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "73",
+							"id": "75",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -492,7 +474,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "101",
+							"id": "98",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2",
 							"method": "GET",
 							"param": "",
@@ -501,7 +483,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "93",
+							"id": "92",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2",
 							"method": "GET",
 							"param": "",
@@ -510,7 +492,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "115",
+							"id": "110",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
@@ -519,7 +501,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "112",
+							"id": "115",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -528,7 +510,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "114",
+							"id": "111",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -537,7 +519,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "113",
+							"id": "109",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -546,7 +528,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
+							"id": "17",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -555,7 +537,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
+							"id": "54",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -570,7 +552,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "2",
@@ -583,8 +565,8 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"id": "126",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CyuGNeLQ.js",
+							"id": "123",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-lWGvUC2x.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -598,7 +580,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "119"
+					"sourceid": "116"
 				},
 				{
 					"pluginid": "10096",
@@ -611,8 +593,8 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "128",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CyuGNeLQ.js",
+							"id": "125",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-lWGvUC2x.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -626,7 +608,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "119"
+					"sourceid": "116"
 				},
 				{
 					"pluginid": "10094",
@@ -639,7 +621,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "28",
+							"id": "29",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
@@ -648,7 +630,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "108",
+							"id": "106",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -657,7 +639,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "80",
+							"id": "72",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
@@ -666,7 +648,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "84",
+							"id": "82",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -675,7 +657,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "103",
+							"id": "101",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -684,7 +666,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "77",
+							"id": "79",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -693,7 +675,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "106",
+							"id": "105",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2",
 							"method": "GET",
 							"param": "",
@@ -702,7 +684,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "97",
+							"id": "102",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2",
 							"method": "GET",
 							"param": "",
@@ -711,7 +693,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "125",
+							"id": "122",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
@@ -720,7 +702,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "123",
+							"id": "121",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -729,7 +711,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "124",
+							"id": "119",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -738,7 +720,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "122",
+							"id": "120",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -747,7 +729,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "70",
+							"id": "31",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -756,7 +738,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "33",
+							"id": "64",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -771,7 +753,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10027",
@@ -784,8 +766,8 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "127",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CyuGNeLQ.js",
+							"id": "124",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-lWGvUC2x.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -799,7 +781,7 @@
 					"reference": "",
 					"cweid": "615",
 					"wascid": "13",
-					"sourceid": "119"
+					"sourceid": "116"
 				},
 				{
 					"pluginid": "10109",
@@ -817,125 +799,116 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "89",
+							"id": "86",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "62",
+							"id": "58",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "66",
+							"id": "70",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "88",
+							"id": "85",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "67",
+							"id": "65",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
-							"id": "92",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"id": "90",
+							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "89",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "111",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
-							"id": "110",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
-							"id": "109",
+							"id": "108",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "50",
-							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
+							"id": "107",
+							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"id": "11",
+							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "50",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CyuGNeLQ.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-lWGvUC2x.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -948,7 +921,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "1",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "cache-control",
@@ -957,7 +930,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
+							"id": "84",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2",
 							"method": "GET",
 							"param": "cache-control",
@@ -966,7 +939,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
+							"id": "53",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "cache-control",
@@ -975,7 +948,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "55",
+							"id": "69",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"method": "GET",
 							"param": "cache-control",
@@ -984,7 +957,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "85",
+							"id": "83",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"method": "GET",
 							"param": "cache-control",
@@ -993,7 +966,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "61",
+							"id": "60",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "cache-control",
@@ -1002,7 +975,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "91",
+							"id": "88",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2",
 							"method": "GET",
 							"param": "cache-control",
@@ -1021,7 +994,7 @@
 						},
 						{
 							"id": "45",
-							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
+							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1035,7 +1008,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1048,7 +1021,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "35",
+							"id": "41",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1057,7 +1030,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "25",
 							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1066,8 +1039,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "43",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
+							"id": "37",
+							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1094,7 +1067,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "34",
+							"id": "40",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1103,7 +1076,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
+							"id": "23",
 							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1112,8 +1085,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
+							"id": "36",
+							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1140,7 +1113,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "31",
+							"id": "33",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1149,7 +1122,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "21",
 							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1158,8 +1131,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
+							"id": "35",
+							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1173,7 +1146,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1186,7 +1159,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "37",
+							"id": "43",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1195,7 +1168,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "26",
 							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1204,8 +1177,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "44",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
+							"id": "38",
+							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1219,7 +1192,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1250,7 +1223,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
+							"id": "49",
 							"uri": "https://app.maestro.beta.gouv.fr/assets/favicon-BMkCb9zi.ico",
 							"method": "GET",
 							"param": "",
@@ -1259,7 +1232,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "51",
+							"id": "59",
 							"uri": "https://app.maestro.beta.gouv.fr/assets/favicon-CduWKyBp.svg",
 							"method": "GET",
 							"param": "",
@@ -1268,8 +1241,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "53",
+							"id": "52",
 							"uri": "https://app.maestro.beta.gouv.fr/assets/Marianne-Bold-CYjThbH0.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0",
+							"otherinfo": ""
+						},
+						{
+							"id": "73",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/Marianne-Regular-CaCqrnJM.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1286,7 +1268,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "69",
+							"id": "66",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
@@ -1295,16 +1277,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "78",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
-						},
-						{
-							"id": "72",
+							"id": "74",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
@@ -1313,7 +1286,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "57",
+							"id": "15",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1322,7 +1295,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "20",
+							"id": "51",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -1337,7 +1310,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}
