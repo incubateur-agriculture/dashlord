@@ -29,9 +29,9 @@
       "extracted-results": [
         "v=spf1 include:mx.ovh.com -all\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 61014\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 61014\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:56708dd82b25c8f0ab2f0b75e3dad625\"\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com -all\"\n",
-      "timestamp": "2025-06-15T02:32:39.346346518Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 64733\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 64733\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:56708dd82b25c8f0ab2f0b75e3dad625\"\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com -all\"\n",
+      "timestamp": "2025-06-22T02:40:33.274306324Z",
       "matcher-status": true
     },
     {
@@ -70,28 +70,29 @@
         "\"brevo-code:56708dd82b25c8f0ab2f0b75e3dad625\"",
         "\"v=spf1 include:mx.ovh.com -all\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 61014\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 61014\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:56708dd82b25c8f0ab2f0b75e3dad625\"\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com -all\"\n",
-      "timestamp": "2025-06-15T02:32:39.346476069Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 64733\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 64733\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:56708dd82b25c8f0ab2f0b75e3dad625\"\nzacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:mx.ovh.com -all\"\n",
+      "timestamp": "2025-06-22T02:40:33.274430196Z",
       "matcher-status": true
     },
     {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "template": "dns/mx-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
+      "template-id": "mx-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
       "info": {
-        "name": "CAA Record",
+        "name": "MX Record Detection",
         "author": [
           "pdteam"
         ],
         "tags": [
           "dns",
-          "caa"
+          "mx"
         ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
         "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
+          "https://mxtoolbox.com/"
         ],
         "severity": "info",
         "metadata": {
@@ -107,9 +108,14 @@
       "type": "dns",
       "host": "zacharie.beta.gouv.fr.",
       "matched-at": "zacharie.beta.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 44088\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 44088\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nzacharie.beta.gouv.fr.\t60\tIN\tSOA\tdns104.ovh.net. tech.ovh.net. 2025041805 86400 3600 3600000 60\n",
-      "timestamp": "2025-06-15T02:32:39.349521699Z",
+      "extracted-results": [
+        "100 mx3.mail.ovh.net.",
+        "1 mx1.mail.ovh.net.",
+        "5 mx2.mail.ovh.net."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 49894\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 49894\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tMX\t100 mx3.mail.ovh.net.\nzacharie.beta.gouv.fr.\t3600\tIN\tMX\t1 mx1.mail.ovh.net.\nzacharie.beta.gouv.fr.\t3600\tIN\tMX\t5 mx2.mail.ovh.net.\n",
+      "timestamp": "2025-06-22T02:40:33.350609642Z",
       "matcher-status": true
     },
     {
@@ -142,12 +148,12 @@
       "host": "zacharie.beta.gouv.fr.",
       "matched-at": "zacharie.beta.gouv.fr",
       "extracted-results": [
-        "dns104.ovh.net.",
-        "ns104.ovh.net."
+        "ns104.ovh.net.",
+        "dns104.ovh.net."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 21119\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 21119\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tNS\tdns104.ovh.net.\nzacharie.beta.gouv.fr.\t3600\tIN\tNS\tns104.ovh.net.\n",
-      "timestamp": "2025-06-15T02:32:39.350410159Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 31420\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 31420\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tNS\tns104.ovh.net.\nzacharie.beta.gouv.fr.\t3600\tIN\tNS\tdns104.ovh.net.\n",
+      "timestamp": "2025-06-22T02:40:34.158440802Z",
       "matcher-status": true
     },
     {
@@ -187,29 +193,28 @@
       "extracted-results": [
         "\"v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 44759\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;_dmarc.zacharie.beta.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 44759\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;_dmarc.zacharie.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\n_dmarc.zacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com\"\n",
-      "timestamp": "2025-06-15T02:32:39.511879766Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 34138\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;_dmarc.zacharie.beta.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 34138\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;_dmarc.zacharie.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\n_dmarc.zacharie.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com\"\n",
+      "timestamp": "2025-06-22T02:40:34.163526675Z",
       "matcher-status": true
     },
     {
-      "template": "dns/mx-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
-      "template-id": "mx-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
       "info": {
-        "name": "MX Record Detection",
+        "name": "CAA Record",
         "author": [
           "pdteam"
         ],
         "tags": [
           "dns",
-          "mx"
+          "caa"
         ],
-        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
         "reference": [
-          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
-          "https://mxtoolbox.com/"
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
         ],
         "severity": "info",
         "metadata": {
@@ -225,14 +230,9 @@
       "type": "dns",
       "host": "zacharie.beta.gouv.fr.",
       "matched-at": "zacharie.beta.gouv.fr",
-      "extracted-results": [
-        "1 mx1.mail.ovh.net.",
-        "100 mx3.mail.ovh.net.",
-        "5 mx2.mail.ovh.net."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 22825\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t MX\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 22825\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nzacharie.beta.gouv.fr.\t3600\tIN\tMX\t1 mx1.mail.ovh.net.\nzacharie.beta.gouv.fr.\t3600\tIN\tMX\t100 mx3.mail.ovh.net.\nzacharie.beta.gouv.fr.\t3600\tIN\tMX\t5 mx2.mail.ovh.net.\n",
-      "timestamp": "2025-06-15T02:32:39.512994185Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 29366\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 29366\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;zacharie.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nzacharie.beta.gouv.fr.\t60\tIN\tSOA\tdns104.ovh.net. tech.ovh.net. 2025041805 86400 3600 3600000 60\n",
+      "timestamp": "2025-06-22T02:40:34.248188873Z",
       "matcher-status": true
     },
     {
@@ -262,10 +262,50 @@
         "GET,HEAD"
       ],
       "request": "OPTIONS / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 8\r\nAllow: GET,HEAD\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 15 Jun 2025 02:32:44 GMT\r\nEtag: W/\"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg\"\r\nSozu-Id: 01JXRPX8005RYBNYC2W1D3FZYM\r\nVary: Accept-Encoding\r\n\r\nGET,HEAD",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:32:44.933527894Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 8\r\nAllow: GET,HEAD\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 22 Jun 2025 02:40:40 GMT\r\nEtag: W/\"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg\"\r\nSozu-Id: 01JYAR4SD3DC2K81YM9NQCMWD8\r\nVary: Accept-Encoding\r\n\r\nGET,HEAD",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:40:40.507886617Z",
       "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://zacharie.beta.gouv.fr",
+      "matched-at": "https://zacharie.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.78662149Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
     {
@@ -302,9 +342,9 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961565573Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786664752Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -342,9 +382,9 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961605127Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786698495Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -382,129 +422,9 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961625786Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-content-type-options",
-      "type": "http",
-      "host": "https://zacharie.beta.gouv.fr",
-      "matched-at": "https://zacharie.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961640012Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-resource-policy",
-      "type": "http",
-      "host": "https://zacharie.beta.gouv.fr",
-      "matched-at": "https://zacharie.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961653157Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "strict-transport-security",
-      "type": "http",
-      "host": "https://zacharie.beta.gouv.fr",
-      "matched-at": "https://zacharie.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961665079Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786719123Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -542,49 +462,9 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961676731Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "clear-site-data",
-      "type": "http",
-      "host": "https://zacharie.beta.gouv.fr",
-      "matched-at": "https://zacharie.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961688312Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786732228Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -622,9 +502,9 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961700756Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786745222Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -662,9 +542,89 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961712307Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786757054Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "strict-transport-security",
+      "type": "http",
+      "host": "https://zacharie.beta.gouv.fr",
+      "matched-at": "https://zacharie.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786769037Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-content-type-options",
+      "type": "http",
+      "host": "https://zacharie.beta.gouv.fr",
+      "matched-at": "https://zacharie.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.78678151Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -702,9 +662,49 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:30 GMT\r\nEtag: W/\"1b3-19763c9d665\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:41 GMT\r\nSozu-Id: 01JXRPYMYDPC2XXAYYXWC2A40Y\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BjPsXAjj.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:30.961724019Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786793062Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://zacharie.beta.gouv.fr",
+      "matched-at": "https://zacharie.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 435\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:33 GMT\r\nEtag: W/\"1b3-19787e62fab\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:59 GMT\r\nSozu-Id: 01JYAR6DE5N4QQ27WEQTATGYKC\r\nVary: Accept-Encoding\r\n\r\n<!doctype html>\n<html lang=\"fr\" class=\"notranslate\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-BZ63C6ll.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ut192bh-.css\">\n  <link rel=\"manifest\" href=\"/manifest.webmanifest\"></head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:33.786806537Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -733,52 +733,10 @@
       "host": "https://zacharie.beta.gouv.fr",
       "matched-at": "https://zacharie.beta.gouv.fr/robots.txt",
       "request": "GET /robots.txt HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 22\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/plain; charset=UTF-8\r\nDate: Sun, 15 Jun 2025 02:33:42 GMT\r\nEtag: W/\"16-19763c9a833\"\r\nLast-Modified: Thu, 12 Jun 2025 10:57:29 GMT\r\nSozu-Id: 01JXRPZ018T9PZZDQP19660PY1\r\nVary: Accept-Encoding\r\n\r\nUser-agent: *\nAllow: /",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:42.317212833Z",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 22\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/plain; charset=UTF-8\r\nDate: Sun, 22 Jun 2025 02:41:47 GMT\r\nEtag: W/\"16-19787e5fee2\"\r\nLast-Modified: Thu, 19 Jun 2025 11:14:46 GMT\r\nSozu-Id: 01JYAR6TD7V8HAASVHMVGFVRP8\r\nVary: Accept-Encoding\r\n\r\nUser-agent: *\nAllow: /",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:41:47.067850306Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr/robots.txt'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/technologies/waf-detect.yaml",
-      "template-url": "https://templates.nuclei.sh/public/waf-detect",
-      "template-id": "waf-detect",
-      "template-path": "/home/runner/nuclei-templates/http/technologies/waf-detect.yaml",
-      "info": {
-        "name": "WAF Detection",
-        "author": [
-          "dwisiswant0",
-          "lu4nx"
-        ],
-        "tags": [
-          "waf",
-          "tech",
-          "misc"
-        ],
-        "description": "A web application firewall was detected.",
-        "reference": [
-          "https://github.com/ekultek/whatwaf"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "matcher-name": "securesphere",
-      "type": "http",
-      "host": "https://zacharie.beta.gouv.fr",
-      "matched-at": "https://zacharie.beta.gouv.fr/",
-      "request": "POST / HTTP/1.1\r\nHost: zacharie.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 404 Not Found\r\nConnection: close\r\nContent-Length: 140\r\nContent-Security-Policy: default-src 'none'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 15 Jun 2025 02:33:56 GMT\r\nSozu-Id: 01JXRPZE5DV2QC9AMEK40ZZ84J\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /</pre>\n</body>\n</html>\n",
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:33:56.788530566Z",
-      "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: zacharie.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zacharie.beta.gouv.fr/'",
       "matcher-status": true
     },
     {
@@ -807,8 +765,8 @@
       "extracted-results": [
         "Let's Encrypt"
       ],
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:34:29.488894274Z",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:42:40.319361348Z",
       "matcher-status": true
     },
     {
@@ -837,8 +795,8 @@
       "extracted-results": [
         "zacharie.beta.gouv.fr"
       ],
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:34:29.489021341Z",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:42:40.319503254Z",
       "matcher-status": true
     },
     {
@@ -868,8 +826,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:34:30.905469628Z",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:42:41.952970857Z",
       "matcher-status": true
     },
     {
@@ -899,8 +857,8 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "91.208.207.221",
-      "timestamp": "2025-06-15T02:34:31.090904202Z",
+      "ip": "91.208.207.218",
+      "timestamp": "2025-06-22T02:42:42.157802486Z",
       "matcher-status": true
     }
   ]
