@@ -9,12 +9,12 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 29 Jun 2025 02:42:29 GMT",
+      "date": "Sun, 06 Jul 2025 02:41:34 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "2f43c8d9-6997-48f1-b9a4-34948b682d68",
-      "content-security-policy": "connect-src 'self' stats.beta.gouv.fr sentry.incubateur.net; script-src 'self' stats.beta.gouv.fr 'nonce-ttmRBUiCrGlHaKCMC5pirg=='; img-src 'self' data:; form-action 'self'; frame-ancestors 'self'; default-src 'self'",
+      "x-request-id": "d962b0da-8959-45b8-9d40-5bac5524fdd1",
+      "content-security-policy": "form-action 'self'; frame-ancestors 'self'; connect-src 'self' stats.beta.gouv.fr sentry.incubateur.net; script-src 'self' stats.beta.gouv.fr 'nonce-8ECX4Ocaypm260pjAui0tw=='; img-src 'self' data:; default-src 'self'",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
@@ -22,7 +22,7 @@
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=P8Ufsmxup5xIPjw3Xptkd5S4d3NRwPdA; expires=Sun, 28 Jun 2026 02:42:29 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+        "csrftoken=nSUPFfwjeNN39hBvLIzEeqDjbruSOmU5; expires=Sun, 05 Jul 2026 02:41:34 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
       ]
     }
   },
@@ -33,25 +33,25 @@
       "result": "csp-implemented-with-no-unsafe",
       "scoreModifier": 5,
       "data": {
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
         "connect-src": [
           "'self'",
           "sentry.incubateur.net",
           "stats.beta.gouv.fr"
         ],
         "script-src": [
-          "'nonce-ttmrbuicrglhakcmc5pirg=='",
+          "'nonce-8ecx4ocaypm260pjaui0tw=='",
           "'self'",
           "stats.beta.gouv.fr"
         ],
         "img-src": [
           "'self'",
           "data:"
-        ],
-        "form-action": [
-          "'self'"
-        ],
-        "frame-ancestors": [
-          "'self'"
         ],
         "default-src": [
           "'self'"
@@ -82,7 +82,7 @@
       "data": {
         "csrftoken": {
           "domain": "aides-agri.beta.gouv.fr",
-          "expires": "2026-06-28T02:42:29.000Z",
+          "expires": "2026-07-05T02:41:34.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
