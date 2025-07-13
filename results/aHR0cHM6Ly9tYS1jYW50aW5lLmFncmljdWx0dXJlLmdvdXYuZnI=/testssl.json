@@ -213,7 +213,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -248,7 +248,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "SHA384 with RSA"
+              "finding"      : "SHA256 with RSA"
           }
 ,         {
               "id"           : "cert_keySize",
@@ -269,14 +269,14 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+              "finding"      : "TLS Web Client Authentication, TLS Web Server Authentication"
           }
 ,         {
               "id"           : "cert_serialNumber",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "791BF314542E4C629D593D48147685A6"
+              "finding"      : "62862053D06DBEF8A8CB02EEAE0D95A2"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2DC433B5D771450166B9E9AF8EED0BC81417D52A"
+              "finding"      : "4CDE1B42DEC8F5DF9D904B56B76671882460D1EB"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "AC65966B305A218509E55D90F1B1FCD2D222180BFA2215842CC385A314AF1FCF"
+              "finding"      : "48A79554B8B690752FC035F7FD230B8E6EA4D37905B2F7988819B4C8A389899B"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -325,7 +325,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ma-cantine.agriculture.gouv.fr www.ma-cantine.agriculture.gouv.fr"
+              "finding"      : "ma-cantine.agriculture.gouv.fr"
           }
 ,         {
               "id"           : "cert_trust",
@@ -338,8 +338,8 @@
               "id"           : "cert_chain_of_trust",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "passed."
+              "severity"     : "CRITICAL",
+              "finding"      : "Some certificate trust checks failed -> Java (chain incomplete)  , OK -> Mozilla Microsoft Linux Apple"
           }
 ,         {
               "id"           : "cert_certificatePolicies_EV",
@@ -352,22 +352,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (4)"
+              "severity"     : "OK",
+              "finding"      : "360 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-07-10 00:00"
+              "finding"      : "2025-07-08 12:05"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2025-07-10 23:59"
+              "severity"     : "OK",
+              "finding"      : "2026-07-08 12:05"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -388,14 +388,14 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl"
+              "finding"      : "http://crl.harica.gr/HARICA-GEANT-TLS-R1.crl"
           }
 ,         {
               "id"           : "cert_ocspURL",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://GEANT.ocsp.sectigo.com"
+              "finding"      : "http://ocsp-tls.harica.gr"
           }
 ,         {
               "id"           : "OCSP_stapling",
@@ -430,7 +430,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "4"
+              "finding"      : "5"
           }
 ,         {
               "id"           : "certs_list_ordering_problem",
@@ -444,7 +444,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "GEANT OV RSA CA 4 (GEANT Vereniging from NL)"
+              "finding"      : "GEANT TLS RSA 1 (Hellenic Academic and Research Institutions CA from GR)"
           }
 ,         {
               "id"           : "intermediate_cert <#1>",
@@ -573,6 +573,48 @@
               "finding"      : "GEANT OV RSA CA 4 <-- USERTrust RSA Certification Authority"
           }
 ,         {
+              "id"           : "intermediate_cert <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "5B678DC44095A52895B63B31F27227F4B36C3E347491BF2BFA691837A5FB8C79"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2025-01-03 11:15"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2039-12-31 11:14"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "GEANT TLS RSA 1 <-- HARICA TLS RSA Root CA 2021"
+          }
+,         {
               "id"           : "intermediate_cert_badOCSP",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
@@ -598,7 +640,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1751768130"
+              "finding"      : "1752373190"
           }
 ,         {
               "id"           : "HSTS",
@@ -668,7 +710,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "font-src 'self' client.crisp.chat; object-src 'self' cellar-c2.services.clever-cloud.com; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com"
+              "finding"      : "connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; font-src 'self' client.crisp.chat; object-src 'self' cellar-c2.services.clever-cloud.com; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
@@ -813,7 +855,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=AC65966B305A218509E55D90F1B1FCD2D222180BFA2215842CC385A314AF1FCF"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=48A79554B8B690752FC035F7FD230B8E6EA4D37905B2F7988819B4C8A389899B"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1119,7 +1161,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)"
           }
 ,         {
               "id"           : "rating_doc",
@@ -1182,14 +1224,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "A"
-          }
-,         {
-              "id"           : "grade_cap_reason_1",
-              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to A. HSTS is not offered"
+              "finding"      : "A+"
           }
 ,         {
               "id"           : "service",
@@ -1440,7 +1475,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "SHA384 with RSA"
+              "finding"      : "SHA256 with RSA"
           }
 ,         {
               "id"           : "cert_keySize",
@@ -1461,14 +1496,14 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
+              "finding"      : "TLS Web Client Authentication, TLS Web Server Authentication"
           }
 ,         {
               "id"           : "cert_serialNumber",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "791BF314542E4C629D593D48147685A6"
+              "finding"      : "62862053D06DBEF8A8CB02EEAE0D95A2"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -1482,21 +1517,21 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2DC433B5D771450166B9E9AF8EED0BC81417D52A"
+              "finding"      : "4CDE1B42DEC8F5DF9D904B56B76671882460D1EB"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "AC65966B305A218509E55D90F1B1FCD2D222180BFA2215842CC385A314AF1FCF"
+              "finding"      : "48A79554B8B690752FC035F7FD230B8E6EA4D37905B2F7988819B4C8A389899B"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -1517,7 +1552,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ma-cantine.agriculture.gouv.fr www.ma-cantine.agriculture.gouv.fr"
+              "finding"      : "ma-cantine.agriculture.gouv.fr"
           }
 ,         {
               "id"           : "cert_trust",
@@ -1530,8 +1565,8 @@
               "id"           : "cert_chain_of_trust",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "passed."
+              "severity"     : "CRITICAL",
+              "finding"      : "Some certificate trust checks failed -> Java (chain incomplete)  , OK -> Mozilla Microsoft Linux Apple"
           }
 ,         {
               "id"           : "cert_certificatePolicies_EV",
@@ -1544,22 +1579,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (4)"
+              "severity"     : "OK",
+              "finding"      : "360 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-07-10 00:00"
+              "finding"      : "2025-07-08 12:05"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2025-07-10 23:59"
+              "severity"     : "OK",
+              "finding"      : "2026-07-08 12:05"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -1580,14 +1615,14 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl"
+              "finding"      : "http://crl.harica.gr/HARICA-GEANT-TLS-R1.crl"
           }
 ,         {
               "id"           : "cert_ocspURL",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://GEANT.ocsp.sectigo.com"
+              "finding"      : "http://ocsp-tls.harica.gr"
           }
 ,         {
               "id"           : "OCSP_stapling",
@@ -1622,7 +1657,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "4"
+              "finding"      : "5"
           }
 ,         {
               "id"           : "certs_list_ordering_problem",
@@ -1636,7 +1671,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "GEANT OV RSA CA 4 (GEANT Vereniging from NL)"
+              "finding"      : "GEANT TLS RSA 1 (Hellenic Academic and Research Institutions CA from GR)"
           }
 ,         {
               "id"           : "intermediate_cert <#1>",
@@ -1765,6 +1800,48 @@
               "finding"      : "GEANT OV RSA CA 4 <-- USERTrust RSA Certification Authority"
           }
 ,         {
+              "id"           : "intermediate_cert <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "5B678DC44095A52895B63B31F27227F4B36C3E347491BF2BFA691837A5FB8C79"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2025-01-03 11:15"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2039-12-31 11:14"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#4>",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "GEANT TLS RSA 1 <-- HARICA TLS RSA Root CA 2021"
+          }
+,         {
               "id"           : "intermediate_cert_badOCSP",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
@@ -1790,7 +1867,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1751768289"
+              "finding"      : "1752373310"
           }
 ,         {
               "id"           : "HSTS",
@@ -1860,7 +1937,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "font-src 'self' client.crisp.chat; object-src 'self' cellar-c2.services.clever-cloud.com; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com"
+              "finding"      : "connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; font-src 'self' client.crisp.chat; object-src 'self' cellar-c2.services.clever-cloud.com; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
@@ -2005,7 +2082,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=AC65966B305A218509E55D90F1B1FCD2D222180BFA2215842CC385A314AF1FCF"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=48A79554B8B690752FC035F7FD230B8E6EA4D37905B2F7988819B4C8A389899B"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -2311,7 +2388,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)"
           }
 ,         {
               "id"           : "rating_doc",
@@ -2374,20 +2451,13 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "A"
-          }
-,         {
-              "id"           : "grade_cap_reason_1",
-              "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to A. HSTS is not offered"
+              "finding"      : "A+"
           }
 ,         {
               "id"           : "scanTime",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "322"
+              "finding"      : "241"
           }
 ]
