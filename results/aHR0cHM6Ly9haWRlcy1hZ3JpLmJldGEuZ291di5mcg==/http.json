@@ -9,12 +9,12 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 27 Jul 2025 02:51:37 GMT",
+      "date": "Sun, 03 Aug 2025 02:53:47 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "954840cb-a75c-464d-97c1-b0334412de51",
-      "content-security-policy": "connect-src 'self' stats.beta.gouv.fr sentry.incubateur.net; default-src 'self'; img-src 'self' data:; script-src 'self' stats.beta.gouv.fr 'nonce-PrgMzYhc+3mmRltbH10GrA=='; form-action 'self'; frame-ancestors 'self'",
+      "x-request-id": "9c9fc743-16d7-4d05-a73d-549fd4352d0d",
+      "content-security-policy": "connect-src 'self' stats.beta.gouv.fr sentry.incubateur.net; img-src 'self' data:; frame-ancestors 'self'; form-action 'self'; script-src 'self' stats.beta.gouv.fr 'nonce-bQ9oo91ZzcMtrO7wV0aY8w=='; default-src 'self'",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
@@ -22,7 +22,7 @@
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=t9Afkb3y3koh0p5LfglDittxcJt8m9bN; expires=Sun, 26 Jul 2026 02:51:37 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+        "csrftoken=bNpkYa2lkyeQdWmvv2a6iISBacz1bjki; expires=Sun, 02 Aug 2026 02:53:47 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
       ]
     }
   },
@@ -38,22 +38,22 @@
           "sentry.incubateur.net",
           "stats.beta.gouv.fr"
         ],
-        "default-src": [
-          "'self'"
-        ],
         "img-src": [
           "'self'",
           "data:"
         ],
-        "script-src": [
-          "'nonce-prgmzyhc+3mmrltbh10gra=='",
-          "'self'",
-          "stats.beta.gouv.fr"
+        "frame-ancestors": [
+          "'self'"
         ],
         "form-action": [
           "'self'"
         ],
-        "frame-ancestors": [
+        "script-src": [
+          "'nonce-bq9oo91zzcmtro7wv0ay8w=='",
+          "'self'",
+          "stats.beta.gouv.fr"
+        ],
+        "default-src": [
           "'self'"
         ]
       },
@@ -82,7 +82,7 @@
       "data": {
         "csrftoken": {
           "domain": "aides-agri.beta.gouv.fr",
-          "expires": "2026-07-26T02:51:37.000Z",
+          "expires": "2026-08-02T02:53:47.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
