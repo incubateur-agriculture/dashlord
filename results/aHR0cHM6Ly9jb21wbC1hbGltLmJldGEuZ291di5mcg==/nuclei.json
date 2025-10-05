@@ -32,55 +32,9 @@
       "type": "dns",
       "host": "compl-alim.beta.gouv.fr.",
       "matched-at": "compl-alim.beta.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 34528\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 34528\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\ncompl-alim.beta.gouv.fr.\t60\tIN\tSOA\tdns102.ovh.net. tech.ovh.net. 2025090509 86400 3600 3600000 60\n",
-      "timestamp": "2025-09-28T01:55:50.700427415Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/mx-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
-      "template-id": "mx-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
-      "info": {
-        "name": "MX Record Detection",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "mx"
-        ],
-        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
-        "reference": [
-          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
-          "https://mxtoolbox.com/"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "compl-alim.beta.gouv.fr.",
-      "matched-at": "compl-alim.beta.gouv.fr",
-      "extracted-results": [
-        "100 mx3.mail.ovh.net.",
-        "200 mx4.mail.ovh.net.",
-        "5 mx1.mail.ovh.net.",
-        "0 mx.ox.numerique.gouv.fr.",
-        "50 mx2.mail.ovh.net.",
-        "1 mx0.mail.ovh.net."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 16335\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 16335\n;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t100 mx3.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t200 mx4.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t5 mx1.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t0 mx.ox.numerique.gouv.fr.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t50 mx2.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t1 mx0.mail.ovh.net.\n",
-      "timestamp": "2025-09-28T01:55:50.781049061Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 55655\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 55655\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\ncompl-alim.beta.gouv.fr.\t60\tIN\tSOA\tdns102.ovh.net. tech.ovh.net. 2025090509 86400 3600 3600000 60\n",
+      "timestamp": "2025-10-05T01:55:04.561593732Z",
       "matcher-status": true
     },
     {
@@ -112,9 +66,9 @@
       "extracted-results": [
         "v=spf1 mx include:mx.ovh.com include:spf.brevo.com include:_spf.ox.numerique.gouv.fr -all\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 29093\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 29093\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 mx include:mx.ovh.com include:spf.brevo.com include:_spf.ox.numerique.gouv.fr -all\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\n",
-      "timestamp": "2025-09-28T01:55:50.782461313Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 3792\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 3792\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 mx include:mx.ovh.com include:spf.brevo.com include:_spf.ox.numerique.gouv.fr -all\"\n",
+      "timestamp": "2025-10-05T01:55:04.563381596Z",
       "matcher-status": true
     },
     {
@@ -154,9 +108,55 @@
         "\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"",
         "\"v=spf1 mx include:mx.ovh.com include:spf.brevo.com include:_spf.ox.numerique.gouv.fr -all\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 29093\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 29093\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 mx include:mx.ovh.com include:spf.brevo.com include:_spf.ox.numerique.gouv.fr -all\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\n",
-      "timestamp": "2025-09-28T01:55:50.782542925Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 3792\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 3792\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:293764942a0065f7430250ae2c71bf76\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"brevo-code:2b43cf397cb1fc92da03664801c5b6ce\"\ncompl-alim.beta.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 mx include:mx.ovh.com include:spf.brevo.com include:_spf.ox.numerique.gouv.fr -all\"\n",
+      "timestamp": "2025-10-05T01:55:04.563462106Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/mx-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
+      "template-id": "mx-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
+      "info": {
+        "name": "MX Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "mx"
+        ],
+        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
+        "reference": [
+          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
+          "https://mxtoolbox.com/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "compl-alim.beta.gouv.fr.",
+      "matched-at": "compl-alim.beta.gouv.fr",
+      "extracted-results": [
+        "100 mx3.mail.ovh.net.",
+        "50 mx2.mail.ovh.net.",
+        "200 mx4.mail.ovh.net.",
+        "0 mx.ox.numerique.gouv.fr.",
+        "5 mx1.mail.ovh.net.",
+        "1 mx0.mail.ovh.net."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 564\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 564\n;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t50 mx2.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t200 mx4.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t0 mx.ox.numerique.gouv.fr.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t5 mx1.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t1 mx0.mail.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tMX\t100 mx3.mail.ovh.net.\n",
+      "timestamp": "2025-10-05T01:55:04.566147037Z",
       "matcher-status": true
     },
     {
@@ -192,9 +192,9 @@
         "dns102.ovh.net.",
         "ns102.ovh.net."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 2983\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 2983\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tdns102.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tns102.ovh.net.\n",
-      "timestamp": "2025-09-28T01:55:50.782931474Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 1831\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 1831\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;compl-alim.beta.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tdns102.ovh.net.\ncompl-alim.beta.gouv.fr.\t3600\tIN\tNS\tns102.ovh.net.\n",
+      "timestamp": "2025-10-05T01:55:04.716545881Z",
       "matcher-status": true
     },
     {
@@ -224,9 +224,9 @@
         "GET, HEAD, OPTIONS"
       ],
       "request": "OPTIONS / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAllow: GET, HEAD, OPTIONS\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:55:56 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670H9WVQKAYDDP5WTY3N1F0\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nContent-Length: 0\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAllow: GET, HEAD, OPTIONS\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:55:09 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S18XS3FSE0JVRWDQYDJJMX\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nContent-Length: 0\r\n\r\n",
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:55:56.056797848Z",
+      "timestamp": "2025-10-05T01:55:09.857712894Z",
       "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -267,252 +267,12 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr",
       "extracted-results": [
-        "csrftoken=Cw9NFBfrib08htuMGtbNGaNmwZHV82qN; expires=Sun, 27 Sep 2026 01:56:35 GMT; Max-Age=31449600; Path=/; SameSite=Lax X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/"
+        "csrftoken=m4fxrUA6qTp2SfKdUJntne2rLAMiAqNg; expires=Sun, 04 Oct 2026 01:55:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/"
       ],
       "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:35 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=Cw9NFBfrib08htuMGtbNGaNmwZHV82qN; expires=Sun, 27 Sep 2026 01:56:35 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JFZASCPBKENE6R0SGW94\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"Ymo5TlJkI0FLQNzoCck95KTArwwgSmuIqInIoMOBQ1vJX6T08vlMBKwMNl31QeKl\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:55:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=m4fxrUA6qTp2SfKdUJntne2rLAMiAqNg; expires=Sun, 04 Oct 2026 01:55:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1A3QEW3KGXCFF5N28MHF2\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"OZgX4XKu6PuY3SoaAR4bwVnFXsp4yALQ0TlklHaqmyJQLXYdkqhuJZfWyS1cYQoW\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:35.081806588Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-permitted-cross-domain-policies",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=lEklapeew5uLbu8rOt5y30ujcOg6FDp2; expires=Sun, 27 Sep 2026 01:56:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JWVB8W3VZKRBEV01YR6R\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"CcMRpVROqhN3cRJFHxATgIX9Zow0JITMNGW2paVSMc7EdbHWlQvh9yhi12CWeb8E\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:48.237195243Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "clear-site-data",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=lEklapeew5uLbu8rOt5y30ujcOg6FDp2; expires=Sun, 27 Sep 2026 01:56:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JWVB8W3VZKRBEV01YR6R\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"CcMRpVROqhN3cRJFHxATgIX9Zow0JITMNGW2paVSMc7EdbHWlQvh9yhi12CWeb8E\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:48.237234496Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-embedder-policy",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=lEklapeew5uLbu8rOt5y30ujcOg6FDp2; expires=Sun, 27 Sep 2026 01:56:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JWVB8W3VZKRBEV01YR6R\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"CcMRpVROqhN3cRJFHxATgIX9Zow0JITMNGW2paVSMc7EdbHWlQvh9yhi12CWeb8E\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:48.237246749Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-resource-policy",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=lEklapeew5uLbu8rOt5y30ujcOg6FDp2; expires=Sun, 27 Sep 2026 01:56:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JWVB8W3VZKRBEV01YR6R\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"CcMRpVROqhN3cRJFHxATgIX9Zow0JITMNGW2paVSMc7EdbHWlQvh9yhi12CWeb8E\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:48.237258451Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "strict-transport-security",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=lEklapeew5uLbu8rOt5y30ujcOg6FDp2; expires=Sun, 27 Sep 2026 01:56:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JWVB8W3VZKRBEV01YR6R\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"CcMRpVROqhN3cRJFHxATgIX9Zow0JITMNGW2paVSMc7EdbHWlQvh9yhi12CWeb8E\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:48.23727404Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "content-security-policy",
-      "type": "http",
-      "host": "https://compl-alim.beta.gouv.fr",
-      "matched-at": "https://compl-alim.beta.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=lEklapeew5uLbu8rOt5y30ujcOg6FDp2; expires=Sun, 27 Sep 2026 01:56:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JWVB8W3VZKRBEV01YR6R\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"CcMRpVROqhN3cRJFHxATgIX9Zow0JITMNGW2paVSMc7EdbHWlQvh9yhi12CWeb8E\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
-      "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:48.237310609Z",
+      "timestamp": "2025-10-05T01:55:48.749263518Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -550,9 +310,249 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:56:48 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=lEklapeew5uLbu8rOt5y30ujcOg6FDp2; expires=Sun, 27 Sep 2026 01:56:48 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670JWVB8W3VZKRBEV01YR6R\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"CcMRpVROqhN3cRJFHxATgIX9Zow0JITMNGW2paVSMc7EdbHWlQvh9yhi12CWeb8E\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1c1b321a.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:01 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=UiHdRiGqVIGYh9c4WpplnlQbxDR4idoM; expires=Sun, 04 Oct 2026 01:56:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AFY2NK00XY7CGR8M3MR7\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"H1Xeaqo5RTFJHBzroNrUKc5sCALf3sWxr9uhRyUlCrbxOABla2G5XnLtZ3s9bva9\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:56:48.237325085Z",
+      "timestamp": "2025-10-05T01:56:01.221271606Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:01 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=UiHdRiGqVIGYh9c4WpplnlQbxDR4idoM; expires=Sun, 04 Oct 2026 01:56:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AFY2NK00XY7CGR8M3MR7\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"H1Xeaqo5RTFJHBzroNrUKc5sCALf3sWxr9uhRyUlCrbxOABla2G5XnLtZ3s9bva9\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.168",
+      "timestamp": "2025-10-05T01:56:01.221315568Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:01 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=UiHdRiGqVIGYh9c4WpplnlQbxDR4idoM; expires=Sun, 04 Oct 2026 01:56:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AFY2NK00XY7CGR8M3MR7\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"H1Xeaqo5RTFJHBzroNrUKc5sCALf3sWxr9uhRyUlCrbxOABla2G5XnLtZ3s9bva9\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.168",
+      "timestamp": "2025-10-05T01:56:01.221334905Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:01 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=UiHdRiGqVIGYh9c4WpplnlQbxDR4idoM; expires=Sun, 04 Oct 2026 01:56:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AFY2NK00XY7CGR8M3MR7\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"H1Xeaqo5RTFJHBzroNrUKc5sCALf3sWxr9uhRyUlCrbxOABla2G5XnLtZ3s9bva9\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.168",
+      "timestamp": "2025-10-05T01:56:01.221348129Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:01 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=UiHdRiGqVIGYh9c4WpplnlQbxDR4idoM; expires=Sun, 04 Oct 2026 01:56:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AFY2NK00XY7CGR8M3MR7\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"H1Xeaqo5RTFJHBzroNrUKc5sCALf3sWxr9uhRyUlCrbxOABla2G5XnLtZ3s9bva9\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.168",
+      "timestamp": "2025-10-05T01:56:01.221361525Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "strict-transport-security",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:01 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=UiHdRiGqVIGYh9c4WpplnlQbxDR4idoM; expires=Sun, 04 Oct 2026 01:56:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AFY2NK00XY7CGR8M3MR7\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"H1Xeaqo5RTFJHBzroNrUKc5sCALf3sWxr9uhRyUlCrbxOABla2G5XnLtZ3s9bva9\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.168",
+      "timestamp": "2025-10-05T01:56:01.221381923Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://compl-alim.beta.gouv.fr",
+      "matched-at": "https://compl-alim.beta.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 950\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:01 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: csrftoken=UiHdRiGqVIGYh9c4WpplnlQbxDR4idoM; expires=Sun, 04 Oct 2026 01:56:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AFY2NK00XY7CGR8M3MR7\r\nVary: Cookie\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"fr\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/static/images/favicon-marianne.png\">\n\n    <title>Compl'Alim</title>\n    <meta name=\"description\" content=\"Compléments alimentaires\">\n    <script type=\"text/javascript\">\n        window.CSRF_TOKEN = \"H1Xeaqo5RTFJHBzroNrUKc5sCALf3sWxr9uhRyUlCrbxOABla2G5XnLtZ3s9bva9\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n    </script>\n</head>\n\n<body>\n    <noscript>\n        <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to\n            continue.</strong>\n    </noscript>\n    <div id=\"app\">\n        <script src=\"/static/js/app.1f1422d6.js\" ></script>\n    </div>\n</body>\n\n</html>\n",
+      "ip": "91.208.207.168",
+      "timestamp": "2025-10-05T01:56:01.22139636Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr'",
       "matcher-status": true
     },
@@ -587,9 +587,9 @@
         "/element/"
       ],
       "request": "GET /robots.txt HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:57:19 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670KVNAVV46QVWGWH1YP6ZJ\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:13 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AWDQBZ0B4XZ6NRD10C4A\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:57:19.787642307Z",
+      "timestamp": "2025-10-05T01:56:14.010016207Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr/robots.txt'",
       "matcher-status": true
     },
@@ -618,9 +618,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr/robots.txt",
       "request": "GET /robots.txt HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 01:57:19 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670KVQ7ZJKG27EA14WT7C1T\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 643\r\nContent-Type: text/plain\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:13 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1AWDTY88SN837F5VW9XVT\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\nUser-Agent: *\nDisallow: /element/\n\n\n# Prevents AI feeding bots from scraping\n# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: Omgili\nDisallow: /\n\nUser-agent: FacebookBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n# PerplexityAI\nUser-agent: PerplexityBot\nDisallow: /\n",
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T01:57:19.848294629Z",
+      "timestamp": "2025-10-05T01:56:14.010954792Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr/robots.txt'",
       "matcher-status": true
     },
@@ -660,9 +660,9 @@
       "host": "https://compl-alim.beta.gouv.fr",
       "matched-at": "https://compl-alim.beta.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: compl-alim.beta.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 2073\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 28 Sep 2025 02:00:35 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=a47lz_dhqs-_qcyepkc2tg; Path=/\r\nSozu-Id: 01K670SV16MSPRDT9Y0ZAVZS43\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <title>403 Forbidden</title>\n  <style>\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font-family: sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    #info { background:#f6f6f6; }\n    #info ul { margin: 0.5em 4em; }\n    #info p, #summary p { padding-top:10px; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n<div id=\"summary\">\n  <h1>Interdit <span>(403)</span></h1>\n  <p>La vérification CSRF a échoué. La requête a été interrompue.</p>\n\n  <p>Vous voyez ce message parce que ce site HTTPS exige que le navigateur web envoie un en-tête « Referer », ce qu’il n&#x27;a pas fait. Cet en-tête est exigé pour des raisons de sécurité, afin de s’assurer que le navigateur n’ait pas été piraté par un intervenant externe.</p>\n  <p>Si vous avez désactivé l’envoi des en-têtes « Referer » par votre navigateur, veuillez les réactiver, au moins pour ce site ou pour les connexions HTTPS, ou encore pour les requêtes de même origine (« same-origin »).</p>\n  <p>Si vous utilisez la balise &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt; ou que vous incluez l’en-tête « Referrer-Policy: no-referrer », il est préférable de les enlever. La protection CSRF exige que l’en-tête ``Referer`` effectue un contrôle de référant strict. Si vous vous souciez de la confidentialité, utilisez des alternatives comme &lt;a rel=&quot;noreferrer&quot; …&gt; pour les liens vers des sites tiers.</p>\n\n\n</div>\n\n<div id=\"explanation\">\n  <p><small>Des informations plus détaillées sont affichées lorsque la variable DEBUG vaut True.</small></p>\n</div>\n\n</body>\n</html>\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 2073\r\nContent-Type: text/html; charset=utf-8\r\nCross-Origin-Opener-Policy: same-origin\r\nDate: Sun, 05 Oct 2025 01:56:35 GMT\r\nReferrer-Policy: same-origin\r\nSet-Cookie: X-Clever-Cloud-Sticky-Id=1yiav-mzrr2enrl_ai3cog; Path=/\r\nSozu-Id: 01K6S1BH86S8ES91BR96H96TT1\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <title>403 Forbidden</title>\n  <style>\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font-family: sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    #info { background:#f6f6f6; }\n    #info ul { margin: 0.5em 4em; }\n    #info p, #summary p { padding-top:10px; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n<div id=\"summary\">\n  <h1>Interdit <span>(403)</span></h1>\n  <p>La vérification CSRF a échoué. La requête a été interrompue.</p>\n\n  <p>Vous voyez ce message parce que ce site HTTPS exige que le navigateur web envoie un en-tête « Referer », ce qu’il n&#x27;a pas fait. Cet en-tête est exigé pour des raisons de sécurité, afin de s’assurer que le navigateur n’ait pas été piraté par un intervenant externe.</p>\n  <p>Si vous avez désactivé l’envoi des en-têtes « Referer » par votre navigateur, veuillez les réactiver, au moins pour ce site ou pour les connexions HTTPS, ou encore pour les requêtes de même origine (« same-origin »).</p>\n  <p>Si vous utilisez la balise &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt; ou que vous incluez l’en-tête « Referrer-Policy: no-referrer », il est préférable de les enlever. La protection CSRF exige que l’en-tête ``Referer`` effectue un contrôle de référant strict. Si vous vous souciez de la confidentialité, utilisez des alternatives comme &lt;a rel=&quot;noreferrer&quot; …&gt; pour les liens vers des sites tiers.</p>\n\n\n</div>\n\n<div id=\"explanation\">\n  <p><small>Des informations plus détaillées sont affichées lorsque la variable DEBUG vaut True.</small></p>\n</div>\n\n</body>\n</html>\n",
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T02:00:35.766555608Z",
+      "timestamp": "2025-10-05T01:56:35.347543365Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: compl-alim.beta.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://compl-alim.beta.gouv.fr/'",
       "matcher-status": true
     },
@@ -693,7 +693,7 @@
         "Let's Encrypt"
       ],
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T02:01:11.373710543Z",
+      "timestamp": "2025-10-05T02:00:15.154992745Z",
       "matcher-status": true
     },
     {
@@ -723,7 +723,7 @@
         "compl-alim.beta.gouv.fr"
       ],
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T02:01:11.373857107Z",
+      "timestamp": "2025-10-05T02:00:15.15515039Z",
       "matcher-status": true
     },
     {
@@ -754,7 +754,7 @@
         "tls12"
       ],
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T02:01:12.824122071Z",
+      "timestamp": "2025-10-05T02:00:16.625277146Z",
       "matcher-status": true
     },
     {
@@ -785,7 +785,7 @@
         "tls13"
       ],
       "ip": "91.208.207.168",
-      "timestamp": "2025-09-28T02:01:12.992048286Z",
+      "timestamp": "2025-10-05T02:00:16.795153304Z",
       "matcher-status": true
     }
   ]
