@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.16.1",
-	"@generated": "Sun, 16 Nov 2025 02:21:22",
-	"created": "2025-11-16T02:21:22.501630762Z",
+	"@generated": "Sun, 23 Nov 2025 02:31:33",
+	"created": "2025-11-23T02:31:33.799431778Z",
 	"site":[ 
 		{
 			"@name": "https://zacharie.beta.gouv.fr",
@@ -21,7 +21,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "3",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -31,398 +31,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "49",
 							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "73",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "87",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "119",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "95",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "84",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "82",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "109",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "107",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "118",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "43",
-							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "12",
-					"systemic": false,
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
-					"cweid": "693",
-					"wascid": "15",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10020",
-					"alertRef": "10020-1",
-					"alert": "Missing Anti-clickjacking Header",
-					"name": "Missing Anti-clickjacking Header",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
-					"instances":[ 
-						{
-							"id": "0",
-							"uri": "https://zacharie.beta.gouv.fr",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "30",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "71",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "83",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "94",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "81",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "80",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "105",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "99",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "116",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "33",
-							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "11",
-					"systemic": false,
-					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
-					"cweid": "1021",
-					"wascid": "15",
-					"sourceid": "6"
-				},
-				{
-					"pluginid": "90004",
-					"alertRef": "90004-1",
-					"alert": "Insufficient Site Isolation Against Spectre Vulnerability",
-					"name": "Insufficient Site Isolation Against Spectre Vulnerability",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
-					"instances":[ 
-						{
-							"id": "18",
-							"uri": "https://zacharie.beta.gouv.fr",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "63",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "58",
-							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "53",
-							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "66",
-							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "19",
-							"uri": "https://zacharie.beta.gouv.fr",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "64",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "67",
-							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "20",
-							"uri": "https://zacharie.beta.gouv.fr",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "70",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "69",
-							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "11",
-					"systemic": false,
-					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
-					"cweid": "693",
-					"wascid": "14",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10063",
-					"alertRef": "10063-1",
-					"alert": "Permissions Policy Header Not Set",
-					"name": "Permissions Policy Header Not Set",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
-					"instances":[ 
-						{
-							"id": "17",
-							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -432,16 +42,6 @@
 						},
 						{
 							"id": "62",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "79",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -461,17 +61,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "124",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "114",
+							"id": "86",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -481,17 +71,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "126",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "100",
+							"id": "43",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -501,7 +81,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "93",
+							"id": "91",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -511,7 +91,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "117",
+							"id": "114",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -521,7 +101,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "115",
+							"id": "116",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "84",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -531,7 +121,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "125",
+							"id": "115",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -541,7 +131,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "45",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": null,
 							"method": "GET",
@@ -551,7 +141,447 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "13",
+					"count": "12",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020-1",
+					"alert": "Missing Anti-clickjacking Header",
+					"name": "Missing Anti-clickjacking Header",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
+					"instances":[ 
+						{
+							"id": "1",
+							"uri": "https://zacharie.beta.gouv.fr",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "39",
+							"uri": "https://zacharie.beta.gouv.fr/",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "59",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "107",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "85",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "40",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "88",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "112",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "110",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "83",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "111",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "38",
+							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "12",
+					"systemic": false,
+					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90004",
+					"alertRef": "90004-1",
+					"alert": "Insufficient Site Isolation Against Spectre Vulnerability",
+					"name": "Insufficient Site Isolation Against Spectre Vulnerability",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
+					"instances":[ 
+						{
+							"id": "29",
+							"uri": "https://zacharie.beta.gouv.fr",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "31",
+							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "77",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "64",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "54",
+							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "71",
+							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "32",
+							"uri": "https://zacharie.beta.gouv.fr",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "81",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "69",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "79",
+							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "34",
+							"uri": "https://zacharie.beta.gouv.fr",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "82",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "72",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "80",
+							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
+							"nodeName": null,
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "14",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
+					"cweid": "693",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"id": "26",
+							"uri": "https://zacharie.beta.gouv.fr",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "76",
+							"uri": "https://zacharie.beta.gouv.fr/",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "75",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "113",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "100",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "123",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "61",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "105",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "118",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "103",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "122",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "67",
+							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "12",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
@@ -571,7 +601,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "11",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -581,7 +611,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "51",
+							"id": "60",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"nodeName": null,
 							"method": "GET",
@@ -591,7 +621,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "37",
+							"id": "7",
 							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
 							"nodeName": null,
 							"method": "GET",
@@ -601,7 +631,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "68",
+							"id": "92",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"nodeName": null,
 							"method": "GET",
@@ -611,7 +641,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "70",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -621,17 +651,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "101",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "103",
+							"id": "94",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -641,7 +661,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
+							"id": "50",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -651,7 +671,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "90",
+							"id": "97",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -661,7 +681,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
+							"id": "89",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "42",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
@@ -671,7 +701,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
+							"id": "57",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": null,
 							"method": "GET",
@@ -701,8 +731,8 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "133",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-CURz4m58.js",
+							"id": "130",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-WvA1v5Xm.js",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -711,8 +741,8 @@
 							"otherinfo": "1540483477, which evaluates to: 2018-10-25 16:04:37."
 						},
 						{
-							"id": "131",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-CURz4m58.js",
+							"id": "128",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-WvA1v5Xm.js",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -721,8 +751,8 @@
 							"otherinfo": "1651663474, which evaluates to: 2022-05-04 11:24:34."
 						},
 						{
-							"id": "132",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-CURz4m58.js",
+							"id": "129",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-WvA1v5Xm.js",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -731,8 +761,8 @@
 							"otherinfo": "1768515844, which evaluates to: 2026-01-15 22:24:04."
 						},
 						{
-							"id": "129",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-CURz4m58.js",
+							"id": "126",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-WvA1v5Xm.js",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -748,7 +778,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "312"
+					"sourceid": "329"
 				},
 				{
 					"pluginid": "10021",
@@ -761,7 +791,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "12",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -771,7 +801,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "56",
+							"id": "65",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"nodeName": null,
 							"method": "GET",
@@ -781,7 +811,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "44",
+							"id": "9",
 							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
 							"nodeName": null,
 							"method": "GET",
@@ -791,7 +821,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "72",
+							"id": "95",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"nodeName": null,
 							"method": "GET",
@@ -801,7 +831,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "77",
+							"id": "73",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -811,17 +841,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "102",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"id": "106",
+							"id": "98",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -831,7 +851,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "89",
+							"id": "53",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -841,7 +861,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "91",
+							"id": "102",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -851,7 +871,17 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "34",
+							"id": "93",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
+							"nodeName": null,
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "47",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
@@ -861,7 +891,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "57",
+							"id": "58",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": null,
 							"method": "GET",
@@ -891,8 +921,8 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "138",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-CURz4m58.js",
+							"id": "135",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-WvA1v5Xm.js",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -901,8 +931,8 @@
 							"otherinfo": "\uFFFD\uFFFD-\uFFFDf\uFFFDx\uFFFD|.\uFFFD\uFFFDz\uFFFDH\uFFFD\u05EBi\uFFFDb\uFFFD"
 						},
 						{
-							"id": "127",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-Oi6wZ-QJ.css",
+							"id": "124",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-YIAVYBTq.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -918,7 +948,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "312"
+					"sourceid": "329"
 				},
 				{
 					"pluginid": "10027",
@@ -931,8 +961,8 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "128",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-CURz4m58.js",
+							"id": "125",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-WvA1v5Xm.js",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
@@ -948,7 +978,7 @@
 					"reference": "",
 					"cweid": "615",
 					"wascid": "13",
-					"sourceid": "312"
+					"sourceid": "329"
 				},
 				{
 					"pluginid": "10109",
@@ -961,154 +991,144 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "8",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "49",
+							"id": "55",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "74",
+							"id": "66",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "97",
+							"id": "109",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "120",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
-							"id": "98",
+							"id": "90",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "122",
+							"id": "121",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "85",
+							"id": "46",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "88",
+							"id": "96",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "113",
+							"id": "119",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "123",
+							"id": "117",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "110",
+							"id": "87",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "121",
+							"id": "120",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "50",
+							"id": "52",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": null,
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CURz4m58.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-WvA1v5Xm.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
-					"count": "14",
+					"count": "13",
 					"systemic": false,
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -1131,7 +1151,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "48",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"nodeName": null,
 							"method": "GET",
@@ -1141,7 +1161,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "61",
+							"id": "78",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"nodeName": null,
 							"method": "GET",
@@ -1151,7 +1171,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "41",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
@@ -1161,7 +1181,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
+							"id": "44",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": null,
 							"method": "GET",
@@ -1178,7 +1198,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1191,7 +1211,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "22",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -1201,18 +1221,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
+							"id": "16",
 							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "40",
-							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1221,7 +1231,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1241,7 +1251,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "13",
+							"id": "19",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -1251,18 +1261,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "46",
+							"id": "15",
 							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "36",
-							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1271,7 +1271,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1291,7 +1291,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "17",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -1301,18 +1301,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
+							"id": "14",
 							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "35",
-							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1321,7 +1311,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1341,7 +1331,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "24",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -1351,18 +1341,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
+							"id": "18",
 							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
-							"nodeName": null,
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "41",
-							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1371,7 +1351,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
@@ -1391,7 +1371,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "16",
+							"id": "25",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": null,
 							"method": "GET",
@@ -1401,7 +1381,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
+							"id": "68",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"nodeName": null,
 							"method": "GET",
@@ -1411,7 +1391,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "55",
+							"id": "23",
 							"uri": "https://zacharie.beta.gouv.fr/favicon.svg",
 							"nodeName": null,
 							"method": "GET",
@@ -1421,7 +1401,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
+							"id": "106",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"nodeName": null,
 							"method": "GET",
@@ -1431,7 +1411,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "78",
+							"id": "74",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -1441,17 +1421,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "104",
-							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
-							"nodeName": null,
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
-						},
-						{
-							"id": "111",
+							"id": "99",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -1461,7 +1431,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "96",
+							"id": "56",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -1471,7 +1441,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "92",
+							"id": "104",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": null,
 							"method": "GET",
@@ -1481,7 +1451,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "112",
+							"id": "101",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": null,
 							"method": "GET",
@@ -1491,7 +1461,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
+							"id": "51",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": null,
 							"method": "GET",
@@ -1501,7 +1471,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "63",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": null,
 							"method": "GET",
@@ -1511,7 +1481,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"systemic": false,
 					"solution": "",
 					"otherinfo": "",
