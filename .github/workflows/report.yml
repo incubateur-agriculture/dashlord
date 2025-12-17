@@ -13,6 +13,9 @@ concurrency:
   cancel-in-progress: true
   group: report
 
+permissions:
+  contents: write
+
 jobs:
   website:
     runs-on: ubuntu-latest
