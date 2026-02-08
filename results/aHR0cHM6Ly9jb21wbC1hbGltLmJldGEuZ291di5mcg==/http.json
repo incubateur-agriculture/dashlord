@@ -1,41 +1,82 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C+",
     "error": null,
-    "score": 35,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 23 Nov 2025 02:02:16 GMT",
+      "date": "Sun, 08 Feb 2026 02:50:11 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "950",
+      "content-length": "1175",
       "connection": "close",
       "x-frame-options": "DENY",
+      "content-security-policy": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-8WKzdKEFTMvNFrbfBfvKvg' *.gouv.fr; style-src 'self' 'nonce-8WKzdKEFTMvNFrbfBfvKvg'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
       "vary": "Cookie",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=esX7aMbxnxrUPtMzhGDUGA3JcrzjS6y1; expires=Sun, 22 Nov 2026 02:02:16 GMT; Max-Age=31449600; Path=/; SameSite=Lax",
-        "X-Clever-Cloud-Sticky-Id=-427mpqkrs29n0o8ujudsq; Path=/"
+        "csrftoken=Hj5k05tLJs6yXcukke6tY2byENMRbFZl; expires=Sun, 07 Feb 2027 02:50:11 GMT; Max-Age=31449600; Path=/; SameSite=Lax",
+        "X-Clever-Cloud-Sticky-Id=gnzfjf0aqjihn2l5mnjekq; Path=/"
       ],
-      "sozu-id": "01KAQ7555YT1RJJW2XTAVYX8CH"
+      "sozu-id": "01KGXJG7KX1EGQH1FYQXRX5QJZ"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe",
+      "scoreModifier": 5,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.gouv.fr",
+          "*.services.clever-cloud.com",
+          "compl-alim-metabase.cleverapps.io"
+        ],
+        "script-src": [
+          "'nonce-8wkzdkeftmvnfrbfbfvkvg'",
+          "'self'",
+          "*.gouv.fr"
+        ],
+        "style-src": [
+          "'nonce-8wkzdkeftmvnfrbfbfvkvg'",
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "*.services.clever-cloud.com",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.gouv.fr",
+          "https://api.iconify.design",
+          "https://api.simplesvg.com",
+          "https://api.unisvg.com"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -45,7 +86,7 @@
       "data": {
         "csrftoken": {
           "domain": "compl-alim.beta.gouv.fr",
-          "expires": "2026-11-22T02:02:16.000Z",
+          "expires": "2027-02-07T02:50:11.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
