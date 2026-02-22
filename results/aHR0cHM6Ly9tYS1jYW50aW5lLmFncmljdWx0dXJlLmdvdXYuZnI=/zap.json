@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 15 Feb 2026 02:46:08",
-	"created": "2026-02-15T02:46:08.799573648Z",
+	"@generated": "Sun, 22 Feb 2026 02:41:51",
+	"created": "2026-02-22T02:41:51.372783868Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -82,7 +82,7 @@
 			"site": "https://ma-cantine.agriculture.gouv.fr",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "100"
+			"statistic": "75"
 		}
 	],
 	"site":[ 
@@ -109,17 +109,17 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "49",
+							"id": "27",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						}
 					],
@@ -130,7 +130,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -143,23 +143,23 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "5",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:\nconnect-src"
 						},
 						{
-							"id": "50",
+							"id": "28",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:\nconnect-src"
 						}
 					],
@@ -170,7 +170,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -183,23 +183,23 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "7",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"id": "51",
+							"id": "29",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "script-src includes unsafe-inline."
 						}
 					],
@@ -210,7 +210,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -223,23 +223,23 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "8",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "52",
+							"id": "30",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; media-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; object-src 'self' cellar-c2.services.clever-cloud.com",
+							"evidence": "style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; object-src 'self' cellar-c2.services.clever-cloud.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; font-src 'self' client.crisp.chat; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; media-src 'self' cellar-c2.services.clever-cloud.com; default-src 'self'; connect-src 'self' stats.beta.gouv.fr ws: api-adresse.data.gouv.fr geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr",
 							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
@@ -250,7 +250,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -263,7 +263,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "13",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -273,7 +273,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "53",
+							"id": "31",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -303,7 +303,7 @@
 					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "14",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -313,7 +313,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
+							"id": "32",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -334,66 +334,16 @@
 				},
 				{
 					"pluginid": "90004",
-					"alertRef": "90004-1",
-					"alert": "Insufficient Site Isolation Against Spectre Vulnerability",
-					"name": "Insufficient Site Isolation Against Spectre Vulnerability",
+					"alertRef": "90004-2",
+					"alert": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+					"name": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
 					"riskcode": "1",
 					"confidence": "2",
 					"riskdesc": "Low (Medium)",
-					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
+					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "29",
-							"uri": "https://ma-cantine.agriculture.gouv.fr",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"id": "59",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "69",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/app.e04eecb0.css",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/app.e04eecb0.css",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "65",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/materialdesignicons.min.css",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "48",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "31",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -403,7 +353,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "44",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -413,7 +363,77 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "7",
+					"count": "2",
+					"systemic": true,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
+					"cweid": "693",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90004",
+					"alertRef": "90004-1",
+					"alert": "Cross-Origin-Resource-Policy Header Missing or Invalid",
+					"name": "Cross-Origin-Resource-Policy Header Missing or Invalid",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
+					"instances":[ 
+						{
+							"id": "55",
+							"uri": "https://ma-cantine.agriculture.gouv.fr",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "43",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "70",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/app.5eb274ff.css",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/app.5eb274ff.css",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "67",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/materialdesignicons.min.css",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "25",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
 					"systemic": true,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
 					"otherinfo": "",
@@ -433,7 +453,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "27",
+							"id": "54",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -443,7 +463,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "42",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -453,9 +473,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "113",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "115",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -470,7 +490,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10035",
@@ -493,7 +513,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "56",
+							"id": "34",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -504,8 +524,8 @@
 						},
 						{
 							"id": "66",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/app.e04eecb0.css",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/app.e04eecb0.css",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/app.5eb274ff.css",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/app.5eb274ff.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -513,7 +533,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
+							"id": "63",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/materialdesignicons.min.css",
 							"method": "GET",
@@ -523,7 +543,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "44",
+							"id": "0",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -540,7 +560,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10096",
@@ -553,9 +573,9 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "75",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "77",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -563,9 +583,9 @@
 							"otherinfo": "1581668921, which evaluates to: 2020-02-14 08:28:41."
 						},
 						{
-							"id": "72",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "74",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -573,9 +593,9 @@
 							"otherinfo": "1620504925, which evaluates to: 2021-05-08 20:15:25."
 						},
 						{
-							"id": "73",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "75",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -583,9 +603,9 @@
 							"otherinfo": "1665286089, which evaluates to: 2022-10-09 03:28:09."
 						},
 						{
-							"id": "74",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "76",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -593,9 +613,9 @@
 							"otherinfo": "1971595495, which evaluates to: 2032-06-23 09:24:55."
 						},
 						{
-							"id": "76",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "78",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -623,9 +643,9 @@
 					"desc": "<p>The identified library appears to be vulnerable.</p>",
 					"instances":[ 
 						{
-							"id": "111",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "71",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -653,9 +673,9 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "67",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/app.e04eecb0.css",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/app.e04eecb0.css",
+							"id": "68",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/app.5eb274ff.css",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/app.5eb274ff.css",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -663,7 +683,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "63",
+							"id": "64",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/materialdesignicons.min.css",
 							"method": "GET",
@@ -673,7 +693,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "46",
+							"id": "3",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -683,9 +703,9 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "110",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "112",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -713,39 +733,39 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "33",
+							"id": "50",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "uHhpgTonM2nnBrMaGdy7udekocqPzTTh",
-							"otherinfo": "\uFFFDxi\uFFFD:'3i\uFFFD\\x0006\uFFFD\\x001a\\x0019\u073B\uFFFD\u05E4\uFFFD\u028F\uFFFD4\uFFFD"
+							"evidence": "2BEi7fRvdDDJ6wSYse1p7AspQr1VXpeO",
+							"otherinfo": "\uFFFD\\x0011\"\uFFFD\uFFFDot0\uFFFD\uFFFD\\x0004\uFFFD\uFFFD\uFFFDi\uFFFD\\x000b)B\uFFFDU^\uFFFD\uFFFD"
 						},
 						{
-							"id": "34",
+							"id": "47",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "yOWYenYxSkzST7IeimPJ7Y9zDwElJ1iP",
-							"otherinfo": "\uFFFD\uFFFDzv1JL\uFFFDO\uFFFD\\x001e\uFFFDc\uFFFD\uFFFDs\\x000f\\x0001%'X\uFFFD"
+							"evidence": "4KIZwX8gTcKzSFehzktYSgKOBE8Xr1PU",
+							"otherinfo": "\uFFFD\\x0019\uFFFD M\u00B3HW\uFFFD\uFFFDKXJ\\x0002\uFFFD\\x0004O\\x0017\uFFFDS\uFFFD"
 						},
 						{
-							"id": "61",
+							"id": "36",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "uHhpgTonM2nnBrMaGdy7udekocqPzTTh",
-							"otherinfo": "\uFFFDxi\uFFFD:'3i\uFFFD\\x0006\uFFFD\\x001a\\x0019\u073B\uFFFD\u05E4\uFFFD\u028F\uFFFD4\uFFFD"
+							"evidence": "2BEi7fRvdDDJ6wSYse1p7AspQr1VXpeO",
+							"otherinfo": "\uFFFD\\x0011\"\uFFFD\uFFFDot0\uFFFD\uFFFD\\x0004\uFFFD\uFFFD\uFFFDi\uFFFD\\x000b)B\uFFFDU^\uFFFD\uFFFD"
 						},
 						{
-							"id": "115",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "113",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -756,11 +776,11 @@
 					"count": "4",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFDxi\uFFFD:'3i\uFFFD\\x0006\uFFFD\\x001a\\x0019\u073B\uFFFD\u05E4\uFFFD\u028F\uFFFD4\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0011\"\uFFFD\uFFFDot0\uFFFD\uFFFD\\x0004\uFFFD\uFFFD\uFFFDi\uFFFD\\x000b)B\uFFFDU^\uFFFD\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10027",
@@ -773,9 +793,9 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "70",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.3fb4b393.js",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.3fb4b393.js",
+							"id": "72",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/js/app.6a8611cf.js",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/js\/app.6a8611cf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -803,33 +823,33 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "17",
-							"uri": "https://ma-cantine.agriculture.gouv.fr",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"GkHRzM7loIPLaX5T1Y2qtX9JsEeybgk94YtFDZVI6SetTUDX9aHZqL88V0IJK7sO\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"prod\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"True\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_BANNER = \"True\" === \"True\"\n  </script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
 							"id": "16",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"Ps3hEkrr6iLoa2K6XxJtg0IJDsMjUzv79ZawK3FEIaYBBjm6tA7qA3MTRu2Yjiee\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"prod\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"True\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_BANNER = \"True\" === \"True\"\n  </script>",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"KROJrJaxJ6lYJdaWPbBy7JEKMuPLEN09ErmyNw8Ds8VnrIe3elUmPPeodYNyVEFT\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"prod\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"True\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_BANNER = \"True\" === \"True\"\n  </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "55",
+							"id": "17",
+							"uri": "https://ma-cantine.agriculture.gouv.fr",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"LSLtkfd4iVCXfm66R4DnAYy0IUBLX99kDjfBhkUplo5wbIOU98uCxoQfobswKodY\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"prod\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"True\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_BANNER = \"True\" === \"True\"\n  </script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "33",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"h295EtJXvQ47yTRgDa2U7uVr8vbh9QVGBzgkKcXa7IhkZatg9dqRrxZBmxrWyzEN\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"prod\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"True\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_BANNER = \"True\" === \"True\"\n  </script>",
+							"evidence": "<script type=\"text/javascript\">\n    window.CSRF_TOKEN = \"TbQPsin5rBXWiobDStECaIJANhqodTFMLCkXpn4qu4qveKTraxvR781Ptyh908Jq\";\n    window.MATOMO_ID = \"78\";\n    window.ENVIRONMENT = \"prod\"\n    window.ENABLE_XP_RESERVATION = \"False\" === \"True\"\n    window.ENABLE_XP_VEGE = \"False\" === \"True\"\n    window.ENABLE_DASHBOARD = \"True\" === \"True\"\n    window.ENABLE_TELEDECLARATION = \"True\" === \"True\"\n    window.IS_WIDGET = \"\"\n    window.ENABLE_WASTE_MEASUREMENTS = \"True\" === \"True\"\n    window.SHOW_BANNER = \"True\" === \"True\"\n  </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -853,7 +873,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "1",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -863,7 +883,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
+							"id": "26",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -880,7 +900,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -893,7 +913,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "38",
+							"id": "51",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -903,9 +923,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt",
+							"id": "39",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "22",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -913,14 +943,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -933,7 +963,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "36",
+							"id": "49",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -943,9 +973,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt",
+							"id": "38",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "21",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -953,14 +993,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -973,7 +1013,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "35",
+							"id": "48",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -983,9 +1023,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt",
+							"id": "37",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "20",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -993,14 +1043,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1013,7 +1063,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "40",
+							"id": "52",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -1023,9 +1073,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
-							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt",
+							"id": "40",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "23",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1033,14 +1093,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",
@@ -1053,7 +1113,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "45",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -1063,7 +1123,17 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "43",
+							"id": "35",
+							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
+							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "csrftoken",
+							"otherinfo": "cookie:csrftoken"
+						},
+						{
+							"id": "61",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -1073,14 +1143,14 @@
 							"otherinfo": "cookie:csrftoken"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p>cookie:csrftoken</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1093,7 +1163,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "26",
+							"id": "53",
 							"uri": "https://ma-cantine.agriculture.gouv.fr",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr",
 							"method": "GET",
@@ -1103,7 +1173,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "20",
+							"id": "62",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1113,7 +1183,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "57",
+							"id": "41",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/robots.txt/",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/robots.txt\/",
 							"method": "GET",
@@ -1123,7 +1193,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "64",
+							"id": "65",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/css/materialdesignicons.min.css",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/css\/materialdesignicons.min.css",
 							"method": "GET",
@@ -1133,7 +1203,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
+							"id": "24",
 							"uri": "https://ma-cantine.agriculture.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/ma-cantine.agriculture.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
