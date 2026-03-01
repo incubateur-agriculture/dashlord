@@ -9,11 +9,11 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 22 Feb 2026 02:35:56 GMT",
+      "date": "Sun, 01 Mar 2026 02:42:12 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "ef44c211-aae3-4a26-a99f-975dd5607191",
+      "x-request-id": "84871d9d-0992-4199-8f14-2e4d0de510ff",
       "vary": "Accept-Encoding",
       "link": "<https://maestro.beta.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://maestro.beta.gouv.fr/wp-json/wp/v2/pages/7>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://maestro.beta.gouv.fr/>; rel=shortlink",
       "strict-transport-security": "max-age=31536000"
@@ -49,15 +49,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://maestro.beta.gouv.fr/",
+      "destination": "http://maestro.beta.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://maestro.beta.gouv.fr/",
-        "https://maestro.beta.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
