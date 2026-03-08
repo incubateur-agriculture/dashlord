@@ -1,7 +1,7 @@
-# Nmap 7.92 scan initiated Sun Mar  1 02:55:09 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ma-cantine.agriculture.gouv.fr
-Nmap scan report for ma-cantine.agriculture.gouv.fr (91.208.207.184)
-Host is up (0.084s latency).
-Other addresses for ma-cantine.agriculture.gouv.fr (not scanned): 91.208.207.168
+# Nmap 7.92 scan initiated Sun Mar  8 02:47:54 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ma-cantine.agriculture.gouv.fr
+Nmap scan report for ma-cantine.agriculture.gouv.fr (91.208.207.168)
+Host is up (0.11s latency).
+Other addresses for ma-cantine.agriculture.gouv.fr (not scanned): 91.208.207.184
 Not shown: 994 closed tcp ports (reset)
 PORT     STATE    SERVICE   VERSION
 80/tcp   open     http
@@ -11,7 +11,7 @@ PORT     STATE    SERVICE   VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6160
-|     Sozu-Id: 01KJKN4H1K5XGR262BG7S79QK4
+|     Sozu-Id: 01KK5NG9W7A6ATQ6MBHE4KS2V1
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -24,7 +24,7 @@ PORT     STATE    SERVICE   VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6164
-|     Sozu-Id: 01KJKN4Q2VV5QPNGVXM0H92HV1
+|     Sozu-Id: 01KK5NGFYQN5KYAPS51RSF51P5
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -39,10 +39,10 @@ PORT     STATE    SERVICE   VERSION
 1081/tcp filtered pvuniwien
 9999/tcp filtered abyss
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.92%I=7%D=3/1%Time=69A3AA96%P=x86_64-alpine-linux-musl%r(
+SF-Port80-TCP:V=7.92%I=7%D=3/8%Time=69ACE364%P=x86_64-alpine-linux-musl%r(
 SF:GetRequest,1893,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x
 SF:20no-cache\r\nConnection:\x20close\r\nContent-Length:\x206160\r\nSozu-I
-SF:d:\x2001KJKN4H1K5XGR262BG7S79QK4\r\n\r\n<!doctype\x20html>\r\n<html\x20
+SF:d:\x2001KK5NG9W7A6ATQ6MBHE4KS2V1\r\n\r\n<!doctype\x20html>\r\n<html\x20
 SF:lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x20<meta\x20charset=utf-8
 SF:>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=devi
 SF:ce-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x20Bad\x20Request</title
@@ -57,7 +57,7 @@ SF:croll-behavior:smooth;height:100%;-webkit-font-smoothing:antialiased;fo
 SF:nt-family:var\(--font-family\);background-color:var\(--bg-color\)}butto
 SF:n#copy-btn,code{")%r(HTTPOptions,1897,"HTTP/1\.1\x20400\x20Bad\x20Reque
 SF:st\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Len
-SF:gth:\x206164\r\nSozu-Id:\x2001KJKN4Q2VV5QPNGVXM0H92HV1\r\n\r\n<!doctype
+SF:gth:\x206164\r\nSozu-Id:\x2001KK5NGFYQN5KYAPS51RSF51P5\r\n\r\n<!doctype
 SF:\x20html>\r\n<html\x20lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x20
 SF:<meta\x20charset=utf-8>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x
 SF:20content=\"width=device-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x2
@@ -73,4 +73,4 @@ SF:oothing:antialiased;font-family:var\(--font-family\);background-color:v
 SF:ar\(--bg-color\)}button#copy-btn,code{");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Mar  1 02:55:25 2026 -- 1 IP address (1 host up) scanned in 16.12 seconds
+# Nmap done at Sun Mar  8 02:48:13 2026 -- 1 IP address (1 host up) scanned in 18.55 seconds
