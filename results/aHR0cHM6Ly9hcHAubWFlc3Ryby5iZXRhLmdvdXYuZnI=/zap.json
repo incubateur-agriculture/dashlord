@@ -1,9 +1,17 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 1 Mar 2026 02:56:28",
-	"created": "2026-03-01T02:56:28.960823044Z",
+	"@generated": "Sun, 8 Mar 2026 02:50:39",
+	"created": "2026-03-08T02:50:39.547202684Z",
 	"insights":[
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.warn",
+			"description": "ZAP warnings logged - see the zap.log file for details",
+			"statistic": "1"
+		},
 		{
 			"level": "Info",
 			"reason": "Informational",
@@ -119,53 +127,53 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "8",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "51",
+							"id": "45",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "66",
+							"id": "54",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "42",
+							"id": "7",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "9",
+							"id": "36",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
@@ -175,76 +183,6 @@
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
-					"wascid": "15",
-					"sourceid": "6"
-				},
-				{
-					"pluginid": "90003",
-					"alertRef": "90003",
-					"alert": "Sub Resource Integrity Attribute Missing",
-					"name": "Sub Resource Integrity Attribute Missing",
-					"riskcode": "2",
-					"confidence": "3",
-					"riskdesc": "Medium (High)",
-					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
-					"instances":[ 
-						{
-							"id": "14",
-							"uri": "https://app.maestro.beta.gouv.fr",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\"\n    />",
-							"otherinfo": ""
-						},
-						{
-							"id": "53",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\"\n    />",
-							"otherinfo": ""
-						},
-						{
-							"id": "70",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Regular_Italic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\"\n    />",
-							"otherinfo": ""
-						},
-						{
-							"id": "44",
-							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\"\n    />",
-							"otherinfo": ""
-						},
-						{
-							"id": "13",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link\n      rel=\"stylesheet\"\n      href=\"https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css\"\n    />",
-							"otherinfo": ""
-						}
-					],
-					"count": "5",
-					"systemic": true,
-					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
-					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "6"
 				},
@@ -259,53 +197,53 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "4",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "49",
+							"id": "44",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "63",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light_Italic.woff2",
+							"id": "53",
+							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "41",
+							"id": "5",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						},
 						{
-							"id": "4",
+							"id": "35",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';block-all-mixed-content;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+							"evidence": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
 							"otherinfo": "Errors:\nSource-expression lists cannot be empty (use 'none' instead)\n"
 						}
 					],
@@ -316,7 +254,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90004",
@@ -329,7 +267,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "24",
+							"id": "18",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -339,7 +277,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "56",
+							"id": "49",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
 							"method": "GET",
@@ -349,7 +287,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
+							"id": "65",
+							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light_Italic.woff2",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "58",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Regular_Italic.woff2",
 							"method": "GET",
@@ -359,19 +307,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
+							"id": "40",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "23",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -399,7 +337,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "19",
+							"id": "15",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -409,7 +347,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "55",
+							"id": "48",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
 							"method": "GET",
@@ -419,7 +357,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "64",
+							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light_Italic.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "57",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Regular_Italic.woff2",
 							"method": "GET",
@@ -429,19 +377,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "61",
+							"id": "39",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "21",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -469,9 +407,9 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"id": "111",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CHxodG-X.js",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-CHxodG-X.js",
+							"id": "96",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-C1ydOOLx.js",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-C1ydOOLx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -499,9 +437,9 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "113",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CHxodG-X.js",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-CHxodG-X.js",
+							"id": "98",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-C1ydOOLx.js",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-C1ydOOLx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -509,9 +447,9 @@
 							"otherinfo": "1540483477, which evaluates to: 2018-10-25 16:04:37."
 						},
 						{
-							"id": "119",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CHxodG-X.js",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-CHxodG-X.js",
+							"id": "104",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-C1ydOOLx.js",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-C1ydOOLx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -519,9 +457,9 @@
 							"otherinfo": "1566083941, which evaluates to: 2019-08-17 23:19:01."
 						},
 						{
-							"id": "118",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CHxodG-X.js",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-CHxodG-X.js",
+							"id": "103",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-C1ydOOLx.js",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-C1ydOOLx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -549,7 +487,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "30",
+							"id": "25",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -559,7 +497,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "102",
+							"id": "87",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Bold_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Bold_Italic.woff2",
 							"method": "GET",
@@ -569,7 +507,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "58",
+							"id": "50",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
 							"method": "GET",
@@ -579,7 +517,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "80",
+							"id": "66",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light_Italic.woff2",
 							"method": "GET",
@@ -589,7 +527,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "93",
+							"id": "73",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Medium_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Medium_Italic.woff2",
 							"method": "GET",
@@ -599,7 +537,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "78",
+							"id": "59",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Regular_Italic.woff2",
 							"method": "GET",
@@ -609,7 +547,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "106",
+							"id": "92",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-ExtraBold.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Spectral-ExtraBold.woff2",
 							"method": "GET",
@@ -619,7 +557,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "94",
+							"id": "83",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Spectral-Regular.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Spectral-Regular.woff2",
 							"method": "GET",
@@ -629,7 +567,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "109",
+							"id": "95",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
 							"method": "GET",
@@ -639,17 +577,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "110",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light_Italic.woff2",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light_Italic.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/assets/Marianne-Medium-DptVAR1p",
-							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
-						},
-						{
-							"id": "71",
+							"id": "41",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -659,7 +587,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						},
 						{
-							"id": "25",
+							"id": "76",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -669,14 +597,14 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\u01DD\uFFFD\uFFFD\\x000e\uFFFDU\\x0001\\x001di</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10027",
@@ -684,25 +612,25 @@
 					"alert": "Information Disclosure - Suspicious Comments",
 					"name": "Information Disclosure - Suspicious Comments",
 					"riskcode": "0",
-					"confidence": "1",
-					"riskdesc": "Informational (Low)",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "112",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/index-CHxodG-X.js",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-CHxodG-X.js",
+							"id": "97",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/index-C1ydOOLx.js",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/index-C1ydOOLx.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in likely comment: \"//www.w3.org/2000/svg\",F);break;case 2:d=H.createElementNS(\"http://www.w3.org/1998/Math/MathML\",F);break;default:switch(F){case\"\", see evidence field for the suspicious comment/snippet."
+							"evidence": "* The buffer module from node.js, for the br",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"/*!\n * The buffer module from node.js, for the browser.\n *\n * @author   Feross Aboukhadijeh <https://feross.org>\n * @license  MI\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "1",
 					"systemic": false,
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bSELECT\\b and was detected in likely comment: \"//www.w3.org/2000/svg\",F);break;case 2:d=H.createElementNS(\"http://www.w3.org/1998/Math/MathML\",F);break;default:switch(F){case\"\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected in likely comment: \"/*!</p><p> * The buffer module from node.js, for the browser.</p><p> *</p><p> * @author   Feross Aboukhadijeh <https://feross.org></p><p> * @license  MI\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "615",
 					"wascid": "13",
@@ -725,47 +653,47 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CHxodG-X.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-C1ydOOLx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "52",
+							"id": "46",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CHxodG-X.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-C1ydOOLx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "69",
+							"id": "55",
 							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Regular_Italic.woff2",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Regular_Italic.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CHxodG-X.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-C1ydOOLx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "43",
+							"id": "11",
 							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CHxodG-X.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-C1ydOOLx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "12",
+							"id": "37",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-CHxodG-X.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-C1ydOOLx.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -776,7 +704,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -789,6 +717,16 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
+							"id": "3",
+							"uri": "https://app.maestro.beta.gouv.fr",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "public, max-age=0",
+							"otherinfo": ""
+						},
+						{
 							"id": "0",
 							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/manifest.json",
@@ -799,27 +737,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
-							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "public, max-age=0",
-							"otherinfo": ""
-						},
-						{
-							"id": "40",
-							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "public, max-age=0",
-							"otherinfo": ""
-						},
-						{
-							"id": "1",
+							"id": "34",
 							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -829,14 +747,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"systemic": true,
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "23"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -849,7 +767,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "36",
+							"id": "29",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -859,9 +777,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
+							"id": "23",
+							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -876,7 +794,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -889,7 +807,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "35",
+							"id": "28",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -899,9 +817,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "27",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
+							"id": "21",
+							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -916,7 +834,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -929,7 +847,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "31",
+							"id": "27",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -939,9 +857,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
+							"id": "20",
+							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -969,7 +887,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "38",
+							"id": "32",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -979,9 +897,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
+							"id": "24",
+							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/manifest.json",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1009,7 +927,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "16",
+							"id": "13",
 							"uri": "https://app.maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1019,9 +937,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/Marianne-Bold-CYjThbH0.woff2",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/Marianne-Bold-CYjThbH0.woff2",
+							"id": "42",
+							"uri": "https://app.maestro.beta.gouv.fr/assets/apple-touch-icon-DrfPSIlu.png",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/apple-touch-icon-DrfPSIlu.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1029,17 +947,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "46",
-							"uri": "https://app.maestro.beta.gouv.fr/assets/favicon-CduWKyBp.svg",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/assets\/favicon-CduWKyBp.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
-						},
-						{
-							"id": "45",
+							"id": "16",
 							"uri": "https://app.maestro.beta.gouv.fr/manifest.json",
 							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/manifest.json",
 							"method": "GET",
@@ -1049,9 +957,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
-							"uri": "https://app.maestro.beta.gouv.fr/sitemap.xml",
-							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/sitemap.xml",
+							"id": "47",
+							"uri": "https://app.maestro.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/fonts/Marianne-Light.woff2",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/fonts\/Marianne-Light.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0",
+							"otherinfo": ""
+						},
+						{
+							"id": "38",
+							"uri": "https://app.maestro.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/app.maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
