@@ -1,7 +1,7 @@
-# Nmap 7.92 scan initiated Sun Mar  1 03:16:42 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zacharie.beta.gouv.fr
-Nmap scan report for zacharie.beta.gouv.fr (91.208.207.218)
-Host is up (0.081s latency).
-Other addresses for zacharie.beta.gouv.fr (not scanned): 91.208.207.215 91.208.207.217 91.208.207.223 91.208.207.222 91.208.207.221 91.208.207.216 91.208.207.214 91.208.207.220
+# Nmap 7.92 scan initiated Sun Mar  8 03:08:12 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zacharie.beta.gouv.fr
+Nmap scan report for zacharie.beta.gouv.fr (91.208.207.222)
+Host is up (0.099s latency).
+Other addresses for zacharie.beta.gouv.fr (not scanned): 91.208.207.221 91.208.207.217 91.208.207.223 91.208.207.216 91.208.207.220 91.208.207.214 91.208.207.215 91.208.207.218
 Not shown: 985 closed tcp ports (reset)
 PORT     STATE    SERVICE       VERSION
 80/tcp   open     http
@@ -11,7 +11,7 @@ PORT     STATE    SERVICE       VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6160
-|     Sozu-Id: 01KJKPC04MF01YW4GDVT76RGCE
+|     Sozu-Id: 01KK5PNGQ7FD7K27960FMP3BMM
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -24,7 +24,7 @@ PORT     STATE    SERVICE       VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6164
-|     Sozu-Id: 01KJKPC65A9G67ZNVGKZR79YGZ
+|     Sozu-Id: 01KK5PNPRZ4F8BGC58E2J8JZV2
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -49,7 +49,7 @@ PORT     STATE    SERVICE       VERSION
 |     220 7a2a1062-7a9c-4482-952c-ee2cfb121e72 Mailpit (BOTI) ESMTP Service ready
 |     250-7a2a1062-7a9c-4482-952c-ee2cfb121e72 greets 
 |     250-SIZE 0
-|     250-AUTH PLAIN LOGIN
+|     250-AUTH LOGIN PLAIN
 |     250-ENHANCEDSTATUSCODES
 |     SMTPUTF8
 |   Help: 
@@ -61,19 +61,19 @@ PORT     STATE    SERVICE       VERSION
 5801/tcp open     vnc-http-1?
 | fingerprint-strings: 
 |   GenericLines: 
-|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":25564,"client_ip":"91.208.207.218"} 
+|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":128277,"client_ip":"91.208.207.222"} 
 |     -ERR 'Authorization Violation'
 |   GetRequest: 
-|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":25563,"client_ip":"91.208.207.218"} 
+|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":128276,"client_ip":"91.208.207.222"} 
 |     -ERR 'Authorization Violation'
 |   HTTPOptions: 
-|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":25565,"client_ip":"91.208.207.218"} 
+|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":128278,"client_ip":"91.208.207.222"} 
 |     -ERR 'Authorization Violation'
 |   NULL: 
-|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":25562,"client_ip":"91.208.207.218"} 
+|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":128275,"client_ip":"91.208.207.222"} 
 |     -ERR 'Authentication Timeout'
 |   RTSPRequest: 
-|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":25566,"client_ip":"91.208.207.218"} 
+|     INFO {"server_id":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","server_name":"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC","version":"2.8.4","proto":1,"git_commit":"66524ed","go":"go1.17.10","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":128279,"client_ip":"91.208.207.222"} 
 |_    -ERR 'Authorization Violation'
 5902/tcp open     tcpwrapped
 5961/tcp open     smtp
@@ -98,10 +98,10 @@ PORT     STATE    SERVICE       VERSION
 9999/tcp filtered abyss
 4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=3/1%Time=69A3AFA3%P=x86_64-alpine-linux-musl%r(
+SF-Port80-TCP:V=7.92%I=7%D=3/8%Time=69ACE827%P=x86_64-alpine-linux-musl%r(
 SF:GetRequest,1893,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x
 SF:20no-cache\r\nConnection:\x20close\r\nContent-Length:\x206160\r\nSozu-I
-SF:d:\x2001KJKPC04MF01YW4GDVT76RGCE\r\n\r\n<!doctype\x20html>\r\n<html\x20
+SF:d:\x2001KK5PNGQ7FD7K27960FMP3BMM\r\n\r\n<!doctype\x20html>\r\n<html\x20
 SF:lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x20<meta\x20charset=utf-8
 SF:>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=devi
 SF:ce-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x20Bad\x20Request</title
@@ -116,7 +116,7 @@ SF:croll-behavior:smooth;height:100%;-webkit-font-smoothing:antialiased;fo
 SF:nt-family:var\(--font-family\);background-color:var\(--bg-color\)}butto
 SF:n#copy-btn,code{")%r(HTTPOptions,1897,"HTTP/1\.1\x20400\x20Bad\x20Reque
 SF:st\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Len
-SF:gth:\x206164\r\nSozu-Id:\x2001KJKPC65A9G67ZNVGKZR79YGZ\r\n\r\n<!doctype
+SF:gth:\x206164\r\nSozu-Id:\x2001KK5PNPRZ4F8BGC58E2J8JZV2\r\n\r\n<!doctype
 SF:\x20html>\r\n<html\x20lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x20
 SF:<meta\x20charset=utf-8>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x
 SF:20content=\"width=device-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x2
@@ -131,7 +131,7 @@ SF:splay:flex}body,html{scroll-behavior:smooth;height:100%;-webkit-font-sm
 SF:oothing:antialiased;font-family:var\(--font-family\);background-color:v
 SF:ar\(--bg-color\)}button#copy-btn,code{");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5221-TCP:V=7.92%I=7%D=3/1%Time=69A3AFA3%P=x86_64-alpine-linux-musl%
+SF-Port5221-TCP:V=7.92%I=7%D=3/8%Time=69ACE827%P=x86_64-alpine-linux-musl%
 SF:r(NULL,4D,"220\x207a2a1062-7a9c-4482-952c-ee2cfb121e72\x20Mailpit\x20\(
 SF:BOTI\)\x20ESMTP\x20Service\x20ready\r\n")%r(GenericLines,A9,"220\x207a2
 SF:a1062-7a9c-4482-952c-ee2cfb121e72\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Se
@@ -143,48 +143,48 @@ SF:0Syntax\x20error,\x20command\x20unrecognized\r\n500\x205\.5\.2\x20Synta
 SF:x\x20error,\x20command\x20unrecognized\r\n")%r(Hello,C8,"220\x207a2a106
 SF:2-7a9c-4482-952c-ee2cfb121e72\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Servic
 SF:e\x20ready\r\n250-7a2a1062-7a9c-4482-952c-ee2cfb121e72\x20greets\x20\r\
-SF:n250-SIZE\x200\r\n250-AUTH\x20PLAIN\x20LOGIN\r\n250-ENHANCEDSTATUSCODES
+SF:n250-SIZE\x200\r\n250-AUTH\x20LOGIN\x20PLAIN\r\n250-ENHANCEDSTATUSCODES
 SF:\r\n250\x20SMTPUTF8\r\n")%r(Help,70,"220\x207a2a1062-7a9c-4482-952c-ee2
 SF:cfb121e72\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Service\x20ready\r\n502\x2
 SF:05\.5\.1\x20Command\x20not\x20implemented\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5801-TCP:V=7.92%I=7%D=3/1%Time=69A3AF9F%P=x86_64-alpine-linux-musl%
-SF:r(NULL,182,"INFO\x20{\"server_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJ
+SF-Port5801-TCP:V=7.92%I=7%D=3/8%Time=69ACE823%P=x86_64-alpine-linux-musl%
+SF:r(NULL,183,"INFO\x20{\"server_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJ
 SF:ALRIXQ73WOCL3EKXVKLYJC\",\"server_name\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWO
 SF:VUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"version\":\"2\.8\.4\",\"proto\":1,\"gi
 SF:t_commit\":\"66524ed\",\"go\":\"go1\.17\.10\",\"host\":\"0\.0\.0\.0\",\
 SF:"port\":4040,\"headers\":true,\"auth_required\":true,\"max_payload\":52
-SF:42880,\"client_id\":25562,\"client_ip\":\"91\.208\.207\.218\"}\x20\r\n-
-SF:ERR\x20'Authentication\x20Timeout'\r\n")%r(GetRequest,183,"INFO\x20{\"s
-SF:erver_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\"
-SF:,\"server_name\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVK
-SF:LYJC\",\"version\":\"2\.8\.4\",\"proto\":1,\"git_commit\":\"66524ed\",\
-SF:"go\":\"go1\.17\.10\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"headers\"
-SF::true,\"auth_required\":true,\"max_payload\":5242880,\"client_id\":2556
-SF:3,\"client_ip\":\"91\.208\.207\.218\"}\x20\r\n-ERR\x20'Authorization\x2
-SF:0Violation'\r\n")%r(GenericLines,183,"INFO\x20{\"server_id\":\"NB42JKKJ
-SF:WCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"server_name\":\"NB
-SF:42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"version\":\"
-SF:2\.8\.4\",\"proto\":1,\"git_commit\":\"66524ed\",\"go\":\"go1\.17\.10\"
-SF:,\"host\":\"0\.0\.0\.0\",\"port\":4040,\"headers\":true,\"auth_required
-SF:\":true,\"max_payload\":5242880,\"client_id\":25564,\"client_ip\":\"91\
-SF:.208\.207\.218\"}\x20\r\n-ERR\x20'Authorization\x20Violation'\r\n")%r(H
-SF:TTPOptions,183,"INFO\x20{\"server_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVU
-SF:XZJJALRIXQ73WOCL3EKXVKLYJC\",\"server_name\":\"NB42JKKJWCOCKWZ4SUWI3FSU
-SF:LMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"version\":\"2\.8\.4\",\"proto\":1,
-SF:\"git_commit\":\"66524ed\",\"go\":\"go1\.17\.10\",\"host\":\"0\.0\.0\.0
-SF:\",\"port\":4040,\"headers\":true,\"auth_required\":true,\"max_payload\
-SF:":5242880,\"client_id\":25565,\"client_ip\":\"91\.208\.207\.218\"}\x20\
-SF:r\n-ERR\x20'Authorization\x20Violation'\r\n")%r(RTSPRequest,183,"INFO\x
-SF:20{\"server_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVK
-SF:LYJC\",\"server_name\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL
-SF:3EKXVKLYJC\",\"version\":\"2\.8\.4\",\"proto\":1,\"git_commit\":\"66524
-SF:ed\",\"go\":\"go1\.17\.10\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"hea
-SF:ders\":true,\"auth_required\":true,\"max_payload\":5242880,\"client_id\
-SF:":25566,\"client_ip\":\"91\.208\.207\.218\"}\x20\r\n-ERR\x20'Authorizat
-SF:ion\x20Violation'\r\n");
+SF:42880,\"client_id\":128275,\"client_ip\":\"91\.208\.207\.222\"}\x20\r\n
+SF:-ERR\x20'Authentication\x20Timeout'\r\n")%r(GetRequest,184,"INFO\x20{\"
+SF:server_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\
+SF:",\"server_name\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXV
+SF:KLYJC\",\"version\":\"2\.8\.4\",\"proto\":1,\"git_commit\":\"66524ed\",
+SF:\"go\":\"go1\.17\.10\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"headers\
+SF:":true,\"auth_required\":true,\"max_payload\":5242880,\"client_id\":128
+SF:276,\"client_ip\":\"91\.208\.207\.222\"}\x20\r\n-ERR\x20'Authorization\
+SF:x20Violation'\r\n")%r(GenericLines,184,"INFO\x20{\"server_id\":\"NB42JK
+SF:KJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"server_name\":\"
+SF:NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"version\":
+SF:\"2\.8\.4\",\"proto\":1,\"git_commit\":\"66524ed\",\"go\":\"go1\.17\.10
+SF:\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"headers\":true,\"auth_requir
+SF:ed\":true,\"max_payload\":5242880,\"client_id\":128277,\"client_ip\":\"
+SF:91\.208\.207\.222\"}\x20\r\n-ERR\x20'Authorization\x20Violation'\r\n")%
+SF:r(HTTPOptions,184,"INFO\x20{\"server_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMW
+SF:OVUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"server_name\":\"NB42JKKJWCOCKWZ4SUWI3
+SF:FSULMWOVUXZJJALRIXQ73WOCL3EKXVKLYJC\",\"version\":\"2\.8\.4\",\"proto\"
+SF::1,\"git_commit\":\"66524ed\",\"go\":\"go1\.17\.10\",\"host\":\"0\.0\.0
+SF:\.0\",\"port\":4040,\"headers\":true,\"auth_required\":true,\"max_paylo
+SF:ad\":5242880,\"client_id\":128278,\"client_ip\":\"91\.208\.207\.222\"}\
+SF:x20\r\n-ERR\x20'Authorization\x20Violation'\r\n")%r(RTSPRequest,184,"IN
+SF:FO\x20{\"server_id\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73WOCL3E
+SF:KXVKLYJC\",\"server_name\":\"NB42JKKJWCOCKWZ4SUWI3FSULMWOVUXZJJALRIXQ73
+SF:WOCL3EKXVKLYJC\",\"version\":\"2\.8\.4\",\"proto\":1,\"git_commit\":\"6
+SF:6524ed\",\"go\":\"go1\.17\.10\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\
+SF:"headers\":true,\"auth_required\":true,\"max_payload\":5242880,\"client
+SF:_id\":128279,\"client_ip\":\"91\.208\.207\.222\"}\x20\r\n-ERR\x20'Autho
+SF:rization\x20Violation'\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5961-TCP:V=7.92%I=7%D=3/1%Time=69A3AFA3%P=x86_64-alpine-linux-musl%
+SF-Port5961-TCP:V=7.92%I=7%D=3/8%Time=69ACE827%P=x86_64-alpine-linux-musl%
 SF:r(NULL,46,"220\x20afb3e915-4279-48aa-956f-43055ad851bc\x20Mailpit\x20ES
 SF:MTP\x20Service\x20ready\r\n")%r(GenericLines,A2,"220\x20afb3e915-4279-4
 SF:8aa-956f-43055ad851bc\x20Mailpit\x20ESMTP\x20Service\x20ready\r\n500\x2
@@ -202,4 +202,4 @@ SF:.5\.1\x20Command\x20not\x20implemented\r\n");
 Service Info: CPE: cpe:/o:fortinet:fortios
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Mar  1 03:17:18 2026 -- 1 IP address (1 host up) scanned in 36.18 seconds
+# Nmap done at Sun Mar  8 03:08:50 2026 -- 1 IP address (1 host up) scanned in 37.85 seconds
