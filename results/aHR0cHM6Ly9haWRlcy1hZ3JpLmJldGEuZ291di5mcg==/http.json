@@ -9,12 +9,12 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 22 Mar 2026 03:21:15 GMT",
+      "date": "Sun, 29 Mar 2026 03:34:39 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "8526ae5d-5067-48cf-90cf-03a6e8bfad84",
-      "content-security-policy": "connect-src 'self' stats.beta.gouv.fr sentry.incubateur.net; font-src 'self' maxcdn.bootstrapcdn.com; img-src 'self' data:; default-src 'self'; form-action 'self'; script-src 'self' stats.beta.gouv.fr 'nonce-eixuJ8NsWabr+xDqa6cL9g=='; style-src 'self' stats.beta.gouv.fr maxcdn.bootstrapcdn.com 'nonce-eixuJ8NsWabr+xDqa6cL9g=='; frame-ancestors 'self'",
+      "x-request-id": "4f6daff1-5146-4766-bb35-d7f97cb1d7b5",
+      "content-security-policy": "frame-ancestors 'self'; default-src 'self'; form-action 'self'; font-src 'self' maxcdn.bootstrapcdn.com; script-src 'self' stats.beta.gouv.fr 'nonce-PTF5tmmMCJGMlysRv7E3mw=='; style-src 'self' stats.beta.gouv.fr maxcdn.bootstrapcdn.com 'nonce-PTF5tmmMCJGMlysRv7E3mw=='; img-src 'self' data:; connect-src 'self' stats.beta.gouv.fr sentry.incubateur.net",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
@@ -22,7 +22,7 @@
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=Kul92RXNj7RC928llioQP9YgqrxsJenM; expires=Sun, 21 Mar 2027 03:21:15 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+        "csrftoken=tS1rbm5UIszf47WrznliBgkxyt83ZGVA; expires=Sun, 28 Mar 2027 03:34:39 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
       ]
     }
   },
@@ -33,18 +33,8 @@
       "result": "csp-implemented-with-no-unsafe",
       "scoreModifier": 5,
       "data": {
-        "connect-src": [
-          "'self'",
-          "sentry.incubateur.net",
-          "stats.beta.gouv.fr"
-        ],
-        "font-src": [
-          "'self'",
-          "maxcdn.bootstrapcdn.com"
-        ],
-        "img-src": [
-          "'self'",
-          "data:"
+        "frame-ancestors": [
+          "'self'"
         ],
         "default-src": [
           "'self'"
@@ -52,19 +42,29 @@
         "form-action": [
           "'self'"
         ],
+        "font-src": [
+          "'self'",
+          "maxcdn.bootstrapcdn.com"
+        ],
         "script-src": [
-          "'nonce-eixuj8nswabr+xdqa6cl9g=='",
+          "'nonce-ptf5tmmmcjgmlysrv7e3mw=='",
           "'self'",
           "stats.beta.gouv.fr"
         ],
         "style-src": [
-          "'nonce-eixuj8nswabr+xdqa6cl9g=='",
+          "'nonce-ptf5tmmmcjgmlysrv7e3mw=='",
           "'self'",
           "maxcdn.bootstrapcdn.com",
           "stats.beta.gouv.fr"
         ],
-        "frame-ancestors": [
-          "'self'"
+        "img-src": [
+          "'self'",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'",
+          "sentry.incubateur.net",
+          "stats.beta.gouv.fr"
         ]
       },
       "http": true,
@@ -92,7 +92,7 @@
       "data": {
         "csrftoken": {
           "domain": "aides-agri.beta.gouv.fr",
-          "expires": "2027-03-21T03:21:15.000Z",
+          "expires": "2027-03-28T03:34:39.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
