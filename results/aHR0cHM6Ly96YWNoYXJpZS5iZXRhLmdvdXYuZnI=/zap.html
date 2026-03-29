@@ -212,7 +212,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 22 Mar 2026 02:58:10
+		Generated on Sun, 29 Mar 2026 03:11:53
 	</h3>
 
 	<h3>
@@ -245,7 +245,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>2</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -253,7 +253,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>7</div>
+					<div>5</div>
 				</td>
 			</tr>
 			<tr>
@@ -481,7 +481,7 @@ td {
 					<div>Percentage of slow responses</div>
 				</td>
 				<td align="center">
-					<div>14 %</div>
+					<div>11 %</div>
 				</td>
 				</tr>
 			
@@ -511,15 +511,7 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
-				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				
-				<td align="center">Systemic</td>
-				
-				
-			</tr>
-			<tr>
-				<td><a href="#10020">Missing Anti-clickjacking Header</a></td>
+				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				
 				<td align="center">Systemic</td>
@@ -559,27 +551,11 @@ td {
 				
 			</tr>
 			<tr>
-				<td><a href="#10035">Strict-Transport-Security Header Not Set</a></td>
-				<td align="center" class="risk-1">Low</td>
-				
-				<td align="center">Systemic</td>
-				
-				
-			</tr>
-			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
 				
 				
 				<td align="center">5</td>
-				
-			</tr>
-			<tr>
-				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
-				<td align="center" class="risk-1">Low</td>
-				
-				<td align="center">Systemic</td>
-				
 				
 			</tr>
 			<tr>
@@ -602,8 +578,8 @@ td {
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				
+				<td align="center">Systemic</td>
 				
-				<td align="center">4</td>
 				
 			</tr>
 			<tr>
@@ -611,7 +587,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">4</td>
 				
 			</tr>
 			<tr>
@@ -619,7 +595,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">4</td>
 				
 			</tr>
 			<tr>
@@ -627,7 +603,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">4</td>
 				
 			</tr>
 			<tr>
@@ -635,7 +611,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">4</td>
 				
 			</tr>
 			<tr>
@@ -656,14 +632,14 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-2"><a
-						id="10038"></a>
+						id="10055"></a>
 						<div>Medium</div></th>
-					<th class="risk-2">Content Security Policy (CSP) Header Not Set</th>
+					<th class="risk-2">CSP: style-src unsafe-inline</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
+							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
 							
 						</td>
 				</tr>
@@ -689,7 +665,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Content-Security-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -699,12 +675,15 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; https://stats.beta.gouv.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: https://developer.apple.com https://play.google.com; font-src &#39;self&#39; data:; connect-src &#39;self&#39; https://api.zacharie.beta.gouv.fr https://api-test.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;self&#39;; upgrade-insecure-requests</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%"></td>
+						<td width="80%">
+							<div>style-src includes unsafe-inline.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
@@ -725,7 +704,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Content-Security-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -735,12 +714,15 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; https://stats.beta.gouv.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: https://developer.apple.com https://play.google.com; font-src &#39;self&#39; data:; connect-src &#39;self&#39; https://api.zacharie.beta.gouv.fr https://api-test.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;self&#39;; upgrade-insecure-requests</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%"></td>
+						<td width="80%">
+							<div>style-src includes unsafe-inline.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
@@ -761,7 +743,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Content-Security-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -771,12 +753,15 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; https://stats.beta.gouv.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: https://developer.apple.com https://play.google.com; font-src &#39;self&#39; data:; connect-src &#39;self&#39; https://api.zacharie.beta.gouv.fr https://api-test.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;self&#39;; upgrade-insecure-requests</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%"></td>
+						<td width="80%">
+							<div>style-src includes unsafe-inline.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
@@ -797,7 +782,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Content-Security-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -807,12 +792,15 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; https://stats.beta.gouv.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: https://developer.apple.com https://play.google.com; font-src &#39;self&#39; data:; connect-src &#39;self&#39; https://api.zacharie.beta.gouv.fr https://api-test.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;self&#39;; upgrade-insecure-requests</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%"></td>
+						<td width="80%">
+							<div>style-src includes unsafe-inline.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
@@ -833,7 +821,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Content-Security-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -843,12 +831,15 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; https://stats.beta.gouv.fr; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: https://developer.apple.com https://play.google.com; font-src &#39;self&#39; data:; connect-src &#39;self&#39; https://api.zacharie.beta.gouv.fr https://api-test.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;self&#39;; upgrade-insecure-requests</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%"></td>
+						<td width="80%">
+							<div>style-src includes unsafe-inline.</div>
+							
+						</td>
 					</tr>
 				
 				<tr>
@@ -861,32 +852,26 @@ td {
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</div>
+							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a>
-							<br />
-						
-							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a>
-							<br />
-						
 							<a href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a>
 							<br />
 						
-							<a href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a>
-							<br />
-						
-							<a href="https://web.dev/articles/csp">https://web.dev/articles/csp</a>
-							<br />
-						
-							<a href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a>
+							<a href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a>
 							<br />
 						
 							<a href="https://content-security-policy.com/">https://content-security-policy.com/</a>
+							<br />
+						
+							<a href="https://github.com/HtmlUnit/htmlunit-csp">https://github.com/HtmlUnit/htmlunit-csp</a>
+							<br />
+						
+							<a href="https://web.dev/articles/csp#resource-options">https://web.dev/articles/csp#resource-options</a>
 							
 						</td>
 				</tr>
@@ -902,174 +887,7 @@ td {
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10038/">10038</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10020"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Missing Anti-clickjacking Header</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr">https://zacharie.beta.gouv.fr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/">https://zacharie.beta.gouv.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css">https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					
-					<td width="80%">Systemic</td>
-					
-					
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</div>
-							<br />
-						
-							<div>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10020/">10020</a></td>
+						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1907,254 +1725,6 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10035"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Strict-Transport-Security Header Not Set</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr">https://zacharie.beta.gouv.fr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/">https://zacharie.beta.gouv.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/manifest.webmanifest">https://zacharie.beta.gouv.fr/manifest.webmanifest</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/manifest.webmanifest</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/robots.txt">https://zacharie.beta.gouv.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/robots.txt</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/sitemap.xml">https://zacharie.beta.gouv.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/sitemap.xml</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					
-					<td width="80%">Systemic</td>
-					
-					
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a>
-							<br />
-						
-							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
-							<br />
-						
-							<a href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a>
-							<br />
-						
-							<a href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a>
-							<br />
-						
-							<a href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10035/">10035</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
 						id="10096"></a>
 						<div>Low</div></th>
 					<th class="risk-1">Timestamp Disclosure - Unix</th>
@@ -2173,12 +1743,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</a></td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2212,12 +1782,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</a></td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2251,12 +1821,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</a></td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2290,12 +1860,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</a></td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2329,12 +1899,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</a></td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2405,278 +1975,6 @@ td {
 		
 			<table class="results">
 				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10021"></a>
-						<div>Low</div></th>
-					<th class="risk-1">X-Content-Type-Options Header Missing</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr">https://zacharie.beta.gouv.fr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</div>
-							<br />
-						
-							<div>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/">https://zacharie.beta.gouv.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</div>
-							<br />
-						
-							<div>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/manifest.webmanifest">https://zacharie.beta.gouv.fr/manifest.webmanifest</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/manifest.webmanifest</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</div>
-							<br />
-						
-							<div>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/robots.txt">https://zacharie.beta.gouv.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/robots.txt</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</div>
-							<br />
-						
-							<div>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/sitemap.xml">https://zacharie.beta.gouv.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/sitemap.xml</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</div>
-							<br />
-						
-							<div>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</div>
-							
-						</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					
-					<td width="80%">Systemic</td>
-					
-					
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</div>
-							<br />
-						
-							<div>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a>
-							<br />
-						
-							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10021/">10021</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
 					<th width="20%" class="risk-0"><a
 						id="10094"></a>
 						<div>Informational</div></th>
@@ -2696,51 +1994,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-Bz-aLmkd.css">https://zacharie.beta.gouv.fr/assets/index-Bz-aLmkd.css</a></td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-Bz-aLmkd.css</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2011V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>�MuW�v��x�h~��!�k��~��hx�m</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-De2MMO_2.js</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-0s0Y596T.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2767,6 +2026,45 @@ td {
 							class="indent2">Other Info</td>
 						<td width="80%">
 							<div>��-�f�x�|.��z�H�׫i�b�</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/assets/index-DE8dbrAW.css">https://zacharie.beta.gouv.fr/assets/index-DE8dbrAW.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/assets/index-DE8dbrAW.css</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">2011V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>�MuW�v��x�h~��!�k��~��hx�m</div>
 							
 						</td>
 					</tr>
@@ -2855,7 +2153,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-De2MMO_2.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-0s0Y596T.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2894,7 +2192,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-De2MMO_2.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-0s0Y596T.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2933,7 +2231,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-De2MMO_2.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-0s0Y596T.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2972,7 +2270,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-De2MMO_2.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-0s0Y596T.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3011,7 +2309,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-De2MMO_2.js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script type=&quot;module&quot; crossorigin src=&quot;/assets/index-0s0Y596T.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3077,42 +2375,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr">https://zacharie.beta.gouv.fr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://zacharie.beta.gouv.fr/">https://zacharie.beta.gouv.fr/</a></td>
 					</tr>
 					<tr>
@@ -3149,12 +2411,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zacharie.beta.gouv.fr/manifest.webmanifest">https://zacharie.beta.gouv.fr/manifest.webmanifest</a></td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/robots.txt">https://zacharie.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://zacharie.beta.gouv.fr/manifest.webmanifest</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/robots.txt</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3221,8 +2483,8 @@ td {
 				<tr>
 					<td width="20%">Instances</td>
 					
+					<td width="80%">Systemic</td>
 					
-					<td width="80%">4</td>
 					
 				</tr>
 				<tr>
@@ -3319,6 +2581,42 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/favicon.svg">https://zacharie.beta.gouv.fr/favicon.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/favicon.svg</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://zacharie.beta.gouv.fr/robots.txt">https://zacharie.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -3392,7 +2690,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 					
 				</tr>
 				<tr>
@@ -3483,6 +2781,42 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/favicon.svg">https://zacharie.beta.gouv.fr/favicon.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/favicon.svg</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://zacharie.beta.gouv.fr/robots.txt">https://zacharie.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -3556,7 +2890,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 					
 				</tr>
 				<tr>
@@ -3647,6 +2981,42 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/favicon.svg">https://zacharie.beta.gouv.fr/favicon.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/favicon.svg</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://zacharie.beta.gouv.fr/robots.txt">https://zacharie.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -3720,7 +3090,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 					
 				</tr>
 				<tr>
@@ -3811,6 +3181,42 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://zacharie.beta.gouv.fr/favicon.svg">https://zacharie.beta.gouv.fr/favicon.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://zacharie.beta.gouv.fr/favicon.svg</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://zacharie.beta.gouv.fr/robots.txt">https://zacharie.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
@@ -3884,7 +3290,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 					
 				</tr>
 				<tr>

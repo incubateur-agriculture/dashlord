@@ -16,13 +16,13 @@
   "cookies": [
     {
       "name": "_pk_id.139.afc7",
-      "value": "83313b0415324b03.1774148363.",
+      "value": "4123ccd681793e0c.1774753989.",
       "domain": "zacharie.beta.gouv.fr",
       "path": "/",
-      "expires": 1808103563,
+      "expires": 1808709189,
       "size": 43,
       "httpOnly": false,
-      "secure": false,
+      "secure": true,
       "session": false,
       "sameSite": "Lax",
       "priority": "Medium",
@@ -34,10 +34,10 @@
       "value": "1",
       "domain": "zacharie.beta.gouv.fr",
       "path": "/",
-      "expires": 1774150162,
+      "expires": 1774755789,
       "size": 17,
       "httpOnly": false,
-      "secure": false,
+      "secure": true,
       "session": false,
       "sameSite": "Lax",
       "priority": "Medium",
@@ -50,19 +50,23 @@
     "cache-control": "public, max-age=0",
     "connection": "keep-alive",
     "content-encoding": "br",
+    "content-security-policy": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://developer.apple.com https://play.google.com; font-src 'self' data:; connect-src 'self' https://api.zacharie.beta.gouv.fr https://api-test.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 22 Mar 2026 02:59:21 GMT",
-    "etag": "W/\"533-19d1064f329\"",
+    "date": "Sun, 29 Mar 2026 03:13:07 GMT",
+    "etag": "W/\"533-19d2fb87598\"",
     "keep-alive": "timeout=5",
-    "last-modified": "Sat, 21 Mar 2026 12:35:44 GMT",
-    "sozu-id": "01KM9QQ6QQG7CJ7TWZ9D32E4WT",
+    "last-modified": "Fri, 27 Mar 2026 14:35:11 GMT",
+    "sozu-id": "01KMVS9EAESM7JTEHD1BB5W923",
+    "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "transfer-encoding": "chunked",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
   },
   "endpoints": [
     {
       "hostname": "zacharie.beta.gouv.fr",
-      "ip": "91.208.207.214",
+      "ip": "91.208.207.216",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -118,19 +122,18 @@
     },
     {
       "hostname": "developer.apple.com",
-      "ip": "17.253.21.137",
+      "ip": "17.253.127.131",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 4684888,
           "names": {
-            "de": "Ashburn",
-            "en": "Ashburn",
-            "es": "Ashburn",
-            "fr": "Ashburn",
-            "ja": "アッシュバーン",
-            "pt-BR": "Ashburn",
-            "ru": "Ашберн",
-            "zh-CN": "阿什本"
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
           }
         },
         "continent": {
@@ -163,13 +166,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
+          "latitude": 32.7797,
+          "longitude": -96.8022,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "20149"
+          "code": "75270"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -187,17 +190,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 4736286,
+            "iso_code": "TX",
             "names": {
-              "de": "Virginia",
-              "en": "Virginia",
-              "es": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "de": "Texas",
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "pt-BR": "Texas",
+              "ru": "Техас",
+              "zh-CN": "得克萨斯州"
             }
           }
         ]
@@ -205,7 +208,7 @@
     },
     {
       "hostname": "play.google.com",
-      "ip": "142.251.32.14",
+      "ip": "64.233.181.139",
       "geoip": {
         "continent": {
           "code": "NA",
