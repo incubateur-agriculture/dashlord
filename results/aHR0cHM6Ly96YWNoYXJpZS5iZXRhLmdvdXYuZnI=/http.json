@@ -9,7 +9,7 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "content-security-policy": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://developer.apple.com https://play.google.com; font-src 'self' data:; connect-src 'self' https://api.zacharie.beta.gouv.fr https://api-test.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
+      "content-security-policy": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://developer.apple.com https://play.google.com; font-src 'self' data:; connect-src 'self' https://api.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr https://api.zacharie.incubateur.net; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
@@ -19,14 +19,14 @@
       "permissions-policy": "camera=(), microphone=(), geolocation=(), interest-cohort=()",
       "accept-ranges": "bytes",
       "cache-control": "public, max-age=0",
-      "last-modified": "Thu, 30 Apr 2026 18:47:00 GMT",
-      "etag": "W/\"5be-19ddfb73c4e\"",
+      "last-modified": "Fri, 08 May 2026 15:05:14 GMT",
+      "etag": "W/\"5be-19e081f12ea\"",
       "content-type": "text/html; charset=UTF-8",
       "vary": "Accept-Encoding",
-      "date": "Sun, 03 May 2026 04:02:10 GMT",
+      "date": "Sun, 10 May 2026 04:09:26 GMT",
       "connection": "close",
       "transfer-encoding": "chunked",
-      "sozu-id": "01KQP00DP25YB0MFKYES22Q1M0"
+      "sozu-id": "01KR816RDD7PBGBWKX26K8NVA5"
     }
   },
   "tests": {
@@ -60,8 +60,8 @@
         "connect-src": [
           "'self'",
           "https://*.ingest.sentry.io",
-          "https://api-test.zacharie.beta.gouv.fr",
           "https://api.zacharie.beta.gouv.fr",
+          "https://api.zacharie.incubateur.net",
           "https://metabase.zacharie.beta.gouv.fr",
           "https://sentry.incubateur.net",
           "https://stats.beta.gouv.fr"
