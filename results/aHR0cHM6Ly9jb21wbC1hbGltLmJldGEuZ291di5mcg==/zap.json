@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Wed, 13 May 2026 10:49:04",
-	"created": "2026-05-13T10:49:04.749455390Z",
+	"@generated": "Sun, 17 May 2026 03:45:03",
+	"created": "2026-05-17T03:45:03.207811761Z",
 	"insights":[
 		{
 			"level": "Low",
@@ -90,7 +90,7 @@
 			"site": "https://compl-alim.beta.gouv.fr",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "50"
+			"statistic": "100"
 		}
 	],
 	"site":[ 
@@ -111,53 +111,53 @@
 					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "7",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-6fIrl79RhPBLdwwWb7Kp2Q' *.gouv.fr; style-src 'self' 'nonce-6fIrl79RhPBLdwwWb7Kp2Q'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
+							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-3Jz2sNeiHOAYxhinYxofFg' *.gouv.fr; style-src 'self' 'nonce-3Jz2sNeiHOAYxhinYxofFg'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "29",
+							"id": "8",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-Kh8Q3tqyrACzTqPefP5ANg' *.gouv.fr; style-src 'self' 'nonce-Kh8Q3tqyrACzTqPefP5ANg'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
+							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-eG7-lxqeGlOEPFqZ0f_UtQ' *.gouv.fr; style-src 'self' 'nonce-eG7-lxqeGlOEPFqZ0f_UtQ'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "71",
+							"id": "45",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-U4zJel-Q8ukh0vMeTwF8gw' *.gouv.fr; style-src 'self' 'nonce-U4zJel-Q8ukh0vMeTwF8gw'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
+							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-ZN_cFw9cO_O2Gz1Zsm9tUg' *.gouv.fr; style-src 'self' 'nonce-ZN_cFw9cO_O2Gz1Zsm9tUg'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "68",
+							"id": "50",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-83YsTxH9DpGUn8k6odry_Q' *.gouv.fr; style-src 'self' 'nonce-83YsTxH9DpGUn8k6odry_Q'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
+							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-yVgJCI9S9Wdk7XnUkfqJow' *.gouv.fr; style-src 'self' 'nonce-yVgJCI9S9Wdk7XnUkfqJow'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "35",
+							"id": "76",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-YsPTQ6leo29UYDATnYHI0w' *.gouv.fr; style-src 'self' 'nonce-YsPTQ6leo29UYDATnYHI0w'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
+							"evidence": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-YI-SU1KySWL4hgfLMAj2hQ' *.gouv.fr; style-src 'self' 'nonce-YI-SU1KySWL4hgfLMAj2hQ'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						}
 					],
@@ -181,7 +181,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "3",
+							"id": "11",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -191,7 +191,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "4",
+							"id": "13",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -201,7 +201,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "73",
+							"id": "47",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
@@ -211,7 +211,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "55",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
@@ -221,7 +221,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "37",
+							"id": "78",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
@@ -238,7 +238,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10011",
@@ -251,7 +251,7 @@
 					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "17",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -261,7 +261,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "7",
+							"id": "19",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -271,7 +271,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
+							"id": "53",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
@@ -281,7 +281,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "63",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
@@ -291,7 +291,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "80",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
@@ -321,7 +321,7 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "15",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -338,7 +338,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90004",
@@ -351,7 +351,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "18",
+							"id": "56",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -361,7 +361,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "92",
+							"id": "69",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
@@ -371,7 +371,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "91",
+							"id": "77",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
@@ -381,7 +381,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "61",
+							"id": "86",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
@@ -411,7 +411,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "17",
+							"id": "54",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -421,7 +421,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "89",
+							"id": "67",
+							"uri": "https://compl-alim.beta.gouv.fr/",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "75",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
@@ -431,7 +441,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "78",
+							"id": "32",
 							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -441,17 +451,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
-							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "27",
+							"id": "26",
 							"uri": "https://compl-alim.beta.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -481,7 +481,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "16",
+							"id": "52",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -491,7 +491,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "88",
+							"id": "65",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
@@ -501,7 +501,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
+							"id": "74",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
@@ -511,7 +511,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
+							"id": "84",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
@@ -521,7 +521,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "101",
+							"id": "95",
 							"uri": "https://compl-alim.beta.gouv.fr/static/js/app.7a2e9daa.js",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/js\/app.7a2e9daa.js",
 							"method": "GET",
@@ -538,7 +538,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10035",
@@ -551,7 +551,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "23",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -561,7 +561,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "81",
+							"id": "61",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
@@ -571,7 +571,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "72",
+							"id": "70",
+							"uri": "https://compl-alim.beta.gouv.fr/element/",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "12",
 							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -579,29 +589,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "43",
-							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "19",
-							"uri": "https://compl-alim.beta.gouv.fr/static/images/favicon-marianne.png",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/images\/favicon-marianne.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"systemic": true,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
@@ -621,7 +611,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "94",
+							"id": "89",
 							"uri": "https://compl-alim.beta.gouv.fr/static/css/app.fc198de7.css",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/css\/app.fc198de7.css",
 							"method": "GET",
@@ -631,7 +621,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "20",
+							"id": "4",
 							"uri": "https://compl-alim.beta.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -641,7 +631,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "98",
+							"id": "93",
 							"uri": "https://compl-alim.beta.gouv.fr/static/js/app.7a2e9daa.js",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/js\/app.7a2e9daa.js",
 							"method": "GET",
@@ -671,57 +661,57 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "44",
+							"id": "62",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "McmSiNBMZI8PINMVwAzuqMQNPspXlPut",
-							"otherinfo": "1\u0252\uFFFD\uFFFDLd\uFFFD\\x000f \uFFFD\\x0015\uFFFD\\x000c\uFFFD\uFFFD\r>\uFFFDW\uFFFD\uFFFD\uFFFD"
+							"evidence": "U9HXgWDHRCkgED5BCxSKxTlzUGLKfF2c",
+							"otherinfo": "S\uFFFD\u05C1`\uFFFDD) \\x0010>A\\x000b\\x0014\uFFFD\uFFFD9sPb\uFFFD|]\uFFFD"
 						},
 						{
-							"id": "10",
+							"id": "60",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "WtEcH4QFwdLwOmkYgaG7Mr3Btcpyp4GC",
-							"otherinfo": "Z\uFFFD\\x001c\\x001f\uFFFD\\x0005\uFFFD\uFFFD\uFFFD:i\\x0018\uFFFD\uFFFD\uFFFD2\uFFFD\uFFFD\uFFFD\uFFFDr\uFFFD\uFFFD\uFFFD"
+							"evidence": "pbCinPLZ1tAMEBEYvLGofAY3ggSH9dAa",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x000c\\x0010\\x0011\\x0018\uFFFD\uFFFD\uFFFD|\\x00067\uFFFD\\x0004\uFFFD\uFFFD\uFFFD\\x001a"
 						},
 						{
-							"id": "84",
+							"id": "72",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "McmSiNBMZI8PINMVwAzuqMQNPspXlPut",
-							"otherinfo": "1\u0252\uFFFD\uFFFDLd\uFFFD\\x000f \uFFFD\\x0015\uFFFD\\x000c\uFFFD\uFFFD\r>\uFFFDW\uFFFD\uFFFD\uFFFD"
+							"evidence": "U9HXgWDHRCkgED5BCxSKxTlzUGLKfF2c",
+							"otherinfo": "S\uFFFD\u05C1`\uFFFDD) \\x0010>A\\x000b\\x0014\uFFFD\uFFFD9sPb\uFFFD|]\uFFFD"
 						},
 						{
-							"id": "83",
+							"id": "79",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "McmSiNBMZI8PINMVwAzuqMQNPspXlPut",
-							"otherinfo": "1\u0252\uFFFD\uFFFDLd\uFFFD\\x000f \uFFFD\\x0015\uFFFD\\x000c\uFFFD\uFFFD\r>\uFFFDW\uFFFD\uFFFD\uFFFD"
+							"evidence": "U9HXgWDHRCkgED5BCxSKxTlzUGLKfF2c",
+							"otherinfo": "S\uFFFD\u05C1`\uFFFDD) \\x0010>A\\x000b\\x0014\uFFFD\uFFFD9sPb\uFFFD|]\uFFFD"
 						},
 						{
-							"id": "46",
+							"id": "87",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "McmSiNBMZI8PINMVwAzuqMQNPspXlPut",
-							"otherinfo": "1\u0252\uFFFD\uFFFDLd\uFFFD\\x000f \uFFFD\\x0015\uFFFD\\x000c\uFFFD\uFFFD\r>\uFFFDW\uFFFD\uFFFD\uFFFD"
+							"evidence": "U9HXgWDHRCkgED5BCxSKxTlzUGLKfF2c",
+							"otherinfo": "S\uFFFD\u05C1`\uFFFDD) \\x0010>A\\x000b\\x0014\uFFFD\uFFFD9sPb\uFFFD|]\uFFFD"
 						},
 						{
-							"id": "95",
+							"id": "91",
 							"uri": "https://compl-alim.beta.gouv.fr/static/css/app.fc198de7.css",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/css\/app.fc198de7.css",
 							"method": "GET",
@@ -731,7 +721,7 @@
 							"otherinfo": "\uFFFDo\uFFFD~\uFFFD\uFFFD~/\uFFFD\\x001dzW\uFFFD~\uFFFD\uFFFD\uFFFD\uFFFDey\uFFFDn"
 						},
 						{
-							"id": "99",
+							"id": "96",
 							"uri": "https://compl-alim.beta.gouv.fr/static/js/app.7a2e9daa.js",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/js\/app.7a2e9daa.js",
 							"method": "GET",
@@ -744,7 +734,7 @@
 					"count": "7",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>1\u0252\uFFFD\uFFFDLd\uFFFD\\x000f \uFFFD\\x0015\uFFFD\\x000c\uFFFD\uFFFD\r>\uFFFDW\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>S\uFFFD\u05C1`\uFFFDD) \\x0010>A\\x000b\\x0014\uFFFD\uFFFD9sPb\uFFFD|]\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
@@ -761,53 +751,53 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "22",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" nonce=\"6fIrl79RhPBLdwwWb7Kp2Q\">\n        window.CSRF_TOKEN = \"TQFlbz6DwdEpk7ruTtrL3Yzv79WesFcYF99nItM8SgfLYjBiZtXIFfsWqbbCHzIq\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
+							"evidence": "<script type=\"text/javascript\" nonce=\"3Jz2sNeiHOAYxhinYxofFg\">\n        window.CSRF_TOKEN = \"WUY4mkwd8PVrvt2Tmugh5qaKA2ncIPlRbVqczZ72Z8l3ZUwHH5MvaQYDG85JHSLR\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "40",
+							"id": "21",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" nonce=\"Kh8Q3tqyrACzTqPefP5ANg\">\n        window.CSRF_TOKEN = \"ewA6u2bDBWC7Lnu5qUZRq35IAAhA5AX5QyMOCFCfquAMj06QMkobGFLlfSwngfho\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
+							"evidence": "<script type=\"text/javascript\" nonce=\"eG7-lxqeGlOEPFqZ0f_UtQ\">\n        window.CSRF_TOKEN = \"bgOK6ea48s4KHpN353FmaW320kGPhFUVVflxc0DBPUeQbSIuxqnWxFerKQhpmaMX\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "80",
+							"id": "59",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" nonce=\"U4zJel-Q8ukh0vMeTwF8gw\">\n        window.CSRF_TOKEN = \"F3ypeaeIIxUkqOxFpqeoQa04z1VTAh9qh5K7mNFkx5SZYr9qLQDI6MGHejaGLWtJ\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
+							"evidence": "<script type=\"text/javascript\" nonce=\"ZN_cFw9cO_O2Gz1Zsm9tUg\">\n        window.CSRF_TOKEN = \"cE8m9o6xAeiypc9YiYm3xzUNq2RYRdJSWDF9faz4hGsETF4pKl4DUi5caysyWIBU\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "79",
+							"id": "66",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" nonce=\"83YsTxH9DpGUn8k6odry_Q\">\n        window.CSRF_TOKEN = \"H5r4HGqrJnL9M7FauVtfqwntkJ2LU9tXj7DMPjR3yVJOkKhVQlSzG836Z1hy5ONg\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
+							"evidence": "<script type=\"text/javascript\" nonce=\"yVgJCI9S9Wdk7XnUkfqJow\">\n        window.CSRF_TOKEN = \"aNNHVaLTiy2A6KIj13QT1wFZuJYBgqSsUMku1WeqZ0cGAdDKtqytofQoefzblVKu\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "41",
+							"id": "81",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" nonce=\"YsPTQ6leo29UYDATnYHI0w\">\n        window.CSRF_TOKEN = \"9mGSxoF6IrdJ8tOSNpDS4T0ktn1vQH5bLoSAF16IxZboG6qD9P2ckvGX8Fgi1mpu\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
+							"evidence": "<script type=\"text/javascript\" nonce=\"YI-SU1KySWL4hgfLMAj2hQ\">\n        window.CSRF_TOKEN = \"3wCagfYoJ54RiExuNhRVI8sxSFIzKsuzNv9Xm1rVqxeXM7sVfEzv5RDWCbj9PXmB\";\n        window.ENVIRONMENT = \"prod\";\n        window.MATOMO_ID = \"95\";\n        window.OBSERVATION_DAYS = parseInt(\"15\", 10);\n        window.CONTACT_EMAIL = \"contact@compl-alim.beta.gouv.fr\";\n    </script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -831,7 +821,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "3",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -841,7 +831,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "44",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
@@ -851,7 +841,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "46",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
@@ -861,7 +851,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "69",
+							"id": "9",
 							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -871,7 +861,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
+							"id": "73",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
@@ -901,9 +891,9 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "13",
-							"uri": "https://compl-alim.beta.gouv.fr",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
+							"id": "39",
+							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -911,9 +901,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
-							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
+							"id": "38",
+							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -921,7 +911,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "29",
 							"uri": "https://compl-alim.beta.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -938,7 +928,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "90005",
@@ -951,9 +941,9 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "12",
-							"uri": "https://compl-alim.beta.gouv.fr",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
+							"id": "37",
+							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -961,9 +951,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "49",
-							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
+							"id": "36",
+							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -971,7 +961,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
+							"id": "28",
 							"uri": "https://compl-alim.beta.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -988,7 +978,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "90005",
@@ -1001,9 +991,9 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "11",
-							"uri": "https://compl-alim.beta.gouv.fr",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
+							"id": "35",
+							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1011,9 +1001,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
-							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
+							"id": "34",
+							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1021,7 +1011,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
+							"id": "27",
 							"uri": "https://compl-alim.beta.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -1038,7 +1028,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "90005",
@@ -1051,9 +1041,9 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "14",
-							"uri": "https://compl-alim.beta.gouv.fr",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
+							"id": "41",
+							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1061,9 +1051,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
-							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
+							"id": "40",
+							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1071,7 +1061,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "30",
 							"uri": "https://compl-alim.beta.gouv.fr/static/images/favicon-marianne.png",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/static\/images\/favicon-marianne.png",
 							"method": "GET",
@@ -1088,7 +1078,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "10112",
@@ -1111,7 +1101,7 @@
 							"otherinfo": "cookie:csrftoken\ncookie:X-Clever-Cloud-Sticky-Id"
 						},
 						{
-							"id": "64",
+							"id": "42",
 							"uri": "https://compl-alim.beta.gouv.fr/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
 							"method": "GET",
@@ -1121,7 +1111,7 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "62",
+							"id": "43",
 							"uri": "https://compl-alim.beta.gouv.fr/element/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/element\/",
 							"method": "GET",
@@ -1131,7 +1121,7 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "30",
+							"id": "68",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
@@ -1141,9 +1131,9 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "63",
-							"uri": "https://compl-alim.beta.gouv.fr/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
+							"id": "6",
+							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -1158,7 +1148,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1171,7 +1161,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "48",
 							"uri": "https://compl-alim.beta.gouv.fr",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr",
 							"method": "GET",
@@ -1181,7 +1171,17 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "77",
+							"id": "64",
+							"uri": "https://compl-alim.beta.gouv.fr/",
+							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "31",
 							"uri": "https://compl-alim.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1191,19 +1191,9 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "74",
+							"id": "33",
 							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"id": "58",
-							"uri": "https://compl-alim.beta.gouv.fr/sitemap.xml/",
-							"nodeName": "https:\/\/compl-alim.beta.gouv.fr\/sitemap.xml\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
