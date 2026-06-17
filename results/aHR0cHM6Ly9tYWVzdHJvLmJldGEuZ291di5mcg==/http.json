@@ -9,11 +9,11 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 14 Jun 2026 04:23:18 GMT",
+      "date": "Wed, 17 Jun 2026 08:11:44 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "36f08f30-34f6-4683-a824-484feb9f64fe",
+      "x-request-id": "b8c1054c-37b0-431d-a7db-3c9fc6b4bb52",
       "vary": "Accept-Encoding",
       "link": "<https://maestro.beta.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://maestro.beta.gouv.fr/wp-json/wp/v2/pages/7>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://maestro.beta.gouv.fr/>; rel=shortlink",
       "strict-transport-security": "max-age=31536000"
@@ -48,13 +48,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://maestro.beta.gouv.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://maestro.beta.gouv.fr/",
+      "redirects": true,
       "route": [
-        "http://maestro.beta.gouv.fr/"
+        "http://maestro.beta.gouv.fr/",
+        "https://maestro.beta.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -69,12 +70,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
