@@ -1,19 +1,19 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "C-",
     "error": null,
-    "score": 25,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 17 Jun 2026 08:11:44 GMT",
+      "date": "Sun, 21 Jun 2026 04:30:40 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "b8c1054c-37b0-431d-a7db-3c9fc6b4bb52",
+      "x-request-id": "fe3a8ece-1815-4e0d-a4ce-86b742295fb8",
       "vary": "Accept-Encoding",
       "link": "<https://maestro.beta.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://maestro.beta.gouv.fr/wp-json/wp/v2/pages/7>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://maestro.beta.gouv.fr/>; rel=shortlink",
       "strict-transport-security": "max-age=31536000"
@@ -70,12 +70,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented-no-https",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
