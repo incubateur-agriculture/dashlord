@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Wed, 17 Jun 2026 08:23:23",
-	"created": "2026-06-17T08:23:23.434881370Z",
+	"@generated": "Sun, 21 Jun 2026 04:42:27",
+	"created": "2026-06-21T04:42:27.304696273Z",
 	"site":[ 
 		{
 			"@name": "https://zacharie.beta.gouv.fr",
@@ -31,17 +31,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "38",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://developer.apple.com https://play.google.com; font-src 'self' data:; connect-src 'self' https://api.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr https://api.zacharie.incubateur.net; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
-							"otherinfo": "style-src includes unsafe-inline."
-						},
-						{
-							"id": "36",
+							"id": "47",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/utility\/colors\/colors.min.css",
 							"method": "GET",
@@ -51,9 +41,19 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "37",
+							"id": "44",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/main.css",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://developer.apple.com https://play.google.com; font-src 'self' data:; connect-src 'self' https://api.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr https://api.zacharie.incubateur.net; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "45",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/utility\/colors\/colors.min.css",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -91,7 +91,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "29",
+							"id": "40",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr",
 							"method": "GET",
@@ -101,17 +101,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "46",
+							"id": "57",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/utility\/colors\/colors.min.css",
 							"method": "GET",
@@ -121,9 +111,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
+							"id": "58",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/main.css",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "55",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/utility\/colors\/colors.min.css",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -161,9 +161,9 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "81",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-BrLqAZGp.js",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-BrLqAZGp.js",
+							"id": "90",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-us4uhRsW.js",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-us4uhRsW.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -171,9 +171,9 @@
 							"otherinfo": "1540483477, which evaluates to: 2018-10-25 16:04:37."
 						},
 						{
-							"id": "79",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-BrLqAZGp.js",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-BrLqAZGp.js",
+							"id": "88",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-us4uhRsW.js",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-us4uhRsW.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -181,9 +181,9 @@
 							"otherinfo": "1651663474, which evaluates to: 2022-05-04 11:24:34."
 						},
 						{
-							"id": "80",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-BrLqAZGp.js",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-BrLqAZGp.js",
+							"id": "89",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-us4uhRsW.js",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-us4uhRsW.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -191,9 +191,9 @@
 							"otherinfo": "1768515844, which evaluates to: 2026-01-15 22:24:04."
 						},
 						{
-							"id": "78",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-BrLqAZGp.js",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-BrLqAZGp.js",
+							"id": "87",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-us4uhRsW.js",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-us4uhRsW.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -201,9 +201,9 @@
 							"otherinfo": "1907505652, which evaluates to: 2030-06-12 14:40:52."
 						},
 						{
-							"id": "76",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-BrLqAZGp.js",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-BrLqAZGp.js",
+							"id": "85",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-us4uhRsW.js",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-us4uhRsW.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -231,9 +231,9 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "75",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-Bq0js7F2.css",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-Bq0js7F2.css",
+							"id": "84",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-Cba4Kvcr.css",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-Cba4Kvcr.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -241,9 +241,9 @@
 							"otherinfo": "\uFFFDN>\uFFFD\uFFFD!\uFFFD_!\uFFFD\uFFFD\\x0019\uFFFDo\uFFFD\\x001f\uFFFD\uFFFD\uFFFD\\x001dxW\uFFFD~\uFFFD^\\x00193"
 						},
 						{
-							"id": "86",
-							"uri": "https://zacharie.beta.gouv.fr/assets/index-BrLqAZGp.js",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-BrLqAZGp.js",
+							"id": "95",
+							"uri": "https://zacharie.beta.gouv.fr/assets/index-us4uhRsW.js",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/assets\/index-us4uhRsW.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -258,7 +258,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "271"
+					"sourceid": "277"
 				},
 				{
 					"pluginid": "10109",
@@ -277,37 +277,37 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-BrLqAZGp.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-us4uhRsW.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "41",
-							"uri": "https://zacharie.beta.gouv.fr/",
-							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-BrLqAZGp.js\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
-							"id": "40",
+							"id": "51",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/utility\/colors\/colors.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-BrLqAZGp.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-us4uhRsW.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "39",
+							"id": "49",
 							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/main.css",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/main.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-BrLqAZGp.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-us4uhRsW.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "50",
+							"uri": "https://zacharie.beta.gouv.fr/node_modules/@codegouvfr/react-dsfr/node_modules/@codegouvfr/react-dsfr/dsfr/utility/colors/colors.min.css",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/node_modules\/@codegouvfr\/react-dsfr\/node_modules\/@codegouvfr\/react-dsfr\/dsfr\/utility\/colors\/colors.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-us4uhRsW.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -317,7 +317,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-BrLqAZGp.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-us4uhRsW.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -341,7 +341,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "0",
+							"id": "1",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr",
 							"method": "GET",
@@ -351,7 +351,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "46",
 							"uri": "https://zacharie.beta.gouv.fr/",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/",
 							"method": "GET",
@@ -361,7 +361,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "35",
+							"id": "20",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/manifest.webmanifest",
 							"method": "GET",
@@ -371,7 +371,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
+							"id": "14",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -379,16 +379,26 @@
 							"attack": "",
 							"evidence": "public, max-age=0",
 							"otherinfo": ""
+						},
+						{
+							"id": "0",
+							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "public, max-age=0",
+							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -401,7 +411,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "16",
+							"id": "32",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr",
 							"method": "GET",
@@ -421,6 +431,26 @@
 							"otherinfo": ""
 						},
 						{
+							"id": "41",
+							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/manifest.webmanifest",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "17",
+							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"id": "25",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/sitemap.xml",
@@ -431,7 +461,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
@@ -451,7 +481,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "28",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr",
 							"method": "GET",
@@ -471,7 +501,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "27",
+							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/manifest.webmanifest",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "16",
+							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "22",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -481,7 +531,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
@@ -501,7 +551,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "24",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr",
 							"method": "GET",
@@ -521,7 +571,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
+							"id": "23",
+							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/manifest.webmanifest",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "15",
+							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "21",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -531,7 +601,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
@@ -551,7 +621,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "23",
+							"id": "34",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr",
 							"method": "GET",
@@ -571,7 +641,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "42",
+							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/manifest.webmanifest",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "18",
+							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "30",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -581,14 +671,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -601,7 +691,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "26",
+							"id": "35",
 							"uri": "https://zacharie.beta.gouv.fr",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr",
 							"method": "GET",
@@ -621,7 +711,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
+							"id": "43",
 							"uri": "https://zacharie.beta.gouv.fr/manifest.webmanifest",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/manifest.webmanifest",
 							"method": "GET",
@@ -631,7 +721,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
+							"id": "19",
 							"uri": "https://zacharie.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -641,7 +731,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
+							"id": "31",
 							"uri": "https://zacharie.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/zacharie.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -658,7 +748,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}
