@@ -212,7 +212,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 21 Jun 2026 04:49:29
+		Generated on Sun, 28 Jun 2026 04:26:44
 	</h3>
 
 	<h3>
@@ -327,16 +327,16 @@ td {
 				<td><a href="#90004">Cross-Origin-Embedder-Policy Header Missing or Invalid</a></td>
 				<td align="center" class="risk-1">Low</td>
 				
-				<td align="center">Systemic</td>
 				
+				<td align="center">5</td>
 				
 			</tr>
 			<tr>
 				<td><a href="#90004">Cross-Origin-Resource-Policy Header Missing or Invalid</a></td>
 				<td align="center" class="risk-1">Low</td>
 				
-				<td align="center">Systemic</td>
 				
+				<td align="center">5</td>
 				
 			</tr>
 			<tr>
@@ -352,7 +352,7 @@ td {
 				<td align="center" class="risk-1">Low</td>
 				
 				
-				<td align="center">7</td>
+				<td align="center">9</td>
 				
 			</tr>
 			<tr>
@@ -368,7 +368,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">13</td>
+				<td align="center">12</td>
 				
 			</tr>
 			<tr>
@@ -376,7 +376,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">2</td>
+				<td align="center">3</td>
 				
 			</tr>
 			<tr>
@@ -408,7 +408,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">2</td>
 				
 			</tr>
 			<tr>
@@ -416,7 +416,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">2</td>
 				
 			</tr>
 			<tr>
@@ -424,7 +424,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">2</td>
 				
 			</tr>
 			<tr>
@@ -432,7 +432,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">3</td>
+				<td align="center">2</td>
 				
 			</tr>
 			<tr>
@@ -456,7 +456,7 @@ td {
 				<td align="center" class="risk-0">Informational</td>
 				
 				
-				<td align="center">12</td>
+				<td align="center">7</td>
 				
 			</tr>
 		</table>
@@ -551,12 +551,58 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;themes=6">https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;themes=6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?departement=01&amp;filieres=1&amp;profil=None&amp;sujets=1&amp;themes=2&amp;tri=cloture&amp;voir_fermees=on">https://aides-agri.beta.gouv.fr/aides?departement=01&amp;filieres=1&amp;profil=None&amp;sujets=1&amp;themes=2&amp;tri=cloture&amp;voir_fermees=on</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aides (email,themes)</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/aides (departement,filieres,profil,sujets,themes,tri,voir_fermees)</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form method=&quot;post&quot;
+                action=&quot;/creer-feedback-themes-sujets&quot;
+                hx-boost=&quot;true&quot;
+                hx-target=&quot;find .fr-modal__content&quot;
+                hx-push-url=&quot;false&quot;
+                hx-disabled-elt=&quot;find button[type=submit]&quot;
+                data-controller=&quot;dsfr-form&quot;
+          &gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: &quot;&quot; ].</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com">https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/aides (email)</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -643,58 +689,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=6">https://aides-agri.beta.gouv.fr/aides?themes=6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=4">https://aides-agri.beta.gouv.fr/aides?themes=4</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
 						<td width="80%">https://aides-agri.beta.gouv.fr/aides (themes)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form method=&quot;post&quot;
-                action=&quot;/creer-feedback-themes-sujets&quot;
-                hx-boost=&quot;true&quot;
-                hx-target=&quot;find .fr-modal__content&quot;
-                hx-push-url=&quot;false&quot;
-                hx-disabled-elt=&quot;find button[type=submit]&quot;
-                data-controller=&quot;dsfr-form&quot;
-          &gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: &quot;&quot; ].</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=6&amp;usefulness=0">https://aides-agri.beta.gouv.fr/aides?themes=6&amp;usefulness=0</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aides (themes,usefulness)</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1162,12 +1162,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/etape">https://aides-agri.beta.gouv.fr/etape</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/etape</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1198,12 +1198,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/cgu">https://aides-agri.beta.gouv.fr/pages/cgu</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/resultats">https://aides-agri.beta.gouv.fr/resultats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/cgu</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/resultats</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1234,12 +1234,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/mentions-legales">https://aides-agri.beta.gouv.fr/pages/mentions-legales</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/trouver-mon-entreprise">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/mentions-legales</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1506,8 +1506,8 @@ td {
 				<tr>
 					<td width="20%">Instances</td>
 					
-					<td width="80%">Systemic</td>
 					
+					<td width="80%">5</td>
 					
 				</tr>
 				<tr>
@@ -1745,8 +1745,8 @@ td {
 				<tr>
 					<td width="20%">Instances</td>
 					
-					<td width="80%">Systemic</td>
 					
+					<td width="80%">5</td>
 					
 				</tr>
 				<tr>
@@ -1898,6 +1898,78 @@ td {
 				<TR vAlign="top">
 					<TD colspan="2"></TD>
 				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/asp/connecte/F_FNR_PROTECT/depot/simple">https://aides-agri.beta.gouv.fr/asp/connecte/F_FNR_PROTECT/depot/simple</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/asp/connecte/F_FNR_PROTECT/depot/simple</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">/system/</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/detail?cdDispositif=PAD_ENG_PROD_DC">https://aides-agri.beta.gouv.fr/detail?cdDispositif=PAD_ENG_PROD_DC</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/detail (cdDispositif)</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">/system/</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -2155,7 +2227,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">7</td>
+					<td width="80%">9</td>
 					
 				</tr>
 				<tr>
@@ -2282,12 +2354,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/etape">https://aides-agri.beta.gouv.fr/etape</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/etape</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2318,12 +2390,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/cgu">https://aides-agri.beta.gouv.fr/pages/cgu</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/resultats">https://aides-agri.beta.gouv.fr/resultats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/cgu</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/resultats</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2354,12 +2426,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/mentions-legales">https://aides-agri.beta.gouv.fr/pages/mentions-legales</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/trouver-mon-entreprise">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/mentions-legales</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2483,13 +2555,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">MteIoUJXc78L57H3sf6EcFv9QQyZmKaA</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>2׈�BWs������p[�A����</div>
+							<div>\��f�;����׵���S����</div>
 							
 						</td>
 					</tr>
@@ -2522,13 +2594,16 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
+						<td width="80%">glEo7NXcfc3186GuQssKeqDyemq0vzfQ</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
+							<div>�Q(���}���B�</div>
+							<br />
+						
+							<div>z��zj��7�</div>
 							
 						</td>
 					</tr>
@@ -2561,130 +2636,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides">https://aides-agri.beta.gouv.fr/aides</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aides</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?sujets=1">https://aides-agri.beta.gouv.fr/aides?sujets=1</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aides (sujets)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=5">https://aides-agri.beta.gouv.fr/aides?themes=5</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aides (themes)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
+							<div>\��f�;����׵���S����</div>
 							
 						</td>
 					</tr>
@@ -2717,13 +2675,91 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
+							<div>\��f�;����׵���S����</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/etape">https://aides-agri.beta.gouv.fr/etape</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/etape</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>\��f�;����׵���S����</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/feedback-themes-sujets">https://aides-agri.beta.gouv.fr/feedback-themes-sujets</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/feedback-themes-sujets</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>\��f�;����׵���S����</div>
 							
 						</td>
 					</tr>
@@ -2756,91 +2792,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite">https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/donnees-personnelles">https://aides-agri.beta.gouv.fr/pages/donnees-personnelles</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/donnees-personnelles</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
+							<div>\��f�;����׵���S����</div>
 							
 						</td>
 					</tr>
@@ -2873,13 +2831,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
+							<div>\��f�;����׵���S����</div>
 							
 						</td>
 					</tr>
@@ -2887,12 +2845,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/statistiques">https://aides-agri.beta.gouv.fr/pages/statistiques</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/resultats">https://aides-agri.beta.gouv.fr/resultats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/statistiques</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/resultats</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2912,13 +2870,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">kn569fLqHoUiMchkZEevOiR4Dpbdj004</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�~z����&quot;1�ddG�:$x�ݏM8</div>
+							<div>\��f�;����׵���S����</div>
 							
 						</td>
 					</tr>
@@ -2962,11 +2920,89 @@ td {
 						</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/trouver-ma-commune">https://aides-agri.beta.gouv.fr/trouver-ma-commune</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/trouver-ma-commune</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>\��f�;����׵���S����</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/trouver-mon-entreprise">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">XIKtZsQ7At3NwtLXtbah9w0NU6QPv5KV</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>\��f�;����׵���S����</div>
+							
+						</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">13</td>
+					<td width="80%">12</td>
 					
 				</tr>
 				<tr>
@@ -3060,7 +3096,46 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;themes=6">https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;themes=6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;sujets=1">https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;sujets=1</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/aides (email,sujets)</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">email</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">zaproxy@example.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The URL contains email address(es).</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;themes=4">https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&amp;themes=4</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3100,7 +3175,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 					
 				</tr>
 				<tr>
@@ -3230,7 +3305,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=6">https://aides-agri.beta.gouv.fr/aides?themes=6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=4">https://aides-agri.beta.gouv.fr/aides?themes=4</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3728,7 +3803,7 @@ td {
                    aria-controls=&quot;modal-external-link&quot;
                    data-action=&quot;click-&gt;matomo#trackEvent&quot;
                    data-event-page=&quot;Résultats&quot;
-                   data-event-name=&quot;Lien descriptif en mode minimal&quot;
+                   data-event-name=&quot;&quot;
                 &gt;
                   D’accord
                 &lt;/a&gt;</td>
@@ -3776,7 +3851,7 @@ td {
                    aria-controls=&quot;modal-external-link&quot;
                    data-action=&quot;click-&gt;matomo#trackEvent&quot;
                    data-event-page=&quot;Résultats&quot;
-                   data-event-name=&quot;Lien descriptif en mode minimal&quot;
+                   data-event-name=&quot;&quot;
                 &gt;
                   D’accord
                 &lt;/a&gt;</td>
@@ -3793,7 +3868,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=6">https://aides-agri.beta.gouv.fr/aides?themes=6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=4">https://aides-agri.beta.gouv.fr/aides?themes=4</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3824,7 +3899,7 @@ td {
                    aria-controls=&quot;modal-external-link&quot;
                    data-action=&quot;click-&gt;matomo#trackEvent&quot;
                    data-event-page=&quot;Résultats&quot;
-                   data-event-name=&quot;Lien descriptif en mode minimal&quot;
+                   data-event-name=&quot;&quot;
                 &gt;
                   D’accord
                 &lt;/a&gt;</td>
@@ -4171,48 +4246,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/">https://aides-agri.beta.gouv.fr/</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/sitemap.xml">https://aides-agri.beta.gouv.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Dest</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/sitemap.xml</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4244,7 +4283,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 					
 				</tr>
 				<tr>
@@ -4335,48 +4374,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/">https://aides-agri.beta.gouv.fr/</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/sitemap.xml">https://aides-agri.beta.gouv.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Mode</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/sitemap.xml</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4408,7 +4411,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 					
 				</tr>
 				<tr>
@@ -4499,48 +4502,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/">https://aides-agri.beta.gouv.fr/</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/sitemap.xml">https://aides-agri.beta.gouv.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/sitemap.xml</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4572,7 +4539,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 					
 				</tr>
 				<tr>
@@ -4663,48 +4630,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/">https://aides-agri.beta.gouv.fr/</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/sitemap.xml">https://aides-agri.beta.gouv.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-User</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/sitemap.xml</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4736,7 +4667,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 					
 				</tr>
 				<tr>
@@ -4869,51 +4800,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?sujets=1">https://aides-agri.beta.gouv.fr/aides?sujets=1</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides">https://aides-agri.beta.gouv.fr/aides</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aides (sujets)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">csrftoken</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">csrftoken</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>cookie:csrftoken</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aides?themes=6">https://aides-agri.beta.gouv.fr/aides?themes=6</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aides (themes)</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/aides</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4986,90 +4878,90 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/etape">https://aides-agri.beta.gouv.fr/etape</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/etape</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>cookie:csrftoken</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/feedback-themes-sujets">https://aides-agri.beta.gouv.fr/feedback-themes-sujets</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/feedback-themes-sujets</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>cookie:csrftoken</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/cgu">https://aides-agri.beta.gouv.fr/pages/cgu</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
 						<td width="80%">https://aides-agri.beta.gouv.fr/pages/cgu</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">csrftoken</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">csrftoken</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>cookie:csrftoken</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite">https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">csrftoken</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">csrftoken</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>cookie:csrftoken</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/donnees-personnelles">https://aides-agri.beta.gouv.fr/pages/donnees-personnelles</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/donnees-personnelles</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5142,12 +5034,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/statistiques">https://aides-agri.beta.gouv.fr/pages/statistiques</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/resultats">https://aides-agri.beta.gouv.fr/resultats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/statistiques</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/resultats</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5181,12 +5073,51 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/donnees-personnelles">https://aides-agri.beta.gouv.fr/pages/donnees-personnelles</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/trouver-ma-commune">https://aides-agri.beta.gouv.fr/trouver-ma-commune</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/donnees-personnelles</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/trouver-ma-commune</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">csrftoken</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>cookie:csrftoken</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/trouver-mon-entreprise">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/trouver-mon-entreprise</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5314,12 +5245,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/">https://aides-agri.beta.gouv.fr/</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/etape">https://aides-agri.beta.gouv.fr/etape</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/etape</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5353,12 +5284,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/resultats">https://aides-agri.beta.gouv.fr/resultats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/ensemble-d-aides/2308-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aides-liees-a-la-crise-du-gnr</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/resultats</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5392,12 +5323,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/pages/mentions-legales">https://aides-agri.beta.gouv.fr/pages/mentions-legales</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/robots.txt">https://aides-agri.beta.gouv.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/pages/mentions-legales</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/robots.txt</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5417,15 +5348,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">max-age=60</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</div>
-							
-						</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
@@ -5724,12 +5652,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/1391-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aide-a-la-protection-des-troupeaux-contre-la-predation-du-loup-et-de-lours-appel-a-projet-2026?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/1391-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aide-a-la-protection-des-troupeaux-contre-la-predation-du-loup-et-de-lours-appel-a-projet-2026?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/2294-franceagrimer-aide-a-la-distillation-de-crise-campagne-2026?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides">https://aides-agri.beta.gouv.fr/aide/2294-franceagrimer-aide-a-la-distillation-de-crise-campagne-2026?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aide/1391-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aide-a-la-protection-des-troupeaux-contre-la-predation-du-loup-et-de-lours-appel-a-projet-2026 (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/aide/2294-franceagrimer-aide-a-la-distillation-de-crise-campagne-2026 (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5758,7 +5686,7 @@ td {
 							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
 							<br />
 						
-							<div>https://aides-agri.beta.gouv.fr/aide/1391-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-aide-a-la-protection-des-troupeaux-contre-la-predation-du-loup-et-de-lours-appel-a-projet-2026?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
+							<div>https://aides-agri.beta.gouv.fr/aide/2294-franceagrimer-aide-a-la-distillation-de-crise-campagne-2026?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides</div>
 							<br />
 						
 							<div>appears to include user input in:</div>
@@ -5770,13 +5698,13 @@ td {
 							<div>The user input found was:</div>
 							<br />
 						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
+							<div>breadcrumb_entry_point_url=/aides</div>
 							<br />
 						
 							<div>The user-controlled value was:</div>
 							<br />
 						
-							<div>/aides?themes=6</div>
+							<div>/aides</div>
 							
 						</td>
 					</tr>
@@ -5784,12 +5712,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/2312-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-prise-en-charge-exceptionnelle-de-cotisations-sociales-a-la-msa?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides">https://aides-agri.beta.gouv.fr/aide/2312-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-prise-en-charge-exceptionnelle-de-cotisations-sociales-a-la-msa?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
+						<td width="80%">https://aides-agri.beta.gouv.fr/aide/2312-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-prise-en-charge-exceptionnelle-de-cotisations-sociales-a-la-msa (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5818,7 +5746,7 @@ td {
 							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
 							<br />
 						
-							<div>https://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
+							<div>https://aides-agri.beta.gouv.fr/aide/2312-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-prise-en-charge-exceptionnelle-de-cotisations-sociales-a-la-msa?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides</div>
 							<br />
 						
 							<div>appears to include user input in:</div>
@@ -5830,13 +5758,13 @@ td {
 							<div>The user input found was:</div>
 							<br />
 						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
+							<div>breadcrumb_entry_point_url=/aides</div>
 							<br />
 						
 							<div>The user-controlled value was:</div>
 							<br />
 						
-							<div>/aides?themes=6</div>
+							<div>/aides</div>
 							
 						</td>
 					</tr>
@@ -5844,67 +5772,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/2421-agence-bio-fonds-avenir-bio-appel-a-projets-2026?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/2421-agence-bio-fonds-avenir-bio-appel-a-projets-2026?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aide/2421-agence-bio-fonds-avenir-bio-appel-a-projets-2026 (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">breadcrumb_entry_point_url</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
-							<br />
-						
-							<div>https://aides-agri.beta.gouv.fr/aide/2421-agence-bio-fonds-avenir-bio-appel-a-projets-2026?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
-							<br />
-						
-							<div>appears to include user input in:</div>
-							<br />
-						
-							<div>a(n) [a] tag [href] attribute</div>
-							<br />
-						
-							<div>The user input found was:</div>
-							<br />
-						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
-							<br />
-						
-							<div>The user-controlled value was:</div>
-							<br />
-						
-							<div>/aides?themes=6</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/697-ademe-act-programme-volontaire-francais?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/697-ademe-act-programme-volontaire-francais?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
+						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/697-ademe-act-programme-volontaire-francais?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides">https://aides-agri.beta.gouv.fr/aide/697-ademe-act-programme-volontaire-francais?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5938,7 +5806,7 @@ td {
 							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
 							<br />
 						
-							<div>https://aides-agri.beta.gouv.fr/aide/697-ademe-act-programme-volontaire-francais?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
+							<div>https://aides-agri.beta.gouv.fr/aide/697-ademe-act-programme-volontaire-francais?breadcrumb_entry_point_title=Catalogue+de+dispositifs&amp;breadcrumb_entry_point_url=%2Faides</div>
 							<br />
 						
 							<div>appears to include user input in:</div>
@@ -5950,253 +5818,13 @@ td {
 							<div>The user input found was:</div>
 							<br />
 						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
+							<div>breadcrumb_entry_point_url=/aides</div>
 							<br />
 						
 							<div>The user-controlled value was:</div>
 							<br />
 						
-							<div>/aides?themes=6</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/714-bpifrance-communaute-du-coq-vert?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/714-bpifrance-communaute-du-coq-vert?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aide/714-bpifrance-communaute-du-coq-vert (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">breadcrumb_entry_point_url</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
-							<br />
-						
-							<div>https://aides-agri.beta.gouv.fr/aide/714-bpifrance-communaute-du-coq-vert?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
-							<br />
-						
-							<div>appears to include user input in:</div>
-							<br />
-						
-							<div>a(n) [a] tag [href] attribute</div>
-							<br />
-						
-							<div>The user input found was:</div>
-							<br />
-						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
-							<br />
-						
-							<div>The user-controlled value was:</div>
-							<br />
-						
-							<div>/aides?themes=6</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/716-bpifrance-diag-eco-flux?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/716-bpifrance-diag-eco-flux?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aide/716-bpifrance-diag-eco-flux (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">breadcrumb_entry_point_url</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
-							<br />
-						
-							<div>https://aides-agri.beta.gouv.fr/aide/716-bpifrance-diag-eco-flux?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
-							<br />
-						
-							<div>appears to include user input in:</div>
-							<br />
-						
-							<div>a(n) [a] tag [href] attribute</div>
-							<br />
-						
-							<div>The user input found was:</div>
-							<br />
-						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
-							<br />
-						
-							<div>The user-controlled value was:</div>
-							<br />
-						
-							<div>/aides?themes=6</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/768-bpifrance-pret-action-climat?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/768-bpifrance-pret-action-climat?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aide/768-bpifrance-pret-action-climat (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">breadcrumb_entry_point_url</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
-							<br />
-						
-							<div>https://aides-agri.beta.gouv.fr/aide/768-bpifrance-pret-action-climat?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
-							<br />
-						
-							<div>appears to include user input in:</div>
-							<br />
-						
-							<div>a(n) [a] tag [href] attribute</div>
-							<br />
-						
-							<div>The user input found was:</div>
-							<br />
-						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
-							<br />
-						
-							<div>The user-controlled value was:</div>
-							<br />
-						
-							<div>/aides?themes=6</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://aides-agri.beta.gouv.fr/aide/782-ddfip-deductions-exceptionnelles-pour-les-vehicules-lourds-utilisant-des-energies-propres?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6">https://aides-agri.beta.gouv.fr/aide/782-ddfip-deductions-exceptionnelles-pour-les-vehicules-lourds-utilisant-des-energies-propres?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://aides-agri.beta.gouv.fr/aide/782-ddfip-deductions-exceptionnelles-pour-les-vehicules-lourds-utilisant-des-energies-propres (breadcrumb_entry_point_title,breadcrumb_entry_point_url)</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">breadcrumb_entry_point_url</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</div>
-							<br />
-						
-							<div>https://aides-agri.beta.gouv.fr/aide/782-ddfip-deductions-exceptionnelles-pour-les-vehicules-lourds-utilisant-des-energies-propres?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&amp;breadcrumb_entry_point_url=%2Faides%3Fthemes%3D6</div>
-							<br />
-						
-							<div>appears to include user input in:</div>
-							<br />
-						
-							<div>a(n) [a] tag [href] attribute</div>
-							<br />
-						
-							<div>The user input found was:</div>
-							<br />
-						
-							<div>breadcrumb_entry_point_url=/aides?themes=6</div>
-							<br />
-						
-							<div>The user-controlled value was:</div>
-							<br />
-						
-							<div>/aides?themes=6</div>
+							<div>/aides</div>
 							
 						</td>
 					</tr>
@@ -6265,7 +5893,7 @@ td {
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">12</td>
+					<td width="80%">7</td>
 					
 				</tr>
 				<tr>
