@@ -11,8 +11,23 @@
   ],
   "cookies": [
     {
+      "name": "csrftoken",
+      "value": "8j50iznhGgpKz4J89dS8j1Em0IcS15Nl",
+      "domain": "compl-alim.beta.gouv.fr",
+      "path": "/",
+      "expires": 1815274911.580693,
+      "size": 41,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
       "name": "X-Clever-Cloud-Sticky-Id",
-      "value": "rlyb5ruxsy2ftocbfr5ggq",
+      "value": "3nrrq8a-rnseuhd50zdn7a",
       "domain": "compl-alim.beta.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -23,33 +38,18 @@
       "priority": "Medium",
       "sourceScheme": "Secure",
       "sameParty": false
-    },
-    {
-      "name": "csrftoken",
-      "value": "QT79N6TTcTsHrzEnmtzAO34hlSLiyrNE",
-      "domain": "compl-alim.beta.gouv.fr",
-      "path": "/",
-      "expires": 1814672596.086637,
-      "size": 41,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "priority": "Medium",
-      "sourceScheme": "Secure",
-      "sameParty": false
     }
   ],
   "headers": {
     "connection": "keep-alive",
-    "content-length": "1175",
-    "content-security-policy": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-31TIGBhB_YM9oRdao9JH4w' *.gouv.fr; style-src 'self' 'nonce-31TIGBhB_YM9oRdao9JH4w'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
+    "content-length": "1172",
+    "content-security-policy": "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-SI6rlI0Ch3hVJLfY4FrWLQ' *.gouv.fr; style-src 'self' 'nonce-SI6rlI0Ch3hVJLfY4FrWLQ'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com",
     "content-type": "text/html; charset=utf-8",
     "cross-origin-opener-policy": "same-origin",
-    "date": "Sun, 05 Jul 2026 03:43:16 GMT",
+    "date": "Sun, 12 Jul 2026 03:01:51 GMT",
     "referrer-policy": "same-origin",
-    "set-cookie": "csrftoken=QT79N6TTcTsHrzEnmtzAO34hlSLiyrNE; expires=Sun, 04 Jul 2027 03:43:16 GMT; Max-Age=31449600; Path=/; SameSite=Lax\nX-Clever-Cloud-Sticky-Id=rlyb5ruxsy2ftocbfr5ggq; Path=/",
-    "sozu-id": "01KWR5Z2XKZX69C9N4JQEHRW3B",
+    "set-cookie": "csrftoken=8j50iznhGgpKz4J89dS8j1Em0IcS15Nl; expires=Sun, 11 Jul 2027 03:01:51 GMT; Max-Age=31449600; Path=/; SameSite=Lax\nX-Clever-Cloud-Sticky-Id=3nrrq8a-rnseuhd50zdn7a; Path=/",
+    "sozu-id": "01KXA4C9NXFTEZ27156GSQZHK7",
     "vary": "Cookie",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY"
@@ -113,7 +113,7 @@
     },
     {
       "hostname": "api.iconify.design",
-      "ip": "172.67.71.159",
+      "ip": "104.26.12.204",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
