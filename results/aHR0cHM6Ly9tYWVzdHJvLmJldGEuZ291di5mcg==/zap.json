@@ -1,17 +1,9 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 26 Jul 2026 03:16:37",
-	"created": "2026-07-26T03:16:37.494497548Z",
+	"@generated": "Tue, 28 Jul 2026 13:01:13",
+	"created": "2026-07-28T13:01:13.475684052Z",
 	"insights":[
-		{
-			"level": "Low",
-			"reason": "Warning",
-			"site": "",
-			"key": "insight.log.error",
-			"description": "ZAP errors logged - see the zap.log file for details",
-			"statistic": "1"
-		},
 		{
 			"level": "Low",
 			"reason": "Warning",
@@ -130,7 +122,7 @@
 			"site": "https://maestro.beta.gouv.fr",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "95"
+			"statistic": "100"
 		}
 	],
 	"site":[ 
@@ -151,7 +143,7 @@
 					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
 					"instances":[ 
 						{
-							"id": "114",
+							"id": "109",
 							"uri": "https://maestro.beta.gouv.fr/aides/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/",
 							"method": "GET",
@@ -161,7 +153,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"_wpcf7\" \"_wpcf7_container_post\" \"_wpcf7_locale\" \"_wpcf7_posted_data_hash\" \"_wpcf7_recaptcha_response\" \"_wpcf7_unit_tag\" \"_wpcf7_version\" \"nom\" \"prenom\" \"region\" \"your-email\" ]."
 						},
 						{
-							"id": "195",
+							"id": "194",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)",
 							"method": "GET",
@@ -181,7 +173,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"redirect_to\" \"rememberme\" \"testcookie\" \"user_login\" \"user_pass\" \"wp-submit\" ]."
 						},
 						{
-							"id": "198",
+							"id": "214",
 							"uri": "https://maestro.beta.gouv.fr/aides/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
 							"method": "POST",
@@ -191,7 +183,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"_wpcf7\" \"_wpcf7_container_post\" \"_wpcf7_locale\" \"_wpcf7_posted_data_hash\" \"_wpcf7_recaptcha_response\" \"_wpcf7_unit_tag\" \"_wpcf7_version\" \"nom\" \"prenom\" \"region\" \"your-email\" ]."
 						},
 						{
-							"id": "222",
+							"id": "203",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php ()(log,pwd,redirect_to,rememberme,testcookie,wp-submit)",
 							"method": "POST",
@@ -208,7 +200,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "74"
+					"sourceid": "70"
 				},
 				{
 					"pluginid": "10038",
@@ -221,7 +213,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "20",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -231,7 +223,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "77",
+							"id": "71",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -241,7 +233,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
+							"id": "85",
+							"uri": "https://maestro.beta.gouv.fr/actualites/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/actualites\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "63",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -251,17 +253,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "82",
-							"uri": "https://maestro.beta.gouv.fr/statistiques/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/statistiques\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "33",
+							"id": "35",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-admin/admin-ajax.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-admin\/admin-ajax.php",
 							"method": "GET",
@@ -291,7 +283,7 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "18",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -301,7 +293,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "73",
+							"id": "66",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -311,7 +303,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "96",
+							"id": "83",
 							"uri": "https://maestro.beta.gouv.fr/actualites/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/actualites\/",
 							"method": "GET",
@@ -321,7 +313,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
+							"id": "61",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -331,9 +323,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "80",
-							"uri": "https://maestro.beta.gouv.fr/statistiques/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/statistiques\/",
+							"id": "93",
+							"uri": "https://maestro.beta.gouv.fr/declaration-daccessibilite/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/declaration-daccessibilite\/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -361,7 +353,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "23",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -371,7 +363,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
+							"id": "80",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -381,7 +373,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "90",
+							"uri": "https://maestro.beta.gouv.fr/actualites/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/actualites\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://www.google.com/recaptcha/api.js?render=6LeB-dorAAAAAGcEoFLh1sBNun2uZGpgie7UqBY9&amp;ver=3.0\" id=\"google-recaptcha-js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "74",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -391,19 +393,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "116",
-							"uri": "https://maestro.beta.gouv.fr/mentions-legales/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/mentions-legales\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://www.google.com/recaptcha/api.js?render=6LeB-dorAAAAAGcEoFLh1sBNun2uZGpgie7UqBY9&amp;ver=3.0\" id=\"google-recaptcha-js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "89",
-							"uri": "https://maestro.beta.gouv.fr/statistiques/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/statistiques\/",
+							"id": "107",
+							"uri": "https://maestro.beta.gouv.fr/declaration-daccessibilite/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/declaration-daccessibilite\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -431,7 +423,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "224",
+							"id": "215",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php",
 							"method": "GET",
@@ -441,7 +433,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "191",
+							"id": "190",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)",
 							"method": "GET",
@@ -461,7 +453,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "218",
+							"id": "199",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php ()(log,pwd,redirect_to,rememberme,testcookie,wp-submit)",
 							"method": "POST",
@@ -471,7 +463,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "230",
+							"id": "221",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)(redirect_to,user_login,wp-submit)",
 							"method": "POST",
@@ -488,7 +480,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "209"
+					"sourceid": "220"
 				},
 				{
 					"pluginid": "10054",
@@ -501,7 +493,7 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"id": "226",
+							"id": "217",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php",
 							"method": "GET",
@@ -511,7 +503,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "193",
+							"id": "192",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)",
 							"method": "GET",
@@ -531,7 +523,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "220",
+							"id": "201",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php ()(log,pwd,redirect_to,rememberme,testcookie,wp-submit)",
 							"method": "POST",
@@ -541,7 +533,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "232",
+							"id": "223",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)(redirect_to,user_login,wp-submit)",
 							"method": "POST",
@@ -558,7 +550,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "209"
+					"sourceid": "220"
 				},
 				{
 					"pluginid": "10017",
@@ -571,7 +563,7 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "13",
+							"id": "21",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -581,7 +573,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "78",
+							"id": "72",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -591,7 +583,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "103",
+							"id": "86",
 							"uri": "https://maestro.beta.gouv.fr/actualites/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/actualites\/",
 							"method": "GET",
@@ -601,7 +593,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "53",
+							"id": "64",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -611,9 +603,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "83",
-							"uri": "https://maestro.beta.gouv.fr/statistiques/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/statistiques\/",
+							"id": "98",
+							"uri": "https://maestro.beta.gouv.fr/declaration-daccessibilite/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/declaration-daccessibilite\/",
 							"method": "GET",
 							"param": "https://www.google.com/recaptcha/api.js?render=6LeB-dorAAAAAGcEoFLh1sBNun2uZGpgie7UqBY9&ver=3.0",
 							"attack": "",
@@ -641,7 +633,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "3",
+							"id": "11",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -651,7 +643,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "64",
+							"id": "58",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -661,7 +653,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "43",
+							"id": "51",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -691,7 +683,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "12",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -701,7 +693,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "59",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -711,7 +703,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "44",
+							"id": "52",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -741,7 +733,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "10",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -751,7 +743,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "63",
+							"id": "57",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -761,7 +753,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
+							"id": "50",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -771,7 +763,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "19",
+							"id": "1",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -781,7 +773,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "55",
+							"id": "33",
 							"uri": "https://maestro.beta.gouv.fr/sitemap_index.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap_index.xml",
 							"method": "GET",
@@ -821,7 +813,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "189",
+							"id": "197",
 							"uri": "https://maestro.beta.gouv.fr/app/themes/uncode/library/js/plugins.min.js",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/app\/themes\/uncode\/library\/js\/plugins.min.js",
 							"method": "GET",
@@ -838,7 +830,7 @@
 					"reference": "<p>https://v17.angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "126"
+					"sourceid": "128"
 				},
 				{
 					"pluginid": "10063",
@@ -851,7 +843,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "9",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -861,7 +853,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
+							"id": "56",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -871,7 +863,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
+							"id": "77",
+							"uri": "https://maestro.beta.gouv.fr/actualites/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/actualites\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "49",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -881,17 +883,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
-							"uri": "https://maestro.beta.gouv.fr/statistiques/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/statistiques\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "32",
+							"id": "31",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-admin/admin-ajax.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-admin\/admin-ajax.php",
 							"method": "GET",
@@ -921,7 +913,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "129",
+							"id": "120",
 							"uri": "https://maestro.beta.gouv.fr/aides/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/",
 							"method": "GET",
@@ -938,7 +930,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "74"
+					"sourceid": "70"
 				},
 				{
 					"pluginid": "10021",
@@ -951,7 +943,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "16",
+							"id": "24",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -961,7 +953,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "87",
+							"id": "82",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -971,7 +963,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "69",
+							"id": "78",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -981,7 +973,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "29",
+							"id": "7",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -991,7 +983,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "57",
+							"id": "42",
 							"uri": "https://maestro.beta.gouv.fr/sitemap_index.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap_index.xml",
 							"method": "GET",
@@ -1021,7 +1013,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "13",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1031,7 +1023,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "72",
+							"id": "65",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -1041,7 +1033,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "95",
+							"id": "81",
 							"uri": "https://maestro.beta.gouv.fr/actualites/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/actualites\/",
 							"method": "GET",
@@ -1051,7 +1043,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "104",
+							"id": "99",
 							"uri": "https://maestro.beta.gouv.fr/aides/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/",
 							"method": "GET",
@@ -1061,7 +1053,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "46",
+							"id": "60",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -1071,7 +1063,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "97",
+							"id": "92",
 							"uri": "https://maestro.beta.gouv.fr/declaration-daccessibilite/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/declaration-daccessibilite\/",
 							"method": "GET",
@@ -1081,7 +1073,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "128",
+							"id": "160",
 							"uri": "https://maestro.beta.gouv.fr/feed/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/feed\/",
 							"method": "GET",
@@ -1091,7 +1083,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06EF\uFFFD\uFFFD\uD861\uDE9A\u079D\uFFFD\uFFFD\uFFFDW\uFFFD\uFFFD\uFFFD\\x000b\uFFFD"
 						},
 						{
-							"id": "99",
+							"id": "141",
 							"uri": "https://maestro.beta.gouv.fr/mentions-legales/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/mentions-legales\/",
 							"method": "GET",
@@ -1101,7 +1093,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "159",
+							"id": "158",
 							"uri": "https://maestro.beta.gouv.fr/politique-de-confidentialite/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/politique-de-confidentialite\/",
 							"method": "GET",
@@ -1111,7 +1103,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "79",
+							"id": "101",
 							"uri": "https://maestro.beta.gouv.fr/statistiques/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/statistiques\/",
 							"method": "GET",
@@ -1121,7 +1113,7 @@
 							"otherinfo": "rZ.w\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u06DF\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\\x001a\uFFFD\uFFFD"
 						},
 						{
-							"id": "163",
+							"id": "135",
 							"uri": "https://maestro.beta.gouv.fr/suivez-le-guide/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/suivez-le-guide\/",
 							"method": "GET",
@@ -1151,7 +1143,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "22",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1161,7 +1153,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "85",
+							"id": "79",
 							"uri": "https://maestro.beta.gouv.fr/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/",
 							"method": "GET",
@@ -1171,19 +1163,9 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "66",
-							"uri": "https://maestro.beta.gouv.fr/articles/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a tabindex=\"-1\" href=\"https://maestro.beta.gouv.fr/comprendre-les-pspc/\" class=\"pushed\" target=\"_self\" data-lb-index=\"0\"><div class=\"t-entry-visual-overlay\"><div class=\"t-entry-visual-overlay-in style-color-wayh-bg\" style=\"opacity: 0.5;\"></div></div><img decoding=\"async\" class=\"adaptive-async wp-image-1126\" src=\"https://maestro-wordpress.s3.fr-par.scw.cloud/uploads/2026/07/Comprendre-les-PSPC-DGAL-e1783954430200-uai-258x193.jpg\" width=\"258\" height=\"193\" alt=\"\" data-uniqueid=\"1126-154022\" data-guid=\"https://maestro-wordpress.s3.fr-par.scw.cloud/uploads/2026/07/Comprendre-les-PSPC-DGAL-e1783954430200.jpg\" data-path=\"2026/07/Comprendre-les-PSPC-DGAL-e1783954430200.jpg\" data-width=\"2000\" data-height=\"1296\" data-singlew=\"3\" data-singleh=\"2.25\" data-crop=\"1\" /></a>",
-							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
-						},
-						{
-							"id": "115",
-							"uri": "https://maestro.beta.gouv.fr/mentions-legales/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/mentions-legales\/",
+							"id": "89",
+							"uri": "https://maestro.beta.gouv.fr/actualites/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/actualites\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1191,9 +1173,19 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "88",
-							"uri": "https://maestro.beta.gouv.fr/statistiques/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/statistiques\/",
+							"id": "73",
+							"uri": "https://maestro.beta.gouv.fr/articles/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a tabindex=\"-1\" href=\"https://maestro.beta.gouv.fr/comprendre-les-pspc/\" class=\"pushed\" target=\"_self\" data-lb-index=\"0\"><div class=\"t-entry-visual-overlay\"><div class=\"t-entry-visual-overlay-in style-color-wayh-bg\" style=\"opacity: 0.5;\"></div></div><img decoding=\"async\" class=\"adaptive-async wp-image-1126\" src=\"https://maestro-wordpress.s3.fr-par.scw.cloud/uploads/2026/07/Comprendre-les-PSPC-DGAL-e1783954430200-uai-258x193.jpg\" width=\"258\" height=\"193\" alt=\"\" data-uniqueid=\"1126-540094\" data-guid=\"https://maestro-wordpress.s3.fr-par.scw.cloud/uploads/2026/07/Comprendre-les-PSPC-DGAL-e1783954430200.jpg\" data-path=\"2026/07/Comprendre-les-PSPC-DGAL-e1783954430200.jpg\" data-width=\"2000\" data-height=\"1296\" data-singlew=\"3\" data-singleh=\"2.25\" data-crop=\"1\" /></a>",
+							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
+						},
+						{
+							"id": "103",
+							"uri": "https://maestro.beta.gouv.fr/declaration-daccessibilite/",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/declaration-daccessibilite\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1221,7 +1213,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "19",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1231,7 +1223,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "51",
+							"id": "62",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -1241,7 +1233,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
+							"id": "6",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1251,7 +1243,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "56",
+							"id": "40",
 							"uri": "https://maestro.beta.gouv.fr/sitemap_index.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap_index.xml",
 							"method": "GET",
@@ -1261,7 +1253,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
+							"id": "46",
 							"uri": "https://maestro.beta.gouv.fr/wp-json/wp/v2/pages/7",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp-json\/wp\/v2\/pages\/7",
 							"method": "GET",
@@ -1291,7 +1283,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "16",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1301,7 +1293,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "25",
+							"id": "4",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1311,7 +1303,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "28",
 							"uri": "https://maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1341,7 +1333,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "15",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1351,7 +1343,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "3",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1361,7 +1353,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
+							"id": "27",
 							"uri": "https://maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1391,7 +1383,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "14",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1401,7 +1393,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
+							"id": "2",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1411,7 +1403,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "20",
+							"id": "26",
 							"uri": "https://maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1441,7 +1433,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "17",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1451,7 +1443,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "27",
+							"id": "5",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1461,7 +1453,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
+							"id": "29",
 							"uri": "https://maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1491,7 +1483,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "223",
+							"id": "213",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php",
 							"method": "GET",
@@ -1501,7 +1493,7 @@
 							"otherinfo": "cookie:wordpress_test_cookie"
 						},
 						{
-							"id": "190",
+							"id": "189",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)",
 							"method": "GET",
@@ -1521,7 +1513,7 @@
 							"otherinfo": "cookie:wordpress_test_cookie"
 						},
 						{
-							"id": "217",
+							"id": "198",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php ()(log,pwd,redirect_to,rememberme,testcookie,wp-submit)",
 							"method": "POST",
@@ -1531,7 +1523,7 @@
 							"otherinfo": "cookie:wordpress_test_cookie"
 						},
 						{
-							"id": "229",
+							"id": "220",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)(redirect_to,user_login,wp-submit)",
 							"method": "POST",
@@ -1548,7 +1540,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "209"
+					"sourceid": "220"
 				},
 				{
 					"pluginid": "10049",
@@ -1561,7 +1553,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "0",
+							"id": "8",
 							"uri": "https://maestro.beta.gouv.fr",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr",
 							"method": "GET",
@@ -1571,7 +1563,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "40",
+							"id": "48",
 							"uri": "https://maestro.beta.gouv.fr/articles/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/articles\/",
 							"method": "GET",
@@ -1581,7 +1573,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "17",
+							"id": "0",
 							"uri": "https://maestro.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1591,9 +1583,9 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "50",
-							"uri": "https://maestro.beta.gouv.fr/wp-json/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp-json\/",
+							"id": "32",
+							"uri": "https://maestro.beta.gouv.fr/sitemap_index.xml",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap_index.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1601,7 +1593,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "34",
+							"id": "43",
 							"uri": "https://maestro.beta.gouv.fr/wp-json/wp/v2/pages/7",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp-json\/wp\/v2\/pages\/7",
 							"method": "GET",
@@ -1631,7 +1623,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "18",
+							"id": "25",
 							"uri": "https://maestro.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1641,7 +1633,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "34",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-admin/",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-admin\/",
 							"method": "GET",
@@ -1651,7 +1643,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "30",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-admin/admin-ajax.php",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-admin\/admin-ajax.php",
 							"method": "GET",
@@ -1668,7 +1660,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10031",
@@ -1681,7 +1673,7 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"id": "196",
+							"id": "195",
 							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword",
 							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php (action)",
 							"method": "GET",
@@ -1701,104 +1693,44 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/wp/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fmaestro.beta.gouv.fr%2Fwp%2Fwp-admin%2F\n\nappears to include user input in:\na(n) [link] tag [href] attribute\n\nThe user input found was:\nredirect_to=https://maestro.beta.gouv.fr/wp/wp-admin/\n\nThe user-controlled value was:\nhttps://maestro.beta.gouv.fr/wp/wp-admin/css/forms.min.css?ver=6.6.1"
 						},
 						{
-							"id": "201",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
+							"id": "204",
+							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php ()(log,pwd,redirect_to,rememberme,testcookie,wp-submit)",
 							"method": "POST",
-							"param": "_wpcf7",
+							"param": "redirect_to",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [div] tag [data-wpcf7-id] attribute\n\nThe user input found was:\n_wpcf7=102\n\nThe user-controlled value was:\n102"
-						},
-						{
-							"id": "206",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
-							"method": "POST",
-							"param": "_wpcf7_container_post",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\n_wpcf7_container_post=116\n\nThe user-controlled value was:\n116"
-						},
-						{
-							"id": "199",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
-							"method": "POST",
-							"param": "_wpcf7_locale",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\n_wpcf7_locale=en_US\n\nThe user-controlled value was:\nen_us"
-						},
-						{
-							"id": "200",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
-							"method": "POST",
-							"param": "_wpcf7_unit_tag",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [div] tag [id] attribute\n\nThe user input found was:\n_wpcf7_unit_tag=wpcf7-f102-p116-o1\n\nThe user-controlled value was:\nwpcf7-f102-p116-o1"
-						},
-						{
-							"id": "203",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
-							"method": "POST",
-							"param": "_wpcf7_version",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\n_wpcf7_version=6.0.3\n\nThe user-controlled value was:\n6.0.3"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/wp/wp-login.php\n\nappears to include user input in:\na(n) [link] tag [href] attribute\n\nThe user input found was:\nredirect_to=https://maestro.beta.gouv.fr/wp/wp-admin/\n\nThe user-controlled value was:\nhttps://maestro.beta.gouv.fr/wp/wp-admin/css/forms.min.css?ver=6.6.1"
 						},
 						{
 							"id": "207",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
+							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php ()(log,pwd,redirect_to,rememberme,testcookie,wp-submit)",
 							"method": "POST",
-							"param": "nom",
+							"param": "rememberme",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nnom=ZAP\n\nThe user-controlled value was:\nzap"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/wp/wp-login.php\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nrememberme=forever\n\nThe user-controlled value was:\nforever"
 						},
 						{
 							"id": "208",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
+							"uri": "https://maestro.beta.gouv.fr/wp/wp-login.php",
+							"nodeName": "https:\/\/maestro.beta.gouv.fr\/wp\/wp-login.php ()(log,pwd,redirect_to,rememberme,testcookie,wp-submit)",
 							"method": "POST",
-							"param": "prenom",
+							"param": "wp-submit",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nprenom=ZAP\n\nThe user-controlled value was:\nzap"
-						},
-						{
-							"id": "209",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
-							"method": "POST",
-							"param": "region",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nregion=ZAP\n\nThe user-controlled value was:\nzap"
-						},
-						{
-							"id": "216",
-							"uri": "https://maestro.beta.gouv.fr/aides/",
-							"nodeName": "https:\/\/maestro.beta.gouv.fr\/aides\/ ()(_wpcf7,_wpcf7_container_post,_wpcf7_locale,_wpcf7_posted_data_hash,_wpcf7_recaptcha_response,_wpcf7_unit_tag,_wpcf7_version,nom,prenom,region,your-email,your-message)",
-							"method": "POST",
-							"param": "your-email",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/aides/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nyour-email=foo-bar@example.com\n\nThe user-controlled value was:\nfoo-bar@example.com"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://maestro.beta.gouv.fr/wp/wp-login.php\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nwp-submit=Log In\n\nThe user-controlled value was:\nlog in"
 						}
 					],
-					"count": "11",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://maestro.beta.gouv.fr/wp/wp-login.php?action=lostpassword</p><p></p><p>appears to include user input in:</p><p>a(n) [form] tag [name] attribute</p><p></p><p>The user input found was:</p><p>action=lostpassword</p><p></p><p>The user-controlled value was:</p><p>lostpasswordform</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "187"
+					"sourceid": "189"
 				}
 			]
 		}
