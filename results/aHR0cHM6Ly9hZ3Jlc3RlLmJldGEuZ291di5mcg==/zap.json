@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Tue, 28 Jul 2026 13:32:15",
-	"created": "2026-07-28T13:32:15.996270427Z",
+	"@generated": "Sun, 2 Aug 2026 03:30:27",
+	"created": "2026-08-02T03:30:27.129230069Z",
 	"insights":[
 		{
 			"level": "Low",
@@ -114,7 +114,7 @@
 			"site": "https://agreste.beta.gouv.fr",
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
-			"statistic": "299"
+			"statistic": "297"
 		},
 		{
 			"level": "Info",
@@ -122,7 +122,7 @@
 			"site": "https://agreste.beta.gouv.fr",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "97"
+			"statistic": "96"
 		}
 	],
 	"site":[ 
@@ -143,7 +143,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "31",
+							"id": "35",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -153,7 +153,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "40",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -163,17 +163,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "80",
-							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "83",
+							"id": "90",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/culture-et-productions-vegetales/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/culture-et-productions-vegetales\/",
 							"method": "GET",
@@ -183,7 +173,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "71",
+							"id": "86",
+							"uri": "https://agreste.beta.gouv.fr/thematiques/elevage-et-productions-animales/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/elevage-et-productions-animales\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "78",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -213,37 +213,37 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "48",
-							"uri": "https://agreste.beta.gouv.fr",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script async src=\"https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "50",
-							"uri": "https://agreste.beta.gouv.fr",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "51",
-							"uri": "https://agreste.beta.gouv.fr/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script async src=\"https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"id": "53",
+							"uri": "https://agreste.beta.gouv.fr",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "57",
+							"uri": "https://agreste.beta.gouv.fr",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "52",
+							"uri": "https://agreste.beta.gouv.fr/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "55",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -253,7 +253,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "83",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -270,7 +270,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10017",
@@ -283,7 +283,7 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "33",
+							"id": "37",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -293,23 +293,13 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
+							"id": "36",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
 							"param": "https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js",
 							"attack": "",
 							"evidence": "<script async src=\"https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "43",
-							"uri": "https://agreste.beta.gouv.fr/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "https://cdn.jsdelivr.net/npm/chart.js",
-							"attack": "",
-							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -317,13 +307,23 @@
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/chart.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "41",
+							"uri": "https://agreste.beta.gouv.fr/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
+							"method": "GET",
 							"param": "https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js",
 							"attack": "",
 							"evidence": "<script async src=\"https://stats.sites.beta.gouv.fr/js/pa-JXzXK4sks8u6-XKsy7WB0.js\"></script>",
 							"otherinfo": ""
 						},
 						{
-							"id": "72",
+							"id": "79",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -353,7 +353,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "9",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -363,7 +363,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
+							"id": "18",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -373,17 +373,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
-							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "68",
+							"id": "66",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/culture-et-productions-vegetales/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/culture-et-productions-vegetales\/",
 							"method": "GET",
@@ -393,7 +383,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "72",
+							"uri": "https://agreste.beta.gouv.fr/thematiques/elevage-et-productions-animales/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/elevage-et-productions-animales\/",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "70",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -410,7 +410,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90004",
@@ -423,7 +423,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "6",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -433,7 +433,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "15",
+							"id": "17",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -443,7 +443,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "3",
+							"id": "1",
 							"uri": "https://agreste.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -453,9 +453,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "64",
-							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
+							"id": "65",
+							"uri": "https://agreste.beta.gouv.fr/thematiques/culture-et-productions-vegetales/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/culture-et-productions-vegetales\/",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -463,7 +463,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
+							"id": "67",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -480,7 +480,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10063",
@@ -493,7 +493,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "5",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -503,7 +503,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "13",
+							"id": "15",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -513,17 +513,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
-							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "66",
+							"id": "64",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/culture-et-productions-vegetales/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/culture-et-productions-vegetales\/",
 							"method": "GET",
@@ -533,7 +523,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "69",
+							"uri": "https://agreste.beta.gouv.fr/thematiques/elevage-et-productions-animales/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/elevage-et-productions-animales\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "63",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -563,7 +563,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "125",
+							"id": "129",
 							"uri": "https://agreste.beta.gouv.fr/static/css/dsfr-django-overrides.css",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/static\/css\/dsfr-django-overrides.css",
 							"method": "GET",
@@ -573,7 +573,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "121",
+							"id": "125",
 							"uri": "https://agreste.beta.gouv.fr/static/dsfr/dist/favicon/apple-touch-icon.png",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/apple-touch-icon.png",
 							"method": "GET",
@@ -583,7 +583,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "123",
+							"id": "127",
 							"uri": "https://agreste.beta.gouv.fr/static/dsfr/dist/favicon/favicon.ico",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/favicon.ico",
 							"method": "GET",
@@ -593,7 +593,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "122",
+							"id": "126",
 							"uri": "https://agreste.beta.gouv.fr/static/dsfr/dist/favicon/favicon.svg",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/favicon.svg",
 							"method": "GET",
@@ -603,7 +603,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "124",
+							"id": "128",
 							"uri": "https://agreste.beta.gouv.fr/static/dsfr/dist/favicon/manifest.webmanifest",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/manifest.webmanifest",
 							"method": "GET",
@@ -620,7 +620,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "592"
+					"sourceid": "590"
 				},
 				{
 					"pluginid": "10094",
@@ -653,17 +653,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "113",
-							"uri": "https://agreste.beta.gouv.fr/collections/chiffres-et-donnees/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/collections\/chiffres-et-donnees\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/js/pa-JXzXK4sks8u6-XKsy7WB0",
-							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
-						},
-						{
-							"id": "110",
+							"id": "109",
 							"uri": "https://agreste.beta.gouv.fr/collections/graphagri/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/collections\/graphagri\/",
 							"method": "GET",
@@ -673,7 +663,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "117",
+							"id": "119",
 							"uri": "https://agreste.beta.gouv.fr/collections/memento/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/collections\/memento\/",
 							"method": "GET",
@@ -683,7 +673,17 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "74",
+							"id": "118",
+							"uri": "https://agreste.beta.gouv.fr/collections/primeur/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/collections\/primeur\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/js/pa-JXzXK4sks8u6-XKsy7WB0",
+							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
+						},
+						{
+							"id": "81",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
 							"method": "GET",
@@ -693,7 +693,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "76",
+							"id": "80",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/culture-et-productions-vegetales/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/culture-et-productions-vegetales\/",
 							"method": "GET",
@@ -703,7 +703,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "100",
+							"id": "99",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/economie-agricole-et-prix/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/economie-agricole-et-prix\/",
 							"method": "GET",
@@ -713,7 +713,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "85",
+							"id": "76",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/elevage-et-productions-animales/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/elevage-et-productions-animales\/",
 							"method": "GET",
@@ -723,7 +723,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "69",
+							"id": "74",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -733,7 +733,7 @@
 							"otherinfo": "~\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\\uFFFD,\uFFFD\uFFFD.\uFFFD\uFFFD\u02B3.\uFFFD\\x0007"
 						},
 						{
-							"id": "99",
+							"id": "110",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/exploitations-et-population-agricole/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/exploitations-et-population-agricole\/",
 							"method": "GET",
@@ -763,7 +763,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "45",
+							"id": "49",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -773,7 +773,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "46",
+							"id": "51",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -783,17 +783,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "86",
-							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"fr-nav__link\" href=\"#\" target=\"_self\">Collections</a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"id": "87",
+							"id": "96",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/culture-et-productions-vegetales/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/culture-et-productions-vegetales\/",
 							"method": "GET",
@@ -803,7 +793,17 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "73",
+							"id": "94",
+							"uri": "https://agreste.beta.gouv.fr/thematiques/elevage-et-productions-animales/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/elevage-et-productions-animales\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"fr-nav__link\" href=\"#\" target=\"_self\">Collections</a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "82",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -820,7 +820,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -833,7 +833,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "30",
+							"id": "34",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -843,7 +843,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "36",
+							"id": "39",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -853,7 +853,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
+							"id": "13",
 							"uri": "https://agreste.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -863,9 +863,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "79",
-							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
+							"id": "84",
+							"uri": "https://agreste.beta.gouv.fr/thematiques/elevage-et-productions-animales/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/elevage-et-productions-animales\/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -873,7 +873,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "77",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -913,7 +913,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "14",
+							"id": "32",
+							"uri": "https://agreste.beta.gouv.fr/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "7",
 							"uri": "https://agreste.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -923,7 +933,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
@@ -953,7 +963,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "12",
+							"id": "31",
+							"uri": "https://agreste.beta.gouv.fr/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "4",
 							"uri": "https://agreste.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -963,7 +983,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
@@ -993,7 +1013,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "9",
+							"id": "30",
+							"uri": "https://agreste.beta.gouv.fr/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "3",
 							"uri": "https://agreste.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1003,7 +1033,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1033,7 +1063,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "33",
+							"uri": "https://agreste.beta.gouv.fr/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "8",
 							"uri": "https://agreste.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1043,7 +1083,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
@@ -1063,7 +1103,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "2",
 							"uri": "https://agreste.beta.gouv.fr",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr",
 							"method": "GET",
@@ -1073,7 +1113,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "11",
+							"id": "12",
 							"uri": "https://agreste.beta.gouv.fr/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/",
 							"method": "GET",
@@ -1094,8 +1134,8 @@
 						},
 						{
 							"id": "61",
-							"uri": "https://agreste.beta.gouv.fr/thematiques/alimentaire-et-agro-alimentaire/",
-							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/alimentaire-et-agro-alimentaire\/",
+							"uri": "https://agreste.beta.gouv.fr/thematiques/culture-et-productions-vegetales/",
+							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/culture-et-productions-vegetales\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1103,7 +1143,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "57",
+							"id": "62",
 							"uri": "https://agreste.beta.gouv.fr/thematiques/environnement-et-ressources-naturelles/",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/thematiques\/environnement-et-ressources-naturelles\/",
 							"method": "GET",
@@ -1133,7 +1173,7 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"id": "133",
+							"id": "137",
 							"uri": "https://agreste.beta.gouv.fr/publications/?category=graphagri&page=1",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/publications\/ (category,page)",
 							"method": "GET",
@@ -1143,7 +1183,7 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://agreste.beta.gouv.fr/publications/?category=graphagri&page=1\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\npage=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1, shrink-to-fit=no"
 						},
 						{
-							"id": "131",
+							"id": "135",
 							"uri": "https://agreste.beta.gouv.fr/publications/?page=1",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/publications\/ (page)",
 							"method": "GET",
@@ -1153,7 +1193,7 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://agreste.beta.gouv.fr/publications/?page=1\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\npage=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1, shrink-to-fit=no"
 						},
 						{
-							"id": "135",
+							"id": "139",
 							"uri": "https://agreste.beta.gouv.fr/publications/?page=1&theme=grandes-cultures",
 							"nodeName": "https:\/\/agreste.beta.gouv.fr\/publications\/ (page,theme)",
 							"method": "GET",
@@ -1170,7 +1210,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "10340"
+					"sourceid": "10335"
 				}
 			]
 		}
