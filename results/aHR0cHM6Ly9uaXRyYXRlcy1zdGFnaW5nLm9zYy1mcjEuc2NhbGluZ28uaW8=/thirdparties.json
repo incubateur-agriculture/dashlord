@@ -2,6 +2,10 @@
   "trackers": [
     {
       "type": "unknown",
+      "url": "https://browser.sentry-cdn.com/10.11.0/bundle.tracing.replay.min.js"
+    },
+    {
+      "type": "unknown",
       "url": "https://data.geopf.fr/wmts?&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE=normal&TILEMATRIXSET=PM&FORMAT=image/jpeg&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILEMATRIX=8&TILEROW=87&TILECOL=130"
     },
     {
@@ -99,11 +103,41 @@
   ],
   "cookies": [
     {
-      "name": "visitorid",
-      "value": "cc991560-b971-434e-8889-c6de611384c2",
+      "name": "_pk_ses.276.5a1b",
+      "value": "1",
       "domain": "nitrates-staging.osc-fr1.scalingo.io",
       "path": "/",
-      "expires": 1819338106.012615,
+      "expires": 1786244960,
+      "size": 17,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
+      "name": "_pk_id.276.5a1b",
+      "value": "016dff9249635f86.1786243160.",
+      "domain": "nitrates-staging.osc-fr1.scalingo.io",
+      "path": "/",
+      "expires": 1820198360,
+      "size": 43,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
+      "name": "visitorid",
+      "value": "48318cce-adbf-4289-a534-284906ce7fa3",
+      "domain": "nitrates-staging.osc-fr1.scalingo.io",
+      "path": "/",
+      "expires": 1819939159.607152,
       "size": 45,
       "httpOnly": false,
       "secure": true,
@@ -115,10 +149,10 @@
     },
     {
       "name": "csrftoken",
-      "value": "U6y42X0kaii13Eu4GkR1lp25jmCpcKF7",
+      "value": "hrfBUzaqhaIRtIaFLtj0c2oxAMz6Nsk7",
       "domain": "nitrates-staging.osc-fr1.scalingo.io",
       "path": "/",
-      "expires": 1817091705.172565,
+      "expires": 1817692757.662389,
       "size": 41,
       "httpOnly": true,
       "secure": true,
@@ -134,19 +168,19 @@
     "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.crisp.chat https://sentry.incubateur.net https://browser.sentry-cdn.com https://*.data.gouv.fr https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://*.data.gouv.fr https://geo.api.gouv.fr https://*.beta.gouv.fr https://sentry.incubateur.net https://*.crisp.chat wss://*.crisp.chat; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' https://data.geopf.fr https://*.s3.fr-par.scw.cloud data: https://*.crisp.chat https://static.demarches-simplifiees.fr; font-src 'self' https://*.crisp.chat; media-src 'self' https://*.s3.fr-par.scw.cloud https://*.crisp.chat; frame-src 'self' https://*.crisp.chat https://*.data.gouv.fr https://*.beta.gouv.fr; worker-src 'self' blob: https://*.crisp.chat; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
     "content-type": "text/html; charset=utf-8",
     "cross-origin-opener-policy": "same-origin",
-    "date": "Sun, 02 Aug 2026 03:41:45 GMT",
+    "date": "Sun, 09 Aug 2026 02:39:17 GMT",
     "referrer-policy": "same-origin",
-    "set-cookie": "visitorid=cc991560-b971-434e-8889-c6de611384c2; expires=Fri, 27 Aug 2027 03:41:45 GMT; Max-Age=33696000; Path=/; SameSite=Lax; Secure\ncsrftoken=U6y42X0kaii13Eu4GkR1lp25jmCpcKF7; expires=Sun, 01 Aug 2027 03:41:45 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure",
+    "set-cookie": "visitorid=48318cce-adbf-4289-a534-284906ce7fa3; expires=Fri, 03 Sep 2027 02:39:17 GMT; Max-Age=33696000; Path=/; SameSite=Lax; Secure\ncsrftoken=hrfBUzaqhaIRtIaFLtj0c2oxAMz6Nsk7; expires=Sun, 08 Aug 2027 02:39:17 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure",
     "strict-transport-security": "max-age=60; includeSubDomains; preload",
     "vary": "Cookie",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-request-id": "87682d60-6e12-4035-a6a4-9514fee51137"
+    "x-request-id": "a2a4e13d-a04c-4e1f-ad07-5c8878c6a0c9"
   },
   "endpoints": [
     {
       "hostname": "nitrates-staging.osc-fr1.scalingo.io",
-      "ip": "148.253.75.120",
+      "ip": "109.232.233.130",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -196,6 +230,60 @@
             "pt-BR": "França",
             "ru": "Франция",
             "zh-CN": "法国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "browser.sentry-cdn.com",
+      "ip": "151.101.130.217",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
           }
         }
       }
