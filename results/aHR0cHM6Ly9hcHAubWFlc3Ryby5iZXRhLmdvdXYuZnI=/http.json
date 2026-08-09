@@ -9,12 +9,12 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 02 Aug 2026 03:11:05 GMT",
+      "date": "Sun, 09 Aug 2026 02:06:27 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "7f295dd8-eb7c-4726-ba16-f682b649aec8",
-      "content-security-policy": "default-src 'none';script-src 'self' https://stats.beta.gouv.fr;frame-src;style-src 'self' 'unsafe-inline';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;font-src 'self' data:;object-src 'self';media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://sentry.incubateur.net https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests",
+      "x-request-id": "7032e7d8-64b8-469d-b0c3-39811468e3d2",
+      "content-security-policy": "default-src 'none';base-uri 'self';font-src 'self' data:;form-action 'self';frame-ancestors 'self';img-src 'self' https://stats.beta.gouv.fr https://jedonnemonavis.numerique.gouv.fr https://s3.fr-par.scw.cloud data:;object-src 'self';script-src 'self' https://stats.beta.gouv.fr;script-src-attr 'none';style-src 'self' 'unsafe-inline';upgrade-insecure-requests;frame-src;media-src 'self';connect-src 'self' https://stats.beta.gouv.fr https://sentry.incubateur.net https://openmaptiles.data.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://api.maptiler.com https://s3.fr-par.scw.cloud;worker-src 'self' blob:;manifest-src 'self'",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
@@ -29,11 +29,11 @@
       "vary": "Origin",
       "access-control-allow-credentials": "true",
       "x-ratelimit-limit": "10000",
-      "x-ratelimit-remaining": "9840",
-      "x-ratelimit-reset": "1785640357",
+      "x-ratelimit-remaining": "9842",
+      "x-ratelimit-reset": "1786241294",
       "cache-control": "public, max-age=0",
-      "last-modified": "Mon, 27 Jul 2026 12:09:56 GMT",
-      "etag": "W/\"985-19fa37b5220\""
+      "last-modified": "Wed, 05 Aug 2026 08:32:20 GMT",
+      "etag": "W/\"985-19fd10d5620\""
     }
   },
   "tests": {
@@ -46,16 +46,18 @@
         "default-src": [
           "'none'"
         ],
-        "script-src": [
-          "'self'",
-          "https://stats.beta.gouv.fr"
+        "base-uri": [
+          "'self'"
         ],
-        "frame-src": [
-          "'none'"
-        ],
-        "style-src": [
+        "font-src": [
           "'self'",
-          "'unsafe-inline'"
+          "data:"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
         ],
         "img-src": [
           "'self'",
@@ -64,12 +66,25 @@
           "https://s3.fr-par.scw.cloud",
           "https://stats.beta.gouv.fr"
         ],
-        "font-src": [
-          "'self'",
-          "data:"
-        ],
         "object-src": [
           "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "https://stats.beta.gouv.fr"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'none'"
         ],
         "media-src": [
           "'self'"
@@ -90,21 +105,6 @@
         ],
         "manifest-src": [
           "'self'"
-        ],
-        "base-uri": [
-          "'self'"
-        ],
-        "form-action": [
-          "'self'"
-        ],
-        "frame-ancestors": [
-          "'self'"
-        ],
-        "script-src-attr": [
-          "'none'"
-        ],
-        "upgrade-insecure-requests": [
-          "'none'"
         ]
       },
       "http": true,
