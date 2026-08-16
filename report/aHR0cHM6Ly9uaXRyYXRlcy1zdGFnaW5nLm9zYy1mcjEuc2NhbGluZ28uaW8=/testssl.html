@@ -19,13 +19,13 @@
 <span style="font-weight:bold;">#####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad (Mar 28 2025)</i>  [~183 ciphers]
-  on runnervmvrwv9:/home/testssl/bin/openssl.Linux.x86_64
+  on runnervmzvulz:/home/testssl/bin/openssl.Linux.x86_64
 
 <span style="font-weight:bold;">Testing all IP addresses (port 443): </span>5.104.101.30 109.232.233.130 109.232.236.90 148.253.75.120
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-08-09 02:39:46        --&gt;&gt; 5.104.101.30:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-08-16 02:12:29        --&gt;&gt; 5.104.101.30:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
- Further IP addresses:   109.232.233.130 148.253.75.120 109.232.236.90 
+ Further IP addresses:   109.232.233.130 109.232.236.90 148.253.75.120 
  rDNS (5.104.101.30):    ows-5-104-101-30.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
@@ -89,7 +89,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;renegotiation info/#65281&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>300 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: yes
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -107,7 +107,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=3FAF6ED45CE029A0611B3530FA8EC97EC3DE0F5B5CBF832F13F18AD6D758B6C2
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#c05600;">expires &lt; 60 days (33)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (26)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl3.digicert.com/GandiCert.crl
                               http://crl4.digicert.com/GandiCert.crl
@@ -131,7 +131,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#c05600;">60 s = 0 days is too short ( &gt;= 15552000 seconds recommended)</span><span style="color:#008817;">, includeSubDomains</span><span style="color:#008817;">, preload</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -139,32 +139,52 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
-                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat
+                              <span style="color:#008817;">Content-Security-Policy</span>: default-src &apos;self&apos;;
+                                script-src &apos;self&apos; &apos;unsafe-inline&apos;
                                 https://sentry.incubateur.net
-                                https://browser.sentry-cdn.com
-                                https://*.data.gouv.fr https://*.beta.gouv.fr;
-                                connect-src &apos;self&apos; https://data.geopf.fr
-                                https://*.data.gouv.fr https://geo.api.gouv.fr
-                                https://*.beta.gouv.fr
-                                https://sentry.incubateur.net
-                                https://*.crisp.chat wss://*.crisp.chat;
-                                style-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat; img-src &apos;self&apos;
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
                                 https://data.geopf.fr
-                                https://*.s3.fr-par.scw.cloud data:
-                                https://*.crisp.chat
-                                https://static.demarches-simplifiees.fr;
-                                font-src &apos;self&apos; https://*.crisp.chat; media-src
-                                &apos;self&apos; https://*.s3.fr-par.scw.cloud
-                                https://*.crisp.chat; frame-src &apos;self&apos;
-                                https://*.crisp.chat https://*.data.gouv.fr
-                                https://*.beta.gouv.fr; worker-src &apos;self&apos; blob:
-                                https://*.crisp.chat; object-src &apos;none&apos;;
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
                                 base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
                                 /csp/reports/
+                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
+                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
+                                base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
+                                /csp/reports/
+                              <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
+                                autoplay=(), camera=(), display-capture=(),
+                                encrypted-media=(), fullscreen=(self),
+                                geolocation=(self), gyroscope=(),
+                                magnetometer=(), microphone=(), midi=(),
+                                payment=(), usb=(), xr-spatial-tracking=()
                               Cross-Origin-Opener-Policy: same-origin
+                              Cross-Origin-Resource-Policy: same-origin
                               Referrer-Policy: same-origin
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
 
@@ -246,12 +266,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A-</span>
 <span style="font-weight:bold;"> Grade warning                </span><span style="color:#c05600;">HSTS max-age is too short</span>
 
-<span style="color:white;background-color:black;"> Done 2026-08-09 02:41:16 [  92s] --&gt;&gt; 5.104.101.30:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-08-16 02:14:08 [ 101s] --&gt;&gt; 5.104.101.30:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-08-09 02:41:16        --&gt;&gt; 109.232.233.130:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-08-16 02:14:08        --&gt;&gt; 109.232.233.130:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
- Further IP addresses:   5.104.101.30 148.253.75.120 109.232.236.90 
+ Further IP addresses:   5.104.101.30 109.232.236.90 148.253.75.120 
  rDNS (109.232.233.130): ows-109-232-233-130.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
@@ -333,7 +353,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=3FAF6ED45CE029A0611B3530FA8EC97EC3DE0F5B5CBF832F13F18AD6D758B6C2
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#c05600;">expires &lt; 60 days (33)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (26)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl3.digicert.com/GandiCert.crl
                               http://crl4.digicert.com/GandiCert.crl
@@ -365,32 +385,52 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
-                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat
+                              <span style="color:#008817;">Content-Security-Policy</span>: default-src &apos;self&apos;;
+                                script-src &apos;self&apos; &apos;unsafe-inline&apos;
                                 https://sentry.incubateur.net
-                                https://browser.sentry-cdn.com
-                                https://*.data.gouv.fr https://*.beta.gouv.fr;
-                                connect-src &apos;self&apos; https://data.geopf.fr
-                                https://*.data.gouv.fr https://geo.api.gouv.fr
-                                https://*.beta.gouv.fr
-                                https://sentry.incubateur.net
-                                https://*.crisp.chat wss://*.crisp.chat;
-                                style-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat; img-src &apos;self&apos;
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
                                 https://data.geopf.fr
-                                https://*.s3.fr-par.scw.cloud data:
-                                https://*.crisp.chat
-                                https://static.demarches-simplifiees.fr;
-                                font-src &apos;self&apos; https://*.crisp.chat; media-src
-                                &apos;self&apos; https://*.s3.fr-par.scw.cloud
-                                https://*.crisp.chat; frame-src &apos;self&apos;
-                                https://*.crisp.chat https://*.data.gouv.fr
-                                https://*.beta.gouv.fr; worker-src &apos;self&apos; blob:
-                                https://*.crisp.chat; object-src &apos;none&apos;;
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
                                 base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
                                 /csp/reports/
+                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
+                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
+                                base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
+                                /csp/reports/
+                              <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
+                                autoplay=(), camera=(), display-capture=(),
+                                encrypted-media=(), fullscreen=(self),
+                                geolocation=(self), gyroscope=(),
+                                magnetometer=(), microphone=(), midi=(),
+                                payment=(), usb=(), xr-spatial-tracking=()
                               Cross-Origin-Opener-Policy: same-origin
+                              Cross-Origin-Resource-Policy: same-origin
                               Referrer-Policy: same-origin
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
 
@@ -472,12 +512,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A-</span>
 <span style="font-weight:bold;"> Grade warning                </span><span style="color:#c05600;">HSTS max-age is too short</span>
 
-<span style="color:white;background-color:black;"> Done 2026-08-09 02:42:44 [ 180s] --&gt;&gt; 109.232.233.130:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-08-16 02:15:46 [ 199s] --&gt;&gt; 109.232.233.130:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-08-09 02:42:44        --&gt;&gt; 109.232.236.90:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-08-16 02:15:46        --&gt;&gt; 109.232.236.90:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
- Further IP addresses:   109.232.233.130 5.104.101.30 148.253.75.120 
+ Further IP addresses:   5.104.101.30 109.232.233.130 148.253.75.120 
  rDNS (109.232.236.90):  ows-109-232-236-90.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
@@ -559,7 +599,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=3FAF6ED45CE029A0611B3530FA8EC97EC3DE0F5B5CBF832F13F18AD6D758B6C2
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#c05600;">expires &lt; 60 days (33)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (26)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl3.digicert.com/GandiCert.crl
                               http://crl4.digicert.com/GandiCert.crl
@@ -591,32 +631,52 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
-                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat
+                              <span style="color:#008817;">Content-Security-Policy</span>: default-src &apos;self&apos;;
+                                script-src &apos;self&apos; &apos;unsafe-inline&apos;
                                 https://sentry.incubateur.net
-                                https://browser.sentry-cdn.com
-                                https://*.data.gouv.fr https://*.beta.gouv.fr;
-                                connect-src &apos;self&apos; https://data.geopf.fr
-                                https://*.data.gouv.fr https://geo.api.gouv.fr
-                                https://*.beta.gouv.fr
-                                https://sentry.incubateur.net
-                                https://*.crisp.chat wss://*.crisp.chat;
-                                style-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat; img-src &apos;self&apos;
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
                                 https://data.geopf.fr
-                                https://*.s3.fr-par.scw.cloud data:
-                                https://*.crisp.chat
-                                https://static.demarches-simplifiees.fr;
-                                font-src &apos;self&apos; https://*.crisp.chat; media-src
-                                &apos;self&apos; https://*.s3.fr-par.scw.cloud
-                                https://*.crisp.chat; frame-src &apos;self&apos;
-                                https://*.crisp.chat https://*.data.gouv.fr
-                                https://*.beta.gouv.fr; worker-src &apos;self&apos; blob:
-                                https://*.crisp.chat; object-src &apos;none&apos;;
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
                                 base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
                                 /csp/reports/
+                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
+                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
+                                base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
+                                /csp/reports/
+                              <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
+                                autoplay=(), camera=(), display-capture=(),
+                                encrypted-media=(), fullscreen=(self),
+                                geolocation=(self), gyroscope=(),
+                                magnetometer=(), microphone=(), midi=(),
+                                payment=(), usb=(), xr-spatial-tracking=()
                               Cross-Origin-Opener-Policy: same-origin
+                              Cross-Origin-Resource-Policy: same-origin
                               Referrer-Policy: same-origin
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
 
@@ -698,12 +758,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A-</span>
 <span style="font-weight:bold;"> Grade warning                </span><span style="color:#c05600;">HSTS max-age is too short</span>
 
-<span style="color:white;background-color:black;"> Done 2026-08-09 02:44:11 [ 267s] --&gt;&gt; 109.232.236.90:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-08-16 02:17:26 [ 299s] --&gt;&gt; 109.232.236.90:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-08-09 02:44:11        --&gt;&gt; 148.253.75.120:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-08-16 02:17:26        --&gt;&gt; 148.253.75.120:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
- Further IP addresses:   109.232.233.130 5.104.101.30 109.232.236.90 
+ Further IP addresses:   5.104.101.30 109.232.233.130 109.232.236.90 
  rDNS (148.253.75.120):  ows-148-253-75-120.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
@@ -767,7 +827,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;renegotiation info/#65281&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>300 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -785,7 +845,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=3FAF6ED45CE029A0611B3530FA8EC97EC3DE0F5B5CBF832F13F18AD6D758B6C2
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#c05600;">expires &lt; 60 days (33)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (26)</span> (2026-02-25 00:00 --&gt; 2026-09-11 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl3.digicert.com/GandiCert.crl
                               http://crl4.digicert.com/GandiCert.crl
@@ -817,32 +877,52 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>2 issued: <span style="color:#008817;">2/2</span> secure, <span style="color:#008817;">1/2</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
-                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat
+                              <span style="color:#008817;">Content-Security-Policy</span>: default-src &apos;self&apos;;
+                                script-src &apos;self&apos; &apos;unsafe-inline&apos;
                                 https://sentry.incubateur.net
-                                https://browser.sentry-cdn.com
-                                https://*.data.gouv.fr https://*.beta.gouv.fr;
-                                connect-src &apos;self&apos; https://data.geopf.fr
-                                https://*.data.gouv.fr https://geo.api.gouv.fr
-                                https://*.beta.gouv.fr
-                                https://sentry.incubateur.net
-                                https://*.crisp.chat wss://*.crisp.chat;
-                                style-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                https://*.crisp.chat; img-src &apos;self&apos;
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
                                 https://data.geopf.fr
-                                https://*.s3.fr-par.scw.cloud data:
-                                https://*.crisp.chat
-                                https://static.demarches-simplifiees.fr;
-                                font-src &apos;self&apos; https://*.crisp.chat; media-src
-                                &apos;self&apos; https://*.s3.fr-par.scw.cloud
-                                https://*.crisp.chat; frame-src &apos;self&apos;
-                                https://*.crisp.chat https://*.data.gouv.fr
-                                https://*.beta.gouv.fr; worker-src &apos;self&apos; blob:
-                                https://*.crisp.chat; object-src &apos;none&apos;;
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
                                 base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
                                 /csp/reports/
+                              <span style="color:#008817;">Content-Security-Policy-Report-Only</span>: default-src
+                                &apos;self&apos;; script-src &apos;self&apos; &apos;unsafe-inline&apos;
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; connect-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://api-adresse.data.gouv.fr
+                                https://geo.api.gouv.fr
+                                https://sentry.incubateur.net
+                                https://*.beta.gouv.fr; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos;; img-src &apos;self&apos;
+                                https://data.geopf.fr
+                                https://*.cellar-c2.services.clever-cloud.com
+                                data: https://*.beta.gouv.fr; font-src &apos;self&apos;;
+                                media-src &apos;self&apos;
+                                https://*.cellar-c2.services.clever-cloud.com;
+                                frame-src &apos;self&apos; https://*.beta.gouv.fr;
+                                worker-src &apos;self&apos; blob:; object-src &apos;none&apos;;
+                                base-uri &apos;self&apos;; form-action &apos;self&apos;; report-uri
+                                /csp/reports/
+                              <span style="color:#008817;">Permissions-Policy</span>: accelerometer=(),
+                                autoplay=(), camera=(), display-capture=(),
+                                encrypted-media=(), fullscreen=(self),
+                                geolocation=(self), gyroscope=(),
+                                magnetometer=(), microphone=(), midi=(),
+                                payment=(), usb=(), xr-spatial-tracking=()
                               Cross-Origin-Opener-Policy: same-origin
+                              Cross-Origin-Resource-Policy: same-origin
                               Referrer-Policy: same-origin
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
 
@@ -924,7 +1004,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A-</span>
 <span style="font-weight:bold;"> Grade warning                </span><span style="color:#c05600;">HSTS max-age is too short</span>
 
-<span style="color:white;background-color:black;"> Done 2026-08-09 02:45:36 [ 352s] --&gt;&gt; 148.253.75.120:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-08-16 02:19:06 [ 399s] --&gt;&gt; 148.253.75.120:443 (nitrates-staging.osc-fr1.scalingo.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>5.104.101.30 109.232.233.130 109.232.236.90 148.253.75.120
