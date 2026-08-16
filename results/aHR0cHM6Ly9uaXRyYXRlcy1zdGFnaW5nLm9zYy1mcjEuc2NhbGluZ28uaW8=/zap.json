@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 9 Aug 2026 02:38:06",
-	"created": "2026-08-09T02:38:06.360313007Z",
+	"@generated": "Sun, 16 Aug 2026 02:10:27",
+	"created": "2026-08-16T02:10:27.819488497Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -10,7 +10,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.code.2xx",
 			"description": "Percentage of responses with status code 2xx",
-			"statistic": "92"
+			"statistic": "90"
 		},
 		{
 			"level": "Info",
@@ -18,7 +18,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.code.3xx",
 			"description": "Percentage of responses with status code 3xx",
-			"statistic": "7"
+			"statistic": "9"
 		},
 		{
 			"level": "Info",
@@ -26,7 +26,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.endpoint.ctype.image/png",
 			"description": "Percentage of endpoints with content type image/png",
-			"statistic": "3"
+			"statistic": "2"
 		},
 		{
 			"level": "Info",
@@ -34,7 +34,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.endpoint.ctype.image/svg+xml",
 			"description": "Percentage of endpoints with content type image/svg+xml",
-			"statistic": "5"
+			"statistic": "9"
 		},
 		{
 			"level": "Info",
@@ -50,7 +50,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.endpoint.ctype.text/css",
 			"description": "Percentage of endpoints with content type text/css",
-			"statistic": "33"
+			"statistic": "31"
 		},
 		{
 			"level": "Info",
@@ -58,7 +58,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.endpoint.ctype.text/html",
 			"description": "Percentage of endpoints with content type text/html",
-			"statistic": "13"
+			"statistic": "16"
 		},
 		{
 			"level": "Info",
@@ -66,7 +66,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.endpoint.ctype.text/javascript",
 			"description": "Percentage of endpoints with content type text/javascript",
-			"statistic": "41"
+			"statistic": "39"
 		},
 		{
 			"level": "Info",
@@ -82,7 +82,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
-			"statistic": "51"
+			"statistic": "74"
 		},
 		{
 			"level": "Info",
@@ -90,7 +90,7 @@
 			"site": "https://nitrates-staging.osc-fr1.scalingo.io",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "47"
+			"statistic": "100"
 		}
 	],
 	"site":[ 
@@ -101,134 +101,154 @@
 			"@ssl": "true",
 			"alerts": [ 
 				{
-					"pluginid": "10038",
-					"alertRef": "10038-1",
-					"alert": "Content Security Policy (CSP) Header Not Set",
-					"name": "Content Security Policy (CSP) Header Not Set",
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
 					"riskcode": "2",
 					"confidence": "3",
 					"riskdesc": "Medium (High)",
-					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "4",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "50",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "91",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "101",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/sitemap.xml",
+							"id": "11",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "4",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "3",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src."
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"systemic": false,
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "10"
 				},
 				{
-					"pluginid": "10098",
-					"alertRef": "10098",
-					"alert": "Cross-Domain Misconfiguration",
-					"name": "Cross-Domain Misconfiguration",
+					"pluginid": "10055",
+					"alertRef": "10055-5",
+					"alert": "CSP: script-src unsafe-inline",
+					"name": "CSP: script-src unsafe-inline",
 					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "43",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/favicon/apple-touch-icon.09be1cc5f435.png",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/favicon\/apple-touch-icon.09be1cc5f435.png",
+							"id": "12",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *",
-							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"id": "45",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/favicon/favicon.643092a0caac.ico",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/favicon\/favicon.643092a0caac.ico",
+							"id": "5",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *",
-							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"id": "36",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/favicon/favicon.7718992eb76d.svg",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/favicon\/favicon.7718992eb76d.svg",
+							"id": "6",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *",
-							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
-						},
-						{
-							"id": "34",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/css/project.min.0e654572cf08.css",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/css\/project.min.0e654572cf08.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *",
-							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
-						},
-						{
-							"id": "46",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/leaflet/leaflet.extras.084055aed802.css",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/leaflet\/leaflet.extras.084055aed802.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *",
-							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "script-src includes unsafe-inline."
 						}
 					],
-					"count": "5",
-					"systemic": true,
-					"solution": "<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p><p>Configure the \"Access-Control-Allow-Origin\" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>",
-					"otherinfo": "<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>",
-					"reference": "<p>https://vulncat.fortify.com/en/detail?category=HTML5&subcategory=Overly%20Permissive%20CORS%20Policy</p>",
-					"cweid": "264",
-					"wascid": "14",
-					"sourceid": "52"
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "10"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "13",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "7",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "9",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90003",
@@ -241,7 +261,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "29",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
@@ -251,7 +271,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "66",
+							"id": "87",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
@@ -261,9 +281,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "96",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"id": "110",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://sentry.incubateur.net/js-sdk-loader/a06c2202513f570f909050d799f50670.min.js\"\n          crossorigin=\"anonymous\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "72",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -271,7 +301,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
@@ -279,6 +309,56 @@
 					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-3",
+					"alert": "CSP: Notices",
+					"name": "CSP: Notices",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "10",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "Warnings:\nThe report-uri directive has been deprecated in favor of the new report-to directive\n"
+						},
+						{
+							"id": "2",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "Warnings:\nThe report-uri directive has been deprecated in favor of the new report-to directive\n"
+						},
+						{
+							"id": "1",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "Warnings:\nThe report-uri directive has been deprecated in favor of the new report-to directive\n"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>Warnings:</p><p>The report-uri directive has been deprecated in favor of the new report-to directive</p><p></p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10010",
@@ -291,7 +371,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "26",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
@@ -301,27 +381,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
-							"method": "GET",
-							"param": "visitorid",
-							"attack": "",
-							"evidence": "Set-Cookie: visitorid",
-							"otherinfo": ""
-						},
-						{
-							"id": "93",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
-							"method": "GET",
-							"param": "visitorid",
-							"attack": "",
-							"evidence": "Set-Cookie: visitorid",
-							"otherinfo": ""
-						},
-						{
-							"id": "107",
+							"id": "37",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/",
 							"method": "GET",
@@ -331,9 +391,29 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "103",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/sitemap.xml",
+							"id": "16",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
+							"method": "GET",
+							"param": "visitorid",
+							"attack": "",
+							"evidence": "Set-Cookie: visitorid",
+							"otherinfo": ""
+						},
+						{
+							"id": "67",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
+							"method": "GET",
+							"param": "visitorid",
+							"attack": "",
+							"evidence": "Set-Cookie: visitorid",
+							"otherinfo": ""
+						},
+						{
+							"id": "56",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/oidc/authenticate/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/oidc\/authenticate\/",
 							"method": "GET",
 							"param": "visitorid",
 							"attack": "",
@@ -361,7 +441,7 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "27",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
@@ -371,7 +451,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "53",
+							"id": "78",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
@@ -381,9 +461,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "94",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"id": "109",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"method": "GET",
+							"param": "https://sentry.incubateur.net/js-sdk-loader/a06c2202513f570f909050d799f50670.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://sentry.incubateur.net/js-sdk-loader/a06c2202513f570f909050d799f50670.min.js\"\n          crossorigin=\"anonymous\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "68",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
 							"method": "GET",
 							"param": "https://sentry.incubateur.net/js-sdk-loader/a06c2202513f570f909050d799f50670.min.js",
 							"attack": "",
@@ -391,14 +481,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -411,184 +501,64 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "23",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "70",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "98",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "105",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/sitemap.xml",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "4",
-					"systemic": false,
-					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
-					"cweid": "693",
-					"wascid": "14",
-					"sourceid": "6"
-				},
-				{
-					"pluginid": "90004",
-					"alertRef": "90004-1",
-					"alert": "Cross-Origin-Resource-Policy Header Missing or Invalid",
-					"name": "Cross-Origin-Resource-Policy Header Missing or Invalid",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
-					"instances":[ 
-						{
-							"id": "20",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"id": "69",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "97",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "104",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/sitemap.xml",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "4",
-					"systemic": false,
-					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
-					"cweid": "693",
-					"wascid": "14",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10063",
-					"alertRef": "10063-1",
-					"alert": "Permissions Policy Header Not Set",
-					"name": "Permissions Policy Header Not Set",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
-					"instances":[ 
-						{
-							"id": "19",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
-							"param": "",
+							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
 						},
 						{
-							"id": "68",
+							"id": "88",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
-							"param": "",
+							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
 						},
 						{
-							"id": "71",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/js/libs/spinner.9f3473624cf7.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/js\/libs\/spinner.9f3473624cf7.js",
+							"id": "111",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
 							"method": "GET",
-							"param": "",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "45",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
 						},
 						{
 							"id": "73",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/leaflet/draw/leaflet.draw.i18n.beacce959cfe.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/leaflet\/draw\/leaflet.draw.i18n.beacce959cfe.js",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
 							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "74",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/leaflet/leaflet.extras.42f035e2be48.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/leaflet\/leaflet.extras.42f035e2be48.js",
-							"method": "GET",
-							"param": "",
+							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
 						}
 					],
 					"count": "5",
-					"systemic": true,
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
-					"wascid": "15",
-					"sourceid": "6"
+					"wascid": "14",
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10094",
@@ -601,59 +571,69 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "26",
+							"id": "89",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "0jhluHdgtafYGEc0KUTocd4Jdo3ojfao",
-							"otherinfo": "\uFFFD8e\uFFFDw`\uFFFD\uFFFD\uFFFD\\x0018G4)D\uFFFDq\uFFFD\tv\uFFFD\uFFFD\uFFFD\uFFFD"
+							"evidence": "0Nw7yfHGVRsh77WfLgjPSTHI2m4sTWBr",
+							"otherinfo": "\uFFFD\uFFFD;\uFFFD\uFFFD\uFFFDU\\x001b!\uFD5F.\\x0008\uFFFDI1\uFFFD\uFFFDn,M`k"
 						},
 						{
-							"id": "24",
+							"id": "74",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "zP4QrT5Mfm5UIr2B7LpYQWIQj6LBGpgR",
-							"otherinfo": "\uFFFD\uFFFD\\x0010\uFFFD>L~nT\"\uFFFD\uFFFD\uFFFDXAb\\x0010\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\\x0011"
+							"evidence": "NMliHS2LuNNFhWgkc38UYctxRmc7a2LO",
+							"otherinfo": "4\uFFFDb\\x001d-\uFFFD\uFFFD\uFFFDE\uFFFDh$s\\x0014a\uFFFDqFg;kb\uFFFD"
 						},
 						{
-							"id": "72",
+							"id": "90",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "zP4QrT5Mfm5UIr2B7LpYQWIQj6LBGpgR",
-							"otherinfo": "\uFFFD\uFFFD\\x0010\uFFFD>L~nT\"\uFFFD\uFFFD\uFFFDXAb\\x0010\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\\x0011"
+							"evidence": "NMliHS2LuNNFhWgkc38UYctxRmc7a2LO",
+							"otherinfo": "4\uFFFDb\\x001d-\uFFFD\uFFFD\uFFFDE\uFFFDh$s\\x0014a\uFFFDqFg;kb\uFFFD"
 						},
 						{
-							"id": "99",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"id": "112",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "zP4QrT5Mfm5UIr2B7LpYQWIQj6LBGpgR",
-							"otherinfo": "\uFFFD\uFFFD\\x0010\uFFFD>L~nT\"\uFFFD\uFFFD\uFFFDXAb\\x0010\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\\x0011"
+							"evidence": "NMliHS2LuNNFhWgkc38UYctxRmc7a2LO",
+							"otherinfo": "4\uFFFDb\\x001d-\uFFFD\uFFFD\uFFFDE\uFFFDh$s\\x0014a\uFFFDqFg;kb\uFFFD"
 						},
 						{
-							"id": "110",
+							"id": "85",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "NMliHS2LuNNFhWgkc38UYctxRmc7a2LO",
+							"otherinfo": "4\uFFFDb\\x001d-\uFFFD\uFFFD\uFFFDE\uFFFDh$s\\x0014a\uFFFDqFg;kb\uFFFD"
+						},
+						{
+							"id": "57",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/oidc/authenticate/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/oidc\/authenticate\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "dsL51qyy7JuRrL0CKJt24VRbJF0Giad5",
-							"otherinfo": "v\uFFFD\uFFFD\u05AC\uFFFD\uC6D1\uFFFD\uFFFD\\x0002(\uFFFDv\uFFFDT[$]\\x0006\uFFFD\uFFFDy"
+							"evidence": "seLyGW7lB4pO2X8mN1rPQlEa95stNieU",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\\x0019n\uFFFD\\x0007\uFFFDN\uFFFD&7Z\uFFFDBQ\\x001a\uFFFD\uFFFD-6'\uFFFD"
 						},
 						{
-							"id": "88",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/dsfr.7ea602b6f1e4.css",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/dsfr.7ea602b6f1e4.css",
+							"id": "120",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/dsfr.21b1342d805d.css",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/dsfr.21b1342d805d.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -661,7 +641,7 @@
 							"otherinfo": "\uFFFDo\uFFFD~\uFFFD\uFFFD~/\uFFFD\\x001dzW\uFFFD~\uFFFD\uFFFD\uFFFD\uFFFDey\uFFFDn"
 						},
 						{
-							"id": "120",
+							"id": "121",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/leaflet/leaflet.25c3da10cb19.js",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/leaflet\/leaflet.25c3da10cb19.js",
 							"method": "GET",
@@ -671,10 +651,10 @@
 							"otherinfo": "GIF89a\\x0001\\x0000\\x0001\\x0000\\x0000\uFFFD\\x0000,\\x0000\\x0000\\x0000\\x0000\\x0001\\x0000\\x0001\\x0000\\x0000\\x0002\\x0000;"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD8e\uFFFDw`\uFFFD\uFFFD\uFFFD\\x0018G4)D\uFFFDq\uFFFD\tv\uFFFD\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD;\uFFFD\uFFFD\uFFFDU\\x001b!\uFD5F.\\x0008\uFFFDI1\uFFFD\uFFFDn,M`k</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
@@ -691,7 +671,7 @@
 					"desc": "<p>The response contained a Content-Security-Policy-Report-Only header, this may indicate a work-in-progress implementation, or an oversight in promoting pre-Prod to Prod, etc.</p><p></p><p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "23",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
@@ -701,7 +681,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "51",
+							"id": "76",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
@@ -711,9 +691,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "92",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"id": "107",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -721,9 +701,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "102",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/sitemap.xml",
+							"id": "8",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "66",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -731,7 +721,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
@@ -751,7 +741,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "28",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
@@ -761,7 +751,7 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"// debug (cf. simulator.js) -> bypass de l'allowlist departement en interne.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "64",
+							"id": "86",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
@@ -771,19 +761,29 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"// debug (cf. simulator.js) -> bypass de l'allowlist departement en interne.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "95",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"id": "99",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/bug_floater.3a7c446533fd.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/bug_floater.3a7c446533fd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "// debug (cf. simulator.js) ",
-							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 2 times, the first in likely comment: \"// debug (cf. simulator.js) -> bypass de l'allowlist departement en interne.\", see evidence field for the suspicious comment/snippet."
+							"evidence": "ions pour le tri en admin.",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in likely comment: \"// intentions pour le tri en admin.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "77",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/cascade.473043901134.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/cascade.473043901134.js",
+							"id": "100",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/bug_floater.3a7c446533fd.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/bug_floater.3a7c446533fd.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ttant \u00AB Signaler un bug \u00BB (pr\u00E9sent sur tout",
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected 3 times, the first in likely comment: \"/* #285 \u2014 Bouton flottant \u00AB Signaler un bug \u00BB (pr\u00E9sent sur toutes les pages).\n *\n * R\u00F4le :\n *   1. D\u00E8s le chargement, installer \", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "91",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/cascade.5f47935005da.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/cascade.5f47935005da.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -791,9 +791,9 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in likely comment: \"// L'user a touche en amont -> on reset les hidden inputs concernes.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "85",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/form_autoscroll.895272922485.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/form_autoscroll.895272922485.js",
+							"id": "97",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/form_autoscroll.1ee481a9b7da.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/form_autoscroll.1ee481a9b7da.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -801,9 +801,19 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in likely comment: \"// L'etape a ete re-cachee (l'user a change un choix en amont) : on\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "87",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/reset_form.154333db8e24.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/reset_form.154333db8e24.js",
+							"id": "96",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/question_couvert_flow.85bdec2ad77d.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/question_couvert_flow.85bdec2ad77d.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// (bug remont\u00E9 #272). On l",
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in likely comment: \"// (bug remont\u00E9 #272). On le place \u00E0 la main sous l'input via son rect.\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "98",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/reset_form.fd8b57239eba.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/reset_form.fd8b57239eba.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -811,9 +821,9 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 2 times, the first in likely comment: \"// query string. Invariant garanti : chaque cle apparait AU PLUS une fois\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "80",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.3c6f99020514.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.3c6f99020514.js",
+							"id": "92",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.6d769b4a4dee.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.6d769b4a4dee.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -821,9 +831,9 @@
 							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in likely comment: \"//    depuis ce champ (bug d'origine : auto-scroll + question fantome).\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "81",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.3c6f99020514.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.3c6f99020514.js",
+							"id": "93",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.6d769b4a4dee.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.6d769b4a4dee.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -831,9 +841,9 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in likely comment: \"// au chargement par URL (ex bouton preview admin), alors que le\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "83",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.3c6f99020514.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.3c6f99020514.js",
+							"id": "95",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.6d769b4a4dee.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.6d769b4a4dee.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -841,9 +851,9 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 7 times, the first in likely comment: \"// inputs lat/lng + meme panneau debug que la home (sans toucher au JS de\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "82",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.3c6f99020514.js",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.3c6f99020514.js",
+							"id": "94",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/nitrates/simulator.6d769b4a4dee.js",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/nitrates\/simulator.6d769b4a4dee.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -851,7 +861,7 @@
 							"otherinfo": "The following pattern was used: \\bDB\\b and was detected in likely comment: \"// le cadastre, pas le RPG). On garde l'import et la table en DB\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"systemic": false,
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"// debug (cf. simulator.js) -> bypass de l'allowlist departement en interne.\", see evidence field for the suspicious comment/snippet.</p>",
@@ -859,6 +869,36 @@
 					"cweid": "615",
 					"wascid": "13",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"id": "71",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Aide et d\u00E9finitions</a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "95"
 				},
 				{
 					"pluginid": "10049",
@@ -871,7 +911,27 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "35",
+							"id": "38",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "43",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "15",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
 							"method": "GET",
@@ -881,7 +941,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "30",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
 							"method": "GET",
@@ -891,14 +951,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "41"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "10015",
@@ -911,7 +971,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "22",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
@@ -921,7 +981,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
+							"id": "75",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
@@ -931,9 +991,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "90",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"id": "106",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "65",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -941,7 +1011,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
@@ -961,9 +1031,9 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "29",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
+							"id": "41",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -971,7 +1041,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "19",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
 							"method": "GET",
@@ -979,16 +1049,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "33",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "90005",
@@ -1001,9 +1081,9 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "28",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
+							"id": "40",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1011,7 +1091,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "18",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
 							"method": "GET",
@@ -1019,16 +1099,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "32",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "90005",
@@ -1041,9 +1131,9 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "25",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
+							"id": "39",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1051,7 +1141,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "37",
+							"id": "17",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
 							"method": "GET",
@@ -1059,16 +1149,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "31",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "90005",
@@ -1081,9 +1181,9 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "31",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
+							"id": "42",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1091,7 +1191,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "20",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/robots.txt",
 							"method": "GET",
@@ -1099,16 +1199,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "34",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/sitemap.xml",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "10112",
@@ -1121,7 +1231,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "14",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
 							"method": "GET",
@@ -1131,7 +1241,7 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "41",
+							"id": "70",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/",
 							"method": "GET",
@@ -1141,9 +1251,9 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "89",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"id": "105",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -1151,7 +1261,7 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "106",
+							"id": "35",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/",
 							"method": "GET",
@@ -1161,8 +1271,8 @@
 							"otherinfo": "cookie:visitorid"
 						},
 						{
-							"id": "100",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/sitemap.xml",
+							"id": "0",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/robots.txt",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
 							"method": "GET",
 							"param": "visitorid",
@@ -1171,7 +1281,17 @@
 							"otherinfo": "cookie:visitorid"
 						},
 						{
-							"id": "108",
+							"id": "62",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/definitions/",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/definitions\/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "csrftoken",
+							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
+						},
+						{
+							"id": "54",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/oidc/authenticate/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/oidc\/authenticate\/",
 							"method": "GET",
@@ -1179,9 +1299,19 @@
 							"attack": "",
 							"evidence": "sessionid",
 							"otherinfo": "cookie:sessionid\ncookie:visitorid"
+						},
+						{
+							"id": "36",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "csrftoken",
+							"otherinfo": "cookie:csrftoken"
 						}
 					],
-					"count": "6",
+					"count": "8",
 					"systemic": false,
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p>cookie:csrftoken</p><p>cookie:visitorid</p>",
@@ -1201,39 +1331,9 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "16",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"id": "44",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/favicon/apple-touch-icon.09be1cc5f435.png",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/favicon\/apple-touch-icon.09be1cc5f435.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=315360000",
-							"otherinfo": ""
-						},
-						{
-							"id": "49",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/favicon/favicon.643092a0caac.ico",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/favicon\/favicon.643092a0caac.ico",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=315360000",
-							"otherinfo": ""
-						},
-						{
-							"id": "42",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/@gouvfr/dsfr/dist/favicon/favicon.7718992eb76d.svg",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/@gouvfr\/dsfr\/dist\/favicon\/favicon.7718992eb76d.svg",
+							"id": "51",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/admin/css/dark_mode.ef27a31af300.css",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/admin\/css\/dark_mode.ef27a31af300.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1242,8 +1342,38 @@
 						},
 						{
 							"id": "47",
-							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/css/project.min.0e654572cf08.css",
-							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/css\/project.min.0e654572cf08.css",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/admin/css/login.586129c60a93.css",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/admin\/css\/login.586129c60a93.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=315360000",
+							"otherinfo": ""
+						},
+						{
+							"id": "44",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/admin/css/nitrates_admin.3f88bbbbac44.css",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/admin\/css\/nitrates_admin.3f88bbbbac44.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=315360000",
+							"otherinfo": ""
+						},
+						{
+							"id": "49",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/admin/css/proconnect_button.f25037d53060.css",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/admin\/css\/proconnect_button.f25037d53060.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=315360000",
+							"otherinfo": ""
+						},
+						{
+							"id": "52",
+							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/static/css/project_admin.c758f1cde44a.css",
+							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/static\/css\/project_admin.c758f1cde44a.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1254,11 +1384,11 @@
 					"count": "5",
 					"systemic": true,
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
-					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
+					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "80"
 				},
 				{
 					"pluginid": "10031",
@@ -1271,7 +1401,7 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"id": "115",
+							"id": "83",
 							"uri": "https://nitrates-staging.osc-fr1.scalingo.io/792139-admin/login/?next=/792139-admin/",
 							"nodeName": "https:\/\/nitrates-staging.osc-fr1.scalingo.io\/792139-admin\/login\/ (next)",
 							"method": "GET",
@@ -1288,7 +1418,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "130"
+					"sourceid": "120"
 				}
 			]
 		}

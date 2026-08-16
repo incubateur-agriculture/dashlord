@@ -213,7 +213,7 @@
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -359,8 +359,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (33)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (26)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -373,7 +373,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2026-09-11 23:59"
           }
 ,         {
@@ -514,14 +514,14 @@
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1786243237"
+              "finding"      : "1786846407"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -601,14 +601,35 @@
               "finding"      : "nosniff"
           }
 ,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
               "id"           : "Content-Security-Policy-Report-Only",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.crisp.chat https://sentry.incubateur.net https://browser.sentry-cdn.com https://*.data.gouv.fr https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://*.data.gouv.fr https://geo.api.gouv.fr https://*.beta.gouv.fr https://sentry.incubateur.net https://*.crisp.chat wss://*.crisp.chat; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' https://data.geopf.fr https://*.s3.fr-par.scw.cloud data: https://*.crisp.chat https://static.demarches-simplifiees.fr; font-src 'self' https://*.crisp.chat; media-src 'self' https://*.s3.fr-par.scw.cloud https://*.crisp.chat; frame-src 'self' https://*.crisp.chat https://*.data.gouv.fr https://*.beta.gouv.fr; worker-src 'self' blob: https://*.crisp.chat; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
+              "id"           : "Permissions-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "same-origin"
+          }
+,         {
+              "id"           : "Cross-Origin-Resource-Policy",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1488,8 +1509,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (33)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (26)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1502,7 +1523,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2026-09-11 23:59"
           }
 ,         {
@@ -1650,7 +1671,7 @@
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1786243321"
+              "finding"      : "1786846505"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1730,14 +1751,35 @@
               "finding"      : "nosniff"
           }
 ,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
               "id"           : "Content-Security-Policy-Report-Only",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.crisp.chat https://sentry.incubateur.net https://browser.sentry-cdn.com https://*.data.gouv.fr https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://*.data.gouv.fr https://geo.api.gouv.fr https://*.beta.gouv.fr https://sentry.incubateur.net https://*.crisp.chat wss://*.crisp.chat; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' https://data.geopf.fr https://*.s3.fr-par.scw.cloud data: https://*.crisp.chat https://static.demarches-simplifiees.fr; font-src 'self' https://*.crisp.chat; media-src 'self' https://*.s3.fr-par.scw.cloud https://*.crisp.chat; frame-src 'self' https://*.crisp.chat https://*.data.gouv.fr https://*.beta.gouv.fr; worker-src 'self' blob: https://*.crisp.chat; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
+              "id"           : "Permissions-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "same-origin"
+          }
+,         {
+              "id"           : "Cross-Origin-Resource-Policy",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.233.130",
               "port"         : "443",
               "severity"     : "INFO",
@@ -2617,8 +2659,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (33)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (26)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -2631,7 +2673,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2026-09-11 23:59"
           }
 ,         {
@@ -2779,7 +2821,7 @@
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1786243412"
+              "finding"      : "1786846605"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2859,14 +2901,35 @@
               "finding"      : "nosniff"
           }
 ,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
               "id"           : "Content-Security-Policy-Report-Only",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.crisp.chat https://sentry.incubateur.net https://browser.sentry-cdn.com https://*.data.gouv.fr https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://*.data.gouv.fr https://geo.api.gouv.fr https://*.beta.gouv.fr https://sentry.incubateur.net https://*.crisp.chat wss://*.crisp.chat; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' https://data.geopf.fr https://*.s3.fr-par.scw.cloud data: https://*.crisp.chat https://static.demarches-simplifiees.fr; font-src 'self' https://*.crisp.chat; media-src 'self' https://*.s3.fr-par.scw.cloud https://*.crisp.chat; frame-src 'self' https://*.crisp.chat https://*.data.gouv.fr https://*.beta.gouv.fr; worker-src 'self' blob: https://*.crisp.chat; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
+              "id"           : "Permissions-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "same-origin"
+          }
+,         {
+              "id"           : "Cross-Origin-Resource-Policy",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
               "severity"     : "INFO",
@@ -3593,7 +3656,7 @@
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -3746,8 +3809,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (33)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (26)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -3760,7 +3823,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2026-09-11 23:59"
           }
 ,         {
@@ -3908,7 +3971,7 @@
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1786243499"
+              "finding"      : "1786846705"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -3988,14 +4051,35 @@
               "finding"      : "nosniff"
           }
 ,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
               "id"           : "Content-Security-Policy-Report-Only",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.crisp.chat https://sentry.incubateur.net https://browser.sentry-cdn.com https://*.data.gouv.fr https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://*.data.gouv.fr https://geo.api.gouv.fr https://*.beta.gouv.fr https://sentry.incubateur.net https://*.crisp.chat wss://*.crisp.chat; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' https://data.geopf.fr https://*.s3.fr-par.scw.cloud data: https://*.crisp.chat https://static.demarches-simplifiees.fr; font-src 'self' https://*.crisp.chat; media-src 'self' https://*.s3.fr-par.scw.cloud https://*.crisp.chat; frame-src 'self' https://*.crisp.chat https://*.data.gouv.fr https://*.beta.gouv.fr; worker-src 'self' blob: https://*.crisp.chat; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+              "finding"      : "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/"
+          }
+,         {
+              "id"           : "Permissions-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
+              "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "same-origin"
+          }
+,         {
+              "id"           : "Cross-Origin-Resource-Policy",
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
               "port"         : "443",
               "severity"     : "INFO",
@@ -4520,6 +4604,6 @@
               "ip"           : "nitrates-staging.osc-fr1.scalingo.io/148.253.75.120",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "352"
+              "finding"      : "399"
           }
 ]
