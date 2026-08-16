@@ -360,7 +360,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "39 >= 30 days"
+              "finding"      : "32 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -514,14 +514,14 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1786240678"
+              "finding"      : "1786843852"
           }
 ,         {
               "id"           : "HSTS",
@@ -542,7 +542,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No Server banner line in header, interesting!"
+              "finding"      : "Apache"
           }
 ,         {
               "id"           : "banner_application",
@@ -556,56 +556,14 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2 at '/'"
+              "finding"      : "0 at '/'"
           }
 ,         {
-              "id"           : "cookie_secure",
+              "id"           : "security_headers",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "0/2 at '/' marked as secure"
-          }
-,         {
-              "id"           : "cookie_httponly",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "0/2 at '/' marked as HttpOnly"
-          }
-,         {
-              "id"           : "X-Frame-Options",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "DENY"
-          }
-,         {
-              "id"           : "X-Content-Type-Options",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "nosniff"
-          }
-,         {
-              "id"           : "Content-Security-Policy",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-vYG9Cun4KkcRUJJiiADmcQ' *.gouv.fr; style-src 'self' 'nonce-vYG9Cun4KkcRUJJiiADmcQ'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com"
-          }
-,         {
-              "id"           : "Cross-Origin-Opener-Policy",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "same-origin"
-          }
-,         {
-              "id"           : "Referrer-Policy",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "same-origin"
+              "severity"     : "MEDIUM",
+              "finding"      : "--"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -681,10 +639,10 @@
               "id"           : "BREACH",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+              "finding"      : "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -1468,7 +1426,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "39 >= 30 days"
+              "finding"      : "32 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1629,7 +1587,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1786240790"
+              "finding"      : "1786844009"
           }
 ,         {
               "id"           : "HSTS",
@@ -1650,7 +1608,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No Server banner line in header, interesting!"
+              "finding"      : "Apache"
           }
 ,         {
               "id"           : "banner_application",
@@ -1664,56 +1622,14 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2 at '/'"
+              "finding"      : "0 at '/'"
           }
 ,         {
-              "id"           : "cookie_secure",
+              "id"           : "security_headers",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "0/2 at '/' marked as secure"
-          }
-,         {
-              "id"           : "cookie_httponly",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "0/2 at '/' marked as HttpOnly"
-          }
-,         {
-              "id"           : "X-Frame-Options",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "DENY"
-          }
-,         {
-              "id"           : "X-Content-Type-Options",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "nosniff"
-          }
-,         {
-              "id"           : "Content-Security-Policy",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "default-src 'self' *.gouv.fr *.services.clever-cloud.com compl-alim-metabase.cleverapps.io; script-src 'self' 'nonce-lNAJiVYHO56_-DRdTp_xeQ' *.gouv.fr; style-src 'self' 'nonce-lNAJiVYHO56_-DRdTp_xeQ'; img-src 'self' *.services.clever-cloud.com data:; connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com"
-          }
-,         {
-              "id"           : "Cross-Origin-Opener-Policy",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "same-origin"
-          }
-,         {
-              "id"           : "Referrer-Policy",
-              "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "same-origin"
+              "severity"     : "MEDIUM",
+              "finding"      : "--"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1789,10 +1705,10 @@
               "id"           : "BREACH",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+              "finding"      : "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -2220,6 +2136,6 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "225"
+              "finding"      : "319"
           }
 ]
