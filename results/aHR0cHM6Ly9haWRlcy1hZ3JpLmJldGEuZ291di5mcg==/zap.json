@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 23 Aug 2026 01:54:28",
-	"created": "2026-08-23T01:54:28.386275995Z",
+	"@generated": "Sun, 30 Aug 2026 04:43:11",
+	"created": "2026-08-30T04:43:11.684153123Z",
 	"insights":[
 		{
 			"level": "Low",
@@ -18,7 +18,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "89"
+			"statistic": "93"
 		},
 		{
 			"level": "Info",
@@ -26,7 +26,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.code.2xx",
 			"description": "Percentage of responses with status code 2xx",
-			"statistic": "93"
+			"statistic": "91"
 		},
 		{
 			"level": "Info",
@@ -34,15 +34,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.code.4xx",
 			"description": "Percentage of responses with status code 4xx",
-			"statistic": "6"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://aides-agri.beta.gouv.fr",
-			"key": "insight.endpoint.ctype.application/octet-stream",
-			"description": "Percentage of endpoints with content type application/octet-stream",
-			"statistic": "2"
+			"statistic": "8"
 		},
 		{
 			"level": "Info",
@@ -50,7 +42,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.endpoint.ctype.application/xml",
 			"description": "Percentage of endpoints with content type application/xml",
-			"statistic": "2"
+			"statistic": "7"
 		},
 		{
 			"level": "Info",
@@ -58,7 +50,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.endpoint.ctype.image/png",
 			"description": "Percentage of endpoints with content type image/png",
-			"statistic": "8"
+			"statistic": "10"
 		},
 		{
 			"level": "Info",
@@ -67,14 +59,6 @@
 			"key": "insight.endpoint.ctype.image/svg+xml",
 			"description": "Percentage of endpoints with content type image/svg+xml",
 			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://aides-agri.beta.gouv.fr",
-			"key": "insight.endpoint.ctype.image/x-icon",
-			"description": "Percentage of endpoints with content type image/x-icon",
-			"statistic": "2"
 		},
 		{
 			"level": "Info",
@@ -90,7 +74,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.endpoint.ctype.text/html",
 			"description": "Percentage of endpoints with content type text/html",
-			"statistic": "89"
+			"statistic": "87"
 		},
 		{
 			"level": "Info",
@@ -106,7 +90,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.endpoint.ctype.text/plain",
 			"description": "Percentage of endpoints with content type text/plain",
-			"statistic": "2"
+			"statistic": "7"
 		},
 		{
 			"level": "Info",
@@ -122,7 +106,7 @@
 			"site": "https://aides-agri.beta.gouv.fr",
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
-			"statistic": "1495"
+			"statistic": "1269"
 		}
 	],
 	"site":[ 
@@ -143,7 +127,7 @@
 					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
 					"instances":[ 
 						{
-							"id": "89",
+							"id": "101",
 							"uri": "https://aides-agri.beta.gouv.fr/aides",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides",
 							"method": "GET",
@@ -153,7 +137,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"\" ]."
 						},
 						{
-							"id": "152",
+							"id": "160",
 							"uri": "https://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (departement,filieres,profil,sujets,themes,tri,voir_fermees)",
 							"method": "GET",
@@ -163,9 +147,9 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"\" ]."
 						},
 						{
-							"id": "149",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&themes=2",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (email,themes)",
+							"id": "163",
+							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (email)",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -173,8 +157,8 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"\" ]."
 						},
 						{
-							"id": "72",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=2",
+							"id": "115",
+							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=5",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (themes)",
 							"method": "GET",
 							"param": "",
@@ -183,9 +167,9 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"\" ]."
 						},
 						{
-							"id": "151",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=2&usefulness=0",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (themes,usefulness)",
+							"id": "162",
+							"uri": "https://aides-agri.beta.gouv.fr/aides?usefulness=0",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (usefulness)",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -200,7 +184,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "503"
+					"sourceid": "365"
 				},
 				{
 					"pluginid": "10098",
@@ -213,7 +197,7 @@
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "1",
 							"uri": "https://aides-agri.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -223,7 +207,7 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "113",
+							"id": "107",
 							"uri": "https://aides-agri.beta.gouv.fr/static/dsfr/dist/favicon/apple-touch-icon.09be1cc5f435.png",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/apple-touch-icon.09be1cc5f435.png",
 							"method": "GET",
@@ -233,7 +217,7 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "115",
+							"id": "108",
 							"uri": "https://aides-agri.beta.gouv.fr/static/dsfr/dist/favicon/favicon.643092a0caac.ico",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/favicon.643092a0caac.ico",
 							"method": "GET",
@@ -243,7 +227,7 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "114",
+							"id": "100",
 							"uri": "https://aides-agri.beta.gouv.fr/static/dsfr/dist/favicon/favicon.7718992eb76d.svg",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/favicon.7718992eb76d.svg",
 							"method": "GET",
@@ -253,7 +237,7 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "116",
+							"id": "106",
 							"uri": "https://aides-agri.beta.gouv.fr/static/dsfr/dist/favicon/manifest.0c3ee350fbfb.webmanifest",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/dsfr\/dist\/favicon\/manifest.0c3ee350fbfb.webmanifest",
 							"method": "GET",
@@ -270,7 +254,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?category=HTML5&subcategory=Overly%20Permissive%20CORS%20Policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "18"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -283,7 +267,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "4",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -293,17 +277,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "25",
-							"uri": "https://aides-agri.beta.gouv.fr/",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "csrftoken",
-							"attack": "",
-							"evidence": "Set-Cookie: csrftoken",
-							"otherinfo": ""
-						},
-						{
-							"id": "57",
+							"id": "37",
 							"uri": "https://aides-agri.beta.gouv.fr/etape",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/etape",
 							"method": "GET",
@@ -313,9 +287,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
-							"uri": "https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/declaration-accessibilite",
+							"id": "46",
+							"uri": "https://aides-agri.beta.gouv.fr/feedback-themes-sujets",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/feedback-themes-sujets",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -323,9 +297,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
-							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
+							"id": "2",
+							"uri": "https://aides-agri.beta.gouv.fr/resultats",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/resultats",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "Set-Cookie: csrftoken",
+							"otherinfo": ""
+						},
+						{
+							"id": "51",
+							"uri": "https://aides-agri.beta.gouv.fr/trouver-mon-entreprise",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-mon-entreprise",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -340,7 +324,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "90004",
@@ -353,7 +337,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "15",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -363,7 +347,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "35",
+							"id": "64",
 							"uri": "https://aides-agri.beta.gouv.fr/",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
 							"method": "GET",
@@ -373,7 +357,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "95",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/declaration-accessibilite",
 							"method": "GET",
@@ -383,7 +367,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "43",
+							"id": "89",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
 							"method": "GET",
@@ -393,7 +377,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
+							"id": "42",
 							"uri": "https://aides-agri.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -404,13 +388,13 @@
 						}
 					],
 					"count": "5",
-					"systemic": false,
+					"systemic": true,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "90004",
@@ -423,7 +407,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "14",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -433,7 +417,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "63",
 							"uri": "https://aides-agri.beta.gouv.fr/",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
 							"method": "GET",
@@ -443,7 +427,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "64",
+							"id": "92",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/declaration-accessibilite",
 							"method": "GET",
@@ -453,7 +437,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
+							"id": "88",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
 							"method": "GET",
@@ -463,7 +447,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "51",
+							"id": "41",
 							"uri": "https://aides-agri.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -474,13 +458,13 @@
 						}
 					],
 					"count": "5",
-					"systemic": false,
+					"systemic": true,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "10110",
@@ -493,7 +477,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"id": "140",
+							"id": "148",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -510,7 +494,7 @@
 					"reference": "<p>https://v17.angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "568"
+					"sourceid": "474"
 				},
 				{
 					"pluginid": "110009",
@@ -523,8 +507,8 @@
 					"desc": "<p>The full path of files which might be sensitive has been exposed to the client.</p>",
 					"instances":[ 
 						{
-							"id": "147",
-							"uri": "https://aides-agri.beta.gouv.fr/detail?cdDispositif=RENOAAC2026",
+							"id": "159",
+							"uri": "https://aides-agri.beta.gouv.fr/detail?cdDispositif=GRETEA_2026",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/detail (cdDispositif)",
 							"method": "GET",
 							"param": "",
@@ -533,7 +517,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "158",
+							"uri": "https://aides-agri.beta.gouv.fr/ensemble-d-aides/796-ddtm-aide-a-la-relance-de-lexploitation-agricole-area?breadcrumb_entry_point_title=Catalogue+de+dispositifs&breadcrumb_entry_point_url=%2Faides",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/ensemble-d-aides\/796-ddtm-aide-a-la-relance-de-lexploitation-agricole-area (breadcrumb_entry_point_title,breadcrumb_entry_point_url)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/system/",
+							"otherinfo": ""
+						},
+						{
+							"id": "45",
 							"uri": "https://aides-agri.beta.gouv.fr/etape",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/etape",
 							"method": "GET",
@@ -543,7 +537,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "124",
+							"id": "56",
 							"uri": "https://aides-agri.beta.gouv.fr/feedback-themes-sujets",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/feedback-themes-sujets",
 							"method": "GET",
@@ -553,27 +547,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "171",
-							"uri": "https://aides-agri.beta.gouv.fr/ha",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/ha",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/system/",
-							"otherinfo": ""
-						},
-						{
-							"id": "173",
-							"uri": "https://aides-agri.beta.gouv.fr/ha.",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/ha.",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/system/",
-							"otherinfo": ""
-						},
-						{
-							"id": "112",
+							"id": "79",
 							"uri": "https://aides-agri.beta.gouv.fr/resultats",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/resultats",
 							"method": "GET",
@@ -583,7 +557,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "108",
+							"id": "73",
 							"uri": "https://aides-agri.beta.gouv.fr/trouver-ma-commune",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-ma-commune",
 							"method": "GET",
@@ -593,7 +567,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "90",
+							"id": "74",
 							"uri": "https://aides-agri.beta.gouv.fr/trouver-mon-entreprise",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-mon-entreprise",
 							"method": "GET",
@@ -603,7 +577,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "148",
+							"id": "133",
 							"uri": "https://aides-agri.beta.gouv.fr/ui/static",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/ui\/static",
 							"method": "GET",
@@ -613,14 +587,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"systemic": false,
 					"solution": "<p>Disable directory browsing in your web server. Refer to the web server documentation.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/attacks/Full_Path_Disclosure</p>",
 					"cweid": "209",
 					"wascid": "13",
-					"sourceid": "1562"
+					"sourceid": "1542"
 				},
 				{
 					"pluginid": "10063",
@@ -633,7 +607,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "11",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -643,9 +617,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
-							"uri": "https://aides-agri.beta.gouv.fr/",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
+							"id": "24",
+							"uri": "https://aides-agri.beta.gouv.fr/envoyer-les-resultats-par-courriel",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/envoyer-les-resultats-par-courriel",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -653,7 +627,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "61",
+							"id": "39",
 							"uri": "https://aides-agri.beta.gouv.fr/etape",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/etape",
 							"method": "GET",
@@ -663,9 +637,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "63",
-							"uri": "https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/declaration-accessibilite",
+							"id": "50",
+							"uri": "https://aides-agri.beta.gouv.fr/feedback-themes-sujets",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/feedback-themes-sujets",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -673,9 +647,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
-							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
+							"id": "60",
+							"uri": "https://aides-agri.beta.gouv.fr/trouver-mon-entreprise",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-mon-entreprise",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -703,97 +677,97 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "49",
+							"id": "26",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "8",
+							"id": "18",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "NFb9t9K4Kcb3xIVYcol8Gkk2sd46uC2E",
-							"otherinfo": "4V\uFFFD\uFFFD\u04B8)\uFFFD\uFFFD\u0105Xr\uFFFD|\\x001aI6\uFFFD\uFFFD:\uFFFD-\uFFFD"
+							"evidence": "ipo616rXw6BdjzNX69OFAKVWY4Z8zvwK",
+							"otherinfo": "\uFFFD\uFFFD:\u05EA\uFFFD\u00E0]\uFFFD3W\uFFFD\u04C5\\x0000\uFFFDVc\uFFFD|\uFFFD\uFFFD\n"
 						},
 						{
-							"id": "44",
+							"id": "72",
 							"uri": "https://aides-agri.beta.gouv.fr/",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "109",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=2",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (themes)",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
-						},
-						{
-							"id": "69",
+							"id": "44",
 							"uri": "https://aides-agri.beta.gouv.fr/etape",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/etape",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "103",
+							"id": "53",
+							"uri": "https://aides-agri.beta.gouv.fr/feedback-themes-sujets",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/feedback-themes-sujets",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
+						},
+						{
+							"id": "105",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/cgu",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/cgu",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "71",
+							"id": "103",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/declaration-accessibilite",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "55",
+							"id": "99",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "111",
+							"id": "78",
 							"uri": "https://aides-agri.beta.gouv.fr/resultats",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/resultats",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "66",
+							"id": "47",
 							"uri": "https://aides-agri.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -803,34 +777,34 @@
 							"otherinfo": "~\uFFFD\u0689\u05FF\u05DD\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFDu\uFFFD\uFFFDV\uFFFD\uFFFD\u89F1\uFFFD\uD289\uFFFD\uFFFD\uFFFD\\x001fz\uFFFD\"\uFFFDy\u0796W\uFFFD\uFFFD"
 						},
 						{
-							"id": "107",
+							"id": "71",
 							"uri": "https://aides-agri.beta.gouv.fr/trouver-ma-commune",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-ma-commune",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						},
 						{
-							"id": "88",
+							"id": "68",
 							"uri": "https://aides-agri.beta.gouv.fr/trouver-mon-entreprise",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-mon-entreprise",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "L8azLHIEBdY3y3dEedMoGOBtsjIz48P7",
-							"otherinfo": "/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD"
+							"evidence": "86vvXCXeIB1DxHYCNy1uGgIZSi6jzT77",
+							"otherinfo": "\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD"
 						}
 					],
 					"count": "12",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>/\u01B3,r\\x0004\\x0005\uFFFD7\uFFFDwDy\uFFFD(\\x0018\uFFFDm\uFFFD23\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\%\uFFFD \\x001dC\uFFFDv\\x00027-n\\x001a\\x0002\\x0019J.\uFFFD\uFFFD>\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "10024",
@@ -843,7 +817,7 @@
 					"desc": "<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</p>",
 					"instances":[ 
 						{
-							"id": "174",
+							"id": "176",
 							"uri": "https://aides-agri.beta.gouv.fr/aides?departement=01&email=zaproxy%40example.com&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (departement,email,filieres,profil,sujets,themes,tri,voir_fermees)",
 							"method": "GET",
@@ -853,7 +827,7 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "167",
+							"id": "164",
 							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (email)",
 							"method": "GET",
@@ -863,8 +837,8 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "153",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&themes=2",
+							"id": "169",
+							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&themes=5",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (email,themes)",
 							"method": "GET",
 							"param": "email",
@@ -873,8 +847,8 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "175",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&themes=2&usefulness=0",
+							"id": "179",
+							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&themes=5&usefulness=0",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (email,themes,usefulness)",
 							"method": "GET",
 							"param": "email",
@@ -883,7 +857,7 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "180",
+							"id": "178",
 							"uri": "https://aides-agri.beta.gouv.fr/aides?email=zaproxy%40example.com&usefulness=0",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (email,usefulness)",
 							"method": "GET",
@@ -900,7 +874,7 @@
 					"reference": "",
 					"cweid": "598",
 					"wascid": "13",
-					"sourceid": "3475"
+					"sourceid": "3688"
 				},
 				{
 					"pluginid": "10027",
@@ -913,7 +887,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "94",
+							"id": "113",
 							"uri": "https://aides-agri.beta.gouv.fr/aides",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides",
 							"method": "GET",
@@ -923,8 +897,8 @@
 							"otherinfo": "The following pattern was used: \\bFIXME\\b and was detected in likely comment: \"// FIXME very hacky way to prevent DSFR crash because of Toggle component not supporting htmx swapping\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "81",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=2",
+							"id": "118",
+							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=5",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (themes)",
 							"method": "GET",
 							"param": "",
@@ -933,7 +907,7 @@
 							"otherinfo": "The following pattern was used: \\bFIXME\\b and was detected in likely comment: \"// FIXME very hacky way to prevent DSFR crash because of Toggle component not supporting htmx swapping\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "138",
+							"id": "146",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -943,7 +917,7 @@
 							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected 2 times, the first in likely comment: \"// TODO: `composed: true` here is a hack to make global event handlers work with events in shadow DOM\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "135",
+							"id": "143",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -953,7 +927,7 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 7 times, the first in likely comment: \"// select-oob swaps\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "137",
+							"id": "145",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -963,7 +937,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 15 times, the first in likely comment: \"/**\n       * The default delay between receiving a response from the server and doing the swap.\n       * @type number\n       * @\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "134",
+							"id": "142",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -973,7 +947,7 @@
 							"otherinfo": "The following pattern was used: \\bBUGS\\b and was detected in likely comment: \"//   click - on OSX buttons do not focus on click see https://bugs.webkit.org/show_bug.cgi?id=13724\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "136",
+							"id": "144",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -983,7 +957,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in likely comment: \"/**\n       * Whether to report input validation errors to the end user and update focus to the first input that fails validation\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "133",
+							"id": "141",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -993,7 +967,7 @@
 							"otherinfo": "The following pattern was used: \\bLATER\\b and was detected 2 times, the first in likely comment: \"/**\n       * The default implementation of **getWebSocketReconnectDelay** for reconnecting after unexpected connection loss by t\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "139",
+							"id": "147",
 							"uri": "https://aides-agri.beta.gouv.fr/static/vendor/htmx.143c79dfcd09.js",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/static\/vendor\/htmx.143c79dfcd09.js",
 							"method": "GET",
@@ -1010,7 +984,7 @@
 					"reference": "",
 					"cweid": "615",
 					"wascid": "13",
-					"sourceid": "503"
+					"sourceid": "365"
 				},
 				{
 					"pluginid": "10109",
@@ -1023,7 +997,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "3",
+							"id": "7",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1033,7 +1007,7 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"id": "31",
+							"id": "58",
 							"uri": "https://aides-agri.beta.gouv.fr/",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
 							"method": "GET",
@@ -1043,17 +1017,17 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"id": "131",
-							"uri": "https://aides-agri.beta.gouv.fr/aide/2013-bpifrance-garantie-creation-standard",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/2013-bpifrance-garantie-creation-standard",
+							"id": "134",
+							"uri": "https://aides-agri.beta.gouv.fr/aide/1917-direction-regionale-de-lalimentation-de-lagriculture-et-de-la-foret-dispositif-national-daccompagnement-des-projets-et-initiatives-dina-des-cooperatives-dutilisation-de-materiel-agricole-cuma",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/1917-direction-regionale-de-lalimentation-de-lagriculture-et-de-la-foret-dispositif-national-daccompagnement-des-projets-et-initiatives-dina-des-cooperatives-dutilisation-de-materiel-agricole-cuma",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Garantie Cr\u00E9ation Standard</a>",
+							"evidence": "<a class=\"fr-breadcrumb__link\" aria-current=\"page\">Dispositif national d\u2019accompagnement des projets et initiatives (DiNA) des coop\u00E9ratives d\u2019utilisation de mat\u00E9riel agricole (CUMA)</a>",
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "95",
+							"id": "114",
 							"uri": "https://aides-agri.beta.gouv.fr/aides",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides",
 							"method": "GET",
@@ -1063,8 +1037,8 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "82",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=2",
+							"id": "119",
+							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=5",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (themes)",
 							"method": "GET",
 							"param": "",
@@ -1080,7 +1054,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "10015",
@@ -1093,7 +1067,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "3",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1103,7 +1077,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "54",
 							"uri": "https://aides-agri.beta.gouv.fr/",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
 							"method": "GET",
@@ -1113,7 +1087,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "27",
+							"id": "80",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
 							"method": "GET",
@@ -1123,7 +1097,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "13",
+							"id": "0",
 							"uri": "https://aides-agri.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1133,7 +1107,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "36",
 							"uri": "https://aides-agri.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1150,7 +1124,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "90005",
@@ -1163,7 +1137,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "21",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1173,19 +1147,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
-							"uri": "https://aides-agri.beta.gouv.fr/",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "18",
-							"uri": "https://aides-agri.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/robots.txt",
+							"id": "34",
+							"uri": "https://aides-agri.beta.gouv.fr/envoyer-les-resultats-par-courriel",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/envoyer-les-resultats-par-courriel",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1193,7 +1157,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1213,7 +1177,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "20",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1223,19 +1187,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "46",
-							"uri": "https://aides-agri.beta.gouv.fr/",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "17",
-							"uri": "https://aides-agri.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/robots.txt",
+							"id": "33",
+							"uri": "https://aides-agri.beta.gouv.fr/envoyer-les-resultats-par-courriel",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/envoyer-les-resultats-par-courriel",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1243,7 +1197,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1263,7 +1217,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "19",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1273,19 +1227,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
-							"uri": "https://aides-agri.beta.gouv.fr/",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "16",
-							"uri": "https://aides-agri.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/robots.txt",
+							"id": "32",
+							"uri": "https://aides-agri.beta.gouv.fr/envoyer-les-resultats-par-courriel",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/envoyer-les-resultats-par-courriel",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1293,7 +1237,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1313,7 +1257,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "22",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1323,19 +1267,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
-							"uri": "https://aides-agri.beta.gouv.fr/",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "19",
-							"uri": "https://aides-agri.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/robots.txt",
+							"id": "35",
+							"uri": "https://aides-agri.beta.gouv.fr/envoyer-les-resultats-par-courriel",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/envoyer-les-resultats-par-courriel",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1343,7 +1277,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
@@ -1363,7 +1297,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "0",
+							"id": "17",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1373,7 +1307,7 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "21",
+							"id": "70",
 							"uri": "https://aides-agri.beta.gouv.fr/",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
 							"method": "GET",
@@ -1383,27 +1317,7 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "76",
-							"uri": "https://aides-agri.beta.gouv.fr/aides",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides",
-							"method": "GET",
-							"param": "csrftoken",
-							"attack": "",
-							"evidence": "csrftoken",
-							"otherinfo": "cookie:csrftoken"
-						},
-						{
-							"id": "54",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?themes=2",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (themes)",
-							"method": "GET",
-							"param": "csrftoken",
-							"attack": "",
-							"evidence": "csrftoken",
-							"otherinfo": "cookie:csrftoken"
-						},
-						{
-							"id": "56",
+							"id": "43",
 							"uri": "https://aides-agri.beta.gouv.fr/etape",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/etape",
 							"method": "GET",
@@ -1413,7 +1327,17 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "91",
+							"id": "52",
+							"uri": "https://aides-agri.beta.gouv.fr/feedback-themes-sujets",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/feedback-themes-sujets",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "csrftoken",
+							"otherinfo": "cookie:csrftoken"
+						},
+						{
+							"id": "104",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/cgu",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/cgu",
 							"method": "GET",
@@ -1423,7 +1347,7 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "53",
+							"id": "102",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/declaration-accessibilite",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/declaration-accessibilite",
 							"method": "GET",
@@ -1433,7 +1357,7 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "26",
+							"id": "98",
 							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
 							"method": "GET",
@@ -1443,7 +1367,17 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "104",
+							"id": "77",
+							"uri": "https://aides-agri.beta.gouv.fr/resultats",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/resultats",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "csrftoken",
+							"otherinfo": "cookie:csrftoken"
+						},
+						{
+							"id": "69",
 							"uri": "https://aides-agri.beta.gouv.fr/trouver-ma-commune",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-ma-commune",
 							"method": "GET",
@@ -1453,7 +1387,7 @@
 							"otherinfo": "cookie:csrftoken"
 						},
 						{
-							"id": "73",
+							"id": "67",
 							"uri": "https://aides-agri.beta.gouv.fr/trouver-mon-entreprise",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/trouver-mon-entreprise",
 							"method": "GET",
@@ -1461,9 +1395,19 @@
 							"attack": "",
 							"evidence": "csrftoken",
 							"otherinfo": "cookie:csrftoken"
+						},
+						{
+							"id": "31",
+							"uri": "https://aides-agri.beta.gouv.fr/aides",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "csrftoken",
+							"otherinfo": "cookie:csrftoken"
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"systemic": false,
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p>cookie:csrftoken</p>",
@@ -1483,7 +1427,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "9",
 							"uri": "https://aides-agri.beta.gouv.fr",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr",
 							"method": "GET",
@@ -1493,9 +1437,9 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "32",
-							"uri": "https://aides-agri.beta.gouv.fr/",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/",
+							"id": "23",
+							"uri": "https://aides-agri.beta.gouv.fr/envoyer-les-resultats-par-courriel",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/envoyer-les-resultats-par-courriel",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1503,9 +1447,9 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "40",
-							"uri": "https://aides-agri.beta.gouv.fr/pages/mentions-legales",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/pages\/mentions-legales",
+							"id": "38",
+							"uri": "https://aides-agri.beta.gouv.fr/etape",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/etape",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1513,7 +1457,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "15",
+							"id": "49",
 							"uri": "https://aides-agri.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1523,7 +1467,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "50",
+							"id": "40",
 							"uri": "https://aides-agri.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1553,7 +1497,7 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"id": "144",
+							"id": "139",
 							"uri": "https://aides-agri.beta.gouv.fr/?departement=01&filieres=1&profil=agri",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/ (departement,filieres,profil)",
 							"method": "GET",
@@ -1563,7 +1507,7 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/?departement=01&filieres=1&profil=agri\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\ndepartement=01\n\nThe user-controlled value was:\n01"
 						},
 						{
-							"id": "143",
+							"id": "138",
 							"uri": "https://aides-agri.beta.gouv.fr/?departement=01&filieres=1&profil=agri",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/ (departement,filieres,profil)",
 							"method": "GET",
@@ -1573,7 +1517,7 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/?departement=01&filieres=1&profil=agri\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\nfilieres=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1, shrink-to-fit=no"
 						},
 						{
-							"id": "145",
+							"id": "140",
 							"uri": "https://aides-agri.beta.gouv.fr/?departement=01&filieres=1&profil=agri",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/ (departement,filieres,profil)",
 							"method": "GET",
@@ -1583,94 +1527,44 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/?departement=01&filieres=1&profil=agri\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nprofil=agri\n\nThe user-controlled value was:\nagri"
 						},
 						{
-							"id": "150",
-							"uri": "https://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D5",
+							"id": "155",
+							"uri": "https://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf?breadcrumb_entry_point_title=Catalogue+de+dispositifs&breadcrumb_entry_point_url=%2Faides",
 							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/1916-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf (breadcrumb_entry_point_title,breadcrumb_entry_point_url)",
 							"method": "GET",
 							"param": "breadcrumb_entry_point_url",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D5\n\nappears to include user input in:\na(n) [a] tag [href] attribute\n\nThe user input found was:\nbreadcrumb_entry_point_url=/aides?themes=5\n\nThe user-controlled value was:\n/aides?themes=5"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aide/1916-ministere-de-lagriculture-de-lagro-alimentaire-et-de-la-souverainete-alimentaire-initiative-nationale-pour-lagriculture-francaise-inaf?breadcrumb_entry_point_title=Catalogue+de+dispositifs&breadcrumb_entry_point_url=%2Faides\n\nappears to include user input in:\na(n) [a] tag [href] attribute\n\nThe user input found was:\nbreadcrumb_entry_point_url=/aides\n\nThe user-controlled value was:\n/aides"
 						},
 						{
-							"id": "146",
-							"uri": "https://aides-agri.beta.gouv.fr/aide/2504-franceagrimer-renovation-des-vergers-arboricoles-campagnes-2026-2027-et-2027-2028?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D2",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/2504-franceagrimer-renovation-des-vergers-arboricoles-campagnes-2026-2027-et-2027-2028 (breadcrumb_entry_point_title,breadcrumb_entry_point_url)",
+							"id": "152",
+							"uri": "https://aides-agri.beta.gouv.fr/aide/2313-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-pret-flash-carburant?breadcrumb_entry_point_title=Catalogue+de+dispositifs&breadcrumb_entry_point_url=%2Faides",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/2313-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-pret-flash-carburant (breadcrumb_entry_point_title,breadcrumb_entry_point_url)",
 							"method": "GET",
 							"param": "breadcrumb_entry_point_url",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aide/2504-franceagrimer-renovation-des-vergers-arboricoles-campagnes-2026-2027-et-2027-2028?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D2\n\nappears to include user input in:\na(n) [a] tag [href] attribute\n\nThe user input found was:\nbreadcrumb_entry_point_url=/aides?themes=2\n\nThe user-controlled value was:\n/aides?themes=2"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aide/2313-ministere-de-lagriculture-et-de-la-souverainete-alimentaire-pret-flash-carburant?breadcrumb_entry_point_title=Catalogue+de+dispositifs&breadcrumb_entry_point_url=%2Faides\n\nappears to include user input in:\na(n) [a] tag [href] attribute\n\nThe user input found was:\nbreadcrumb_entry_point_url=/aides\n\nThe user-controlled value was:\n/aides"
 						},
 						{
-							"id": "159",
-							"uri": "https://aides-agri.beta.gouv.fr/aide/717-bpifrance-diag-ecoconception?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D5",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/717-bpifrance-diag-ecoconception (breadcrumb_entry_point_title,breadcrumb_entry_point_url)",
+							"id": "149",
+							"uri": "https://aides-agri.beta.gouv.fr/aide/2484-direction-generale-des-finances-publiques-aide-de-100-pour-les-travailleurs-grands-rouleurs?breadcrumb_entry_point_title=Catalogue+de+dispositifs&breadcrumb_entry_point_url=%2Faides",
+							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/2484-direction-generale-des-finances-publiques-aide-de-100-pour-les-travailleurs-grands-rouleurs (breadcrumb_entry_point_title,breadcrumb_entry_point_url)",
 							"method": "GET",
 							"param": "breadcrumb_entry_point_url",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aide/717-bpifrance-diag-ecoconception?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D5\n\nappears to include user input in:\na(n) [a] tag [href] attribute\n\nThe user input found was:\nbreadcrumb_entry_point_url=/aides?themes=5\n\nThe user-controlled value was:\n/aides?themes=5"
-						},
-						{
-							"id": "160",
-							"uri": "https://aides-agri.beta.gouv.fr/aide/768-bpifrance-pret-action-climat?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D5",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aide\/768-bpifrance-pret-action-climat (breadcrumb_entry_point_title,breadcrumb_entry_point_url)",
-							"method": "GET",
-							"param": "breadcrumb_entry_point_url",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aide/768-bpifrance-pret-action-climat?breadcrumb_entry_point_title=Vos+r%C3%A9sultats&breadcrumb_entry_point_url=%2Faides%3Fthemes%3D5\n\nappears to include user input in:\na(n) [a] tag [href] attribute\n\nThe user input found was:\nbreadcrumb_entry_point_url=/aides?themes=5\n\nThe user-controlled value was:\n/aides?themes=5"
-						},
-						{
-							"id": "157",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (departement,filieres,profil,sujets,themes,tri,voir_fermees)",
-							"method": "GET",
-							"param": "departement",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on\n\nappears to include user input in:\na(n) [option] tag [value] attribute\n\nThe user input found was:\ndepartement=01\n\nThe user-controlled value was:\n01"
-						},
-						{
-							"id": "154",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (departement,filieres,profil,sujets,themes,tri,voir_fermees)",
-							"method": "GET",
-							"param": "filieres",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\nfilieres=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1, shrink-to-fit=no"
-						},
-						{
-							"id": "155",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (departement,filieres,profil,sujets,themes,tri,voir_fermees)",
-							"method": "GET",
-							"param": "profil",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on\n\nappears to include user input in:\na(n) [path] tag [stroke] attribute\n\nThe user input found was:\nprofil=None\n\nThe user-controlled value was:\nnone"
-						},
-						{
-							"id": "158",
-							"uri": "https://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on",
-							"nodeName": "https:\/\/aides-agri.beta.gouv.fr\/aides (departement,filieres,profil,sujets,themes,tri,voir_fermees)",
-							"method": "GET",
-							"param": "tri",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aides?departement=01&filieres=1&profil=None&sujets=1&themes=2&tri=cloture&voir_fermees=on\n\nappears to include user input in:\na(n) [option] tag [value] attribute\n\nThe user input found was:\ntri=cloture\n\nThe user-controlled value was:\ncloture"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://aides-agri.beta.gouv.fr/aide/2484-direction-generale-des-finances-publiques-aide-de-100-pour-les-travailleurs-grands-rouleurs?breadcrumb_entry_point_title=Catalogue+de+dispositifs&breadcrumb_entry_point_url=%2Faides\n\nappears to include user input in:\na(n) [a] tag [href] attribute\n\nThe user input found was:\nbreadcrumb_entry_point_url=/aides\n\nThe user-controlled value was:\n/aides"
 						}
 					],
-					"count": "11",
+					"count": "6",
 					"systemic": false,
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://aides-agri.beta.gouv.fr/?departement=01&filieres=1&profil=agri</p><p></p><p>appears to include user input in:</p><p>a(n) [input] tag [value] attribute</p><p></p><p>The user input found was:</p><p>departement=01</p><p></p><p>The user-controlled value was:</p><p>01</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "610"
+					"sourceid": "507"
 				}
 			]
 		}
