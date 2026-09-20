@@ -1,5 +1,12 @@
 [
          {
+              "id"           : "cmdline_fast_depreciation",
+              "ip"           : "ma-cantine.agriculture.gouv.fr/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "'--fast' can have some undesired side effects thus it is not recommended to use anymore"
+          }
+,         {
               "id"           : "service",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
@@ -220,7 +227,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -360,7 +367,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "144 >= 60 days"
+              "finding"      : "138 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,14 +563,14 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789396139"
+              "finding"      : "1789877104"
           }
 ,         {
               "id"           : "HSTS",
@@ -633,7 +640,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "object-src 'self' cellar-c2.services.clever-cloud.com; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; connect-src 'self' stats.beta.gouv.fr ws: geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design api-adresse.data.gouv.fr; default-src 'self'; font-src 'self' client.crisp.chat"
+              "finding"      : "media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; connect-src 'self' stats.beta.gouv.fr ws: geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design api-adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
@@ -1510,7 +1517,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "144 >= 60 days"
+              "finding"      : "138 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1713,7 +1720,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789396256"
+              "finding"      : "1789877223"
           }
 ,         {
               "id"           : "HSTS",
@@ -1783,7 +1790,7 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "object-src 'self' cellar-c2.services.clever-cloud.com; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr 'unsafe-inline' stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; media-src 'self' cellar-c2.services.clever-cloud.com; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; connect-src 'self' stats.beta.gouv.fr ws: geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design api-adresse.data.gouv.fr; default-src 'self'; font-src 'self' client.crisp.chat"
+              "finding"      : "media-src 'self' cellar-c2.services.clever-cloud.com; font-src 'self' client.crisp.chat; default-src 'self'; img-src 'self' cellar-c2.services.clever-cloud.com voxusagers.numerique.gouv.fr stats.beta.gouv.fr www.w3.org data: image.crisp.chat jedonnemonavis.numerique.gouv.fr; frame-src 'self' ma-cantine.crisp.help ma-cantine-metabase.cleverapps.io; connect-src 'self' stats.beta.gouv.fr ws: geo.api.gouv.fr client.crisp.chat wss://client.relay.crisp.chat entreprise.data.gouv.fr plateforme.adresse.data.gouv.fr raw.githubusercontent.com/betagouv/ma-cantine/ api.iconify.design api-adresse.data.gouv.fr; object-src 'self' cellar-c2.services.clever-cloud.com; style-src 'self' 'unsafe-inline' client.crisp.chat netdna.bootstrapcdn.com; script-src 'self' stats.beta.gouv.fr 'unsafe-inline' client.crisp.chat"
           }
 ,         {
               "id"           : "Cross-Origin-Opener-Policy",
@@ -2304,6 +2311,6 @@
               "ip"           : "ma-cantine.agriculture.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "234"
+              "finding"      : "240"
           }
 ]
