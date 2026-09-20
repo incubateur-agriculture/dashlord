@@ -1,37 +1,87 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "A",
     "error": null,
-    "score": 30,
+    "score": 90,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 14 Sep 2026 15:11:00 GMT",
+      "date": "Sun, 20 Sep 2026 04:48:53 GMT",
       "server": "Apache",
-      "last-modified": "Fri, 11 Sep 2026 15:28:16 GMT",
-      "etag": "\"416-65b36bbb948ca-gzip\"",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "default-src 'self' *.gouv.fr *.services.clever-cloud.com;         font-src 'self' https://data.geopf.fr;         script-src 'self' *.gouv.fr https://cdn.jsdelivr.net/ 'unsafe-eval';         style-src 'self' https://cdn.jsdelivr.net/;         img-src 'self' *.services.clever-cloud.com data: *.nasa.gov https://mirrors.creativecommons.org;         connect-src 'self' *.gouv.fr https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com;",
+      "last-modified": "Fri, 18 Sep 2026 08:38:12 GMT",
+      "etag": "\"416-65bbdd219b844-gzip\"",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
-      "content-length": "451",
+      "content-length": "450",
       "connection": "close",
       "content-type": "text/html",
-      "sozu-id": "01M2G7HCZH4PMQ1X1TRVZ752SR"
+      "sozu-id": "01M2YJAK30BAZW3TY0AYSTRPXD"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.gouv.fr",
+          "*.services.clever-cloud.com"
+        ],
+        "font-src": [
+          "'self'",
+          "https://data.geopf.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "*.gouv.fr",
+          "https://cdn.jsdelivr.net/"
+        ],
+        "style-src": [
+          "'self'",
+          "https://cdn.jsdelivr.net/"
+        ],
+        "img-src": [
+          "'self'",
+          "*.nasa.gov",
+          "*.services.clever-cloud.com",
+          "data:",
+          "https://mirrors.creativecommons.org"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.gouv.fr",
+          "https://api.iconify.design",
+          "https://api.simplesvg.com",
+          "https://api.unisvg.com"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -72,12 +122,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
@@ -90,17 +140,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
