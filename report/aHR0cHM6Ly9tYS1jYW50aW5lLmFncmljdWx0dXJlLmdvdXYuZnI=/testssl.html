@@ -8,6 +8,8 @@
 </head>
 <body>
 <pre>
+
+<span style="color:#cd00cd;">&apos;--fast&apos; can have some undesired side effects thus it is not recommended to use anymore</span>
 <span style="font-weight:bold;">
 #####################################################################</span>
   <span style="font-weight:bold;">testssl.sh</span> version <span style="font-weight:bold;">3.2.4</span> from <a href="https://testssl.sh/" style="font-weight:bold;color:black;text-decoration:none;">https://testssl.sh/</a>
@@ -23,7 +25,7 @@
 
 <span style="font-weight:bold;">Testing all IP addresses (port 443): </span>91.208.207.184 91.208.207.168
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-09-14 14:28:36        --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-09-20 04:04:37        --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   91.208.207.168 
  rDNS (91.208.207.184):  --
@@ -89,7 +91,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;renegotiation info/#65281&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>no -- no lifetime advertised
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: yes
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -106,7 +108,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#e52207;font-weight:bold;">NOT ok</span><span style="color:#e52207;font-weight:bold;">:</span><span style="color:#e52207;"> Java </span>(self signed CA in chain)
 <span style="color:#008817;">OK: Mozilla Microsoft Linux Apple </span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">144 &gt;= 60 days</span> (2026-07-21 15:20 --&gt; 2027-02-05 15:20)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">138 &gt;= 60 days</span> (2026-07-21 15:20 --&gt; 2027-02-05 15:20)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl.harica.gr/HARICA-GEANT-TLS-R1.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://ocsp-tls.harica.gr
@@ -126,7 +128,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -134,19 +136,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>1 issued: <span style="color:#c05600;">NOT</span> secure, <span style="color:#c05600;">NOT</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: object-src &apos;self&apos;
-                                cellar-c2.services.clever-cloud.com; img-src
-                                &apos;self&apos; cellar-c2.services.clever-cloud.com
-                                voxusagers.numerique.gouv.fr &apos;unsafe-inline&apos;
-                                stats.beta.gouv.fr www.w3.org data:
-                                image.crisp.chat
-                                jedonnemonavis.numerique.gouv.fr; media-src
-                                &apos;self&apos; cellar-c2.services.clever-cloud.com;
-                                script-src &apos;self&apos; stats.beta.gouv.fr
-                                &apos;unsafe-inline&apos; client.crisp.chat; style-src
-                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
-                                netdna.bootstrapcdn.com; frame-src &apos;self&apos;
-                                ma-cantine.crisp.help
+                              <span style="color:#008817;">Content-Security-Policy</span>: media-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com; font-src
+                                &apos;self&apos; client.crisp.chat; default-src &apos;self&apos;;
+                                img-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com
+                                voxusagers.numerique.gouv.fr stats.beta.gouv.fr
+                                www.w3.org data: image.crisp.chat
+                                jedonnemonavis.numerique.gouv.fr; frame-src
+                                &apos;self&apos; ma-cantine.crisp.help
                                 ma-cantine-metabase.cleverapps.io; connect-src
                                 &apos;self&apos; stats.beta.gouv.fr ws: geo.api.gouv.fr
                                 client.crisp.chat wss://client.relay.crisp.chat
@@ -154,7 +152,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 plateforme.adresse.data.gouv.fr
                                 raw.githubusercontent.com/betagouv/ma-cantine/
                                 api.iconify.design api-adresse.data.gouv.fr;
-                                default-src &apos;self&apos;; font-src &apos;self&apos;
+                                object-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com; style-src
+                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
+                                netdna.bootstrapcdn.com; script-src &apos;self&apos;
+                                stats.beta.gouv.fr &apos;unsafe-inline&apos;
                                 client.crisp.chat
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
@@ -237,10 +239,10 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>96
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-09-14 14:30:32 [ 118s] --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-09-20 04:06:37 [ 122s] --&gt;&gt; 91.208.207.184:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-09-14 14:30:32        --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-09-20 04:06:37        --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   91.208.207.184 
  rDNS (91.208.207.168):  --
@@ -323,7 +325,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#e52207;font-weight:bold;">NOT ok</span><span style="color:#e52207;font-weight:bold;">:</span><span style="color:#e52207;"> Java </span>(self signed CA in chain)
 <span style="color:#008817;">OK: Mozilla Microsoft Linux Apple </span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">144 &gt;= 60 days</span> (2026-07-21 15:20 --&gt; 2027-02-05 15:20)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">138 &gt;= 60 days</span> (2026-07-21 15:20 --&gt; 2027-02-05 15:20)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl.harica.gr/HARICA-GEANT-TLS-R1.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://ocsp-tls.harica.gr
@@ -351,19 +353,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>1 issued: <span style="color:#c05600;">NOT</span> secure, <span style="color:#c05600;">NOT</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: object-src &apos;self&apos;
-                                cellar-c2.services.clever-cloud.com; img-src
-                                &apos;self&apos; cellar-c2.services.clever-cloud.com
-                                voxusagers.numerique.gouv.fr &apos;unsafe-inline&apos;
-                                stats.beta.gouv.fr www.w3.org data:
-                                image.crisp.chat
-                                jedonnemonavis.numerique.gouv.fr; media-src
-                                &apos;self&apos; cellar-c2.services.clever-cloud.com;
-                                script-src &apos;self&apos; stats.beta.gouv.fr
-                                &apos;unsafe-inline&apos; client.crisp.chat; style-src
-                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
-                                netdna.bootstrapcdn.com; frame-src &apos;self&apos;
-                                ma-cantine.crisp.help
+                              <span style="color:#008817;">Content-Security-Policy</span>: media-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com; font-src
+                                &apos;self&apos; client.crisp.chat; default-src &apos;self&apos;;
+                                img-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com
+                                voxusagers.numerique.gouv.fr stats.beta.gouv.fr
+                                www.w3.org data: image.crisp.chat
+                                jedonnemonavis.numerique.gouv.fr; frame-src
+                                &apos;self&apos; ma-cantine.crisp.help
                                 ma-cantine-metabase.cleverapps.io; connect-src
                                 &apos;self&apos; stats.beta.gouv.fr ws: geo.api.gouv.fr
                                 client.crisp.chat wss://client.relay.crisp.chat
@@ -371,7 +369,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 plateforme.adresse.data.gouv.fr
                                 raw.githubusercontent.com/betagouv/ma-cantine/
                                 api.iconify.design api-adresse.data.gouv.fr;
-                                default-src &apos;self&apos;; font-src &apos;self&apos;
+                                object-src &apos;self&apos;
+                                cellar-c2.services.clever-cloud.com; style-src
+                                &apos;self&apos; &apos;unsafe-inline&apos; client.crisp.chat
+                                netdna.bootstrapcdn.com; script-src &apos;self&apos;
+                                stats.beta.gouv.fr &apos;unsafe-inline&apos;
                                 client.crisp.chat
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
@@ -454,7 +456,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>96
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-09-14 14:32:28 [ 234s] --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-09-20 04:08:35 [ 240s] --&gt;&gt; 91.208.207.168:443 (ma-cantine.agriculture.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>91.208.207.184 91.208.207.168
