@@ -9,7 +9,7 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "content-security-policy": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://developer.apple.com https://play.google.com; font-src 'self' data:; connect-src 'self' https://api.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr https://api.zacharie.incubateur.net; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
+      "content-security-policy": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://developer.apple.com https://play.google.com; font-src 'self' data:; connect-src 'self' https://api.zacharie.beta.gouv.fr https://*.ingest.sentry.io https://sentry.incubateur.net https://metabase.zacharie.beta.gouv.fr https://stats.beta.gouv.fr https://api.zacharie.incubateur.net https://recherche-entreprises.api.gouv.fr; frame-src https://metabase.zacharie.beta.gouv.fr https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
@@ -19,14 +19,14 @@
       "permissions-policy": "camera=(), microphone=(), geolocation=(), interest-cohort=()",
       "accept-ranges": "bytes",
       "cache-control": "public, max-age=0",
-      "last-modified": "Fri, 18 Sep 2026 18:04:53 GMT",
-      "etag": "W/\"5be-1a0b5b15876\"",
+      "last-modified": "Sat, 26 Sep 2026 16:04:16 GMT",
+      "etag": "W/\"5be-1a0de75ca46\"",
       "content-type": "text/html; charset=UTF-8",
       "vary": "Accept-Encoding",
-      "date": "Sun, 20 Sep 2026 04:15:29 GMT",
+      "date": "Sun, 27 Sep 2026 04:36:14 GMT",
       "connection": "close",
       "transfer-encoding": "chunked",
-      "sozu-id": "01M2YGDDXCMWCRERFW9W2CFWM6"
+      "sozu-id": "01M3GJCEY53ZEWK30NN32Z5FKX"
     }
   },
   "tests": {
@@ -63,6 +63,7 @@
           "https://api.zacharie.beta.gouv.fr",
           "https://api.zacharie.incubateur.net",
           "https://metabase.zacharie.beta.gouv.fr",
+          "https://recherche-entreprises.api.gouv.fr",
           "https://sentry.incubateur.net",
           "https://stats.beta.gouv.fr"
         ],
