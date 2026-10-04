@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln sylvasan.beta.gouv.fr</pre>
-<p class="lead">Sun Sep 27 05:20:38 2026 – Sun Sep 27 05:23:23 2026<br>1 hosts scanned.
+<p class="lead">Sun Oct  4 05:47:53 2026 – Sun Oct  4 05:48:30 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,9 +76,9 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>91.208.207.218</td>
+<td>91.208.207.221</td>
 <td>sylvasan.beta.gouv.fr</td>
-<td>16</td>
+<td>13</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -91,8 +91,8 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#91-208-207-218"><h3 class="panel-title">91.208.207.218 - sylvasan.beta.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="91-208-207-218">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#91-208-207-221"><h3 class="panel-title">91.208.207.221 - sylvasan.beta.gouv.fr</h3></div>
+<div class="panel-body collapse in" id="91-208-207-221">
 <h4>Hostnames</h4>
 <ul><li>sylvasan.beta.gouv.fr (user)</li></ul>
 <h4>Ports</h4>
@@ -124,7 +124,7 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 6160
-    Sozu-Id: 01M3GMXW9R723RWJX2TXVDP6KH
+    Sozu-Id: 01M42Q8T7H3W2MDDJ99S67FBWY
     &lt;!doctype html&gt;
     &lt;html lang=en-US&gt;
     &lt;head&gt;
@@ -137,7 +137,7 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 6164
-    Sozu-Id: 01M3GMY2BNVJWYQ3YWWZPKQ49Y
+    Sozu-Id: 01M42Q909JE63CAMXDSG7VH5WQ
     &lt;!doctype html&gt;
     &lt;html lang=en-US&gt;
     &lt;head&gt;
@@ -198,55 +198,6 @@
 <td title="Extra Info">protocol 2.0</td>
 </tr>
 <tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/o:fortinet:fortios">cpe:/o:fortinet:fortios</a></td></tr>
-<tr class="success">
-<td title="Port">5050</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">mmcc</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, GenericLines, RPCCheck, SSLSessionReq: 
-    hello over tcp
-    echo:
-  DNSVersionBindReqTCP: 
-    hello over tcp
-    echo: 
-    version
-    bind
-  GetRequest: 
-    hello over tcp
-    echo: GET / HTTP/1.0
-  HTTPOptions: 
-    hello over tcp
-    echo: OPTIONS / HTTP/1.0
-  Help: 
-    hello over tcp
-    echo: HELP
-  Kerberos: 
-    hello over tcp
-    echo: 
-    ^0\xef
-    krbtgt
-    19700101000000Z
-  NULL: 
-    hello over tcp
-  RTSPRequest: 
-    hello over tcp
-    echo: OPTIONS / RTSP/1.0
-  TLSSessionReq: 
-    hello over tcp
-    echo: 
-    random1random2random3random4
-  TerminalServerCookie: 
-    hello over tcp
-    echo: 
-    Cookie: mstshash=nmap</pre>
-</td></tr>
 <tr class="success">
 <td title="Port">5100</td>
 <td title="Protocol">tcp</td>
@@ -320,28 +271,18 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GenericLines: 
-    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":122511,"client_ip":"91.208.207.218","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
+    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":471643,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
     -ERR 'Authorization Violation'
   GetRequest: 
-    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":122510,"client_ip":"91.208.207.218","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
+    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":471642,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
     -ERR 'Authorization Violation'
   HTTPOptions: 
-    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":122512,"client_ip":"91.208.207.218","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
+    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":471644,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
     -ERR 'Authorization Violation'
   NULL: 
-    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":122509,"client_ip":"91.208.207.218","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
+    INFO {"server_id":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","server_name":"NCJBSRYD55FQH2KTHNCKIWVCL7I2ONKDE6M3GBPQVSVUGE6CED4TORUO","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":471641,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCQH4UL7QLC23PEBBOMWZMCJH6CBZBRCNZK4YJSCT6MZECT3OALDNOQC"} 
     -ERR 'Authentication Timeout'</pre>
 </td></tr>
-<tr class="success">
-<td title="Port">5902</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
 <td title="Port">5907</td>
 <td title="Protocol">tcp</td>
@@ -394,16 +335,6 @@
   NULL: 
     220 25901365-d5b9-46bb-bbfa-282cd68032de Mailpit ESMTP Service ready</pre>
 </td></tr>
-<tr class="success">
-<td title="Port">5987</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">wbem-rmi</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="warning">
 <td>9999</td>
 <td>tcp</td>
@@ -431,7 +362,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -441,7 +372,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
@@ -451,7 +382,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>1080</td>
 <td>tcp</td>
 <td>socks</td>
@@ -461,7 +392,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>1081</td>
 <td>tcp</td>
 <td>pvuniwien</td>
@@ -471,7 +402,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5002</td>
 <td>tcp</td>
 <td>ssh</td>
@@ -481,17 +412,7 @@
 <td>protocol 2.0</td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
-<td>5050</td>
-<td>tcp</td>
-<td>mmcc</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5100</td>
 <td>tcp</td>
 <td>ssh</td>
@@ -501,7 +422,7 @@
 <td>protocol 2.0</td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5120</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -511,7 +432,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5221</td>
 <td>tcp</td>
 <td>smtp</td>
@@ -521,7 +442,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5679</td>
 <td>tcp</td>
 <td>activesync</td>
@@ -531,7 +452,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5801</td>
 <td>tcp</td>
 <td>vnc-http-1</td>
@@ -541,17 +462,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
-<td>5902</td>
-<td>tcp</td>
-<td>tcpwrapped</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5907</td>
 <td>tcp</td>
 <td>http</td>
@@ -561,7 +472,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5911</td>
 <td>tcp</td>
 <td>cpdlc</td>
@@ -571,20 +482,10 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
+<td>91.208.207.221 - sylvasan.beta.gouv.fr</td>
 <td>5961</td>
 <td>tcp</td>
 <td>smtp</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>91.208.207.218 - sylvasan.beta.gouv.fr</td>
-<td>5987</td>
-<td>tcp</td>
-<td>wbem-rmi</td>
 <td></td>
 <td></td>
 <td></td>
