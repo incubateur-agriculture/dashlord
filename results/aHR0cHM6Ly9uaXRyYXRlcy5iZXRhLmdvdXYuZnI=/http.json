@@ -9,24 +9,24 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 04 Oct 2026 05:36:37 GMT",
+      "date": "Sun, 11 Oct 2026 05:29:13 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "18850db0-8bfd-4990-8d45-77b9a330cb05",
+      "x-request-id": "71263ca2-f7df-4c9f-88a4-2315dc823028",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "permissions-policy": "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()",
       "cross-origin-resource-policy": "same-origin",
-      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
-      "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
       "strict-transport-security": "max-age=60; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "visitorid=8e35b1a9-a31a-45e4-aa57-88c7aecfe94c; expires=Fri, 29 Oct 2027 05:36:37 GMT; Max-Age=33696000; Path=/; SameSite=Lax; Secure",
-        "csrftoken=OPtwlcYxmfK7DuBSfMOLQQhbwa0eC6RJ; expires=Sun, 03 Oct 2027 05:36:37 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+        "visitorid=688c854e-dacf-4465-9140-46cbf6a2951c; expires=Fri, 05 Nov 2027 05:29:13 GMT; Max-Age=33696000; Path=/; SameSite=Lax; Secure",
+        "csrftoken=w9ANgV4ri9OPJn7L5N3VhnQ5L6vXHmGq; expires=Sun, 10 Oct 2027 05:29:13 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
       ]
     }
   },
@@ -63,6 +63,7 @@
           "data:",
           "https://*.beta.gouv.fr",
           "https://*.cellar-c2.services.clever-cloud.com",
+          "https://cellar-c2.services.clever-cloud.com",
           "https://data.geopf.fr"
         ],
         "font-src": [
@@ -70,7 +71,8 @@
         ],
         "media-src": [
           "'self'",
-          "https://*.cellar-c2.services.clever-cloud.com"
+          "https://*.cellar-c2.services.clever-cloud.com",
+          "https://cellar-c2.services.clever-cloud.com"
         ],
         "frame-src": [
           "'self'",
@@ -118,7 +120,7 @@
       "data": {
         "visitorid": {
           "domain": "nitrates.beta.gouv.fr",
-          "expires": "2027-10-29T05:36:37.000Z",
+          "expires": "2027-11-05T05:29:13.000Z",
           "max-age": 33696000,
           "path": "/",
           "port": null,
@@ -127,7 +129,7 @@
         },
         "csrftoken": {
           "domain": "nitrates.beta.gouv.fr",
-          "expires": "2027-10-03T05:36:37.000Z",
+          "expires": "2027-10-10T05:29:13.000Z",
           "httponly": true,
           "max-age": 31449600,
           "path": "/",
