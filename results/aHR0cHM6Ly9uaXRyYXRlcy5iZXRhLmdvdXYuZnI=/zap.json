@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 11 Oct 2026 05:28:29",
-	"created": "2026-10-11T05:28:29.432584417Z",
+	"@generated": "Sun, 18 Oct 2026 04:14:54",
+	"created": "2026-10-18T04:14:54.130800723Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -40,14 +40,6 @@
 			"level": "Info",
 			"reason": "Informational",
 			"site": "https://nitrates.beta.gouv.fr",
-			"key": "insight.endpoint.ctype.application/xml",
-			"description": "Percentage of endpoints with content type application/xml",
-			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://nitrates.beta.gouv.fr",
 			"key": "insight.endpoint.ctype.image/png",
 			"description": "Percentage of endpoints with content type image/png",
 			"statistic": "1"
@@ -64,17 +56,9 @@
 			"level": "Info",
 			"reason": "Informational",
 			"site": "https://nitrates.beta.gouv.fr",
-			"key": "insight.endpoint.ctype.image/x-icon",
-			"description": "Percentage of endpoints with content type image/x-icon",
-			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://nitrates.beta.gouv.fr",
 			"key": "insight.endpoint.ctype.text/css",
 			"description": "Percentage of endpoints with content type text/css",
-			"statistic": "15"
+			"statistic": "16"
 		},
 		{
 			"level": "Info",
@@ -82,7 +66,7 @@
 			"site": "https://nitrates.beta.gouv.fr",
 			"key": "insight.endpoint.ctype.text/html",
 			"description": "Percentage of endpoints with content type text/html",
-			"statistic": "53"
+			"statistic": "54"
 		},
 		{
 			"level": "Info",
@@ -91,14 +75,6 @@
 			"key": "insight.endpoint.ctype.text/javascript",
 			"description": "Percentage of endpoints with content type text/javascript",
 			"statistic": "20"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://nitrates.beta.gouv.fr",
-			"key": "insight.endpoint.ctype.text/plain",
-			"description": "Percentage of endpoints with content type text/plain",
-			"statistic": "1"
 		},
 		{
 			"level": "Info",
@@ -114,7 +90,7 @@
 			"site": "https://nitrates.beta.gouv.fr",
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
-			"statistic": "147"
+			"statistic": "150"
 		},
 		{
 			"level": "Info",
@@ -122,7 +98,7 @@
 			"site": "https://nitrates.beta.gouv.fr",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "100"
+			"statistic": "53"
 		}
 	],
 	"site":[ 
@@ -143,7 +119,7 @@
 					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "16",
+							"id": "4",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -153,9 +129,19 @@
 							"otherinfo": "The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "17",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "38",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "46",
+							"uri": "https://nitrates.beta.gouv.fr/simulateur/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/simulateur\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -163,14 +149,14 @@
 							"otherinfo": "The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The directive(s): frame-ancestors is/are among the directives that do not fallback to default-src.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10055",
@@ -183,7 +169,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "19",
+							"id": "5",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -193,9 +179,19 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"id": "21",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "40",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "script-src includes unsafe-inline."
+						},
+						{
+							"id": "47",
+							"uri": "https://nitrates.beta.gouv.fr/simulateur/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/simulateur\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -203,7 +199,7 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
@@ -223,7 +219,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "23",
+							"id": "6",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -233,9 +229,19 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "24",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "41",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "48",
+							"uri": "https://nitrates.beta.gouv.fr/simulateur/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/simulateur\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -243,14 +249,14 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90003",
@@ -263,7 +269,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "36",
+							"id": "10",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -273,7 +279,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "68",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -283,9 +289,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "91",
-							"uri": "https://nitrates.beta.gouv.fr/contact/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
+							"id": "73",
+							"uri": "https://nitrates.beta.gouv.fr/_probe/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/_probe\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -293,9 +299,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "100",
-							"uri": "https://nitrates.beta.gouv.fr/definitions/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/definitions\/",
+							"id": "86",
+							"uri": "https://nitrates.beta.gouv.fr/geojson/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/geojson\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -303,9 +309,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "95",
-							"uri": "https://nitrates.beta.gouv.fr/mentions-legales/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/mentions-legales\/",
+							"id": "62",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -320,7 +326,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10055",
@@ -333,7 +339,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "3",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -343,9 +349,19 @@
 							"otherinfo": "Warnings:\nThe report-uri directive has been deprecated in favor of the new report-to directive\n"
 						},
 						{
-							"id": "15",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "37",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'; script-src 'self' 'unsafe-inline' https://sentry.incubateur.net https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://sentry.incubateur.net https://*.beta.gouv.fr; style-src 'self' 'unsafe-inline'; img-src 'self' https://data.geopf.fr https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com data: https://*.beta.gouv.fr; font-src 'self'; media-src 'self' https://cellar-c2.services.clever-cloud.com https://*.cellar-c2.services.clever-cloud.com; frame-src 'self' https://*.beta.gouv.fr; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
+							"otherinfo": "Warnings:\nThe report-uri directive has been deprecated in favor of the new report-to directive\n"
+						},
+						{
+							"id": "45",
+							"uri": "https://nitrates.beta.gouv.fr/simulateur/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/simulateur\/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -353,7 +369,7 @@
 							"otherinfo": "Warnings:\nThe report-uri directive has been deprecated in favor of the new report-to directive\n"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>Warnings:</p><p>The report-uri directive has been deprecated in favor of the new report-to directive</p><p></p>",
@@ -373,7 +389,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "26",
+							"id": "7",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -383,7 +399,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "52",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -393,9 +409,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
-							"uri": "https://nitrates.beta.gouv.fr/contact/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
+							"id": "42",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
 							"method": "GET",
 							"param": "visitorid",
 							"attack": "",
@@ -403,7 +419,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "6",
+							"id": "21",
 							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -413,7 +429,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "28",
 							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -443,7 +459,7 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "27",
+							"id": "8",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -453,7 +469,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "53",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -463,9 +479,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
-							"uri": "https://nitrates.beta.gouv.fr/contact/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
+							"id": "61",
+							"uri": "https://nitrates.beta.gouv.fr/_probe/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/_probe\/",
 							"method": "GET",
 							"param": "https://sentry.incubateur.net/js-sdk-loader/c57384f0197a657c5d337fb3a62d4f6e.min.js",
 							"attack": "",
@@ -473,9 +489,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "81",
-							"uri": "https://nitrates.beta.gouv.fr/definitions/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/definitions\/",
+							"id": "83",
+							"uri": "https://nitrates.beta.gouv.fr/geojson/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/geojson\/",
 							"method": "GET",
 							"param": "https://sentry.incubateur.net/js-sdk-loader/c57384f0197a657c5d337fb3a62d4f6e.min.js",
 							"attack": "",
@@ -483,9 +499,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
-							"uri": "https://nitrates.beta.gouv.fr/mentions-legales/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/mentions-legales\/",
+							"id": "43",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
 							"method": "GET",
 							"param": "https://sentry.incubateur.net/js-sdk-loader/c57384f0197a657c5d337fb3a62d4f6e.min.js",
 							"attack": "",
@@ -513,7 +529,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "49",
+							"id": "17",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -523,7 +539,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
+							"id": "77",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -533,7 +549,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "94",
+							"id": "102",
 							"uri": "https://nitrates.beta.gouv.fr/contact/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
 							"method": "GET",
@@ -543,9 +559,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "99",
-							"uri": "https://nitrates.beta.gouv.fr/mentions-legales/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/mentions-legales\/",
+							"id": "110",
+							"uri": "https://nitrates.beta.gouv.fr/definitions/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/definitions\/",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -553,7 +569,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "39",
 							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -583,134 +599,134 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "43",
+							"id": "94",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "37",
+							"id": "11",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "pFHKun4rLiupyVi9vxARpGkP2teKWWTF",
-							"otherinfo": "\uFFFDQ\u02BA~+.+\uFFFD\uFFFDX\uFFFD\uFFFD\\x0010\\x0011\uFFFDi\\x000f\uFFFD\u05CAYd\uFFFD"
+							"evidence": "DwgnYh0pobBRZ7daVHzX1bOuC4cEuFFb",
+							"otherinfo": "\\x000f\\x0008'b\\x001d)\uFFFD\uFFFDQg\uFFFDZT|\uFFFD\u0573\uFFFD\\x000b\uFFFD\\x0004\uFFFDQ["
 						},
 						{
-							"id": "47",
+							"id": "70",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "M4InegFfsYSARPCk6fM9JY7JJq5ygPzT",
+							"otherinfo": "3\uFFFD'z\\x0001_\uFFFD\uFFFD\uFFFDD\uFFFD\uFFFD\uFFFD=%\uFFFD\uFFFD&\uFFFDr\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"id": "138",
-							"uri": "https://nitrates.beta.gouv.fr/?code_insee&culture_irriguee_type&date_destruction_couvert&date_semis_couvert&effluent_peu_charge&effluent_peu_charge_elevage&lat&lng&occupation_sol&prairie_permanente&sous_culture&type_fertilisant",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/ (code_insee,culture_irriguee_type,date_destruction_couvert,date_semis_couvert,effluent_peu_charge,effluent_peu_charge_elevage,lat,lng,occupation_sol,prairie_permanente,sous_culture,type_fertilisant)",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
-						},
-						{
-							"id": "147",
+							"id": "79",
 							"uri": "https://nitrates.beta.gouv.fr/_probe/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/_probe\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "104",
+							"id": "125",
 							"uri": "https://nitrates.beta.gouv.fr/accessibilite/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/accessibilite\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "122",
+							"id": "119",
 							"uri": "https://nitrates.beta.gouv.fr/cgu/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/cgu\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "92",
+							"id": "101",
 							"uri": "https://nitrates.beta.gouv.fr/contact/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "102",
+							"id": "109",
 							"uri": "https://nitrates.beta.gouv.fr/definitions/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/definitions\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "119",
+							"id": "128",
 							"uri": "https://nitrates.beta.gouv.fr/donnees-personnelles/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/donnees-personnelles\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "143",
+							"id": "91",
 							"uri": "https://nitrates.beta.gouv.fr/geojson/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/geojson\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
 						},
 						{
-							"id": "97",
+							"id": "131",
 							"uri": "https://nitrates.beta.gouv.fr/mentions-legales/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/mentions-legales\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aeL4t0PVfpYVlYBQcnBoubTr3PEg2LJ3",
-							"otherinfo": "i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w"
+							"evidence": "1QIRt4L5Yp8ov3ejifYNim6sE8gaHv8F",
+							"otherinfo": "\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005"
+						},
+						{
+							"id": "63",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "M4InegFfsYSARPCk6fM9JY7JJq5ygPzT",
+							"otherinfo": "3\uFFFD'z\\x0001_\uFFFD\uFFFD\uFFFDD\uFFFD\uFFFD\uFFFD=%\uFFFD\uFFFD&\uFFFDr\uFFFD\uFFFD\uFFFD"
 						}
 					],
 					"count": "12",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>i\uFFFD\uFFFD\uFFFDC\uFFFD~\uFFFD\\x0015\uFFFD\uFFFDPrph\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \u0632w</p>",
+					"otherinfo": "<p>\uFFFD\\x0002\\x0011\uFFFD\uFFFD\uFFFDb\uFFFD(\uFFFDw\uFFFD\uFFFD\uFFFD\r\uFFFDn\uFFFD\\x0013\uFFFD\\x001a\\x001e\uFFFD\\x0005</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "141"
 				},
 				{
 					"pluginid": "10038",
@@ -723,7 +739,7 @@
 					"desc": "<p>The response contained a Content-Security-Policy-Report-Only header, this may indicate a work-in-progress implementation, or an oversight in promoting pre-Prod to Prod, etc.</p><p></p><p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "2",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -733,7 +749,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "10",
+							"id": "51",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -743,9 +759,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "74",
-							"uri": "https://nitrates.beta.gouv.fr/contact/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
+							"id": "59",
+							"uri": "https://nitrates.beta.gouv.fr/_probe/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/_probe\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -753,9 +769,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "79",
-							"uri": "https://nitrates.beta.gouv.fr/definitions/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/definitions\/",
+							"id": "81",
+							"uri": "https://nitrates.beta.gouv.fr/geojson/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/geojson\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -763,9 +779,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "84",
-							"uri": "https://nitrates.beta.gouv.fr/mentions-legales/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/mentions-legales\/",
+							"id": "33",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -793,7 +809,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "32",
+							"id": "9",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -803,7 +819,7 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"// debug (cf. simulator.js) -> bypass de l'allowlist departement en interne.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "31",
+							"id": "66",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -813,7 +829,7 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"// debug (cf. simulator.js) -> bypass de l'allowlist departement en interne.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "124",
+							"id": "135",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/cascade.532008be5f94.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/cascade.532008be5f94.js",
 							"method": "GET",
@@ -823,7 +839,7 @@
 							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in likely comment: \"// #430 (bug 1) : quand la categorie ne propose qu'UN seul sous-fertilisant,\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "125",
+							"id": "136",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/cascade.532008be5f94.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/cascade.532008be5f94.js",
 							"method": "GET",
@@ -833,7 +849,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in likely comment: \"// L'user a touche en amont -> on reset les hidden inputs concernes.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "132",
+							"id": "143",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/form_autoscroll.010373216508.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/form_autoscroll.010373216508.js",
 							"method": "GET",
@@ -843,7 +859,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in likely comment: \"// L'etape a ete re-cachee (l'user a change un choix en amont) : on\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "126",
+							"id": "137",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/question_couvert_flow.4761e0018747.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/question_couvert_flow.4761e0018747.js",
 							"method": "GET",
@@ -853,7 +869,7 @@
 							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected 2 times, the first in likely comment: \"// #430 (bug 3) : \u00AB sur X \u00BB et \u00AB juste avant X \u00BB retombent sur la m\u00EAme valeur\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "127",
+							"id": "138",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/question_couvert_flow.4761e0018747.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/question_couvert_flow.4761e0018747.js",
 							"method": "GET",
@@ -863,7 +879,17 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 2 times, the first in likely comment: \"// repli. `destUrl` = valeur brute de `cflow_destination` dans la query string.\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "128",
+							"id": "144",
+							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/reset_form.59374272ebb3.js",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/reset_form.59374272ebb3.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// query string. Invariant g",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 2 times, the first in likely comment: \"// query string. Invariant garanti : chaque cle apparait AU PLUS une fois\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "139",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/simulator.a5220de8e1ca.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/simulator.a5220de8e1ca.js",
 							"method": "GET",
@@ -873,7 +899,7 @@
 							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in likely comment: \"//    depuis ce champ (bug d'origine : auto-scroll + question fantome).\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "131",
+							"id": "142",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/simulator.a5220de8e1ca.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/simulator.a5220de8e1ca.js",
 							"method": "GET",
@@ -883,7 +909,7 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 7 times, the first in likely comment: \"// inputs lat/lng + meme panneau debug que la home (sans toucher au JS de\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "129",
+							"id": "140",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/simulator.a5220de8e1ca.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/simulator.a5220de8e1ca.js",
 							"method": "GET",
@@ -893,7 +919,7 @@
 							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 2 times, the first in likely comment: \"// Couleur par bassin DCE, editable dans l'admin (CouleurZone) et injectee\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "130",
+							"id": "141",
 							"uri": "https://nitrates.beta.gouv.fr/static/nitrates/simulator.a5220de8e1ca.js",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/nitrates\/simulator.a5220de8e1ca.js",
 							"method": "GET",
@@ -903,14 +929,14 @@
 							"otherinfo": "The following pattern was used: \\bDB\\b and was detected in likely comment: \"// le cadastre, pas le RPG). On garde l'import et la table en DB\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"systemic": false,
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"// debug (cf. simulator.js) -> bypass de l'allowlist departement en interne.\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "615",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -923,7 +949,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "96",
+							"id": "103",
 							"uri": "https://nitrates.beta.gouv.fr/definitions/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/definitions\/",
 							"method": "GET",
@@ -940,7 +966,77 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "135"
+					"sourceid": "159"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "55",
+							"uri": "https://nitrates.beta.gouv.fr/admin/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/admin\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302",
+							"otherinfo": ""
+						},
+						{
+							"id": "58",
+							"uri": "https://nitrates.beta.gouv.fr/api/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/api\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302",
+							"otherinfo": ""
+						},
+						{
+							"id": "49",
+							"uri": "https://nitrates.beta.gouv.fr/simulateur/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/simulateur\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302",
+							"otherinfo": ""
+						},
+						{
+							"id": "67",
+							"uri": "https://nitrates.beta.gouv.fr/simulation/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/simulation\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302",
+							"otherinfo": ""
+						},
+						{
+							"id": "56",
+							"uri": "https://nitrates.beta.gouv.fr/yaml-browser/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/yaml-browser\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "130"
 				},
 				{
 					"pluginid": "10015",
@@ -953,7 +1049,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "1",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -963,7 +1059,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "9",
+							"id": "50",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -973,7 +1069,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "73",
+							"id": "87",
 							"uri": "https://nitrates.beta.gouv.fr/contact/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
 							"method": "GET",
@@ -983,7 +1079,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "5",
+							"id": "19",
 							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -993,7 +1089,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "64",
+							"id": "27",
 							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1023,7 +1119,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "40",
+							"id": "14",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -1033,9 +1129,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "24",
+							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1043,9 +1139,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
-							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
+							"id": "34",
+							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1073,7 +1169,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "39",
+							"id": "13",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -1083,9 +1179,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "57",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "23",
+							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1093,9 +1189,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "53",
-							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
+							"id": "32",
+							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1123,7 +1219,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "38",
+							"id": "12",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -1133,9 +1229,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "52",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "22",
+							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1143,9 +1239,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "50",
-							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
+							"id": "31",
+							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1173,7 +1269,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "41",
+							"id": "15",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -1183,9 +1279,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
-							"uri": "https://nitrates.beta.gouv.fr/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
+							"id": "25",
+							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1193,9 +1289,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "55",
-							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
+							"id": "35",
+							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1223,7 +1319,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "0",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -1233,7 +1329,7 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "3",
+							"id": "29",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -1243,9 +1339,9 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "82",
-							"uri": "https://nitrates.beta.gouv.fr/accessibilite/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/accessibilite\/",
+							"id": "57",
+							"uri": "https://nitrates.beta.gouv.fr/_probe/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/_probe\/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -1253,17 +1349,7 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "113",
-							"uri": "https://nitrates.beta.gouv.fr/cgu/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/cgu\/",
-							"method": "GET",
-							"param": "csrftoken",
-							"attack": "",
-							"evidence": "csrftoken",
-							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
-						},
-						{
-							"id": "70",
+							"id": "85",
 							"uri": "https://nitrates.beta.gouv.fr/contact/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/contact\/",
 							"method": "GET",
@@ -1273,7 +1359,7 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "72",
+							"id": "84",
 							"uri": "https://nitrates.beta.gouv.fr/definitions/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/definitions\/",
 							"method": "GET",
@@ -1283,9 +1369,9 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "105",
-							"uri": "https://nitrates.beta.gouv.fr/donnees-personnelles/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/donnees-personnelles\/",
+							"id": "80",
+							"uri": "https://nitrates.beta.gouv.fr/geojson/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/geojson\/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -1293,9 +1379,9 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "77",
-							"uri": "https://nitrates.beta.gouv.fr/mentions-legales/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/mentions-legales\/",
+							"id": "30",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -1303,7 +1389,7 @@
 							"otherinfo": "cookie:csrftoken\ncookie:visitorid"
 						},
 						{
-							"id": "0",
+							"id": "18",
 							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1313,7 +1399,7 @@
 							"otherinfo": "cookie:visitorid"
 						},
 						{
-							"id": "63",
+							"id": "20",
 							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1323,9 +1409,19 @@
 							"otherinfo": "cookie:visitorid"
 						},
 						{
-							"id": "4",
-							"uri": "https://nitrates.beta.gouv.fr/cgu/",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/cgu\/",
+							"id": "44",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
+							"method": "GET",
+							"param": "csrftoken",
+							"attack": "",
+							"evidence": "csrftoken",
+							"otherinfo": "cookie:csrftoken"
+						},
+						{
+							"id": "54",
+							"uri": "https://nitrates.beta.gouv.fr/prescription/pc1_pc14_ge/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/prescription\/pc1_pc14_ge\/",
 							"method": "GET",
 							"param": "csrftoken",
 							"attack": "",
@@ -1353,7 +1449,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "42",
+							"id": "16",
 							"uri": "https://nitrates.beta.gouv.fr",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr",
 							"method": "GET",
@@ -1363,7 +1459,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "61",
+							"id": "71",
 							"uri": "https://nitrates.beta.gouv.fr/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/",
 							"method": "GET",
@@ -1373,7 +1469,17 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "56",
+							"id": "65",
+							"uri": "https://nitrates.beta.gouv.fr/oidc/",
+							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/oidc\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "26",
 							"uri": "https://nitrates.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -1383,7 +1489,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "66",
+							"id": "36",
 							"uri": "https://nitrates.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -1391,20 +1497,10 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"id": "68",
-							"uri": "https://nitrates.beta.gouv.fr/static/@gouvfr/dsfr/dist/favicon/apple-touch-icon.09be1cc5f435.png",
-							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/static\/@gouvfr\/dsfr\/dist\/favicon\/apple-touch-icon.09be1cc5f435.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=315360000",
-							"otherinfo": ""
 						}
 					],
 					"count": "5",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
@@ -1423,7 +1519,7 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"id": "150",
+							"id": "146",
 							"uri": "https://nitrates.beta.gouv.fr/33560a40-admin/login/?next=/33560a40-admin/",
 							"nodeName": "https:\/\/nitrates.beta.gouv.fr\/33560a40-admin\/login\/ (next)",
 							"method": "GET",
@@ -1440,7 +1536,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "413"
+					"sourceid": "422"
 				}
 			]
 		}
