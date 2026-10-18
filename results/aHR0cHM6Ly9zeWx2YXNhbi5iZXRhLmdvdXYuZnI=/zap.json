@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 11 Oct 2026 05:30:10",
-	"created": "2026-10-11T05:30:10.741385405Z",
+	"@generated": "Sun, 18 Oct 2026 04:21:56",
+	"created": "2026-10-18T04:21:56.378893165Z",
 	"insights":[
 		{
 			"level": "Low",
@@ -82,7 +82,7 @@
 			"site": "https://sylvasan.beta.gouv.fr",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "100"
+			"statistic": "73"
 		}
 	],
 	"site":[ 
@@ -103,7 +103,7 @@
 					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "3",
+							"id": "1",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -113,7 +113,7 @@
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "71",
+							"id": "73",
 							"uri": "https://sylvasan.beta.gouv.fr/platform/api%60,options:",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/platform\/api`,options:",
 							"method": "GET",
@@ -123,7 +123,7 @@
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "7",
+							"id": "28",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -133,7 +133,7 @@
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "19",
+							"id": "22",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -163,7 +163,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "2",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -173,7 +173,7 @@
 							"otherinfo": "script-src includes unsafe-eval."
 						},
 						{
-							"id": "8",
+							"id": "29",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -183,7 +183,7 @@
 							"otherinfo": "script-src includes unsafe-eval."
 						},
 						{
-							"id": "20",
+							"id": "26",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -200,7 +200,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -213,7 +213,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "55",
+							"id": "12",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -223,7 +223,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "57",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -233,7 +233,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "63",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -263,7 +263,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "59",
+							"id": "13",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -283,7 +283,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "64",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -300,7 +300,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -313,7 +313,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "53",
+							"id": "11",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -323,7 +323,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
+							"id": "60",
+							"uri": "https://sylvasan.beta.gouv.fr/assets/_plugin-vue_export-helper-BDNMzG2s.js",
+							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/_plugin-vue_export-helper-BDNMzG2s.js",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "19",
 							"uri": "https://sylvasan.beta.gouv.fr/favicon-marianne.png",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/favicon-marianne.png",
 							"method": "GET",
@@ -333,7 +343,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "53",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -343,7 +353,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "62",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -353,7 +363,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
 					"otherinfo": "",
@@ -373,7 +383,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "49",
+							"id": "10",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -383,7 +393,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "63",
+							"id": "58",
 							"uri": "https://sylvasan.beta.gouv.fr/assets/_plugin-vue_export-helper-BDNMzG2s.js",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/_plugin-vue_export-helper-BDNMzG2s.js",
 							"method": "GET",
@@ -393,7 +403,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "66",
 							"uri": "https://sylvasan.beta.gouv.fr/assets/root-k5ZVHOE0.js",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/root-k5ZVHOE0.js",
 							"method": "GET",
@@ -403,7 +413,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
+							"id": "52",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -413,7 +423,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
+							"id": "59",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -443,7 +453,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "73",
+							"id": "74",
 							"uri": "https://sylvasan.beta.gouv.fr/platform/api%60,options:",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/platform\/api`,options:",
 							"method": "GET",
@@ -473,9 +483,9 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "80",
-							"uri": "https://sylvasan.beta.gouv.fr/assets/index-v5oEN4q0.js",
-							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/index-v5oEN4q0.js",
+							"id": "81",
+							"uri": "https://sylvasan.beta.gouv.fr/assets/index-D551wzIj.js",
+							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/index-D551wzIj.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -503,7 +513,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "32",
+							"id": "4",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -513,7 +523,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?u\uFFFDZ\uFFFD\uFFFD\uFFFDr\\x0018\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0004\uFFFD"
 						},
 						{
-							"id": "76",
+							"id": "77",
 							"uri": "https://sylvasan.beta.gouv.fr/assets/index-BskBJ6Oc.css",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/index-BskBJ6Oc.css",
 							"method": "GET",
@@ -523,17 +533,17 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?1\uFFFD\uFFFDjy\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u07C2'\\x0003\u36CC"
 						},
 						{
-							"id": "90",
-							"uri": "https://sylvasan.beta.gouv.fr/assets/index-v5oEN4q0.js",
-							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/index-v5oEN4q0.js",
+							"id": "91",
+							"uri": "https://sylvasan.beta.gouv.fr/assets/index-D551wzIj.js",
+							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/index-D551wzIj.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "assets/AccountNotActivatedPage-BQvm7Wiv",
-							"otherinfo": "j\uFFFD\\x001e\uFFFD\uFFFD\uFFFDq\uFFFD.\uFFFD\uFFFDh\uFFFD\\x0007-\uFFFD\uFFFD\uFFFDy\uFFFD\u0681\uFFFDB\uFFFD\uFFFDZ+"
+							"evidence": "assets/AccountNotActivatedPage-B_gC5YyZ",
+							"otherinfo": "j\uFFFD\\x001e\uFFFD\uFFFD\uFFFDq\uFFFD.\uFFFD\uFFFDh\uFFFD\\x0007-\uFFFD\uFFFD\uFFFDy\uFFFD\u0681\uFFFD\uFFFD\\x0000\uFFFDc&"
 						},
 						{
-							"id": "31",
+							"id": "37",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -543,7 +553,7 @@
 							"otherinfo": "\uFFFD\uFFFD,z\uFFFD?u\uFFFDZ\uFFFD\uFFFD\uFFFDr\\x0018\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0004\uFFFD"
 						},
 						{
-							"id": "22",
+							"id": "31",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -560,7 +570,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -573,33 +583,33 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "3",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-v5oEN4q0.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-D551wzIj.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "11",
+							"id": "32",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-v5oEN4q0.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-D551wzIj.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "21",
+							"id": "30",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-v5oEN4q0.js\"></script>",
+							"evidence": "<script type=\"module\" crossorigin src=\"/assets/index-D551wzIj.js\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -633,7 +643,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
+							"id": "25",
+							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
+							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "21",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -643,14 +663,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -663,7 +683,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "41",
+							"id": "7",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -673,7 +693,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "14",
+							"id": "16",
 							"uri": "https://sylvasan.beta.gouv.fr/favicon-marianne.png",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/favicon-marianne.png",
 							"method": "GET",
@@ -683,7 +703,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "43",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -693,7 +713,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "25",
+							"id": "42",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -710,7 +730,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -723,7 +743,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "40",
+							"id": "6",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -733,7 +753,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "13",
+							"id": "15",
 							"uri": "https://sylvasan.beta.gouv.fr/favicon-marianne.png",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/favicon-marianne.png",
 							"method": "GET",
@@ -743,7 +763,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "36",
+							"id": "41",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -753,7 +773,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "39",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -770,7 +790,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -783,7 +803,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "37",
+							"id": "5",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -793,7 +813,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "12",
+							"id": "14",
 							"uri": "https://sylvasan.beta.gouv.fr/favicon-marianne.png",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/favicon-marianne.png",
 							"method": "GET",
@@ -803,7 +823,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "35",
+							"id": "40",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -813,7 +833,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "34",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -830,7 +850,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -843,7 +863,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "44",
+							"id": "8",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -853,7 +873,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "15",
+							"id": "17",
 							"uri": "https://sylvasan.beta.gouv.fr/favicon-marianne.png",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/favicon-marianne.png",
 							"method": "GET",
@@ -863,7 +883,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "43",
+							"id": "44",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -873,7 +893,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
+							"id": "50",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
@@ -890,7 +910,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -903,7 +923,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "47",
+							"id": "9",
 							"uri": "https://sylvasan.beta.gouv.fr",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr",
 							"method": "GET",
@@ -913,7 +933,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "62",
+							"id": "54",
 							"uri": "https://sylvasan.beta.gouv.fr/assets/_plugin-vue_export-helper-BDNMzG2s.js",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/assets\/_plugin-vue_export-helper-BDNMzG2s.js",
 							"method": "GET",
@@ -923,7 +943,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "16",
+							"id": "18",
 							"uri": "https://sylvasan.beta.gouv.fr/favicon-marianne.png",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/favicon-marianne.png",
 							"method": "GET",
@@ -933,7 +953,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "50",
+							"id": "45",
 							"uri": "https://sylvasan.beta.gouv.fr/robots.txt",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/robots.txt",
 							"method": "GET",
@@ -943,7 +963,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "27",
+							"id": "51",
 							"uri": "https://sylvasan.beta.gouv.fr/sitemap.xml",
 							"nodeName": "https:\/\/sylvasan.beta.gouv.fr\/sitemap.xml",
 							"method": "GET",
