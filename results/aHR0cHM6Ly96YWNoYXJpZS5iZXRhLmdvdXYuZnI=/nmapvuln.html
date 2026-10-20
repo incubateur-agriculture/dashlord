@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zacharie.beta.gouv.fr</pre>
-<p class="lead">Sun Oct 18 04:02:52 2026 – Sun Oct 18 04:05:39 2026<br>1 hosts scanned.
+<p class="lead">Tue Oct 20 08:45:25 2026 – Tue Oct 20 08:46:01 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,9 +76,9 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>91.208.207.214</td>
+<td>91.208.207.220</td>
 <td>zacharie.beta.gouv.fr</td>
-<td>17</td>
+<td>16</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -91,8 +91,8 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#91-208-207-214"><h3 class="panel-title">91.208.207.214 - zacharie.beta.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="91-208-207-214">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#91-208-207-220"><h3 class="panel-title">91.208.207.220 - zacharie.beta.gouv.fr</h3></div>
+<div class="panel-body collapse in" id="91-208-207-220">
 <h4>Hostnames</h4>
 <ul><li>zacharie.beta.gouv.fr (user)</li></ul>
 <h4>Ports</h4>
@@ -124,7 +124,7 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 6160
-    Sozu-Id: 01M56JTK58TVK5648GXX4QEHCP
+    Sozu-Id: 01M5C7SB9S4F6YW3P3WJGKTKC7
     &lt;!doctype html&gt;
     &lt;html lang=en-US&gt;
     &lt;head&gt;
@@ -137,7 +137,7 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 6164
-    Sozu-Id: 01M56JTSA1738WQRSBNPS041ST
+    Sozu-Id: 01M5C7SHB28VJEA7J1ZHFSZM2V
     &lt;!doctype html&gt;
     &lt;html lang=en-US&gt;
     &lt;head&gt;
@@ -196,55 +196,6 @@
 </tr>
 <tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/o:fortinet:fortios">cpe:/o:fortinet:fortios</a></td></tr>
 <tr class="success">
-<td title="Port">5050</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">mmcc</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, GenericLines, RPCCheck, SSLSessionReq: 
-    hello over tcp
-    echo:
-  DNSVersionBindReqTCP: 
-    hello over tcp
-    echo: 
-    version
-    bind
-  GetRequest: 
-    hello over tcp
-    echo: GET / HTTP/1.0
-  HTTPOptions: 
-    hello over tcp
-    echo: OPTIONS / HTTP/1.0
-  Help: 
-    hello over tcp
-    echo: HELP
-  Kerberos: 
-    hello over tcp
-    echo: 
-    ^0\xef
-    krbtgt
-    19700101000000Z
-  NULL: 
-    hello over tcp
-  RTSPRequest: 
-    hello over tcp
-    echo: OPTIONS / RTSP/1.0
-  TLSSessionReq: 
-    hello over tcp
-    echo: 
-    random1random2random3random4
-  TerminalServerCookie: 
-    hello over tcp
-    echo: 
-    Cookie: mstshash=nmap</pre>
-</td></tr>
-<tr class="success">
 <td title="Port">5100</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
@@ -284,7 +235,7 @@
     220 cf0e2fbe-e853-4fa4-a16f-6387cdc70595 Mailpit (BOTI) ESMTP Service ready
     250-cf0e2fbe-e853-4fa4-a16f-6387cdc70595 greets 
     250-SIZE 52428800
-    250-AUTH LOGIN PLAIN
+    250-AUTH PLAIN LOGIN
     250-ENHANCEDSTATUSCODES
     250-8BITMIME
     SMTPUTF8
@@ -317,28 +268,18 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   GenericLines: 
-    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48427,"client_ip":"91.208.207.214","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197124,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
     -ERR 'Authorization Violation'
   GetRequest: 
-    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48426,"client_ip":"91.208.207.214","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197123,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
     -ERR 'Authorization Violation'
   HTTPOptions: 
-    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48428,"client_ip":"91.208.207.214","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197125,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
     -ERR 'Authorization Violation'
   NULL: 
-    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48425,"client_ip":"91.208.207.214","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+    INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197122,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
     -ERR 'Authentication Timeout'</pre>
 </td></tr>
-<tr class="success">
-<td title="Port">5902</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
 <td title="Port">5907</td>
 <td title="Protocol">tcp</td>
@@ -357,6 +298,16 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">cpdlc</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
+<tr class="success">
+<td title="Port">5959</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">unknown</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
@@ -491,6 +442,7 @@
     	1F7A6000-9E6D-511C-B0F6-7CADB7200761	8.1	https://vulners.com/githubexploit/1F7A6000-9E6D-511C-B0F6-7CADB7200761	*EXPLOIT*
     	1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	8.1	https://vulners.com/githubexploit/1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	*EXPLOIT*
     	1AB9F1F4-9798-59A0-9213-1D907E81E7F6	8.1	https://vulners.com/githubexploit/1AB9F1F4-9798-59A0-9213-1D907E81E7F6	*EXPLOIT*
+    	18512DC7-E38C-5F91-8809-5D15657F0C6E	8.1	https://vulners.com/githubexploit/18512DC7-E38C-5F91-8809-5D15657F0C6E	*EXPLOIT*
     	179F72B6-5619-52B5-A040-72F1ECE6CDD8	8.1	https://vulners.com/githubexploit/179F72B6-5619-52B5-A040-72F1ECE6CDD8	*EXPLOIT*
     	15C36683-070A-5CC1-B21F-5F0BF974D9D3	8.1	https://vulners.com/githubexploit/15C36683-070A-5CC1-B21F-5F0BF974D9D3	*EXPLOIT*
     	1337DAY-ID-39674	8.1	https://vulners.com/zdt/1337DAY-ID-39674	*EXPLOIT*
@@ -539,7 +491,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -549,7 +501,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
@@ -559,7 +511,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>1080</td>
 <td>tcp</td>
 <td>socks</td>
@@ -569,7 +521,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>1081</td>
 <td>tcp</td>
 <td>pvuniwien</td>
@@ -579,7 +531,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5002</td>
 <td>tcp</td>
 <td>ssh</td>
@@ -589,17 +541,7 @@
 <td>protocol 2.0</td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
-<td>5050</td>
-<td>tcp</td>
-<td>mmcc</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5100</td>
 <td>tcp</td>
 <td>ssh</td>
@@ -609,7 +551,7 @@
 <td>protocol 2.0</td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5120</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -619,7 +561,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5221</td>
 <td>tcp</td>
 <td>smtp</td>
@@ -629,7 +571,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5679</td>
 <td>tcp</td>
 <td>activesync</td>
@@ -639,7 +581,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5801</td>
 <td>tcp</td>
 <td>vnc-http-1</td>
@@ -649,17 +591,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
-<td>5902</td>
-<td>tcp</td>
-<td>tcpwrapped</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5907</td>
 <td>tcp</td>
 <td>http</td>
@@ -669,7 +601,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5911</td>
 <td>tcp</td>
 <td>cpdlc</td>
@@ -679,7 +611,17 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
+<td>5959</td>
+<td>tcp</td>
+<td>unknown</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5961</td>
 <td>tcp</td>
 <td>smtp</td>
@@ -689,7 +631,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>5987</td>
 <td>tcp</td>
 <td>wbem-rmi</td>
@@ -699,7 +641,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.214 - zacharie.beta.gouv.fr</td>
+<td>91.208.207.220 - zacharie.beta.gouv.fr</td>
 <td>12265</td>
 <td>tcp</td>
 <td>ssh</td>
