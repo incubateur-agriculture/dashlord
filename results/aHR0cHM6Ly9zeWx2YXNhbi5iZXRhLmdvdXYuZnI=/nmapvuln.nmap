@@ -1,8 +1,8 @@
-# Nmap 7.95 scan initiated Sun Oct 18 04:33:38 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln sylvasan.beta.gouv.fr
-Nmap scan report for sylvasan.beta.gouv.fr (91.208.207.216)
-Host is up (0.081s latency).
-Other addresses for sylvasan.beta.gouv.fr (not scanned): 91.208.207.221 91.208.207.214 91.208.207.223 91.208.207.215 91.208.207.220 91.208.207.217 91.208.207.222 91.208.207.218
-Not shown: 981 closed tcp ports (reset)
+# Nmap 7.95 scan initiated Tue Oct 20 09:14:08 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln sylvasan.beta.gouv.fr
+Nmap scan report for sylvasan.beta.gouv.fr (91.208.207.217)
+Host is up (0.15s latency).
+Other addresses for sylvasan.beta.gouv.fr (not scanned): 91.208.207.214 91.208.207.221 91.208.207.220 91.208.207.218 91.208.207.223 91.208.207.216 91.208.207.222 91.208.207.215
+Not shown: 980 closed tcp ports (reset)
 PORT      STATE    SERVICE       VERSION
 80/tcp    open     http
 | fingerprint-strings: 
@@ -11,7 +11,7 @@ PORT      STATE    SERVICE       VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6160
-|     Sozu-Id: 01M56MJX1XCH93PP708JNFCAZQ
+|     Sozu-Id: 01M5C9DYWNP94QBYKP4KYZ6TR6
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -24,7 +24,7 @@ PORT      STATE    SERVICE       VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6164
-|     Sozu-Id: 01M56MK32QK35NZ2VWWJBNDTFV
+|     Sozu-Id: 01M5C9E5251WYQ8PKBFM4P96WB
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -101,21 +101,22 @@ PORT      STATE    SERVICE       VERSION
 5801/tcp  open     vnc-http-1?
 | fingerprint-strings: 
 |   GenericLines: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48817,"client_ip":"91.208.207.216","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197685,"client_ip":"91.208.207.217","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |     -ERR 'Authorization Violation'
 |   GetRequest: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48816,"client_ip":"91.208.207.216","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197684,"client_ip":"91.208.207.217","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |     -ERR 'Authorization Violation'
 |   HTTPOptions: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48818,"client_ip":"91.208.207.216","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197686,"client_ip":"91.208.207.217","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |     -ERR 'Authorization Violation'
 |   NULL: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":48815,"client_ip":"91.208.207.216","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":197683,"client_ip":"91.208.207.217","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |_    -ERR 'Authentication Timeout'
 5902/tcp  open     tcpwrapped
 5907/tcp  open     ssl/http      nginx 1.31.6
 |_http-server-header: nginx/1.31.6
 5911/tcp  open     ssl/cpdlc?
+5959/tcp  open     ssl/unknown
 5961/tcp  open     smtp
 | fingerprint-strings: 
 |   GenericLines, GetRequest: 
@@ -207,6 +208,7 @@ PORT      STATE    SERVICE       VERSION
 |     	1F7A6000-9E6D-511C-B0F6-7CADB7200761	8.1	https://vulners.com/githubexploit/1F7A6000-9E6D-511C-B0F6-7CADB7200761	*EXPLOIT*
 |     	1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	8.1	https://vulners.com/githubexploit/1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	*EXPLOIT*
 |     	1AB9F1F4-9798-59A0-9213-1D907E81E7F6	8.1	https://vulners.com/githubexploit/1AB9F1F4-9798-59A0-9213-1D907E81E7F6	*EXPLOIT*
+|     	18512DC7-E38C-5F91-8809-5D15657F0C6E	8.1	https://vulners.com/githubexploit/18512DC7-E38C-5F91-8809-5D15657F0C6E	*EXPLOIT*
 |     	179F72B6-5619-52B5-A040-72F1ECE6CDD8	8.1	https://vulners.com/githubexploit/179F72B6-5619-52B5-A040-72F1ECE6CDD8	*EXPLOIT*
 |     	15C36683-070A-5CC1-B21F-5F0BF974D9D3	8.1	https://vulners.com/githubexploit/15C36683-070A-5CC1-B21F-5F0BF974D9D3	*EXPLOIT*
 |     	1337DAY-ID-39674	8.1	https://vulners.com/zdt/1337DAY-ID-39674	*EXPLOIT*
@@ -238,10 +240,10 @@ PORT      STATE    SERVICE       VERSION
 |_    	CVE-2026-59995	5.4	https://vulners.com/cve/CVE-2026-59995
 6 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.95%I=7%D=10/18%Time=6AD44C2B%P=x86_64-alpine-linux-musl%
+SF-Port80-TCP:V=7.95%I=7%D=10/20%Time=6AD730EA%P=x86_64-alpine-linux-musl%
 SF:r(GetRequest,1893,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:
 SF:\x20no-cache\r\nConnection:\x20close\r\nContent-Length:\x206160\r\nSozu
-SF:-Id:\x2001M56MJX1XCH93PP708JNFCAZQ\r\n\r\n<!doctype\x20html>\r\n<html\x
+SF:-Id:\x2001M5C9DYWNP94QBYKP4KYZ6TR6\r\n\r\n<!doctype\x20html>\r\n<html\x
 SF:20lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x20<meta\x20charset=utf
 SF:-8>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=de
 SF:vice-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x20Bad\x20Request</tit
@@ -256,7 +258,7 @@ SF:{scroll-behavior:smooth;height:100%;-webkit-font-smoothing:antialiased;
 SF:font-family:var\(--font-family\);background-color:var\(--bg-color\)}but
 SF:ton#copy-btn,code{")%r(HTTPOptions,1897,"HTTP/1\.1\x20400\x20Bad\x20Req
 SF:uest\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-L
-SF:ength:\x206164\r\nSozu-Id:\x2001M56MK32QK35NZ2VWWJBNDTFV\r\n\r\n<!docty
+SF:ength:\x206164\r\nSozu-Id:\x2001M5C9E5251WYQ8PKBFM4P96WB\r\n\r\n<!docty
 SF:pe\x20html>\r\n<html\x20lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x
 SF:20<meta\x20charset=utf-8>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"
 SF:\x20content=\"width=device-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\
@@ -271,7 +273,7 @@ SF:display:flex}body,html{scroll-behavior:smooth;height:100%;-webkit-font-
 SF:smoothing:antialiased;font-family:var\(--font-family\);background-color
 SF::var\(--bg-color\)}button#copy-btn,code{");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5050-TCP:V=7.95%I=7%D=10/18%Time=6AD44C2B%P=x86_64-alpine-linux-mus
+SF-Port5050-TCP:V=7.95%I=7%D=10/20%Time=6AD730EA%P=x86_64-alpine-linux-mus
 SF:l%r(NULL,F,"hello\x20over\x20tcp\n")%r(GenericLines,19,"hello\x20over\x
 SF:20tcp\necho:\x20\r\n\r\n")%r(GetRequest,27,"hello\x20over\x20tcp\necho:
 SF:\x20GET\x20/\x20HTTP/1\.0\r\n\r\n")%r(HTTPOptions,2B,"hello\x20over\x20
@@ -305,7 +307,7 @@ SF:x1b\x02NM\xef\xbf\xbd\x11\x18\x0f19700101000000Z\xef\xbf\xbd\x06\x02\x0
 SF:4\x1f\x1e\xef\xbf\xbd\xd9\xa8\x170\x15\x02\x01\x12\x02\x01\x11\x02\x01\
 SF:x10\x02\x01\x17\x02\x01\x01\x02\x01\x03\x02\x01\x02");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5221-TCP:V=7.95%I=7%D=10/18%Time=6AD44C2B%P=x86_64-alpine-linux-mus
+SF-Port5221-TCP:V=7.95%I=7%D=10/20%Time=6AD730EA%P=x86_64-alpine-linux-mus
 SF:l%r(NULL,4D,"220\x20cf0e2fbe-e853-4fa4-a16f-6387cdc70595\x20Mailpit\x20
 SF:\(BOTI\)\x20ESMTP\x20Service\x20ready\r\n")%r(GenericLines,A9,"220\x20c
 SF:f0e2fbe-e853-4fa4-a16f-6387cdc70595\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20
@@ -323,41 +325,41 @@ SF:0e2fbe-e853-4fa4-a16f-6387cdc70595\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20S
 SF:ervice\x20ready\r\n502\x205\.5\.1\x20Command\x20not\x20implemented\r\n"
 SF:);
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5801-TCP:V=7.95%I=7%D=10/18%Time=6AD44C27%P=x86_64-alpine-linux-mus
-SF:l%r(NULL,1D0,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNW
+SF-Port5801-TCP:V=7.95%I=7%D=10/20%Time=6AD730E6%P=x86_64-alpine-linux-mus
+SF:l%r(NULL,1D1,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNW
 SF:M2MBLDFGUQUE4TEHNQEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQ
 SF:VDAPNWM2MBLDFGUQUE4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\
 SF:"git_commit\":\"d3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\"
 SF:,\"port\":4040,\"headers\":true,\"auth_required\":true,\"max_payload\":
-SF:5242880,\"client_id\":48815,\"client_ip\":\"91\.208\.207\.216\",\"api_l
-SF:vl\":4,\"xkey\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2
-SF:LVN\"}\x20\r\n-ERR\x20'Authentication\x20Timeout'\r\n")%r(GetRequest,1D
-SF:1,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQU
-SF:E4TEHNQEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBL
-SF:DFGUQUE4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit
-SF:\":\"d3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4
-SF:040,\"headers\":true,\"auth_required\":true,\"max_payload\":5242880,\"c
-SF:lient_id\":48816,\"client_ip\":\"91\.208\.207\.216\",\"api_lvl\":4,\"xk
-SF:ey\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\
-SF:r\n-ERR\x20'Authorization\x20Violation'\r\n")%r(GenericLines,1D1,"INFO\
-SF:x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQE
-SF:MC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4
-SF:TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"d3b
-SF:c045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"he
-SF:aders\":true,\"auth_required\":true,\"max_payload\":5242880,\"client_id
-SF:\":48817,\"client_ip\":\"91\.208\.207\.216\",\"api_lvl\":4,\"xkey\":\"X
-SF:CYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n-ERR\
-SF:x20'Authorization\x20Violation'\r\n")%r(HTTPOptions,1D1,"INFO\x20{\"ser
-SF:ver_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7\",\
-SF:"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7
-SF:L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"d3bc045\",\"
-SF:go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"headers\":t
-SF:rue,\"auth_required\":true,\"max_payload\":5242880,\"client_id\":48818,
-SF:\"client_ip\":\"91\.208\.207\.216\",\"api_lvl\":4,\"xkey\":\"XCYJIDP3IZ
-SF:X63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n-ERR\x20'Autho
-SF:rization\x20Violation'\r\n");
+SF:5242880,\"client_id\":197683,\"client_ip\":\"91\.208\.207\.217\",\"api_
+SF:lvl\":4,\"xkey\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD
+SF:2LVN\"}\x20\r\n-ERR\x20'Authentication\x20Timeout'\r\n")%r(GetRequest,1
+SF:D2,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQ
+SF:UE4TEHNQEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MB
+SF:LDFGUQUE4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commi
+SF:t\":\"d3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":
+SF:4040,\"headers\":true,\"auth_required\":true,\"max_payload\":5242880,\"
+SF:client_id\":197684,\"client_ip\":\"91\.208\.207\.217\",\"api_lvl\":4,\"
+SF:xkey\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x2
+SF:0\r\n-ERR\x20'Authorization\x20Violation'\r\n")%r(GenericLines,1D2,"INF
+SF:O\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHN
+SF:QEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQU
+SF:E4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"d
+SF:3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"
+SF:headers\":true,\"auth_required\":true,\"max_payload\":5242880,\"client_
+SF:id\":197685,\"client_ip\":\"91\.208\.207\.217\",\"api_lvl\":4,\"xkey\":
+SF:\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n-E
+SF:RR\x20'Authorization\x20Violation'\r\n")%r(HTTPOptions,1D2,"INFO\x20{\"
+SF:server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7\
+SF:",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQE
+SF:MC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"d3bc045\"
+SF:,\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"headers\
+SF:":true,\"auth_required\":true,\"max_payload\":5242880,\"client_id\":197
+SF:686,\"client_ip\":\"91\.208\.207\.217\",\"api_lvl\":4,\"xkey\":\"XCYJID
+SF:P3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n-ERR\x20'A
+SF:uthorization\x20Violation'\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5911-TCP:V=7.95%T=SSL%I=7%D=10/18%Time=6AD44C33%P=x86_64-alpine-lin
+SF-Port5911-TCP:V=7.95%T=SSL%I=7%D=10/20%Time=6AD730F3%P=x86_64-alpine-lin
 SF:ux-musl%r(NULL,1B,"\0\0\x12\x04\0\0\0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\
 SF:0\x06\0\0@\0")%r(GenericLines,1B,"\0\0\x12\x04\0\0\0\0\0\0\x04\0\x10\0\
 SF:0\0\x05\0\0@\0\0\x06\0\0@\0")%r(GetRequest,1B,"\0\0\x12\x04\0\0\0\0\0\0
@@ -388,7 +390,7 @@ SF:\0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0")%r(NCP,1B,"\0\0\x12\x04\0\0
 SF:\0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0")%r(NotesRPC,1B,"\0\0\
 SF:x12\x04\0\0\0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5961-TCP:V=7.95%I=7%D=10/18%Time=6AD44C2B%P=x86_64-alpine-linux-mus
+SF-Port5961-TCP:V=7.95%I=7%D=10/20%Time=6AD730EA%P=x86_64-alpine-linux-mus
 SF:l%r(NULL,46,"220\x20a3b35c8d-9087-443d-a75b-9470e8db6fd9\x20Mailpit\x20
 SF:ESMTP\x20Service\x20ready\r\n")%r(GenericLines,A2,"220\x20a3b35c8d-9087
 SF:-443d-a75b-9470e8db6fd9\x20Mailpit\x20ESMTP\x20Service\x20ready\r\n500\
@@ -406,4 +408,4 @@ SF:502\x205\.5\.1\x20Command\x20not\x20implemented\r\n");
 Service Info: OS: Linux; CPE: cpe:/o:fortinet:fortios, cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Oct 18 04:36:22 2026 -- 1 IP address (1 host up) scanned in 163.88 seconds
+# Nmap done at Tue Oct 20 09:16:55 2026 -- 1 IP address (1 host up) scanned in 166.75 seconds
