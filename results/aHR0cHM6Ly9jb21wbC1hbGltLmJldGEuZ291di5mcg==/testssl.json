@@ -241,7 +241,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -380,8 +380,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "33 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (29)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -394,7 +394,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2026-11-23 04:14"
           }
 ,         {
@@ -584,7 +584,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.184",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1792484607"
+              "finding"      : "1792900202"
           }
 ,         {
               "id"           : "HSTS",
@@ -1356,7 +1356,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -1495,8 +1495,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "33 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (29)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1509,7 +1509,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2026-11-23 04:14"
           }
 ,         {
@@ -1699,7 +1699,7 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1792484723"
+              "finding"      : "1792900357"
           }
 ,         {
               "id"           : "HSTS",
@@ -2248,6 +2248,6 @@
               "ip"           : "compl-alim.beta.gouv.fr/91.208.207.168",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "233"
+              "finding"      : "316"
           }
 ]
