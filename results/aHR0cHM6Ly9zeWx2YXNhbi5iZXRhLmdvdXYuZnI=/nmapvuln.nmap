@@ -1,7 +1,7 @@
-# Nmap 7.95 scan initiated Sun Nov  1 05:53:27 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln sylvasan.beta.gouv.fr
-Nmap scan report for sylvasan.beta.gouv.fr (91.208.207.221)
-Host is up (0.13s latency).
-Other addresses for sylvasan.beta.gouv.fr (not scanned): 91.208.207.220 91.208.207.215 91.208.207.218 91.208.207.214 91.208.207.216 91.208.207.217 91.208.207.222 91.208.207.223
+# Nmap 7.95 scan initiated Sun Nov  8 05:54:51 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln sylvasan.beta.gouv.fr
+Nmap scan report for sylvasan.beta.gouv.fr (91.208.207.220)
+Host is up (0.11s latency).
+Other addresses for sylvasan.beta.gouv.fr (not scanned): 91.208.207.223 91.208.207.222 91.208.207.217 91.208.207.214 91.208.207.221 91.208.207.218 91.208.207.215 91.208.207.216
 Not shown: 984 closed tcp ports (reset)
 PORT     STATE    SERVICE       VERSION
 80/tcp   open     http
@@ -11,7 +11,7 @@ PORT     STATE    SERVICE       VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6160
-|     Sozu-Id: 01M6ATQE9PCXJHY73K1828A5FM
+|     Sozu-Id: 01M6WVJQ0H4HXYM0FZXW9TDXBE
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -24,7 +24,7 @@ PORT     STATE    SERVICE       VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     Content-Length: 6164
-|     Sozu-Id: 01M6ATQMDHDQQ1326F96T677CF
+|     Sozu-Id: 01M6WVJX2ZBE4GK0A9KT68851N
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -43,66 +43,66 @@ PORT     STATE    SERVICE       VERSION
 5221/tcp open     smtp
 | fingerprint-strings: 
 |   GenericLines, GetRequest: 
-|     220 cf0e2fbe-e853-4fa4-a16f-6387cdc70595 Mailpit (BOTI) ESMTP Service ready
+|     220 d2ef97ff-9eee-4e03-869f-743509666b38 Mailpit (BOTI) ESMTP Service ready
 |     5.5.2 Syntax error, command unrecognized
 |     5.5.2 Syntax error, command unrecognized
 |   Hello: 
-|     220 cf0e2fbe-e853-4fa4-a16f-6387cdc70595 Mailpit (BOTI) ESMTP Service ready
-|     250-cf0e2fbe-e853-4fa4-a16f-6387cdc70595 greets 
+|     220 d2ef97ff-9eee-4e03-869f-743509666b38 Mailpit (BOTI) ESMTP Service ready
+|     250-d2ef97ff-9eee-4e03-869f-743509666b38 greets 
 |     250-SIZE 52428800
 |     250-AUTH LOGIN PLAIN
 |     250-ENHANCEDSTATUSCODES
 |     250-8BITMIME
 |     SMTPUTF8
 |   Help: 
-|     220 cf0e2fbe-e853-4fa4-a16f-6387cdc70595 Mailpit (BOTI) ESMTP Service ready
+|     220 d2ef97ff-9eee-4e03-869f-743509666b38 Mailpit (BOTI) ESMTP Service ready
 |     5.5.1 Command not implemented
 |   NULL: 
-|_    220 cf0e2fbe-e853-4fa4-a16f-6387cdc70595 Mailpit (BOTI) ESMTP Service ready
+|_    220 d2ef97ff-9eee-4e03-869f-743509666b38 Mailpit (BOTI) ESMTP Service ready
 5679/tcp open     activesync?
 5801/tcp open     vnc-http-1?
 | fingerprint-strings: 
 |   GenericLines: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":793155,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":1131812,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |     -ERR 'Authorization Violation'
 |   GetRequest: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":793154,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":1131809,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |     -ERR 'Authorization Violation'
 |   HTTPOptions: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":793156,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":1131814,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |     -ERR 'Authorization Violation'
 |   NULL: 
-|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":793153,"client_ip":"91.208.207.221","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
+|     INFO {"server_id":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","server_name":"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7","version":"2.14.5","proto":1,"git_commit":"d3bc045","go":"go1.26.5","host":"0.0.0.0","port":4040,"headers":true,"auth_required":true,"max_payload":5242880,"client_id":1131791,"client_ip":"91.208.207.220","api_lvl":4,"xkey":"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN"} 
 |_    -ERR 'Authentication Timeout'
-5907/tcp open     ssl/http      nginx 1.31.6
-|_http-server-header: nginx/1.31.6
+5907/tcp open     ssl/http      nginx 1.31.8
+|_http-server-header: nginx/1.31.8
 5911/tcp open     ssl/cpdlc?
 5961/tcp open     smtp
 | fingerprint-strings: 
 |   GenericLines, GetRequest: 
-|     220 a3b35c8d-9087-443d-a75b-9470e8db6fd9 Mailpit ESMTP Service ready
+|     220 7813143c-1db8-424a-b20e-8ea4a5d3a92f Mailpit ESMTP Service ready
 |     5.5.2 Syntax error, command unrecognized
 |     5.5.2 Syntax error, command unrecognized
 |   Hello: 
-|     220 a3b35c8d-9087-443d-a75b-9470e8db6fd9 Mailpit ESMTP Service ready
-|     250-a3b35c8d-9087-443d-a75b-9470e8db6fd9 greets 
+|     220 7813143c-1db8-424a-b20e-8ea4a5d3a92f Mailpit ESMTP Service ready
+|     250-7813143c-1db8-424a-b20e-8ea4a5d3a92f greets 
 |     250-SIZE 52428800
 |     250-ENHANCEDSTATUSCODES
 |     250-8BITMIME
 |     SMTPUTF8
 |   Help: 
-|     220 a3b35c8d-9087-443d-a75b-9470e8db6fd9 Mailpit ESMTP Service ready
+|     220 7813143c-1db8-424a-b20e-8ea4a5d3a92f Mailpit ESMTP Service ready
 |     5.5.1 Command not implemented
 |   NULL: 
-|_    220 a3b35c8d-9087-443d-a75b-9470e8db6fd9 Mailpit ESMTP Service ready
+|_    220 7813143c-1db8-424a-b20e-8ea4a5d3a92f Mailpit ESMTP Service ready
 5987/tcp open     ssl/wbem-rmi?
 9999/tcp filtered abyss
 5 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.95%I=7%D=11/1%Time=6AE6D3EB%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.95%I=7%D=11/8%Time=6AF00EB5%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,1893,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\
 SF:x20no-cache\r\nConnection:\x20close\r\nContent-Length:\x206160\r\nSozu-
-SF:Id:\x2001M6ATQE9PCXJHY73K1828A5FM\r\n\r\n<!doctype\x20html>\r\n<html\x2
+SF:Id:\x2001M6WVJQ0H4HXYM0FZXW9TDXBE\r\n\r\n<!doctype\x20html>\r\n<html\x2
 SF:0lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x20<meta\x20charset=utf-
 SF:8>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=dev
 SF:ice-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x20Bad\x20Request</titl
@@ -117,7 +117,7 @@ SF:scroll-behavior:smooth;height:100%;-webkit-font-smoothing:antialiased;f
 SF:ont-family:var\(--font-family\);background-color:var\(--bg-color\)}butt
 SF:on#copy-btn,code{")%r(HTTPOptions,1897,"HTTP/1\.1\x20400\x20Bad\x20Requ
 SF:est\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Le
-SF:ngth:\x206164\r\nSozu-Id:\x2001M6ATQMDHDQQ1326F96T677CF\r\n\r\n<!doctyp
+SF:ngth:\x206164\r\nSozu-Id:\x2001M6WVJX2ZBE4GK0A9KT68851N\r\n\r\n<!doctyp
 SF:e\x20html>\r\n<html\x20lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x2
 SF:0<meta\x20charset=utf-8>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\
 SF:x20content=\"width=device-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x
@@ -132,58 +132,58 @@ SF:isplay:flex}body,html{scroll-behavior:smooth;height:100%;-webkit-font-s
 SF:moothing:antialiased;font-family:var\(--font-family\);background-color:
 SF:var\(--bg-color\)}button#copy-btn,code{");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5221-TCP:V=7.95%I=7%D=11/1%Time=6AE6D3EB%P=x86_64-alpine-linux-musl
-SF:%r(NULL,4D,"220\x20cf0e2fbe-e853-4fa4-a16f-6387cdc70595\x20Mailpit\x20\
-SF:(BOTI\)\x20ESMTP\x20Service\x20ready\r\n")%r(GenericLines,A9,"220\x20cf
-SF:0e2fbe-e853-4fa4-a16f-6387cdc70595\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20S
+SF-Port5221-TCP:V=7.95%I=7%D=11/8%Time=6AF00EB5%P=x86_64-alpine-linux-musl
+SF:%r(NULL,4D,"220\x20d2ef97ff-9eee-4e03-869f-743509666b38\x20Mailpit\x20\
+SF:(BOTI\)\x20ESMTP\x20Service\x20ready\r\n")%r(GenericLines,A9,"220\x20d2
+SF:ef97ff-9eee-4e03-869f-743509666b38\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20S
 SF:ervice\x20ready\r\n500\x205\.5\.2\x20Syntax\x20error,\x20command\x20unr
 SF:ecognized\r\n500\x205\.5\.2\x20Syntax\x20error,\x20command\x20unrecogni
-SF:zed\r\n")%r(GetRequest,A9,"220\x20cf0e2fbe-e853-4fa4-a16f-6387cdc70595\
+SF:zed\r\n")%r(GetRequest,A9,"220\x20d2ef97ff-9eee-4e03-869f-743509666b38\
 SF:x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Service\x20ready\r\n500\x205\.5\.2\x
 SF:20Syntax\x20error,\x20command\x20unrecognized\r\n500\x205\.5\.2\x20Synt
-SF:ax\x20error,\x20command\x20unrecognized\r\n")%r(Hello,DD,"220\x20cf0e2f
-SF:be-e853-4fa4-a16f-6387cdc70595\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Servi
-SF:ce\x20ready\r\n250-cf0e2fbe-e853-4fa4-a16f-6387cdc70595\x20greets\x20\r
+SF:ax\x20error,\x20command\x20unrecognized\r\n")%r(Hello,DD,"220\x20d2ef97
+SF:ff-9eee-4e03-869f-743509666b38\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Servi
+SF:ce\x20ready\r\n250-d2ef97ff-9eee-4e03-869f-743509666b38\x20greets\x20\r
 SF:\n250-SIZE\x2052428800\r\n250-AUTH\x20LOGIN\x20PLAIN\r\n250-ENHANCEDSTA
-SF:TUSCODES\r\n250-8BITMIME\r\n250\x20SMTPUTF8\r\n")%r(Help,70,"220\x20cf0
-SF:e2fbe-e853-4fa4-a16f-6387cdc70595\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Se
+SF:TUSCODES\r\n250-8BITMIME\r\n250\x20SMTPUTF8\r\n")%r(Help,70,"220\x20d2e
+SF:f97ff-9eee-4e03-869f-743509666b38\x20Mailpit\x20\(BOTI\)\x20ESMTP\x20Se
 SF:rvice\x20ready\r\n502\x205\.5\.1\x20Command\x20not\x20implemented\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5801-TCP:V=7.95%I=7%D=11/1%Time=6AE6D3E7%P=x86_64-alpine-linux-musl
-SF:%r(NULL,1D1,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM
+SF-Port5801-TCP:V=7.95%I=7%D=11/8%Time=6AF00EB1%P=x86_64-alpine-linux-musl
+SF:%r(NULL,1D2,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM
 SF:2MBLDFGUQUE4TEHNQEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQV
 SF:DAPNWM2MBLDFGUQUE4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"
 SF:git_commit\":\"d3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",
 SF:\"port\":4040,\"headers\":true,\"auth_required\":true,\"max_payload\":5
-SF:242880,\"client_id\":793153,\"client_ip\":\"91\.208\.207\.221\",\"api_l
-SF:vl\":4,\"xkey\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2
-SF:LVN\"}\x20\r\n-ERR\x20'Authentication\x20Timeout'\r\n")%r(GetRequest,1D
-SF:2,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQU
-SF:E4TEHNQEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBL
-SF:DFGUQUE4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit
-SF:\":\"d3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4
-SF:040,\"headers\":true,\"auth_required\":true,\"max_payload\":5242880,\"c
-SF:lient_id\":793154,\"client_ip\":\"91\.208\.207\.221\",\"api_lvl\":4,\"x
-SF:key\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20
-SF:\r\n-ERR\x20'Authorization\x20Violation'\r\n")%r(GenericLines,1D2,"INFO
-SF:\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQ
-SF:EMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE
-SF:4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"d3
-SF:bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"h
-SF:eaders\":true,\"auth_required\":true,\"max_payload\":5242880,\"client_i
-SF:d\":793155,\"client_ip\":\"91\.208\.207\.221\",\"api_lvl\":4,\"xkey\":\
-SF:"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n-ER
-SF:R\x20'Authorization\x20Violation'\r\n")%r(HTTPOptions,1D2,"INFO\x20{\"s
-SF:erver_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L7\"
-SF:,\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEM
-SF:C7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"d3bc045\",
-SF:\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"headers\"
-SF::true,\"auth_required\":true,\"max_payload\":5242880,\"client_id\":7931
-SF:56,\"client_ip\":\"91\.208\.207\.221\",\"api_lvl\":4,\"xkey\":\"XCYJIDP
-SF:3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n-ERR\x20'Au
-SF:thorization\x20Violation'\r\n");
+SF:242880,\"client_id\":1131791,\"client_ip\":\"91\.208\.207\.220\",\"api_
+SF:lvl\":4,\"xkey\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD
+SF:2LVN\"}\x20\r\n-ERR\x20'Authentication\x20Timeout'\r\n")%r(GetRequest,1
+SF:D3,"INFO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQ
+SF:UE4TEHNQEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MB
+SF:LDFGUQUE4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commi
+SF:t\":\"d3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":
+SF:4040,\"headers\":true,\"auth_required\":true,\"max_payload\":5242880,\"
+SF:client_id\":1131809,\"client_ip\":\"91\.208\.207\.220\",\"api_lvl\":4,\
+SF:"xkey\":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x
+SF:20\r\n-ERR\x20'Authorization\x20Violation'\r\n")%r(GenericLines,1D3,"IN
+SF:FO\x20{\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEH
+SF:NQEMC7L7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQ
+SF:UE4TEHNQEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"
+SF:d3bc045\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\
+SF:"headers\":true,\"auth_required\":true,\"max_payload\":5242880,\"client
+SF:_id\":1131812,\"client_ip\":\"91\.208\.207\.220\",\"api_lvl\":4,\"xkey\
+SF:":\"XCYJIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n
+SF:-ERR\x20'Authorization\x20Violation'\r\n")%r(HTTPOptions,1D3,"INFO\x20{
+SF:\"server_id\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHNQEMC7L
+SF:7\",\"server_name\":\"NBONOLPNG4SG4GZPPZDZYECJPQVDAPNWM2MBLDFGUQUE4TEHN
+SF:QEMC7L7\",\"version\":\"2\.14\.5\",\"proto\":1,\"git_commit\":\"d3bc045
+SF:\",\"go\":\"go1\.26\.5\",\"host\":\"0\.0\.0\.0\",\"port\":4040,\"header
+SF:s\":true,\"auth_required\":true,\"max_payload\":5242880,\"client_id\":1
+SF:131814,\"client_ip\":\"91\.208\.207\.220\",\"api_lvl\":4,\"xkey\":\"XCY
+SF:JIDP3IZX63CL5TIWSVN37PXBQBSMVF2RJM7YUPMQTBBDDYLCD2LVN\"}\x20\r\n-ERR\x2
+SF:0'Authorization\x20Violation'\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5911-TCP:V=7.95%T=SSL%I=7%D=11/1%Time=6AE6D3F4%P=x86_64-alpine-linu
+SF-Port5911-TCP:V=7.95%T=SSL%I=7%D=11/8%Time=6AF00EBD%P=x86_64-alpine-linu
 SF:x-musl%r(NULL,1B,"\0\0\x12\x04\0\0\0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0
 SF:\x06\0\0@\0")%r(GenericLines,1B,"\0\0\x12\x04\0\0\0\0\0\0\x04\0\x10\0\0
 SF:\0\x05\0\0@\0\0\x06\0\0@\0")%r(GetRequest,1B,"\0\0\x12\x04\0\0\0\0\0\0\
@@ -214,22 +214,22 @@ SF:0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0")%r(NCP,1B,"\0\0\x12\x04\0\0\
 SF:0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0")%r(NotesRPC,1B,"\0\0\x
 SF:12\x04\0\0\0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5961-TCP:V=7.95%I=7%D=11/1%Time=6AE6D3EB%P=x86_64-alpine-linux-musl
-SF:%r(NULL,46,"220\x20a3b35c8d-9087-443d-a75b-9470e8db6fd9\x20Mailpit\x20E
-SF:SMTP\x20Service\x20ready\r\n")%r(GenericLines,A2,"220\x20a3b35c8d-9087-
-SF:443d-a75b-9470e8db6fd9\x20Mailpit\x20ESMTP\x20Service\x20ready\r\n500\x
+SF-Port5961-TCP:V=7.95%I=7%D=11/8%Time=6AF00EB5%P=x86_64-alpine-linux-musl
+SF:%r(NULL,46,"220\x207813143c-1db8-424a-b20e-8ea4a5d3a92f\x20Mailpit\x20E
+SF:SMTP\x20Service\x20ready\r\n")%r(GenericLines,A2,"220\x207813143c-1db8-
+SF:424a-b20e-8ea4a5d3a92f\x20Mailpit\x20ESMTP\x20Service\x20ready\r\n500\x
 SF:205\.5\.2\x20Syntax\x20error,\x20command\x20unrecognized\r\n500\x205\.5
 SF:\.2\x20Syntax\x20error,\x20command\x20unrecognized\r\n")%r(GetRequest,A
-SF:2,"220\x20a3b35c8d-9087-443d-a75b-9470e8db6fd9\x20Mailpit\x20ESMTP\x20S
+SF:2,"220\x207813143c-1db8-424a-b20e-8ea4a5d3a92f\x20Mailpit\x20ESMTP\x20S
 SF:ervice\x20ready\r\n500\x205\.5\.2\x20Syntax\x20error,\x20command\x20unr
 SF:ecognized\r\n500\x205\.5\.2\x20Syntax\x20error,\x20command\x20unrecogni
-SF:zed\r\n")%r(Hello,C0,"220\x20a3b35c8d-9087-443d-a75b-9470e8db6fd9\x20Ma
-SF:ilpit\x20ESMTP\x20Service\x20ready\r\n250-a3b35c8d-9087-443d-a75b-9470e
-SF:8db6fd9\x20greets\x20\r\n250-SIZE\x2052428800\r\n250-ENHANCEDSTATUSCODE
-SF:S\r\n250-8BITMIME\r\n250\x20SMTPUTF8\r\n")%r(Help,69,"220\x20a3b35c8d-9
-SF:087-443d-a75b-9470e8db6fd9\x20Mailpit\x20ESMTP\x20Service\x20ready\r\n5
+SF:zed\r\n")%r(Hello,C0,"220\x207813143c-1db8-424a-b20e-8ea4a5d3a92f\x20Ma
+SF:ilpit\x20ESMTP\x20Service\x20ready\r\n250-7813143c-1db8-424a-b20e-8ea4a
+SF:5d3a92f\x20greets\x20\r\n250-SIZE\x2052428800\r\n250-ENHANCEDSTATUSCODE
+SF:S\r\n250-8BITMIME\r\n250\x20SMTPUTF8\r\n")%r(Help,69,"220\x207813143c-1
+SF:db8-424a-b20e-8ea4a5d3a92f\x20Mailpit\x20ESMTP\x20Service\x20ready\r\n5
 SF:02\x205\.5\.1\x20Command\x20not\x20implemented\r\n");
 Service Info: CPE: cpe:/o:fortinet:fortios
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Nov  1 05:54:15 2026 -- 1 IP address (1 host up) scanned in 47.94 seconds
+# Nmap done at Sun Nov  8 05:55:28 2026 -- 1 IP address (1 host up) scanned in 37.37 seconds
