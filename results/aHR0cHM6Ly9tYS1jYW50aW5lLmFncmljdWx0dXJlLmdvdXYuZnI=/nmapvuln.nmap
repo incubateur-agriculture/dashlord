@@ -1,7 +1,7 @@
-# Nmap 7.95 scan initiated Sun Nov  1 05:08:39 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ma-cantine.agriculture.gouv.fr
-Nmap scan report for ma-cantine.agriculture.gouv.fr (91.208.207.168)
-Host is up (0.14s latency).
-Other addresses for ma-cantine.agriculture.gouv.fr (not scanned): 91.208.207.184
+# Nmap 7.95 scan initiated Sun Nov  8 05:10:33 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ma-cantine.agriculture.gouv.fr
+Nmap scan report for ma-cantine.agriculture.gouv.fr (91.208.207.184)
+Host is up (0.082s latency).
+Other addresses for ma-cantine.agriculture.gouv.fr (not scanned): 91.208.207.168
 Not shown: 993 closed tcp ports (reset)
 PORT     STATE    SERVICE    VERSION
 80/tcp   open     http
@@ -11,7 +11,7 @@ PORT     STATE    SERVICE    VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     %Content-Length: %CONTENT_LENGTH
-|     Sozu-Id: 01M6AR5E34JX3EGXERZTG004KN
+|     Sozu-Id: 01M6WS1JNH4ZMZ913Y7GMCQW36
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -24,7 +24,7 @@ PORT     STATE    SERVICE    VERSION
 |     Cache-Control: no-cache
 |     Connection: close
 |     %Content-Length: %CONTENT_LENGTH
-|     Sozu-Id: 01M6AR5M7Z1PEK4D20ECSD3Z0W
+|     Sozu-Id: 01M6WS1RQNBRDJPKXBYJKEKXSM
 |     <!doctype html>
 |     <html lang=en-US>
 |     <head>
@@ -41,10 +41,10 @@ PORT     STATE    SERVICE    VERSION
 9999/tcp filtered abyss
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.95%I=7%D=11/1%Time=6AE6C96C%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.95%I=7%D=11/8%Time=6AF00452%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,1854,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\
 SF:x20no-cache\r\nConnection:\x20close\r\n%Content-Length:\x20%CONTENT_LEN
-SF:GTH\r\nSozu-Id:\x2001M6AR5E34JX3EGXERZTG004KN\r\n\r\n<!doctype\x20html>
+SF:GTH\r\nSozu-Id:\x2001M6WS1JNH4ZMZ913Y7GMCQW36\r\n\r\n<!doctype\x20html>
 SF:\r\n<html\x20lang=en-US>\r\n\x20\x20<head>\r\n\x20\x20\x20\x20<meta\x20
 SF:charset=utf-8>\r\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content
 SF:=\"width=device-width\"\x20/>\r\n\x20\x20\x20\x20<title>400\x20Bad\x20R
@@ -59,7 +59,7 @@ SF:x}body,html{scroll-behavior:smooth;height:100%;-webkit-font-smoothing:a
 SF:ntialiased;font-family:var\(--font-family\);background-color:var\(--bg-
 SF:color\)}button#co")%r(HTTPOptions,1650,"HTTP/1\.1\x20400\x20Bad\x20Requ
 SF:est\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\n%Content-L
-SF:ength:\x20%CONTENT_LENGTH\r\nSozu-Id:\x2001M6AR5M7Z1PEK4D20ECSD3Z0W\r\n
+SF:ength:\x20%CONTENT_LENGTH\r\nSozu-Id:\x2001M6WS1RQNBRDJPKXBYJKEKXSM\r\n
 SF:\r\n<!doctype\x20html>\r\n<html\x20lang=en-US>\r\n\x20\x20<head>\r\n\x2
 SF:0\x20\x20\x20<meta\x20charset=utf-8>\r\n\x20\x20\x20\x20<meta\x20name=\
 SF:"viewport\"\x20content=\"width=device-width\"\x20/>\r\n\x20\x20\x20\x20
@@ -74,7 +74,7 @@ SF:ion:column;display:flex}body,html{scroll-behavior:smooth;height:100%;-w
 SF:ebkit-font-smoothing:antialiased;font-family:var\(--font-family\);backg
 SF:round-color:var\(--bg-color\)}button#co");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5911-TCP:V=7.95%T=SSL%I=7%D=11/1%Time=6AE6C975%P=x86_64-alpine-linu
+SF-Port5911-TCP:V=7.95%T=SSL%I=7%D=11/8%Time=6AF0045A%P=x86_64-alpine-linu
 SF:x-musl%r(NULL,1B,"\0\0\x12\x04\0\0\0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0
 SF:\x06\0\0@\0")%r(GenericLines,1B,"\0\0\x12\x04\0\0\0\0\0\0\x04\0\x10\0\0
 SF:\0\x05\0\0@\0\0\x06\0\0@\0")%r(GetRequest,1B,"\0\0\x12\x04\0\0\0\0\0\0\
@@ -106,4 +106,4 @@ SF:0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0")%r(NotesRPC,1B,"\0\0\x
 SF:12\x04\0\0\0\0\0\0\x04\0\x10\0\0\0\x05\0\0@\0\0\x06\0\0@\0");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Nov  1 05:09:27 2026 -- 1 IP address (1 host up) scanned in 48.11 seconds
+# Nmap done at Sun Nov  8 05:11:01 2026 -- 1 IP address (1 host up) scanned in 28.12 seconds
