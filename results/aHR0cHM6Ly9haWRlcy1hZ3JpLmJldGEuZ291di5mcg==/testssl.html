@@ -21,14 +21,14 @@
 <span style="font-weight:bold;">#####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad (Mar 28 2025)</i>  [~179 ciphers]
-  on runnervm7aw5e:/home/testssl/bin/openssl.Linux.x86_64
+  on ip-10-0-143-12:/home/testssl/bin/openssl.Linux.x86_64
 
-<span style="font-weight:bold;">Testing all IP addresses (port 443): </span>5.104.101.30 109.232.233.130 109.232.236.90 148.253.75.120
+<span style="font-weight:bold;">Testing all IP addresses (port 443): </span>148.253.75.120 109.232.233.130 109.232.236.90 5.104.101.30
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-11-08 05:28:31        --&gt;&gt; 5.104.101.30:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-11-15 05:56:41        --&gt;&gt; 148.253.75.120:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
- Further IP addresses:   109.232.233.130 148.253.75.120 109.232.236.90 
- rDNS (5.104.101.30):    ows-5-104-101-30.eu-west-2.compute.outscale.com.
+ Further IP addresses:   109.232.236.90 109.232.233.130 5.104.101.30 
+ rDNS (148.253.75.120):  ows-148-253-75-120.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing protocols </span><u>via sockets except NPN+ALPN </u>
@@ -99,19 +99,19 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>05E0489EED833AD33837838C746F16E7788E (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F2CC89D83C823D97A980B807E7C84B659CED35F1
-                              SHA256 A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+<span style="font-weight:bold;"> Serial                       </span>069FA5456A05509DEA1F0E4CF417A1215290 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 9BCFE90733CD539BBE00B2773212812355F6859F
+                              SHA256 AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>aides-agri.beta.gouv.fr </i> (CN in response to request w/o SNI: <i>*.osc-fr1.scalingo.io </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>aides-agri.beta.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
                               <span style="color:#a86437;">wildcard certificate</span> could be problematic, see other hosts at
-                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">62 &gt;= 30 days</span> (2026-10-11 13:08 --&gt; 2027-01-09 13:08)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">85 &gt;= 30 days</span> (2026-11-10 13:09 --&gt; 2027-02-08 13:09)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
-<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/15.crl
+<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/17.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>--
 <span style="font-weight:bold;"> OCSP stapling                </span>not offered
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
@@ -138,14 +138,14 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               <span style="color:#008817;">Content-Security-Policy</span>: frame-src
                                 https://tube.numerique.gouv.fr; script-src
                                 &apos;self&apos; stats.beta.gouv.fr
-                                &apos;nonce-vwp6ljFoiRj/MjBO622lWw==&apos;;
+                                &apos;nonce-xNIDfYckhbMEUzVyZMvScQ==&apos;;
                                 frame-ancestors &apos;self&apos;; connect-src &apos;self&apos;
                                 stats.beta.gouv.fr sentry.incubateur.net;
                                 form-action &apos;self&apos;; font-src &apos;self&apos;
                                 maxcdn.bootstrapcdn.com; img-src &apos;self&apos; data:;
                                 style-src &apos;self&apos; stats.beta.gouv.fr
                                 maxcdn.bootstrapcdn.com
-                                &apos;nonce-vwp6ljFoiRj/MjBO622lWw==&apos;; default-src
+                                &apos;nonce-xNIDfYckhbMEUzVyZMvScQ==&apos;; default-src
                                 &apos;self&apos;
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
@@ -169,7 +169,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no common prime detected
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -228,12 +228,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-11-08 05:30:14 [ 106s] --&gt;&gt; 5.104.101.30:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-11-15 05:57:39 [  60s] --&gt;&gt; 148.253.75.120:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-11-08 05:30:14        --&gt;&gt; 109.232.233.130:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-11-15 05:57:39        --&gt;&gt; 109.232.233.130:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
- Further IP addresses:   148.253.75.120 5.104.101.30 109.232.236.90 
+ Further IP addresses:   148.253.75.120 109.232.236.90 5.104.101.30 
  rDNS (109.232.233.130): ows-109-232-233-130.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
@@ -305,19 +305,19 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>05E0489EED833AD33837838C746F16E7788E (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F2CC89D83C823D97A980B807E7C84B659CED35F1
-                              SHA256 A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+<span style="font-weight:bold;"> Serial                       </span>069FA5456A05509DEA1F0E4CF417A1215290 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 9BCFE90733CD539BBE00B2773212812355F6859F
+                              SHA256 AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>aides-agri.beta.gouv.fr </i> (CN in response to request w/o SNI: <i>*.osc-fr1.scalingo.io </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>aides-agri.beta.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
                               <span style="color:#a86437;">wildcard certificate</span> could be problematic, see other hosts at
-                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">62 &gt;= 30 days</span> (2026-10-11 13:08 --&gt; 2027-01-09 13:08)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">85 &gt;= 30 days</span> (2026-11-10 13:09 --&gt; 2027-02-08 13:09)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
-<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/15.crl
+<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/17.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>--
 <span style="font-weight:bold;"> OCSP stapling                </span>not offered
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
@@ -333,7 +333,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">365 days</span>=31536000 s<span style="color:#008817;">, includeSubDomains</span><span style="color:#008817;">, preload</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -342,17 +342,16 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
                               <span style="color:#008817;">Content-Security-Policy</span>: frame-src
-                                https://tube.numerique.gouv.fr; script-src
-                                &apos;self&apos; stats.beta.gouv.fr
-                                &apos;nonce-jrijQOGZnjEhwDKwKnCfjg==&apos;;
-                                frame-ancestors &apos;self&apos;; connect-src &apos;self&apos;
-                                stats.beta.gouv.fr sentry.incubateur.net;
-                                form-action &apos;self&apos;; font-src &apos;self&apos;
-                                maxcdn.bootstrapcdn.com; img-src &apos;self&apos; data:;
-                                style-src &apos;self&apos; stats.beta.gouv.fr
+                                https://tube.numerique.gouv.fr; img-src &apos;self&apos;
+                                data:; connect-src &apos;self&apos; stats.beta.gouv.fr
+                                sentry.incubateur.net; default-src &apos;self&apos;;
+                                frame-ancestors &apos;self&apos;; script-src &apos;self&apos;
+                                stats.beta.gouv.fr
+                                &apos;nonce-UpJIhyqJtXl/Zhz5RIbm4g==&apos;; form-action
+                                &apos;self&apos;; style-src &apos;self&apos; stats.beta.gouv.fr
                                 maxcdn.bootstrapcdn.com
-                                &apos;nonce-jrijQOGZnjEhwDKwKnCfjg==&apos;; default-src
-                                &apos;self&apos;
+                                &apos;nonce-UpJIhyqJtXl/Zhz5RIbm4g==&apos;; font-src
+                                &apos;self&apos; maxcdn.bootstrapcdn.com
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
@@ -375,7 +374,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no common prime detected
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -434,12 +433,12 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-11-08 05:31:57 [ 209s] --&gt;&gt; 109.232.233.130:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-11-15 05:58:37 [ 118s] --&gt;&gt; 109.232.233.130:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-11-08 05:31:57        --&gt;&gt; 109.232.236.90:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-11-15 05:58:37        --&gt;&gt; 109.232.236.90:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
- Further IP addresses:   109.232.233.130 148.253.75.120 5.104.101.30 
+ Further IP addresses:   148.253.75.120 109.232.233.130 5.104.101.30 
  rDNS (109.232.236.90):  ows-109-232-236-90.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
@@ -503,7 +502,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;renegotiation info/#65281&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>300 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -511,19 +510,19 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>05E0489EED833AD33837838C746F16E7788E (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F2CC89D83C823D97A980B807E7C84B659CED35F1
-                              SHA256 A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+<span style="font-weight:bold;"> Serial                       </span>069FA5456A05509DEA1F0E4CF417A1215290 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 9BCFE90733CD539BBE00B2773212812355F6859F
+                              SHA256 AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>aides-agri.beta.gouv.fr </i> (CN in response to request w/o SNI: <i>*.osc-fr1.scalingo.io </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>aides-agri.beta.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
                               <span style="color:#a86437;">wildcard certificate</span> could be problematic, see other hosts at
-                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">62 &gt;= 30 days</span> (2026-10-11 13:08 --&gt; 2027-01-09 13:08)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">85 &gt;= 30 days</span> (2026-11-10 13:09 --&gt; 2027-02-08 13:09)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
-<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/15.crl
+<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/17.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>--
 <span style="font-weight:bold;"> OCSP stapling                </span>not offered
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
@@ -539,7 +538,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">365 days</span>=31536000 s<span style="color:#008817;">, includeSubDomains</span><span style="color:#008817;">, preload</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -550,14 +549,14 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               <span style="color:#008817;">Content-Security-Policy</span>: frame-src
                                 https://tube.numerique.gouv.fr; script-src
                                 &apos;self&apos; stats.beta.gouv.fr
-                                &apos;nonce-CdeFyBDMgScg+lBEf4yCFw==&apos;;
+                                &apos;nonce-v32GB4lQssC0sfiewyDYlQ==&apos;;
                                 frame-ancestors &apos;self&apos;; connect-src &apos;self&apos;
                                 stats.beta.gouv.fr sentry.incubateur.net;
                                 form-action &apos;self&apos;; font-src &apos;self&apos;
                                 maxcdn.bootstrapcdn.com; img-src &apos;self&apos; data:;
                                 style-src &apos;self&apos; stats.beta.gouv.fr
                                 maxcdn.bootstrapcdn.com
-                                &apos;nonce-CdeFyBDMgScg+lBEf4yCFw==&apos;; default-src
+                                &apos;nonce-v32GB4lQssC0sfiewyDYlQ==&apos;; default-src
                                 &apos;self&apos;
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
@@ -581,7 +580,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no common prime detected
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -640,13 +639,13 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-11-08 05:33:42 [ 314s] --&gt;&gt; 109.232.236.90:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-11-15 05:59:37 [ 178s] --&gt;&gt; 109.232.236.90:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2026-11-08 05:33:43        --&gt;&gt; 148.253.75.120:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-11-15 05:59:37        --&gt;&gt; 5.104.101.30:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
- Further IP addresses:   109.232.233.130 5.104.101.30 109.232.236.90 
- rDNS (148.253.75.120):  ows-148-253-75-120.eu-west-2.compute.outscale.com.
+ Further IP addresses:   148.253.75.120 109.232.236.90 109.232.233.130 
+ rDNS (5.104.101.30):    ows-5-104-101-30.eu-west-2.compute.outscale.com.
  Service detected:       HTTP
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing protocols </span><u>via sockets except NPN+ALPN </u>
@@ -709,7 +708,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;renegotiation info/#65281&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>300 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -717,19 +716,19 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>05E0489EED833AD33837838C746F16E7788E (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F2CC89D83C823D97A980B807E7C84B659CED35F1
-                              SHA256 A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+<span style="font-weight:bold;"> Serial                       </span>069FA5456A05509DEA1F0E4CF417A1215290 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 9BCFE90733CD539BBE00B2773212812355F6859F
+                              SHA256 AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>aides-agri.beta.gouv.fr </i> (CN in response to request w/o SNI: <i>*.osc-fr1.scalingo.io </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>aides-agri.beta.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
                               <span style="color:#a86437;">wildcard certificate</span> could be problematic, see other hosts at
-                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18
+                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">62 &gt;= 30 days</span> (2026-10-11 13:08 --&gt; 2027-01-09 13:08)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">85 &gt;= 30 days</span> (2026-11-10 13:09 --&gt; 2027-02-08 13:09)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
-<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/15.crl
+<span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr2.c.lencr.org/17.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>--
 <span style="font-weight:bold;"> OCSP stapling                </span>not offered
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
@@ -745,7 +744,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">365 days</span>=31536000 s<span style="color:#008817;">, includeSubDomains</span><span style="color:#008817;">, preload</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -753,17 +752,18 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Cookie(s)                    </span>1 issued: <span style="color:#008817;">1/1</span> secure, <span style="color:#c05600;">NOT</span> HttpOnly
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: DENY
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              <span style="color:#008817;">Content-Security-Policy</span>: script-src &apos;self&apos;
-                                stats.beta.gouv.fr
-                                &apos;nonce-ivRgBC9p+WmaW1VJ0rkAIg==&apos;; frame-src
-                                https://tube.numerique.gouv.fr; form-action
-                                &apos;self&apos;; default-src &apos;self&apos;; style-src &apos;self&apos;
-                                stats.beta.gouv.fr maxcdn.bootstrapcdn.com
-                                &apos;nonce-ivRgBC9p+WmaW1VJ0rkAIg==&apos;;
+                              <span style="color:#008817;">Content-Security-Policy</span>: frame-src
+                                https://tube.numerique.gouv.fr; script-src
+                                &apos;self&apos; stats.beta.gouv.fr
+                                &apos;nonce-SY3izTle+qs1kV5QECkTFQ==&apos;;
                                 frame-ancestors &apos;self&apos;; connect-src &apos;self&apos;
                                 stats.beta.gouv.fr sentry.incubateur.net;
-                                font-src &apos;self&apos; maxcdn.bootstrapcdn.com;
-                                img-src &apos;self&apos; data:
+                                form-action &apos;self&apos;; font-src &apos;self&apos;
+                                maxcdn.bootstrapcdn.com; img-src &apos;self&apos; data:;
+                                style-src &apos;self&apos; stats.beta.gouv.fr
+                                maxcdn.bootstrapcdn.com
+                                &apos;nonce-SY3izTle+qs1kV5QECkTFQ==&apos;; default-src
+                                &apos;self&apos;
                               Cross-Origin-Opener-Policy: same-origin
                               Referrer-Policy: same-origin
 <span style="font-weight:bold;"> Reverse Proxy banner         </span>--
@@ -786,7 +786,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=A4E532D9F9F3299B5CF55E8E689190D10B5DE04710201545DC6FCFA09C06FC18</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=AE8E1718FC58E920F5ED0BD30AD43293D123806D35235133F406F3D9B24F0838</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no common prime detected
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -845,10 +845,10 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-11-08 05:35:29 [ 421s] --&gt;&gt; 148.253.75.120:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-11-15 06:00:36 [ 237s] --&gt;&gt; 5.104.101.30:443 (aides-agri.beta.gouv.fr) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>5.104.101.30 109.232.233.130 109.232.236.90 148.253.75.120
+<span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>148.253.75.120 109.232.233.130 109.232.236.90 5.104.101.30
 
 </pre>
 </body>
